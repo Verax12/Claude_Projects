@@ -11,6 +11,8 @@
 > - O **gazetteer Pleiades** (`places.csv`, repositório *isawnyu/pleiades.datasets*).
 >
 > Os dados que vieram apenas de **resumos de busca** (páginas que não puderam ser abertas: Stanford FUR, Wikipedia, Vroma, tese de Leiden etc.) estão indicados como tal. Os paralelos arqueológicos modernos (Herculano, Óstia, Insula dell'Ara Coeli) **não puderam ser verificados**: ver Lacunas.
+>
+> **Revisão independente (09/10/2026).** Uma verificação adversarial reconferiu as principais afirmações nos textos originais e corrigiu alguns pontos: Porticus Liviae, Aqua Tepula, *lasanum*, sacadas, limite de Nero e outros. O resultado está na seção final, **Verificação independente**.
 
 **Datas das obras literárias.** As datas aproximadas de composição seguem a **cronologia convencional e não foram verificadas por busca nesta tarefa**: Catulo, contemporâneo de César; Horácio, *Sátiras* c. 35 a.C., *Epodos* c. 30 a.C., *Epístolas* c. 20 a.C.; Vitrúvio, anos 20 a.C.; Lívio, Estrabão e Dionísio, sob Augusto; Marcial c. 85–102 d.C.; Juvenal, início do séc. II d.C.; Gélio, séc. II d.C. As datas de **eventos** citadas (218, 192, 191, 186, 61, 58, 56, 54, 48, 47/46, 45, 44 a.C.) vêm dos próprios textos ou das fontes indicadas.
 
@@ -350,13 +352,13 @@ Conversão usada: **1 pé romano (pes) ≈ 0,296 m** (Smith 1890, s.v. *Mensura*
 | **Insula dell'Ara Coeli** (Roma, pé do Capitólio) | **NÃO VERIFICADO nesta pesquisa** | não usar como modelo de fachada até verificar | sem fonte acessível |
 | **Casa de Pansa** (Pompeia) | fase original (casa de átrio) c. 140–120 a.C.; a configuração com lojas alugadas e casas humildes de andar superior é a do **estado de 79 d.C.** (data da reforma não verificada) | paralelo **regional** de quarteirão misto, em fase **imperial** | [M-PLEIADES] #19985870; [M-SMITH-DA] Domus |
 | **Anúncio da insula Arriana Polliana** (Pompeia, CIL 4.138: *tabernae cum pergulis suis*, *cenacula*) | imperial (antes de 79 d.C.) | só terminologia | [M-SMITH-DA] Pergula, Domus |
-| Rostra de César (parede de tijolo) | 44 a.C. | prova de que o tijolo cozido era **novidade** | [M-SMITH-DA] Murus |
+| Rostra de César (parede de tijolo) | 44 a.C. (⚠ não confirmado que o paramento de tijolo seja dessa fase e não de uma restauração posterior; só Smith/Middleton) | indício de que o tijolo cozido era **novidade** | [M-SMITH-DA] Murus |
 
 ---
 
 ## Anacronismos a evitar
 
-1. **Fachadas de tijolo cozido aparente (*opus testaceum*) estilo Óstia.** O paramento de tijolo cozido praticamente não existia em Roma antes da Rostra de César (44 a.C.) [M-SMITH-DA] Murus. As insulae de Óstia que servem de modelo popular são **adrianas** [M-PLEIADES]. Usar reboco sobre *opus incertum* e tufo, tijolo cru e taipa.
+1. **Fachadas de tijolo cozido aparente (*opus testaceum*) estilo Óstia.** Segundo Smith/Middleton, o paramento de tijolo cozido não tem exemplo em Roma anterior à Rostra de César (44 a.C.) [M-SMITH-DA] Murus (⚠ não confirmado por bibliografia moderna). As insulae de Óstia que servem de modelo popular são **adrianas** [M-PLEIADES]. Usar reboco sobre *opus incertum* e tufo, tijolo cru e taipa.
 2. **Limite de altura de 70 pés:** é de Augusto [A-STRAB] 5.3.7. Em 44 a.C. **não havia teto legal**, e alguns prédios podiam ser mais altos.
 3. **Corpo de bombeiros (*vigiles*), *magistri vicorum* augustanos, 14 regiões, 265 vici, Genius Augusti nos altares compitais:** tudo **posterior** a 44 a.C. [A-STRAB] 5.3.7; [M-SMITH-DA] Compitalia, Vicus; [A-PLIN] NH 3.66; [M-PLEIADES] (regiões criadas em 7 a.C.).
 4. **Muro corta-fogo do Fórum de Augusto (2 a.C.), Fórum de Nerva (97 d.C.), Templum Pacis (Vespasiano):** não existiam. A área entre o Fórum e a Subura era casario atravessado pelo Argileto [M-PLEIADES]; [A-CIC-ATT] 4.17.7.
@@ -437,3 +439,91 @@ Conversão usada: **1 pé romano (pes) ≈ 0,296 m** (Smith 1890, s.v. *Mensura*
 - **[M-PERSEUS-SUET]** Nota da tradução Perseus de Suetônio, **via resumo de busca**: https://atlas.perseus.tufts.edu/library/passage/urn:cts:latinLit:phi1348.abo011.perseus-eng2:46-50/xml/.
 - **[M-LEIDEN]** Tese de estudante, Universidade de Leiden (limites de altura: 70 pés ≈ 20 m; Nero ≈ 60; Trajano ≈ 57), **via resumo de busca**: https://studenttheses.universiteitleiden.nl/access/item%3A2660017/view.
 - Encontrados na busca mas **não acessados** (proxy): https://italoamericano.org/ancient-rome-suburra/; https://www.hands-up-education.org/suburani_book/chap2/c2pdfs/c02-addev-impressions.pdf; https://hands-up-education.org/suburani_book/chap1/c1pdfs/insula-add.pdf; https://sourcebooks.web.fordham.edu/ancient/strabo5-rome.asp; https://www.chise.org/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Opus_craticum.html (Wikipedia *Opus craticum*: técnica atestada em Pompeia e Herculano, via resumo de busca).
+
+---
+
+## Verificação independente
+
+**Revisão adversarial de 09/10/2026.**
+
+**Método e limites.** O orçamento de WebSearch compartilhado já estava esgotado quando esta revisão começou. A primeira busca foi recusada pelo sistema e **nenhuma busca na web foi feita**. Em vez disso, os textos-fonte foram baixados diretamente, por URL conhecida, dos repositórios abaixo, e cada afirmação foi conferida no texto:
+
+- edições Perseus (GitHub *PerseusDL*);
+- Latin Library espelhada pelo CLTK (Varrão, Veleio);
+- Smith 1890 (*canonical-pdlrefwk*);
+- Pleiades (`places.csv`).
+
+Esse método permite checar as fontes antigas, Smith e Pleiades, mas **não** a bibliografia arqueológica moderna (LTUR, Coarelli e outros). Os pontos que dependem dela continuam marcados com ⚠.
+
+### Confirmado (✔)
+
+1. ✔ **Terceiro andar habitado em 218 a.C.** Lívio 21.62.3: *in foro boario bovem in tertiam contignationem sua sponte escendisse atque inde tumultu habitatorum territum sese deiecisse*. Está entre os prodígios do inverno de 218/217 a.C. (Perseus lat2).
+2. ✔ **Escada até as telhas em 191 a.C., nas Carinas.** Lívio 36.37.2: *per scalas pervenisse in tegulas aedificii*.
+3. ✔ **Cícero, *Leg. agr.* 2.96:** *cenaculis sublatam atque suspensam, non optimis viis, angustissimis semitis*.
+4. ✔ **Limite de 70 pés, de Augusto.** Estrabão 5.3.7, em grego: *κωλύσας ἐξαίρειν ποδῶν ἑβδομήκοντα τὸ πρὸς ταῖς ὁδοῖς ταῖς δημοσίαις* (tradução Hamilton-Falconer). A mesma passagem traz a milícia de libertos contra incêndios e a redução das alturas das construções novas. Logo, não havia esse teto em 50–44 a.C.
+5. ✔ **Vitrúvio 2.8.17, paredes e prédios altos.** Paredes de no máximo 1,5 pé sobre solo comum. Parede de tijolo cru de 1,5 pé sustenta um só pavimento. Prédios altos levam *pilis lapideis, structuris testaceis, parietibus caementiciis* e *contignationibus crebris*. **Ressalva:** Smith (s.v. *Domus*) lê essas prescrições como disposições da lei edilícia de Augusto.
+6. ✔ **Vitrúvio sobre técnicas.** O *opus craticium* arde "como tochas" e era usado por pressa, pobreza ou para divisórias nos pavimentos superiores (*in pendenti loco dissaeptio*) (2.8.20). O *reticulatum* é a técnica "que agora todos usam", e o *incertum* é a "antiga" (2.8.1). Paredes de telhas velhas: 2.8.19.
+7. ✔ **Casas de César.** Morou primeiro na Subura, *modicis aedibus*, e depois do pontificado máximo na *domus publica* da Via Sacra (Suetônio, Iul. 46.1). Dião narra a eleição para *pontifex maximus* entre os fatos de 63 a.C. (37.37.1–2), o que substitui a antiga fonte "Wikipedia via resumo".
+8. ✔ **Revisão das listas do trigo.** *Vicatim per dominos insularum*; de 320.000 para 150.000 beneficiários (Suetônio, Iul. 41.3).
+9. ✔ **Aluguéis.**
+   - Remissão de César: até 2.000 *nummi* em Roma e 500 HS na Itália (Suetônio, Iul. 38.2); até 500 dracmas por um ano (Dião 42.51.1).
+   - Lei de Célio, 48 a.C.: *mercedes habitationum annuas conductoribus donavit* (César, BC 3.21.1; Dião 42.22.3).
+   - **Acrescentado:** Dolabela, em 47 a.C. (Dião 42.32.2).
+10. ✔ **Crasso.** Mais de 500 escravos arquitetos e construtores; incêndios e desabamentos causados "pelo peso e pela aglomeração dos edifícios" (Plutarco, Crasso 2.4, em grego e inglês). Plutarco fala de construtores, não de bombeiros.
+11. ✔ **Imóveis de Cícero.**
+    - Quinto comprou o *reliquum dodrantem* (os ¾ restantes) do edifício do Argileto por HS 725.000 (Att. 1.14.7, carta datada dos Idos de fevereiro de 61 a.C.).
+    - *Mercedes Argileti et Aventini* (Att. 12.32.2).
+    - Uma mesada de HS 72.000 seria "suficiente"; a partir de 1º de abril, ajuste para HS 80.000, *nunc enim insulae tantum* (Att. 16.1.5).
+12. ✔ **Lojas desabadas e ratos** (Att. 14.9.1). A carta foi escrita *in Cumano*, a 17 de abril de 44 a.C. As lojas fazem parte da herança de Clúvio, em Putéolos (localização inferida do contexto).
+13. ✔ **Plínio, o Velho.**
+    - Roma coberta de tabuinhas até a guerra de Pirro (NH 16.36, citando Cornélio Nepos).
+    - Padeiros só a partir da guerra contra Perseu (NH 18.107).
+    - Mamurra foi o primeiro a revestir paredes inteiras de mármore, na sua casa do Célio (NH 36.48).
+    - As 700 bacias (*lacus*) de Agripa (NH 36.121). A edilidade de Agripa cai no "ano seguinte" aos fatos de 34 a.C. em Dião 49.43.1, ou seja, 33 a.C.
+    - 265 *compita Larum* no censo dos Vespasianos, AUC 826 (NH 3.66).
+14. ✔ ***Ludi compitalicii* e *collegia*.** Em 58 a.C., Sexto Clódio celebrou os jogos "pela primeira vez desde o consulado de L. Júlio e C. Márcio", contra a autoridade do Senado. Três dias depois, os *collegia* foram restaurados e muitos outros criados (Cícero, Pis. 8–9). César dissolveu todos os *collegia*, exceto os antigos (Suetônio, Iul. 42.3).
+15. ✔ **Varrão.** LL 5.48: *sub muro terreo Carinarum*; *pagus Succusanus*; SVC. LL 5.45: *prima scripta est regio Suburana*.
+16. ✔ **Outros pontos conferidos:**
+    - Lívio 5.55.2–5 (telhas fornecidas pelo Estado; *festinatio curam exemit vicos derigendi*) e 39.14.2 (escada para a rua trancada).
+    - Catulo 23.9.
+    - Cícero, Cael. 17: 10.000 HS contra 30.000 HS; o texto não menciona andar.
+    - Plutarco, Sula 1.4: 3.000 HS e 2.000 HS.
+    - Veleio 2.10.1 (Lépido, 6.000 HS).
+    - Tácito, Ann. 15.43.
+    - Horácio: Epod. 5.58; Sat. 1.3.13 e 1.6.112–118; Epist. 1.1.91.
+    - Pleiades: insulae de Óstia (Dipinti; Bacco e Arianna) adrianas; Fórum de Augusto em 2 a.C.; Fórum de Nerva em 97 d.C.; Forum Iulium começado em 54 e dedicado em 46 a.C.; Regio IV com perímetro de 13.000 pés.
+    - Distâncias e rumos recalculados a partir de `00-coordenadas.md`: ≈ 1.361 m a 76°; ≈ 653 m a 79°; ≈ 400 m a 70°; 14°–25°. Todos conferem.
+
+### Corrigido (antes → depois)
+
+1. **Porticus Liviae:** "construída por Augusto, 14 a.C." → construída depois de 15 a.C. (Dião 54.23.6: "isso ele fez mais tarde") e **dedicada em 7 a.C.** (Dião 55.8.2; Pleiades #872004918).
+2. **Aqua Tepula:** "127 a.C." → **125 a.C.** Smith (s.v. *Aquaeductus*) dá 127 a.C. e atribui a obra aos censores Cn. Servílio Cépio e L. Cássio Longino. Mas Veleio 2.10.1 (verificado) mostra que foram esses mesmos censores que censuraram Lépido, e o próprio Smith (s.v. *Domus*) data essa censura de 125 a.C. ⚠ Não consegui abrir Frontino, *Aq.* 1.8, para conferir. Sem impacto na modelagem: a obra é anterior a 44 a.C. de qualquer forma.
+3. ***Lasanum*:** "que Horácio leva em viagem" → levado pelos escravos do pretor Tílio, enquanto Horácio viaja de forma simples (Sat. 1.6.104–109). A confiança no *lasanum* como objeto plebeu caiu para baixa.
+4. **Sacadas:** "proibições de 368 d.C. em diante; em 44 a.C. as sacadas eram livres" → em 368 d.C. o prefeito urbano aplicou "leis mais antigas" (Smith s.v. *Maenianum*; Amiano Marcelino 27.9.10). Não se sabe se havia restrição em 44 a.C.
+5. **Limite de Nero:** "Nero ≈ 60 pés" (tese de Leiden) → Tácito, Ann. 15.43, diz apenas *cohibita aedificiorum altitudine*, sem número. Valor ⚠ não confirmado.
+6. **Aquecimento:** "único aquecimento até Augusto: o braseiro" → Smith diz "parece ter sido em geral o caso". Existe um *caminus* fixo em Horácio, Sat. 1.5.79–81, mas numa *villa* rural.
+7. **Lojas de Cícero:** "abril de 44 a.C." → **17 de abril de 44 a.C.** (*xv K. Mai.*), carta escrita *in Cumano*. A localização em Putéolos é inferida do contexto.
+8. **Casa de Pansa:** a descrição das lojas alugadas e padarias estava, implicitamente, associada a 140–120 a.C. → essa configuração é a do **estado de 79 d.C.**; 140–120 a.C. é a fase da casa de átrio.
+9. **Veleio 2.10:** "não verificado no texto" → verificado.
+10. **Fonte do pontificado de César:** Wikipedia via resumo de busca → Dião 37.37.1–2.
+11. **Custo do Fórum de César:** acrescentada a divergência. Suetônio 26.2 dá "mais de 100 milhões de HS" só pela área; Cícero fala de 60 milhões em 54 a.C.
+
+### Permanece incerto (⚠)
+
+- **Primeiro paramento de tijolo cozido em Roma = Rostra de César (44 a.C.).** A afirmação vem só de Smith/Middleton, que se contradizem; não houve consulta à bibliografia moderna.
+- ***Lex Iulia municipalis* (45 a.C.).** A proibição de carroças durante o dia vem de Smith (s.v. *Carpentum*). O texto da Tabula Heracleensis, a data e a atribuição a César não foram conferidos.
+- **Números da Notitia (44.171 insulae × 1.782 domus):** só via Smith, que cita Marquardt.
+- **Trajano, 60 pés (Aurélio Vítor, *Epit.* 13):** só via Smith.
+- **Casa a Graticcio (Herculano) e Insula dell'Ara Coeli (Roma):** datas e medidas continuam sem verificação. Não estão no Pleiades e não houve busca.
+- **Casa de Pansa e o anúncio da *insula Arriana Polliana* (CIL 4.138):** a ligação é provável, mas não foi verificada.
+- **Altura típica das insulae em 50–44 a.C.** (3–5 pavimentos, 10–17 m): continua [HIPÓTESE]. Nenhuma fonte dá número para o período.
+- **Limites da Subura** (vale Oppius–Célio × vale ao norte do Oppius): controversos, como já registrado.
+- **Fontes não reconferidas nesta revisão:** Dionísio 4.14.3–4, Gélio 15.1.2–3, Juvenal e Marcial. Valem como verificadas pelo pesquisador original.
+
+### Anacronismos encontrados
+
+- **Porticus Liviae:** estava datada de 14 a.C. Corrigido para dedicação em 7 a.C.; é augustana de qualquer forma.
+- **"Sacadas livres em 44 a.C.":** vinha de uma leitura errada de Smith. Corrigido.
+- **Vitrúvio 2.8.17:** os pilares de pedra e as *structurae testaceae* em prédios altos podem refletir a lei edilícia de Augusto (segundo Smith), e não a prática de 44 a.C. Sinalizado.
+- **Casa de Pansa:** havia o risco de usar o estado de 79 d.C. como se fosse de 140–120 a.C. Sinalizado.
+- **Nenhum outro elemento imperial** aparece como existente em 50–44 a.C. As menções a Marcial, Juvenal, Gélio, Óstia, Nero e Agripa já estavam marcadas como posteriores.
