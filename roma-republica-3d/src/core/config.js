@@ -10,6 +10,7 @@
  *   ?ui=0                        esconde a interface (capturas de tela)
  *   ?time=9.5                    hora do dia (6–18) para a posição do sol
  *   ?debug=1                     mostra estatísticas de renderização
+ *   ?ao=1|0                      força oclusão de ambiente (GTAO) ligada/desligada
  */
 
 const params = new URLSearchParams(typeof location !== 'undefined' ? location.search : '');
@@ -26,6 +27,7 @@ export const QUALITY_PRESETS = {
     npcDrawDistance: 90,
     viewDistance: 1400,
     detailDistance: 120,
+    ao: false,
   },
   medium: {
     pixelRatio: Math.min(typeof devicePixelRatio !== 'undefined' ? devicePixelRatio : 1, 1.5),
@@ -37,6 +39,7 @@ export const QUALITY_PRESETS = {
     npcDrawDistance: 130,
     viewDistance: 2200,
     detailDistance: 200,
+    ao: false,
   },
   high: {
     pixelRatio: Math.min(typeof devicePixelRatio !== 'undefined' ? devicePixelRatio : 1, 2),
@@ -48,6 +51,7 @@ export const QUALITY_PRESETS = {
     npcDrawDistance: 170,
     viewDistance: 3000,
     detailDistance: 300,
+    ao: true,
   },
 };
 
@@ -76,6 +80,8 @@ export const config = {
   showUI: params.get('ui') !== '0',
   timeOfDay: params.get('time') ? Number(params.get('time')) : 9.5,
   debug: params.get('debug') === '1',
+  /** Oclusão de ambiente em pós-processamento (padrão: só na qualidade alta). */
+  ao: params.get('ao') != null ? params.get('ao') === '1' : null,
   /** Altura dos olhos do jogador acima do chão (m). */
   eyeHeight: 1.62,
   /** Velocidades do jogador (m/s): passo de caminhada e corrida. */

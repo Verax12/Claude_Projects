@@ -16,6 +16,10 @@ import { UI } from '../ui/UI.js';
 import { mulberry32 } from '../render/noise.js';
 import * as geo from './geo.js';
 import { SITE_LOADERS } from '../sites/index.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const nextFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
 
@@ -60,6 +64,7 @@ export class Engine {
     renderer.toneMappingExposure = 0.5;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.info.autoReset = false; // zerado manualmente a cada quadro (o compositor faz vários passes)
     this.container.appendChild(renderer.domElement);
     this.renderer = renderer;
     materials.setAnisotropy(Math.min(8, renderer.capabilities.getMaxAnisotropy()));
@@ -67,6 +72,20 @@ export class Engine {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.15, q.viewDistance + 4000);
     window.addEventListener('resize', () => this.onResize());
+
+    // oclusão de ambiente (GTAO) opcional — escurece cantos, arcadas e ruas estreitas
+    const useAO = config.ao ?? q.ao;
+    if (useAO) {
+      const pr = renderer.getPixelRatio();
+      const rt = new THREE.WebGLRenderTarget(window.innerWidth * pr, window.innerHeight * pr, { type: THREE.HalfFloatType, samples: q.antialias ? 4 : 0 });
+      this.composer = new EffectComposer(renderer, rt);
+      this.composer.addPass(new RenderPass(this.scene, this.camera));
+      this.gtao = new GTAOPass(this.scene, this.camera, window.innerWidth, window.innerHeight);
+      this.gtao.updateGtaoMaterial({ radius: 1.2, distanceExponent: 1.5, thickness: 2, scale: 1.2, samples: 12 });
+      this.gtao.blendIntensity = 0.9;
+      this.composer.addPass(this.gtao);
+      this.composer.addPass(new OutputPass());
+    }
 
     this.env = new Environment(renderer, this.scene, q);
     this.env.setTime(config.timeOfDay);
@@ -277,6 +296,7 @@ export class Engine {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.composer?.setSize(window.innerWidth, window.innerHeight);
   }
 
   /** Um quadro do jogo. `render = false` avança só a simulação (testes automatizados). */
@@ -299,7 +319,11 @@ export class Engine {
     this.env.fog.far = config.quality.viewDistance + camH * 3;
     this.audio.update(p.feet, p.feet.y);
     this.updateHUD(dt);
-    if (render) this.renderer.render(this.scene, this.camera);
+    if (render) {
+      this.renderer.info.reset();
+      if (this.composer) this.composer.render(dt);
+      else this.renderer.render(this.scene, this.camera);
+    }
   }
 
   updateHUD(dt) {
