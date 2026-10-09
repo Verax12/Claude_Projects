@@ -154,7 +154,7 @@ export function buildSpina(b, det) {
     b.box(3.9, 0.12, 0.3, X, FLOOR + 2.55, 0, { mat: 'woodDark', collide: false });
     for (let i = 0; i < 7; i++) {
       const g = G.sphere(0.2, 10, 8).scale(1, 1.45, 1);
-      b.add(g, { mat: 'stucco', color: [1, 0.98, 0.92], matrix: new THREE.Matrix4().makeTranslation(X - 1.5 + i * 0.5, FLOOR + 2.67 + 0.29, 0) });
+      b.add(g, { mat: 'stucco', color: [1, 0.98, 0.92], matrix: new THREE.Matrix4().makeTranslation(X - 1.5 + i * 0.5, FLOOR + 2.67, 0) });
     }
     b.colliderBox(4.2, 4.3, 1.4, X, FLOOR, 0);
   }

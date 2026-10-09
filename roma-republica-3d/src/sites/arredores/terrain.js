@@ -37,22 +37,22 @@ export function padSpecs() {
     // Campo de Marte central (polígono 2 menos uma margem de transição de 12 m)
     { points: [[-1088, -438], [-652, -438], [-652, -162], [-1088, -162]], height: Y.campus, blend: 12 },
     // margem esquerda (leste) do Tibre ao longo do canal da Ilha (só eleva; não estreita o canal)
-    { points: bankStrip(66, 125, -1, 112, 292), height: Y.bank, blend: 3, mode: 'max' },
+    { points: bankStrip(66, 125, -1, 112, 292), height: Y.bank, blend: 4, mode: 'max' },
     // margem esquerda a jusante da Ilha até o fim da área (só eleva)
-    { points: bankStrip(QUAY_D, 125, -1, 284, 556), height: Y.bank, blend: 3, mode: 'max' },
+    { points: bankStrip(QUAY_D, 125, -1, 284, 556), height: Y.bank, blend: 4, mode: 'max' },
     // margem direita (oeste) a jusante da Ilha, dentro da área (só eleva)
-    { points: bankStrip(QUAY_D, 150, 1, 286, 418, clipW), height: Y.bank, blend: 3, mode: 'max' },
-    { points: bankStrip(67, 150, 1, 226, 292, clipW), height: Y.bank, blend: 3, mode: 'max' },
+    { points: bankStrip(QUAY_D, 150, 1, 286, 418, clipW), height: Y.bank, blend: 4, mode: 'max' },
+    { points: bankStrip(67, 150, 1, 226, 292, clipW), height: Y.bank, blend: 4, mode: 'max' },
     // Forum Boarium e porto fluvial
     { points: [...fbBank, [-298, 492], [-298, 318]], height: Y.boarium, blend: 6 },
     // Forum Holitorium
-    { rect: { x: -405, z: 138, w: 92, d: 84 }, height: Y.holitorium, blend: 10 },
+    { rect: { x: -410, z: 148, w: 100, d: 90 }, height: Y.holitorium, blend: 10 },
     // área sacra de S. Omobono (Fortuna e Mater Matuta), eixo longo a 130°
     { rect: { x: -298, z: 226, w: 64, d: 46, rotY: -40 * (Math.PI / 180) }, height: Y.omobono, blend: 6 },
     // Porta Carmental
     { circle: { x: -345, z: 182, r: 15 }, height: Y.carmentalis, blend: 8 },
     // cabeceiras da Ponte Fabrícia (margem e ilha)
-    { circle: { x: -553, z: 150, r: 9 }, height: -3.4, blend: 6 },
-    { circle: { x: -594, z: 201, r: 8 }, height: -3.2, blend: 6 },
+    { circle: { x: -556, z: 151, r: 9 }, height: -3.4, blend: 6 },
+    { circle: { x: -592, z: 204, r: 8 }, height: -3.2, blend: 6 },
   ];
 }

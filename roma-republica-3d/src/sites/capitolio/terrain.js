@@ -67,7 +67,7 @@ const LOTS = [
   { x: -205, z: 155, w: 16, d: 10, side: -1, floors: 4 },
   { x: -226, z: 160, w: 15, d: 9, side: -1, floors: 3 },
   { x: -263, z: 165.5, w: 14, d: 7, side: -1, floors: 3 },
-  { x: -285, z: 168, w: 14, d: 6, side: -1, floors: 2 },
+  { x: -285, z: 166.5, w: 14, d: 6, side: -1, floors: 2 },
 ];
 
 export function shapeTerrain(ctx) {

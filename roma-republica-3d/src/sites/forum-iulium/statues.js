@@ -20,7 +20,7 @@ export const MON = {
   altarZ: 27,
   fountainZ0: 17.25,
   fountainZ1: 21.0,
-  loricata: [-18.5, 2],
+  loricata: [-20, 2],
 };
 
 export function buildStatues(ctx) {

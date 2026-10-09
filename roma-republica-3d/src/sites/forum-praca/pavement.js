@@ -59,24 +59,29 @@ export function buildPiazzaPavement(b) {
       const de = Math.min(cu - u0, u1 - cu, cv - v0, v1 - cv);
       if (de < 3) t *= 0.93 + 0.023 * de;
       // remendos de lajes de tufo (pavimentos mais antigos/reparos) em pequenos grupos
-      const tufa = valueNoise(cu, cv, 14, 7) > 0.74 && hash2(i, j, 9) > 0.25;
+      const tufa = valueNoise(cu, cv, 11, 7) > 0.8 && hash2(i, j, 9) > 0.45;
+      // travertino: tom creme-claro (hipótese da nota 11 §9) — compensa o cinza da textura
       const warm = (hash2(i, j, 5) - 0.5) * 0.05;
-      const color = [t * (1 + warm), t, t * (1 - warm * 1.4)];
+      const color = tufa ? [t * (1.1 + warm), t * 1.02, t * (0.84 - warm)] : [t * (1.22 + warm), t * 1.1, t * (0.86 - warm)];
       const A = [ua, y, -va];
       const B = [ub, y, -va];
       const C = [ub, y, -vb];
       const D = [ua, y, -vb];
       // orientação da textura: 0°/180° na maior parte; 90° em manchas (fiadas transversais)
-      const rot90 = valueNoise(cu, cv, 36, 11) > 0.7;
-      const r = (hash2(i, j, 13) < 0.5 ? 0 : 2) + (rot90 ? 1 : 0);
+      // fiadas desencontradas: deslocamento da textura por linha de lajes (continuidade dentro
+      // da linha); manchas com lajes giradas (reparos)
+      const rot90 = valueNoise(cu, cv, 36, 11) > 0.72;
+      const flip = hash2(i, j, 13) < 0.12;
+      const r = (flip ? 2 : 0) + (rot90 ? 1 : 0);
       const pts = [[A, B, C, D], [B, C, D, A], [C, D, A, B], [D, A, B, C]][r];
-      b.add(upQuad(...pts), { mat: tufa ? 'slabsTufa' : 'slabs', color });
+      const uvo = r === 0 ? { u0: Math.floor(hash2(j, 0, 17) * 4) * 0.67 + ua, v0: -va } : {};
+      b.add(upQuad(...pts, uvo), { mat: tufa ? 'slabsTufa' : 'slabs', color });
     }
   }
 
   // ---- bordas (espessura visível das lajes onde a praça encontra os vizinhos) ----
   const skirt = (pa, pb, out) => {
-    b.add(sideQuad([pa[0], -0.25, pa[1]], [pb[0], -0.25, pb[1]], [pb[0], y, pb[1]], [pa[0], y, pa[1]], out), { mat: 'slabs', color: [0.86, 0.85, 0.82] });
+    b.add(sideQuad([pa[0], -0.25, pa[1]], [pb[0], -0.25, pb[1]], [pb[0], y, pb[1]], [pa[0], y, pa[1]], out), { mat: 'slabs', color: [1.0, 0.92, 0.75] });
   };
   skirt([u0, -v0], [u1, -v0], [0, 1]); // borda sul (lado da Basílica Júlia / Castor)
   skirt([u0, -v1], [u1, -v1], [0, -1]); // borda norte (Basílica de Paulo)
@@ -93,7 +98,7 @@ export function buildPiazzaPavement(b) {
     const t = 0.9 + hash2(k, 3, 21) * 0.14;
     b.add(upQuad([u, y + 0.004, -(CANAL.v0 + 0.03)], [ue, y + 0.004, -(CANAL.v0 + 0.03)], [ue, y + 0.004, -(CANAL.v1 - 0.03)], [u, y + 0.004, -(CANAL.v1 - 0.03)]), {
       mat: 'peperino',
-      color: [t, t, t * 0.98],
+      color: [t * 1.18, t * 1.15, t * 1.08],
     });
     if (k % 7 === 3) {
       // grelha de escoamento: moldura de ferro + barras

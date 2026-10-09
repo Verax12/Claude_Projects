@@ -119,14 +119,26 @@ function buildModule(b, bd, m) {
   const dy = m.walkC - m.yF;
   b.collider(G.quad([-inner / 2, dy, 0.75], [inner / 2, dy, 0.75], [inner / 2, 0, -0.05], [-inner / 2, 0, -0.05]));
 
-  // paredes laterais (térreo em opus incertum aparente, andares rebocados)
+  // paredes laterais (térreo em opus incertum aparente ou rebocado, andares rebocados)
+  const plasteredGround = hash2(m.id, 9, 67) < 0.35;
   for (const sx of [-1, 1]) {
     const x = sx * (w / 2 - T / 2);
-    b.box(T, H1, D, x, 0, -D / 2, { mat: ground });
+    if (plasteredGround) b.box(T, H1, D, x, 0, -D / 2, { mat: 'plaster', color: shade(col, 1.04) });
+    else b.box(T, H1, D, x, 0, -D / 2, { mat: ground });
     b.box(T, H - H1, D, x, H1, -D / 2, { mat: 'plaster', color: col });
   }
-  // parede dos fundos (dá para o beco de trás)
+  if (plasteredGround) {
+    // barra (rodapé) pintada de vermelho nos pilares da fachada
+    for (const sx of [-1, 1]) b.box(T + 0.02, 0.9, 0.04, sx * (w / 2 - T / 2), 0, 0.005, { mat: 'paintRed', collide: false, color: [0.85, 0.8, 0.78] });
+  }
+  // parede dos fundos (dá para o beco de trás), com janelinhas nos andares
   b.box(inner, H, T, 0, 0, -D + T / 2, { mat: 'plaster', color: shade(col, 0.92) });
+  for (let f = 1; f < m.floors; f++) {
+    if (hash2(m.id, f, 59) < 0.3) continue;
+    const x = (hash2(m.id, f, 61) - 0.5) * (inner - 1.2);
+    b.box(0.55, 0.7, 0.03, x, H1 + (f - 1) * H2 + 1.05, -D - 0.005, { mat: 'flat', color: DARK, collide: false });
+  }
+  if (hash2(m.id, 0, 63) < 0.4) b.box(0.4, 0.3, 0.03, (hash2(m.id, 0, 65) - 0.5) * (inner - 1), 2.2, -D - 0.005, { mat: 'flat', color: DARK, collide: false }); // respiro do sobrado
 
   // ---------------- fachada do térreo ----------------
   if (m.type === 'door') {

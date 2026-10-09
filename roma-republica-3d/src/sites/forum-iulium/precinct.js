@@ -49,6 +49,26 @@ export function bermProfiles(ctx) {
   return { wsw, nno };
 }
 
+/** Altura do topo da berma num ponto local (ou null fora dela). */
+export function bermHeight(berm, lx, lz) {
+  const interp = (prof, s, t) => {
+    for (let i = 0; i < prof.length - 1; i++) {
+      const a = prof[i];
+      const c = prof[i + 1];
+      if (s < a.s || s > c.s) continue;
+      const u = (s - a.s) / (c.s - a.s || 1);
+      const ha = a.hIn + (a.hOut - a.hIn) * t;
+      const hc = c.hIn + (c.hOut - c.hIn) * t;
+      return ha + (hc - ha) * u;
+    }
+    return null;
+  };
+  const W8 = 8.7;
+  if (lx <= -P.wswOuter && lx >= -P.wswOuter - W8 && lz >= P.backZ2) return interp(berm.wsw, lz, (-P.wswOuter - lx) / W8);
+  if (lz <= P.backZ2 && lz >= P.backZ2 - W8) return interp(berm.nno, lx, (P.backZ2 - lz) / W8);
+  return null;
+}
+
 export function buildPrecinct(ctx) {
   const b = ctx.builder('forum-iulium:recinto');
   b.push(ORIGIN.x, 0, ORIGIN.z, ROT);

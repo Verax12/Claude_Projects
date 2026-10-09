@@ -125,6 +125,19 @@ export function scaffold(b, x0, x1, z, y0, levels, o = {}) {
 }
 
 /**
+ * Andaime ao longo do segmento (xa,za)→(xb,zb) do quadro atual, afastado `off` para o lado
+ * esquerdo do sentido de percurso (vetor (−dz, dx) no plano X/Z).
+ */
+export function scaffoldAlong(b, xa, za, xb, zb, off, y0, levels, o = {}) {
+  const dx = xb - xa;
+  const dz = zb - za;
+  const len = Math.hypot(dx, dz);
+  b.push(xa, 0, za, Math.atan2(-dz, dx));
+  scaffold(b, 0, len, off, y0, levels, o);
+  b.pop();
+}
+
+/**
  * Grua romana com roda de tração (polispasto): duas pernas inclinadas, roda de pisar
  * no pé, cordas até o topo e uma carga (bloco) suspensa. Base em (x,y,z), lança para +Z.
  */

@@ -16,7 +16,9 @@ import { sdPoly } from './plan.js';
  * @param {(x:number,z:number)=>number} heightAt
  * @param {number[][]} pts  polilinha [[x,z],...]
  * @param {number} w  largura (m)
- * @param {object} o { lift (m acima do terreno), trim: [polígonos onde não pavimentar], step (m) }
+ * @param {object} o { lift (m acima do terreno), trim: [polígonos onde não pavimentar], step (m),
+ *   pieceLen (m; divide em pedaços para o culling por blocos) }
+ * @returns {THREE.BufferGeometry[]}
  */
 export function ribbonGeometry(heightAt, pts, w, o = {}) {
   const lift = o.lift ?? 0.045;
@@ -67,7 +69,12 @@ export function ribbonGeometry(heightAt, pts, w, o = {}) {
     rows.push({ row, cx: S[i][0], cz: S[i][1] });
   }
   const trimmed = (r) => (o.trim || []).some((poly) => sdPoly(r.cx, r.cz, poly) > -0.3);
+  const pieces = [];
+  const rowsPerPiece = Math.max(4, Math.round((o.pieceLen ?? 1e9) / step));
   for (let i = 0; i < rows.length - 1; i++) {
+    if (i > 0 && i % rowsPerPiece === 0 && pos.length) {
+      pieces.push(toGeometry(pos.splice(0), uv.splice(0)));
+    }
     if (trimmed(rows[i]) && trimmed(rows[i + 1])) continue;
     const A = rows[i].row;
     const B = rows[i + 1].row;
@@ -92,7 +99,8 @@ export function ribbonGeometry(heightAt, pts, w, o = {}) {
       tri(p[0], p[2], p[3]);
     }
   }
-  return toGeometry(pos, uv);
+  if (pos.length) pieces.push(toGeometry(pos, uv));
+  return pieces;
 }
 
 /** Pavimento de um polígono (praça): triangulação em grade, recortada pelo polígono. */

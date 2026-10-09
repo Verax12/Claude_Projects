@@ -13,9 +13,8 @@
  * builder de detalhes `bd` (maxDistance).
  */
 import * as THREE from 'three';
-import * as G from '../../render/geom.js';
 import { propGeometry, prop, stall } from '../../arch/props.js';
-import { M, FB, Y0, WINGS, COURT } from './frame.js';
+import { M, FB, Y0, WINGS } from './frame.js';
 import * as GD from './goods.js';
 
 /** Cores (sRGB) dos produtos — tons naturais, escolha estética (não dado de fonte). */
@@ -57,6 +56,8 @@ export function makeBatches(ctx) {
   const small = { maxDistance: 95, castShadow: false, chunkSize: 160 };
   const mid = { maxDistance: 110, castShadow: true, chunkSize: 160 };
   const W = ctx.world;
+  // ânfora Dressel 1 (pé pontudo) inclinada ~17°: o topo pende para −X local da instância.
+  // yaw −π/2 encosta o topo na parede do fundo de uma loja (−d no quadro da ala).
   const amphoraLean = propGeometry('amphora').clone().applyMatrix4(new THREE.Matrix4().makeRotationZ(0.3)).translate(0.17, 0, 0);
   return {
     fish: W.instances('macellum:fish', GD.fishGeometry(), 'flat', small),
@@ -67,7 +68,6 @@ export function makeBatches(ctx) {
     meat: W.instances('macellum:meat', GD.haunchGeometry(), 'flat', small),
     jar: W.instances('macellum:jar', propGeometry('jar'), 'terracotta', small),
     flask: W.instances('macellum:flask', GD.flaskGeometry(), 'terracotta', small),
-    amphora: W.instances('macellum:amphora', propGeometry('amphora'), 'terracotta', mid),
     amphoraLean: W.instances('macellum:amphoraLean', amphoraLean, 'terracotta', mid),
   };
 }
@@ -116,7 +116,7 @@ export const STALLS = {
   peacock: { x: 20.2, z: 5.6 },
   henPen: { x0: 11, x1: 17, z0: -7.2, z1: -3.4 },
   goosePen: { x0: 11, x1: 17, z0: 3.4, z1: 7.2 },
-  cooks: { x: 0, z: -(M.OZ - 7.7) },
+  cooks: { x: 0, z: -(M.OZ - 6.4) }, // junto ao muro frontal do pórtico norte
 };
 
 /**
@@ -142,7 +142,7 @@ function awning(bd, w, d, hFront, hBack, color) {
     [-w / 2 - 0.12, hBack + 0.02, -d / 2 - 0.12],
   ];
   bd.quad(P[0], P[1], P[2], P[3], { mat: 'cloth', color });
-  bd.quad(P[1], P[0], P[3], P[2].map((v, i) => (i === 1 ? v : v)), { mat: 'cloth', color: shadeHex(color, 0.82) });
+  bd.quad(P[1], P[0], P[3], P[2], { mat: 'cloth', color: shadeHex(color, 0.82) });
   // franja caída na frente
   bd.quad([-w / 2 - 0.12, hFront - 0.3, d / 2 + 0.25], [w / 2 + 0.12, hFront - 0.3, d / 2 + 0.25], [w / 2 + 0.12, hFront - 0.02, d / 2 + 0.25], [-w / 2 - 0.12, hFront - 0.02, d / 2 + 0.25], { mat: 'cloth', color });
   bd.quad([w / 2 + 0.12, hFront - 0.3, d / 2 + 0.25], [-w / 2 - 0.12, hFront - 0.3, d / 2 + 0.25], [-w / 2 - 0.12, hFront - 0.02, d / 2 + 0.25], [w / 2 + 0.12, hFront - 0.02, d / 2 + 0.25], { mat: 'cloth', color: shadeHex(color, 0.8) });
@@ -174,13 +174,11 @@ function fishTables(bd, B, rng) {
       for (let k = 0; k < 4; k++) put(B.fish, F, 0.75 + (k % 2) * 0.32, 0.9, -0.25 + Math.floor(k / 2) * 0.35, 1.57 + (rng() - 0.5) * 0.4, 1.2, pick(C.fish, rng));
     } else if (i === 2) {
       // moreias (muraenae) — iguaria de luxo
+      bd.push(st.x, 0, st.z, st.rot);
       for (let k = 0; k < 3; k++) {
-        const p = F.toWorld(-0.6 + k * 0.55, -0.1 + (k % 2) * 0.2);
-        bd.push(st.x, 0, st.z, st.rot);
         bd.add(GD.eelGeometry(), { mat: 'flat', matrix: new THREE.Matrix4().makeTranslation(-0.6 + k * 0.55, 0.9, -0.15 + (k % 2) * 0.25).multiply(new THREE.Matrix4().makeRotationY(0.4 + k)) });
-        bd.pop();
-        void p;
       }
+      bd.pop();
       basketOf(B, F, 0.95, 0.9, 0.15, C.oyster, 0.8, rng); // ostras
     } else {
       for (let r = 0; r < 2; r++) {
@@ -363,16 +361,18 @@ function birds(bd, B, rng) {
 function cooks(bd, B, rng) {
   const p = STALLS.cooks;
   bd.push(p.x, M.FLOOR, p.z, 0);
-  prop(bd, 'brazier', -0.9, 0, 0.3);
-  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(-0.9, 0.7, 0.3) });
-  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(0.4, 0, 0.75).multiply(new THREE.Matrix4().makeScale(0.8, 0.8, 0.8)) });
-  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(0.75, 0, 0.55).multiply(new THREE.Matrix4().makeScale(0.65, 0.65, 0.65)) });
-  prop(bd, 'table', 1.2, 0, -0.3, 0, 0.85);
-  prop(bd, 'basket', 1.0, 0.63, -0.3, 0, 0.8);
-  bd.box(0.32, 0.03, 0.05, 1.45, 0.66, -0.25, { mat: 'iron', collide: false }); // facas
-  bd.box(0.28, 0.03, 0.05, 1.5, 0.66, -0.4, { mat: 'iron', collide: false });
-  prop(bd, 'stool', -1.8, 0, -0.4);
-  prop(bd, 'bench', 2.8, 0, -1.2, 0);
+  prop(bd, 'brazier', -0.9, 0, 0.1);
+  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(-0.9, 0.7, 0.1) });
+  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(0.2, 0, 0.35).multiply(new THREE.Matrix4().makeScale(0.8, 0.8, 0.8)) });
+  bd.add(GD.potGeometry(), { mat: 'bronze', matrix: new THREE.Matrix4().makeTranslation(0.55, 0, 0.4).multiply(new THREE.Matrix4().makeScale(0.65, 0.65, 0.65)) });
+  prop(bd, 'table', 1.5, 0, -0.1, 0, 0.85);
+  prop(bd, 'basket', 1.3, 0.63, -0.1, 0, 0.8);
+  bd.box(0.32, 0.03, 0.05, 1.75, 0.66, -0.05, { mat: 'iron', collide: false }); // facas
+  bd.box(0.28, 0.03, 0.05, 1.8, 0.66, -0.2, { mat: 'iron', collide: false });
+  bd.colliderBox(1.25, 0.65, 0.7, 1.5, 0, -0.1);
+  bd.colliderBox(0.75, 0.75, 0.75, -0.9, 0, 0.1);
+  prop(bd, 'stool', -1.8, 0, -0.2);
+  prop(bd, 'bench', 3.3, 0, -0.35, 0);
   bd.pop();
   void B;
   void rng;
@@ -403,7 +403,7 @@ export function buildShopContents(ctx, bd, B, shops, closed, rng) {
       if (trade === 'fish') {
         if (cnt) for (let k = 0; k < 5; k++) put(B.fish, F, cnt.x - cnt.w / 2 + 0.2 + k * ((cnt.w - 0.4) / 4), cnt.top, cnt.d + (k % 2 ? 0.1 : -0.12), 1.57 + (rng() - 0.5) * 0.6, 0.85 + rng() * 0.3, pick(C.fish, rng));
         // salgas: ânforas (garum, salsamentum) e peixe seco pendurado
-        for (let k = 0; k < 2; k++) put(B.amphoraLean, F, s.cx - innerW / 2 + 0.45 + k * 0.5, y, 1.0, Math.PI, 1);
+        for (let k = 0; k < 2; k++) put(B.amphoraLean, F, s.cx - innerW / 2 + 0.45 + k * 0.5, y, 0.85, -Math.PI / 2, 1);
         rail(bd, s.cx, innerW, 2.0, 2.5);
         for (let k = 0; k < 2; k++) bd.add(GD.driedFishGeometry(), { mat: 'flat', matrix: new THREE.Matrix4().makeTranslation(s.cx - 0.5 + k * 1.0, 2.5 - 0.36, 2.0) });
         basketOf(B, F, s.cx + (cnt && cnt.x > s.cx ? -0.8 : 0.8), y, 3.9, pick(C.fish, rng), 1, rng);
@@ -426,7 +426,7 @@ export function buildShopContents(ctx, bd, B, shops, closed, rng) {
         shelves(bd, s.cx, innerW);
         if (kind === 0 || kind === 1) {
           // ânforas encostadas na parede do fundo (Falerno; cadi de Quios — Plín. 14.97)
-          for (let k = 0; k < 6; k++) put(B.amphoraLean, F, s.cx - innerW / 2 + 0.4 + k * ((innerW - 0.8) / 5), y, 0.85, Math.PI, 0.95 + rng() * 0.1);
+          for (let k = 0; k < 6; k++) put(B.amphoraLean, F, s.cx - innerW / 2 + 0.4 + k * ((innerW - 0.8) / 5), y, 0.85, -Math.PI / 2 + (rng() - 0.5) * 0.2, 0.95 + rng() * 0.1);
           for (let k = 0; k < 2; k++) bd.add(GD.cadusGeometry(), { mat: 'terracotta', color: '#c98a5e', matrix: new THREE.Matrix4().makeTranslation(s.cx - 0.5 + k * 0.6, y, 2.4) });
           prop(bd, 'dolium', s.cx + innerW / 2 - 0.75, y, 1.6, 0, 0.9);
         } else if (kind === 2) {
@@ -497,15 +497,14 @@ export function buildExterior(ctx, bd, B, rng) {
 
   // mula do verdureiro com cestos (Hor. Ep. 1.18.36), amarrada junto ao portão oeste, na rua
   const Wg = WINGS.find((w) => w.id === 'W');
-  bd.push(-M.OX - 3.4, 0, 2.0, 0);
+  const mp = FB.toWorld(-M.OX - 3.4, 2.0);
+  const my = ctx.terrain.heightAt(mp.x, mp.z) - Y0;
+  bd.push(-M.OX - 3.4, my, 2.0, 0);
   bd.add(GD.muleGeometry(), { mat: 'flat' });
   bd.colliderBox(1.8, 1.4, 1.1, 0, 0, 0);
   bd.pop();
-  void Wg;
-  // ânforas de entrega encostadas no muro externo, ao lado do portão oeste (dentro do lote)
+  // ânforas de entrega encostadas no muro externo, dos dois lados do portão oeste (dentro do lote)
   const Fw = Wg.frame;
-  for (let k = 0; k < 5; k++) put(B.amphoraLean, Fw, -4.2 - k * 0.55, 0, -0.45, 0, 1);
-  for (let k = 0; k < 3; k++) put(B.amphora, Fw, 4.0 + k * 0.5, 0, -1.2 - (k % 2) * 0.4, rng() * 6, 1);
-  void COURT;
-  void G;
+  for (let k = 0; k < 5; k++) put(B.amphoraLean, Fw, -4.2 - k * 0.55, 0, -0.32, Math.PI / 2, 1);
+  for (let k = 0; k < 3; k++) put(B.amphoraLean, Fw, 4.2 + k * 0.55, 0, -0.32, Math.PI / 2 + (rng() - 0.5) * 0.2, 1);
 }

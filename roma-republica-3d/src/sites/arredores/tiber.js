@@ -44,6 +44,14 @@ function slopedBox(b, x, z0, y0, z1, y1, w, h, o) {
   b.add(g, { ...o, matrix: m });
 }
 
+/** Colisor invisível inclinado (mesma forma de slopedBox). */
+function slopedCollider(b, x, z0, y0, z1, y1, w, h) {
+  const len = Math.hypot(z1 - z0, y1 - y0);
+  const m = new THREE.Matrix4().makeRotationX(-Math.atan2(y1 - y0, z1 - z0));
+  m.setPosition(x, (y0 + y1) / 2, (z0 + z1) / 2);
+  b.collider(G.box(w, h, len + 0.02), m);
+}
+
 /**
  * Ponte de pedra em arcos segmentais entre A e B (pontos [x, z] do mundo).
  * Quadro local: origem em A, +Z de A para B.
@@ -177,7 +185,8 @@ function woodBridge(b, A, B, o) {
     b.colliderRamp(W - 0.5, 0, s0, y0, s1, y1);
     for (const sx of [-1, 1]) {
       slopedBox(b, sx * (hw - 0.1), s0, y0 + 0.95, s1, y1 + 0.95, 0.14, 0.14, { mat: 'woodDark', collide: false });
-      slopedBox(b, sx * (hw - 0.1), s0, y0, s1, y1, 0.12, 1.0, { mat: 'woodDark', collide: true, color: '#6b5a48' });
+      slopedBox(b, sx * (hw - 0.1), s0, y0 + 0.45, s1, y1 + 0.45, 0.1, 0.1, { mat: 'wood', collide: false });
+      slopedCollider(b, sx * (hw - 0.1), s0, y0, s1, y1, 0.2, 1.1);
       // vigas longitudinais (longarinas) sob o tabuleiro
       slopedBox(b, sx * (hw - 0.6), s0, y0 - 0.65, s1, y1 - 0.65, 0.35, 0.45, { mat: 'woodDark', collide: false });
     }
@@ -198,6 +207,18 @@ function woodBridge(b, A, B, o) {
   }
   b.pop();
   return { L, yDeck };
+}
+
+/** Pontos [x, y, z] ao longo do eixo de uma ponte (para caminhos de NPC). */
+function bridgePath(A, B, yDeck, step = 10) {
+  const L = Math.hypot(B[0] - A[0], B[1] - A[1]);
+  const n = Math.max(2, Math.ceil(L / step));
+  const out = [];
+  for (let i = 0; i <= n; i++) {
+    const t = i / n;
+    out.push([A[0] + (B[0] - A[0]) * t, yDeck(L * t) + 0.05, A[1] + (B[1] - A[1]) * t]);
+  }
+  return out;
 }
 
 /** Constrói o Tibre do sítio. Devolve dados úteis (cabeceiras das pontes, linha do cais). */
@@ -225,8 +246,8 @@ export function buildTiber(ctx, rnd) {
     }
     const yA = T.heightAt(A[0], A[1]);
     const yB = T.heightAt(Bp[0], Bp[1]);
-    stoneBridge(b, A, Bp, { W: 8.2, yA, yB, yTop: 2.0, flat: [50, L - 50], arches, ySpring: Y.water - 0.6, upstream: -1 });
-    res.bridges.aemilius = { A, B: Bp, yA, yB, mid: [q.x, q.z], yTop: 2.0 };
+    const r = stoneBridge(b, A, Bp, { W: 8.2, yA, yB, yTop: 2.0, flat: [50, L - 50], arches, ySpring: Y.water - 0.6, upstream: -1 });
+    res.bridges.aemilius = { A, B: Bp, yA, yB, mid: [q.x, q.z], yTop: 2.0, path: bridgePath(A, Bp, r.yDeck) };
   }
 
   // ------------------------------------------------------------------ Pons Fabricius
@@ -240,13 +261,13 @@ export function buildTiber(ctx, rnd) {
     const L = 64;
     const yA = T.heightAt(Ai[0], Ai[1]);
     const yB = T.heightAt(Bb[0], Bb[1]);
-    stoneBridge(b, Ai, Bb, {
+    const r = stoneBridge(b, Ai, Bb, {
       W: 6.4, yA, yB, yTop: 0.5, flat: [28, 36],
       arches: [{ s: 23.5, span: 15, rise: 4.6 }, { s: 41.5, span: 15, rise: 4.6 }],
       ySpring: Y.water - 0.4, upstream: 1, reliefArch: true,
       mats: { body: 'tufa', arch: 'peperino', deck: 'basalt', coping: 'travertine' },
     });
-    res.bridges.fabricius = { A: Ai, B: Bb, yA, yB };
+    res.bridges.fabricius = { A: Ai, B: Bb, yA, yB, path: bridgePath(Ai, Bb, r.yDeck, 8) };
   }
 
   // ------------------------------------------------------------------ Pons Sublicius (madeira)
@@ -258,12 +279,14 @@ export function buildTiber(ctx, rnd) {
     const Bw = [q.x - px * 68, q.z - pz * 68];
     const yA = T.heightAt(A[0], A[1]);
     const yB = T.heightAt(Bw[0], Bw[1]);
-    woodBridge(b, A, Bw, { W: 5.2, yA: yA + 0.05, yB: yB + 0.05, hump: 1.4, upstream: -1 });
-    res.bridges.sublicius = { A, B: Bw, yA, yB };
+    const r = woodBridge(b, A, Bw, { W: 5.2, yA: yA + 0.05, yB: yB + 0.05, hump: 1.4, upstream: -1 });
+    res.bridges.sublicius = { A, B: Bw, yA, yB, path: bridgePath(A, Bw, r.yDeck) };
   }
 
   // ------------------------------------------------------------------ cais do porto (margem leste)
-  const quay = bankLine(QUAY_D, -1, 316, 490);
+  // face externa do muro a 57,5 m do eixo (≈ 3,5 m além do limite do pad, onde o terreno já está
+  // nivelado): o talude de transição do terreno fica escondido atrás/abaixo do muro
+  const quay = bankLine(QUAY_D - 3.5, -1, 316, 490);
   res.quay = quay;
   const top = Y.boarium;
   for (let i = 0; i < quay.length - 1; i++) {

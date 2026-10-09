@@ -113,13 +113,13 @@ export const OPIMIA = { u0: -137, u1: -96, v0: 30, v1: 55, floor: 0.6 };
 /*  Carcer / Tullianum                                                        */
 /* ------------------------------------------------------------------------- */
 export const CARCER = {
-  u0: -95,
-  u1: -85,
+  u0: -93,
+  u1: -83.5,
   v0: 44,
   v1: 55,
   h: 6.2,
   // Tullianum: câmara circular ~7 m de diâmetro (⚠), 12 pés (3,55 m) de profundidade (Sall. Cat. 55.3)
-  tull: { u: -89.6, v: 49.5, r: 3.5, floor: -3.85 },
+  tull: { u: -88.4, v: 49.5, r: 3.5, floor: -3.85 },
 };
 
 /* ------------------------------------------------------------------------- */
@@ -146,7 +146,7 @@ export const TAB = {
   topY: 24.5, // topo do entablamento da galeria ≈ nível da sela capitolina antiga
   upperH: 8, // [HIP] altura do pavimento superior coríntio (NÃO ENCONTRADO)
   upperDepth: 8.6,
-  door: { v: -45.6, y: 7.3, w: 2.4, h: 3.6 }, // "um arco no extremo esquerdo" (Platner)
+  door: { v: -45.6, y: 8.4, w: 2.4, h: 3.6 }, // "um arco no extremo esquerdo" (Platner)
 };
 
 /* ------------------------------------------------------------------------- */
@@ -192,8 +192,8 @@ export const K = {
   K3: [-91, -3.5, 2.0],
   K3b: [satPt(12, 14).u, satPt(12, 14).v, 2.5],
   K4: [-120.6, -25.5, 5.0],
-  K5: [-121, -56, 10.0],
-  K6: [-160, -58, 15.5], // passagem para o sítio "capitolio" (altura da galeria do Tabularium)
+  K5: [-121, -55, 10.0],
+  K6: [-160, -56.5, 15.5], // passagem para o sítio "capitolio" (altura da galeria do Tabularium)
 };
 /** Trecho do Clivus sobre o terreno (com pads e calçamento de basalto). */
 export const CLIVUS_TERRAIN = [K.K3, K.K3b, K.K4, K.K5, K.K6];
@@ -219,7 +219,7 @@ export const PLATFORM = (() => {
 /** Lacus Servilius: "no início do Vicus Iugarius, junto à Basílica Júlia" (Festo). Forma NÃO ENCONTRADA. */
 export const LACUS = { u: -72.6, v: -58.5 };
 /** Senaculum: "supra Graecostasim, ubi aedis Concordiae et basilica Opimia" (Varrão LL 5.156). Forma NÃO ENCONTRADA. */
-export const SENACULUM = { u0: -92, u1: -78, v0: 6, v1: 24, h: 0.6 };
+export const SENACULUM = { u0: -88, u1: -77, v0: 25, v1: 35, h: 0.6 };
 /** Altar de Saturno: "diante do templo, do outro lado da rua" — posição exata NÃO ENCONTRADA. */
 export const ARA_SATURNI = { u: -73.2, v: -24.5 };
 

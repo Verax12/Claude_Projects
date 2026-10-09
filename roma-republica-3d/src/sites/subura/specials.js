@@ -72,7 +72,6 @@ export function lacus(b, x, y, z, rotY) {
   // pilar com a bica de bronze e o jorro
   b.box(0.55, 1.45, 0.5, -L / 2 - 0.27, 0, 0, { mat: 'peperino' });
   b.box(0.62, 0.1, 0.57, -L / 2 - 0.27, 1.45, 0, { mat: 'travertine', collide: false });
-  b.cylinder(0.035, 0.03, 0.32, -L / 2 + 0.0, 1.05, 0, { mat: 'bronze', segments: 8, rotY: 0 });
   b.add(G.cylinder(0.035, 0.03, 0.3, 8), { mat: 'bronze', matrix: M4(-L / 2 + 0.02, 1.08, 0, 0, 0, -Math.PI / 2) });
   b.add(G.cylinder(0.025, 0.04, 0.48, 6), { mat: 'water', matrix: M4(-L / 2 + 0.36, h - 0.18, 0, 0, 0, 0.35) });
   // ladrão e canaleta para a rua
@@ -207,32 +206,40 @@ export function scaffold(b, x0, x1, h, o = {}) {
 }
 
 /**
- * Polispasto de duas pernas (cabrilha) com sarilho: "gruas (rodas de tração/polispasto)" para
- * obras — tipo descrito por Vitrúvio 10.2 (não está nas notas de pesquisa: forma HIPOTÉTICA).
- * Pés em z = zf (frente), inclinado sobre a fachada (−Z), com carga pendurada.
+ * Cabrilha de elevação de duas pernas com sarilho, descrita por Vitrúvio 10.2.1–2 (conferido no texto
+ * da Perseus): "dois madeiros presos no alto por um pino e afastados embaixo, mantidos de pé por
+ * cordas", um moitão com roldanas no topo, o sarilho encaixado nas faces de trás das pernas, com
+ * alavancas, e uma tenaz de ferro que agarra a pedra. Vitrúvio escreve sob Augusto; dimensões: HIPÓTESE.
+ * Pés em z = 0 (frente), inclinada sobre a fachada (−Z), com carga pendurada.
  */
 export function shearLegs(b, x, y, zf, h, o = {}) {
   b.push(x, y, zf, 0);
   const lean = o.lean ?? 1.6;
   const top = [0, h, -lean];
+  const rope = { mat: 'cloth', color: '#a89070' };
   beam(b, [-1.3, 0, 0], top, 0.18, { mat: 'wood', color: '#7d5c3c', collide: 'box' });
   beam(b, [1.3, 0, 0], top, 0.18, { mat: 'wood', color: '#7d5c3c', collide: 'box' });
-  b.box(0.8, 0.12, 0.12, 0, h - 0.4, -lean + 0.1, { mat: 'woodDark', collide: false });
-  // estais (cordas) para trás
-  beam(b, top, [0, 0, 6.5], 0.035, { mat: 'cloth', color: '#a89070' });
-  // moitão e carga (bloco de tufo)
-  const hookY = h * 0.45;
-  beam(b, [0, h - 0.3, -lean], [0, hookY + 0.5, -lean], 0.03, { mat: 'cloth', color: '#a89070' });
-  beam(b, [0.08, h - 0.3, -lean], [0.08, hookY + 0.5, -lean], 0.03, { mat: 'cloth', color: '#a89070' });
-  b.box(0.22, 0.32, 0.18, 0, hookY + 0.5, -lean, { mat: 'woodDark', collide: false });
-  for (const s of [-1, 1]) beam(b, [0, hookY + 0.5, -lean], [s * 0.35, hookY + 0.1, -lean], 0.025, { mat: 'cloth', color: '#a89070' });
-  b.box(0.9, 0.55, 0.6, 0, hookY - 0.45, -lean, { mat: 'tufa', collide: false });
-  // sarilho (cilindro horizontal com alavancas) junto aos pés
-  b.box(0.12, 0.9, 0.12, -0.7, 0, 1.0, { mat: 'wood' });
-  b.box(0.12, 0.9, 0.12, 0.7, 0, 1.0, { mat: 'wood' });
-  b.add(G.cylinder(0.16, 0.16, 1.3, 10), { mat: 'wood', color: '#8a6a48', matrix: M4(-0.65, 0.75, 1.0, 0, 0, -Math.PI / 2) });
-  for (const a of [0, Math.PI / 2]) b.add(G.box(0.05, 1.3, 0.05), { mat: 'woodDark', matrix: M4(0.3, 0.75, 1.0, 0, a, 0).multiply(new THREE.Matrix4().makeTranslation(0, -0.65, 0)) });
-  beam(b, [0, 0.75, 1.0], top, 0.03, { mat: 'cloth', color: '#a89070' });
+  b.box(0.5, 0.14, 0.2, 0, h - 0.25, -lean + 0.05, { mat: 'woodDark', collide: false });
+  // cordas de sustentação "presas a intervalos em volta"
+  beam(b, top, [0, 0, 6.5], 0.035, rope);
+  beam(b, top, [-4.5, 0, 3.5], 0.03, rope);
+  beam(b, top, [4.5, 0, 3.5], 0.03, rope);
+  // moitão superior, moitão inferior com a tenaz de ferro e o bloco de tufo
+  const hookY = h * 0.42;
+  b.box(0.22, 0.38, 0.2, 0, h - 0.62, -lean, { mat: 'woodDark', collide: false });
+  for (const dx of [-0.05, 0.05]) beam(b, [dx, h - 0.6, -lean], [dx, hookY + 0.55, -lean], 0.025, rope);
+  b.box(0.2, 0.3, 0.18, 0, hookY + 0.25, -lean, { mat: 'woodDark', collide: false });
+  for (const s of [-1, 1]) beam(b, [0, hookY + 0.25, -lean], [s * 0.3, hookY - 0.15, -lean], 0.035, { mat: 'iron' });
+  b.box(0.9, 0.55, 0.6, 0, hookY - 0.62, -lean, { mat: 'tufa', collide: false });
+  // sarilho nas faces de trás das pernas, perto da base, com alavancas (handspikes)
+  const yw = 0.85;
+  const u = yw / h;
+  const zw = -lean * u + 0.16;
+  const xw = 1.3 * (1 - u) - 0.1;
+  b.add(G.cylinder(0.13, 0.13, 2 * xw, 10), { mat: 'wood', color: '#8a6a48', matrix: M4(-xw, yw, zw, 0, 0, -Math.PI / 2) });
+  for (const s of [-1, 1]) for (const a of [0, Math.PI / 2]) b.add(G.box(0.05, 1.2, 0.05), { mat: 'woodDark', matrix: M4(s * (xw - 0.2), yw, zw, 0, a + 0.4, 0).multiply(new THREE.Matrix4().makeTranslation(0, -0.6, 0)) });
+  // corda de tração descendo entre as pernas até o sarilho
+  beam(b, [0, h - 0.6, -lean + 0.08], [0, yw + 0.1, zw], 0.03, rope);
   b.pop();
 }
 
@@ -392,9 +399,9 @@ export function shopInterior(bi, room) {
       // padaria (Plínio 18.107: padeiros em Roma desde a guerra contra Perseu): moinhos e forno.
       // Moinho de "ampulheta" de lava (meta + catillus) — forma conhecida de Pompeia: HIPÓTESE.
       for (const [mx, mz] of [[cx - W * 0.22, zMid + 0.4], [cx + W * 0.2, zMid - 0.6]]) {
-        bi.cylinder(0.6, 0.62, 0.35, mx, 0, mz, { mat: 'basalt', segments: 14, collide: true });
-        bi.lathe([[0.42, 0], [0.38, 0.5], [0.12, 0.95], [0.0, 1.0]], mx, 0.35, mz, { mat: 'basalt', segments: 14 });
-        bi.lathe([[0.36, 0], [0.24, 0.42], [0.36, 0.85], [0.3, 0.88], [0.16, 0.45], [0.3, 0.06]], mx, 0.72, mz, { mat: 'basalt', segments: 14 });
+        bi.cylinder(0.6, 0.62, 0.35, mx, 0, mz, { mat: 'flat', color: '#4d4a45', segments: 14, collide: true });
+        bi.lathe([[0.42, 0], [0.38, 0.5], [0.12, 0.95], [0.0, 1.0]], mx, 0.35, mz, { mat: 'flat', color: '#4d4a45', segments: 14 });
+        bi.lathe([[0.36, 0], [0.24, 0.42], [0.36, 0.85], [0.3, 0.88], [0.16, 0.45], [0.3, 0.06]], mx, 0.72, mz, { mat: 'flat', color: '#4d4a45', segments: 14 });
         bi.box(1.6, 0.1, 0.1, mx, 1.15, mz, { mat: 'woodDark', collide: false });
       }
       // forno abobadado de tijolo/tufo no fundo

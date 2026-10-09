@@ -420,12 +420,13 @@ export function boatInto(b, L, W, o = {}) {
 /** Boi (volume simplificado: tronco, pescoço, cabeça, chifres, pernas). Frente → +Z local. */
 export function oxInto(b, o = {}) {
   const c = o.color || '#8a7258';
-  b.add(G.sphere(0.55, 10, 7).scale(0.85, 0.82, 1.65).translate(0, 0.72, 0), { mat: 'flat', color: c });
-  b.add(G.sphere(0.32, 8, 6).scale(0.9, 1.0, 1.3).translate(0, 1.15, 0.85), { mat: 'flat', color: c });
-  b.add(G.sphere(0.24, 8, 6).scale(0.85, 0.9, 1.45).translate(0, 1.1, 1.22), { mat: 'flat', color: c });
-  b.box(0.7, 0.05, 0.05, 0, 1.52, 1.1, { mat: 'flat', color: '#d9cfb8', collide: false });
-  for (const [sx, sz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) b.box(0.13, 0.78, 0.13, sx * 0.24, 0, sz * 0.58, { mat: 'flat', color: c, collide: false });
-  b.box(0.04, 0.6, 0.04, 0, 0.55, -0.92, { mat: 'flat', color: c, collide: false }); // cauda
+  const mt = o.mat || 'flat';
+  b.add(G.sphere(0.55, 10, 7).scale(0.85, 0.82, 1.65).translate(0, 0.72, 0), { mat: mt, color: c });
+  b.add(G.sphere(0.32, 8, 6).scale(0.9, 1.0, 1.3).translate(0, 1.15, 0.85), { mat: mt, color: c });
+  b.add(G.sphere(0.24, 8, 6).scale(0.85, 0.9, 1.45).translate(0, 1.1, 1.22), { mat: mt, color: c });
+  b.box(0.7, 0.05, 0.05, 0, 1.52, 1.1, { mat: mt, color: '#d9cfb8', collide: false });
+  for (const [sx, sz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) b.box(0.13, 0.78, 0.13, sx * 0.24, 0, sz * 0.58, { mat: mt, color: c, collide: false });
+  b.box(0.04, 0.6, 0.04, 0, 0.55, -0.92, { mat: mt, color: c, collide: false }); // cauda
 }
 
 /** Telhado simples de duas águas sobre w × l (cumeeira ao longo de Z), beiral em y. Sem frontão. */
