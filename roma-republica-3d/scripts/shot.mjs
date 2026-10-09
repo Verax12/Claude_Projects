@@ -17,6 +17,7 @@
  *   --w=1280 --h=720  resolução
  *   --npcs=0          desliga NPCs
  *   --ao=1            liga a oclusão de ambiente (GTAO)
+ *   --layout=1        desenha os contornos das áreas de cada sítio (docs/LAYOUT.md)
  *   --list            apenas lista os locais de teleporte registrados
  *
  * Vistas podem ter também "colliders": true (mostra a malha de colisão) e
@@ -53,6 +54,7 @@ if (args.sites) q.set('sites', args.sites);
 if (args.time) q.set('time', args.time);
 if (args.npcs === '0') q.set('npcs', '0');
 if (args.ao) q.set('ao', args.ao);
+if (args.layout) q.set('layout', '1');
 // a primeira vista define o ponto inicial (evita a tela de carregamento)
 const v0 = views[0] || {};
 if (v0.cam) q.set('cam', v0.cam.join(','));

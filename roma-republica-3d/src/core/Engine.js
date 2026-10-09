@@ -16,6 +16,7 @@ import { UI } from '../ui/UI.js';
 import { mulberry32 } from '../render/noise.js';
 import * as geo from './geo.js';
 import { SITE_LOADERS } from '../sites/index.js';
+import { SITE_AREAS } from '../data/layout.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
@@ -95,6 +96,7 @@ export class Engine {
     this.ui.setProgress(0.06, 'Modelando o relevo das colinas…');
     await nextFrame();
     this.terrain = new Terrain();
+    await this.terrain.loadBase();
     this.world.terrain = this.terrain;
     this.vegetation = new Vegetation(this.world);
     this.npcs = new NPCSystem(this.world, this.scene, q);
@@ -163,6 +165,7 @@ export class Engine {
     this.initKeys();
     this.exposeAPI();
     if (new URLSearchParams(location.search).get('colliders') === '1') window.__roma.showColliders(true);
+    if (new URLSearchParams(location.search).get('layout') === '1') this.showLayout();
     this.ui.setProgress(1, 'Pronto.');
     this.running = true;
     this.renderer.setAnimationLoop(() => this.frame());
@@ -290,6 +293,34 @@ export class Engine {
         this.world.collider.visible = on;
       },
     };
+  }
+
+  /** Desenha os contornos das áreas de cada sítio (depuração: ?layout=1). */
+  showLayout() {
+    const colors = [0xff3b30, 0xff9500, 0xffcc00, 0x34c759, 0x00c7be, 0x30b0c7, 0x007aff, 0x5856d6, 0xaf52de, 0xff2d55, 0xa2845e, 0x8e8e93, 0xffffff, 0x000000, 0x64d2ff];
+    let k = 0;
+    for (const [id, polys] of Object.entries(SITE_AREAS)) {
+      const color = colors[k++ % colors.length];
+      for (const poly of polys) {
+        const pts = [];
+        for (let i = 0; i <= poly.length; i++) {
+          const [x0, z0] = poly[i % poly.length];
+          const [x1, z1] = poly[(i + 1) % poly.length];
+          const n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, z1 - z0) / 4));
+          if (i === poly.length) break;
+          for (let j = 0; j < n; j++) {
+            const x = x0 + ((x1 - x0) * j) / n;
+            const z = z0 + ((z1 - z0) * j) / n;
+            pts.push(new THREE.Vector3(x, this.terrain.heightAt(x, z) + 0.6, z));
+          }
+        }
+        pts.push(pts[0].clone());
+        const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color, depthTest: false }));
+        line.renderOrder = 999;
+        line.name = `layout:${id}`;
+        this.scene.add(line);
+      }
+    }
   }
 
   onResize() {

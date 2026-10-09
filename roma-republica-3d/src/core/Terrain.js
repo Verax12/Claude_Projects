@@ -2,14 +2,16 @@
  * Terreno: grade de alturas + malhas em blocos com LOD.
  *
  * Fluxo:
- *   1. new Terrain() calcula a altura base (vales + colinas + Tibre) numa grade de 4 m;
+ *   1. new Terrain() + await loadBase(): relevo de base (DEM corrigido para o nível antigo,
+ *      ver data/topography.js) + Tibre, numa grade de 4 m;
  *   2. os sítios chamam addPad() durante shapeTerrain() para nivelar praças/lotes;
  *   3. build() gera as malhas (blocos de 320 m com 3 níveis de detalhe e "saias"
  *      que escondem frestas entre níveis);
  *   4. heightAt(x,z) devolve a altura exata da malha de maior detalhe (mesma triangulação).
  */
 import * as THREE from 'three';
-import { HILLS, BASE_POINTS, TIBER, TERRAIN_BOUNDS, TERRAIN_CELL } from '../data/topography.js';
+import { TIBER, TERRAIN_BOUNDS, TERRAIN_CELL, BASE_GRID } from '../data/topography.js';
+import baseUrl from '../data/terrain-base.bin?url';
 import { fbm } from '../render/noise.js';
 import { terrainDetailTexture } from '../render/textures.js';
 
@@ -93,7 +95,32 @@ export class Terrain {
     this.urban = new Float32Array(this.nx * this.nz);
     this.padCount = 0;
     this.mesh = null;
+  }
+
+  /** Carrega o relevo de base (terrain-base.bin) e calcula a grade. */
+  async loadBase() {
+    const res = await fetch(baseUrl);
+    if (!res.ok) throw new Error(`Falha ao carregar o relevo (${res.status})`);
+    const buf = await res.arrayBuffer();
+    this.base = new Int16Array(buf);
     this.computeBase();
+  }
+
+  /** Relevo de base (m) por interpolação bilinear da grade de 8 m. */
+  baseHeight(x, z) {
+    const { half, step, n } = BASE_GRID;
+    const fi = Math.min(n - 1.001, Math.max(0, (x + half) / step));
+    const fj = Math.min(n - 1.001, Math.max(0, (z + half) / step));
+    const i = Math.floor(fi);
+    const j = Math.floor(fj);
+    const u = fi - i;
+    const v = fj - j;
+    const b = this.base;
+    const h00 = b[j * n + i];
+    const h10 = b[j * n + i + 1];
+    const h01 = b[(j + 1) * n + i];
+    const h11 = b[(j + 1) * n + i + 1];
+    return ((h00 * (1 - u) + h10 * u) * (1 - v) + (h01 * (1 - u) + h11 * u) * v) / 100;
   }
 
   idx(i, j) {
@@ -111,44 +138,28 @@ export class Terrain {
     }
   }
 
-  /** Altura natural num ponto (vales por IDW + colinas + Tibre + ruído suave). */
+  /** Altura natural num ponto: relevo de base + ondulação fina + leito do Tibre. */
   naturalHeight(x, z) {
-    // base por distância inversa
-    let wsum = 0;
-    let hsum = 0;
-    for (const p of BASE_POINTS) {
-      const d2 = (p.x - x) ** 2 + (p.z - z) ** 2 + 1;
-      const w = 1 / (d2 * d2);
-      wsum += w;
-      hsum += w * p.h;
-    }
-    let h = hsum / wsum;
-    // colinas (planaltos com encostas suaves)
-    for (const hill of HILLS) {
-      const sd = signedDistancePoly(x, z, hill.poly);
-      if (sd < -hill.slope * 1.2) continue;
-      const w = smoothstep(-hill.slope, hill.slope * 0.35, sd);
-      let top = hill.h;
-      for (const pk of hill.peaks) {
-        const d = Math.hypot(x - pk.x, z - pk.z);
-        top += pk.h * Math.exp(-(d * d) / (pk.r * pk.r));
-      }
-      for (const v of hill.valleys) {
-        const d = Math.hypot(x - v.x, z - v.z);
-        top += v.h * Math.exp(-(d * d) / (v.r * v.r));
-      }
-      // ondulação natural sobre o planalto
-      top += (fbm((x + 5000) / 2560, (z + 5000) / 2560, 6, 3, 7) - 0.5) * 4;
-      h = Math.max(h, h + (top - h) * w);
-    }
-    // ondulação leve geral
-    h += (fbm((x + 5000) / 2560, (z + 5000) / 2560, 24, 2, 3) - 0.5) * 1.2;
-    // Tibre
+    let h = this.base ? this.baseHeight(x, z) : 0;
+    // ondulação leve (escala menor que a resolução do DEM)
+    h += (fbm((x + 5000) / 2560, (z + 5000) / 2560, 48, 2, 3) - 0.5) * 0.8;
+    // Tibre: leito abaixo do nível da água e margens suaves
     const dr = distPolyline(x, z, TIBER.path);
     const half = TIBER.width / 2;
     if (dr < half + 40) {
       const bank = smoothstep(half + 40, half - 5, dr);
-      h = h + (TIBER.bed - h) * bank;
+      const target = Math.min(h, TIBER.bed);
+      h = h + (target - h) * bank;
+    }
+    // Ilha Tiberina (elipse alongada no sentido da corrente, ~270 × 67 m)
+    const isl = TIBER.island;
+    if (isl) {
+      const c = Math.cos(isl.angle);
+      const sn = Math.sin(isl.angle);
+      const lx = ((x - isl.x) * c + (z - isl.z) * sn) / (isl.length / 2);
+      const lz = (-(x - isl.x) * sn + (z - isl.z) * c) / (isl.width / 2);
+      const e = Math.sqrt(lx * lx + lz * lz);
+      if (e < 1.25) h = Math.max(h, TIBER.waterLevel - 2 + smoothstep(1.25, 0.85, e) * (isl.height - TIBER.waterLevel + 2));
     }
     return h;
   }
@@ -288,8 +299,68 @@ export class Terrain {
         group.add(lod);
       }
     }
+    group.add(this.buildRiver());
     this.mesh = group;
     return group;
+  }
+
+  /** Superfície da água do Tibre (faixa ao longo da linha central). */
+  buildRiver() {
+    const path = TIBER.path;
+    const w = TIBER.width / 2 + 18;
+    const pos = [];
+    const uv = [];
+    const idx = [];
+    // suaviza a polilinha (Chaikin, 3 iterações) e reamostra a cada ~20 m
+    let sm = path.map((p) => p.slice());
+    for (let it = 0; it < 3; it++) {
+      const out = [sm[0]];
+      for (let i = 0; i < sm.length - 1; i++) {
+        const [ax, az] = sm[i];
+        const [bx, bz] = sm[i + 1];
+        out.push([ax * 0.75 + bx * 0.25, az * 0.75 + bz * 0.25], [ax * 0.25 + bx * 0.75, az * 0.25 + bz * 0.75]);
+      }
+      out.push(sm[sm.length - 1]);
+      sm = out;
+    }
+    const pts = [];
+    for (let i = 0; i < sm.length - 1; i++) {
+      const [x0, z0] = sm[i];
+      const [x1, z1] = sm[i + 1];
+      const n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, z1 - z0) / 20));
+      for (let k = 0; k < n; k++) pts.push([x0 + ((x1 - x0) * k) / n, z0 + ((z1 - z0) * k) / n]);
+    }
+    pts.push(sm[sm.length - 1]);
+    let acc = 0;
+    for (let i = 0; i < pts.length; i++) {
+      const a = pts[Math.max(0, i - 1)];
+      const b = pts[Math.min(pts.length - 1, i + 1)];
+      const dx = b[0] - a[0];
+      const dz = b[1] - a[1];
+      const l = Math.hypot(dx, dz) || 1;
+      const nx = -dz / l;
+      const nz = dx / l;
+      if (i > 0) acc += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+      pos.push(pts[i][0] + nx * w, TIBER.waterLevel, pts[i][1] + nz * w, pts[i][0] - nx * w, TIBER.waterLevel, pts[i][1] - nz * w);
+      uv.push(0, acc, 2 * w, acc);
+      if (i > 0) {
+        const k = i * 2;
+        idx.push(k - 2, k, k - 1, k - 1, k, k + 1);
+      }
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+    g.setIndex(idx);
+    g.computeVertexNormals();
+    // garante normais para cima (o sentido dos triângulos depende da orientação da linha)
+    const nrm = g.attributes.normal;
+    for (let i = 0; i < nrm.count; i++) nrm.setXYZ(i, 0, 1, 0);
+    const mat = new THREE.MeshStandardMaterial({ color: 0x4a6366, roughness: 0.12, metalness: 0.15, transparent: true, opacity: 0.88, side: THREE.DoubleSide });
+    const m = new THREE.Mesh(g, mat);
+    m.name = 'tibre';
+    m.receiveShadow = true;
+    return m;
   }
 
   /** Cor do terreno num vértice (grama seca, terra, rocha de tufo, área urbana). */
@@ -297,14 +368,14 @@ export class Terrain {
     const n = fbm((x + 9000) / 1280, (z + 9000) / 1280, 16, 4, 11);
     const n2 = fbm((x + 9000) / 1280, (z + 9000) / 1280, 64, 2, 12);
     // grama seca mediterrânea ↔ grama mais verde
-    let r = 0.47 + (n - 0.5) * 0.12;
+    let r = 0.5 + (n - 0.5) * 0.14;
     let g = 0.47 + (n - 0.5) * 0.1;
-    let b = 0.28;
-    if (n2 > 0.55) {
-      r *= 0.85;
-      g *= 0.95;
-      b *= 0.8;
-    }
+    let b = 0.29;
+    // manchas de vegetação mais verde (transição suave)
+    const lush = smoothstep(0.45, 0.7, n2) * 0.6;
+    r *= 1 - 0.15 * lush;
+    g *= 1 - 0.03 * lush;
+    b *= 1 - 0.18 * lush;
     // terra / rocha em encostas íngremes (tufo exposto)
     const steep = smoothstep(0.92, 0.7, slopeY);
     r = r + (0.55 - r) * steep;

@@ -34,7 +34,9 @@ src/
   ui/                  UI (HUD, teleporte, informação) e styles.css
   data/
     places.js          âncoras geográficas (Pleiades) no sistema local
-    topography.js      colinas, vales, Tibre
+    topography.js      relevo (DEM corrigido), Tibre, nomes das colinas
+    terrain-base.bin   grade de alturas de base (gerada por scripts/build-terrain.py)
+    layout.js          ÁREAS de cada sítio (SITE_AREAS), referencial do Fórum (FORUM_FRAME, forumUV)
   sites/               UM ARQUIVO (ou pasta) POR SÍTIO — ver §3
 docs/
   pesquisa/            notas de pesquisa histórica com fontes (base de TODA a modelagem)
@@ -80,6 +82,9 @@ export default {
 ```
 
 O registro fica em `src/sites/index.js` (já contém todos os sítios previstos — não edite).
+Os módulos são carregados dinamicamente: um erro num sítio não impede os demais de carregar.
+As áreas de cada sítio estão em `src/data/layout.js` e o plano global em `docs/LAYOUT.md`
+(visualize com `--layout=1` no script de captura).
 
 ### 3.1 O objeto `ctx`
 
@@ -199,3 +204,4 @@ npx vite build        # precisa compilar sem erros
 | `casa-plebe` | Bairros | casa-plebe |
 | `foricae` | Bairros | foricae |
 | `circo-maximo` | Arredores | circo-maximo |
+| `forum-boario`, `teatro-pompeu` (opcionais) | Arredores | arredores |

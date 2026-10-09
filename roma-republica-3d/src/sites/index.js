@@ -22,6 +22,7 @@ export const SITE_LOADERS = [
   { id: 'casa-plebe', load: () => import('./insulaPlebeia.js') },
   { id: 'foricae', load: () => import('./foricae.js') },
   { id: 'circo-maximo', load: () => import('./circusMaximus.js') },
+  { id: 'arredores', load: () => import('./surroundings.js') },
   { id: 'cidade', load: () => import('./city.js') },
   { id: 'teste', load: () => import('./_teste.js'), dev: true },
 ];

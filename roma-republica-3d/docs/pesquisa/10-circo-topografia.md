@@ -11,6 +11,8 @@
 > 4. Quase nenhum dado da **bibliografia arqueológica moderna** (altura da muralha, larguras de rua, cotas antigas dos vales) pôde ser pesquisado. Esses dados estão marcados **NÃO ENCONTRADO** e reunidos na seção de lacunas.
 >
 > Termos marcados **[DERIVADO]** são cálculos nossos a partir de dados com fonte. **[HIPÓTESE DE MODELAGEM]** marca decisões de design sem atestação.
+>
+> **Verificação independente (2ª rodada):** 15 afirmações-chave foram reconferidas por um verificador independente. A cota de WebSearch também estava **esgotada** nessa rodada, então a reconferência foi feita **relendo as fontes primárias** nos arquivos TEI do Perseus (Dionísio, Plínio, Suetônio, Lívio, Estrabão, Tácito, Ovídio, Vitrúvio, Cícero e, como novidade, **Dião Cássio**, `tlg0385.tlg001.perseus-grc2.xml`), o `places.csv` do Pleiades e tiles do DEM Terrarium. As correções estão no próprio texto (marcadas **[verif.]**) e o balanço está na seção final **"Verificação independente"**. **⚠ não confirmado** marca o que continua sem confirmação.
 
 ---
 
@@ -18,12 +20,12 @@
 
 | Local | Estado em 50–44 a.C. | O que NÃO pôr (fase posterior) |
 |---|---|---|
-| **Circus Maximus** | **Existente e reformado por César em 46 a.C.** O espaço foi prolongado nas duas extremidades e ganhou um **euripus** (fosso com água) em volta da arena (Suet. *Iul.* 39.2; Plín. *NH* 8.21). Plínio atribui o circo "construído por César ditador" com 3 × 1 estádios (*NH* 36.102). Havia carceres desde 329 a.C., refeitos em 174 a.C. com *ova* e metas (Lív. 8.20.2; 41.27.6). Os jogos de triunfo de 46 a.C. incluíram corridas, Jogo de Troia, caçadas e uma batalha com elefantes em que as **metas foram retiradas** (Suet. *Iul.* 39.2). | O **obelisco de Augusto** (Plín. *NH* 36.71), os golfinhos e demais acréscimos augustanos, o fechamento do euripus e os assentos dos cavaleiros de **Nero** (Plín. *NH* 8.21), o **Arco de Tito** na curva (Pleiades) e o mitreu (Pleiades). A descrição de Dionísio (3.68) é **augustana**, c. 8 a.C. [DERIVADO de Dion. 1.7.2]. Serve de referência próxima, mas não é o estado de 46 a.C. |
+| **Circus Maximus** | **Existente e reformado por César em 46 a.C.** O espaço foi prolongado nas duas extremidades e ganhou um **euripus** (fosso com água) em volta da arena (Suet. *Iul.* 39.2; Plín. *NH* 8.21). Plínio atribui o circo "construído por César ditador" com 3 × 1 estádios (*NH* 36.102). Havia carceres desde 329 a.C., refeitos em 174 a.C. com *ova* e metas (Lív. 8.20.2; 41.27.6). Os jogos de triunfo de 46 a.C. incluíram corridas, Jogo de Troia, caçadas e uma batalha com elefantes em que as **metas foram retiradas** (Suet. *Iul.* 39.2). | O **obelisco de Augusto** (Plín. *NH* 36.71), os **golfinhos** contadores de voltas, postos por **Agripa** como edil em **33 a.C.** (Dião 49.43.2, conferido **[verif.]**), e demais acréscimos augustanos, o fechamento do euripus e os assentos dos cavaleiros de **Nero** (Plín. *NH* 8.21), o **Arco de Tito** na curva (Pleiades) e o mitreu (Pleiades). A descrição de Dionísio (3.68) é **augustana**, c. 8 a.C. [DERIVADO de Dion. 1.7.2]. Serve de referência próxima, mas não é o estado de 46 a.C. |
 | **Colinas e vales** | Relevo natural ainda pronunciado: Capitólio com dois cumes (Arx e Capitolium), Palatino, Velia (esporão hoje inexistente), Esquilino (Opio e Císpio), Viminal, Quirinal, Aventino e Célio. O Aventino ficava **fora do pomério** até Cláudio (Pleiades). | A sela capitolina atual está **~8 m acima** da antiga (Musei Capitolini, via nota 01). O vale do Fórum moderno tem aterros e cortes. |
-| **Muralha Serviana** | De pé em muitos trechos, mas **absorvida pela cidade**: em Lívio, os edifícios "agora geralmente se encostam" à muralha (1.44.4); Dionísio diz que ela era difícil de achar por causa das casas em volta, embora restassem traços em muitos lugares (4.13.5); para Plínio, as casas tinham "acrescentado muitas cidades" além dela (*NH* 3.67). O *agger* do Esquilino continuava sendo a obra mais forte (Dion. 9.68.3–4; Str. 5.3.7). | Muralha Aureliana (séc. III d.C.); Arco de Galieno (262 d.C.) na Porta Esquilina; Arco de Dolabela (Porta Celimontana). |
+| **Muralha Serviana** | De pé em muitos trechos, mas **absorvida pela cidade**: em Lívio, os edifícios "agora geralmente se encostam" à muralha (1.44.4); Dionísio diz que ela era difícil de achar por causa das casas em volta, embora restassem traços em muitos lugares (4.13.5); para Plínio, as casas tinham "acrescentado muitas cidades" além dela (*NH* 3.67). O *agger* do Esquilino continuava sendo a obra mais forte (Dion. 9.68.3–4; Str. 5.3.7). | Muralha Aureliana (271–275 d.C., Pleiades 529700371 **[verif.]**); Arco de Galieno (262 d.C.) na Porta Esquilina; Arco de Dolabela e Silano na Porta Celimontana (posterior; data não verificada aqui). |
 | **Ruas** | Ruas da cidade **pavimentadas com *silex*** desde a empreitada dos censores de 174 a.C. (Lív. 41.27.5). Traçado estreito e sinuoso: *"non optimis viis, angustissimis semitis"* (Cíc. *Leg. agr.* 2.96, 63 a.C.) e *"artis itineribus hucque et illuc flexis atque enormibus vicis, qualis vetus Roma fuit"* (Tác. *Ann.* 15.38). | O limite augustano de **70 pés** de altura para prédios em vias públicas é **posterior** (Str. 5.3.7). |
 | **Velabro / Forum Boarium** | Área comercial e ritual na margem leste do Tibre (Pleiades). Templo de **Portuno** (tetrastilo, fim do séc. II/início do I a.C.) e **templo redondo de Hércules** (fim do séc. II a.C.), ambos segundo o Pleiades. Lívio já cita uma *aedes rotunda Herculis* no Forum Boarium em 296 a.C. (10.23.3). **Ara Máxima**; templos de **Fortuna e Mater Matuta** dentro da Porta Carmental (Lív. 25.7.6), com os **dois arcos de Stertínio** com estátuas douradas diante deles (196 a.C.; Lív. 33.27.4). | **Arco de Jano Quadrifronte** (séc. IV d.C.) e **Arcus Argentariorum** (204 d.C.), ambos segundo o Pleiades. |
-| **Tibre e pontes** | **Pons Sublicius** de madeira, sem pregos de ferro, por razão religiosa (Plín. *NH* 36.100). **Pons Aemilius** de pedra (pilares de 179 a.C., arcos de 142 a.C.; Lív. 40.51.4). **Pons Fabricius** (séc. I a.C., Pleiades; a data de 62 a.C. NÃO foi verificada aqui). Enchentes frequentes (Lív. 35.9.2; 35.21.5; 38.28.4). | **Pons Cestius**: "séc. I a.C." (Pleiades); se já existia em 44 a.C., **NÃO ENCONTRADO**. Muralhas modernas do Tibre (*muraglioni*). |
+| **Tibre e pontes** | **Pons Sublicius** de madeira, sem pregos de ferro, por razão religiosa (Plín. *NH* 36.100). **Pons Aemilius** de pedra (pilares de 179 a.C., arcos colocados pelos censores Cipião e Múmio, c. 142 a.C.; Lív. 40.51.4). **Pons Fabricius**, de pedra, construído em **62 a.C.** (Dião 37.45.3, conferido **[verif.]**). Enchentes frequentes (Lív. 35.9.2; 35.21.5; 38.28.4). | **Pons Cestius**: "séc. I a.C." (Pleiades); se já existia em 44 a.C., **NÃO ENCONTRADO**. Muralhas modernas do Tibre (*muraglioni*). |
 
 ---
 
@@ -32,16 +34,16 @@
 ### Estado em 50–44 a.C.
 
 - **Obra de César, 46 a.C.** Nos jogos do triunfo, "nos jogos circenses, **prolongado o espaço do circo de ambos os lados** e **acrescentado um euripus em volta** (*in gyrum euripo addito*), jovens nobilíssimos conduziram quadrigas, bigas e cavalos de saltadores" (Suet. *Iul.* 39.2, conferido: *"circensibus spatio circi ab utraque parte producto et in gyrum euripo addito quadrigas bigasque et equos desultorios agitauerunt nobilissimi iuuenes"*).
-- **Motivo do euripus.** Nos jogos de Pompeu de 55 a.C. (2º consulado, dedicação do templo de Vênus Vencedora), 20 elefantes (17, segundo alguns) lutaram **no circo** e tentaram romper a cerca de **grades de ferro** (*claustris ferreis*), assustando o público. "Por essa razão, César ditador, quando ia depois dar espetáculo semelhante, **cercou a arena com euripos**, que o imperador Nero suprimiu ao acrescentar lugares para os cavaleiros" (Plín. *NH* 8.20–21, conferido: *"qua de causa Caesar dictator postea simile spectaculum editurus euripis harenam circumdedit, quos Nero princeps sustulit equiti loca addens"*). Platner data o fosso de 46 a.C. e o coloca "entre a arena e os assentos" (resumo de busca de Platner–Ashby, *Circus Maximus*, Perseus).
-- **Plínio atribui o circo a César:** *"circum maximum a Caesare dictatore exstructum longitudine stadiorum trium, latitudine unius, sed cum aedificiis iugerum quaternum, ad sedem CCL"* (*NH* 36.102, edição Mayhoff no Perseus, conferido). A tradução Bostock no Perseus traz **260.000** lugares, de outra leitura do manuscrito. Platner adverte que "o texto desta passagem é corrupto e os números são questionáveis" (resumo de busca).
-- **Jogos de 46 a.C.** Jogo de Troia com duas turmas de meninos; **caçadas por 5 dias**; por fim, uma batalha entre dois exércitos, cada um com **500 infantes, 20 elefantes e 30 cavaleiros**. "Para lutarem com mais espaço, **foram retiradas as metas** e em seu lugar armaram-se **dois acampamentos frente a frente**" (Suet. *Iul.* 39.2–3, conferido: *"sublatae metae inque earum locum bina castra exaduersum constituta erant"*). Plínio confirma: no 3º consulado de César lutaram 20 elefantes contra 500 infantes e, de novo, 20 elefantes com torres e 60 defensores cada (*NH* 8.22, conferido).
+- **Motivo do euripus.** Nos jogos de Pompeu de 55 a.C. (2º consulado, dedicação do templo de Vênus Vencedora), 20 elefantes lutaram **no circo**. "Segundo alguns" foram **18** no texto de Mayhoff, que o aparato apoia em Sêneca; os manuscritos (*ll.*) trazem **17** (aparato de Mayhoff, conferido **[verif.]**). Os elefantes tentaram romper a cerca de **grades de ferro** (*claustris ferreis*), assustando o público. "Por essa razão, César ditador, quando ia depois dar espetáculo semelhante, **cercou a arena com euripos**, que o imperador Nero suprimiu ao acrescentar lugares para os cavaleiros" (Plín. *NH* 8.20–21, conferido: *"qua de causa Caesar dictator postea simile spectaculum editurus euripis harenam circumdedit, quos Nero princeps sustulit equiti loca addens"*). Platner data o fosso de 46 a.C. e o coloca "entre a arena e os assentos" (resumo de busca de Platner–Ashby, *Circus Maximus*, Perseus; não reconferido, mas coerente com Dion. 3.68.2, onde as stoas vêm "depois do euripus" **[verif.]**).
+- **Plínio atribui o circo a César:** *"circum maximum a Caesare dictatore exstructum longitudine stadiorum trium, latitudine unius, sed cum aedificiis iugerum quaternum, ad sedem CCL"* (*NH* 36.102, edição Mayhoff no Perseus, conferido). A tradução Bostock no Perseus traz **260.000** lugares. **[verif.]** Pelo aparato de Mayhoff, *CCLX millium* é a leitura das **edições antigas anteriores a Brotier** (*v.a.Brot.*), não necessariamente de outro manuscrito. Mayhoff imprime *ad sedem CCL*. Platner adverte que "o texto desta passagem é corrupto e os números são questionáveis" (resumo de busca; **⚠ não confirmado**, porque a página não pôde ser reaberta).
+- **Jogos de 46 a.C.** Jogo de Troia com duas turmas de meninos; **caçadas por 5 dias**; por fim, uma batalha entre dois exércitos, cada um com **500 infantes, 20 elefantes e 30 cavaleiros**. "Para lutarem com mais espaço, **foram retiradas as metas** e em seu lugar armaram-se **dois acampamentos frente a frente**" (Suet. *Iul.* 39.2–3, conferido: *"sublatae metae inque earum locum bina castra exaduersum constituta erant"*). Plínio confirma: no 3º consulado de César lutaram 20 elefantes contra 500 infantes e, de novo, 20 elefantes com torres e 60 defensores cada (*NH* 8.22, conferido: *"viginti contra pedites D iterumque totidem turriti cum sexagenis propugnatoribus"*). **[verif.]** Dião Cássio põe essas lutas **no hipódromo**: cavaleiros contra cavaleiros, infantes contra infantes, grupos mistos e "alguns lutaram de cima de **40 elefantes**", o que bate com os 20 + 20 de Suetônio e Plínio. Os mesmos jogos tiveram meninos nobres no **Jogo de Troia** e jovens em carros (Dião 43.23.3–6, conferido no grego, com a numeração do TEI do Perseus).
 - **Antecedentes republicanos (todos conferidos em Lívio):**
   - Tarquínio Prisco "demarcou o lugar do circo que hoje se chama Máximo". Os senadores e cavaleiros recebiam lotes para montar suas arquibancadas (*fori*), sobre **forquilhas de 12 pés** de altura (1.35.8–9). Tarquínio Soberbo fez "*foros in circo*" (1.56.2).
   - *"carceres eo anno in circo primum statuti"*: as primeiras carceres são de **329 a.C.** (8.20.2).
   - Em **174 a.C.** os censores contrataram *"carceres in circo, et ova ad notas curriculis numerandis […] et metas trans et caveas ferreas"* (41.27.6; o texto tem lacuna).
   - Em 196 a.C., L. Stertínio ergueu **um arco (*fornix*) no Circo Máximo** com estátuas douradas (33.27.4).
   - Em 182 a.C. uma tempestade derrubou "estátuas no Circo Máximo **com as colunas** sobre as quais estavam" (40.2.2).
-- **Datação de Dionísio:** ele chegou à Itália quando Augusto encerrou a guerra civil, "no meio da 187ª Olimpíada", e escrevia 22 anos depois (Dion. 1.7.2, conferido). Isso dá **c. 8–7 a.C.** [DERIVADO]. A descrição detalhada em 3.68 mostra, portanto, o circo **cesariano-augustano** algumas décadas depois do período do jogo.
+- **Datação de Dionísio:** ele chegou à Itália quando Augusto encerrou a guerra civil, "no meio da 187ª Olimpíada", e escrevia 22 anos depois (Dion. 1.7.2, conferido). Isso dá **c. 8–7 a.C.** [DERIVADO]. **[verif.]** Conta refeita: a 187ª Olimpíada vai de 32 a 28 a.C. (Ol. 1 = 776 a.C.). O meio cai em c. 30/29 a.C., e somando 22 anos chega-se a c. 8/7 a.C. A descrição detalhada em 3.68 mostra, portanto, o circo **cesariano-augustano** algumas décadas depois do período do jogo.
 
 ### Localização, orientação e relações espaciais
 
@@ -63,7 +65,7 @@
 | Lupercal (sopé do Palatino) | 174,8 | 355,5 | Pleiades 565793497 | baixa (*rough*: é só o ponto genérico do Palatino) |
 
 - **Eixo do vale [DERIVADO do DEM]:** procuramos a linha de mínimos do relevo moderno em cortes transversais a cada 20 m, ao longo de ±280 m do ponto Pleiades. O eixo mais retilíneo tem **rumo ≈ 126° / 306°**, isto é, de **ONO** (carceres, Forum Boarium) para **ESE** (curva). A linha de fundo passa **~10–30 m a nordeste** do ponto Pleiades (lado do Palatino). O parque moderno é aberto, então o DEM ali é relativamente limpo, mas o fundo atual **não** é o nível antigo da arena (NÃO ENCONTRADO).
-- **Verificação [DERIVADO]:** um circo de 621 m (Dionísio) centrado no ponto Pleiades e alinhado a 126° teria extremidades em **NO ≈ (−192, 549)** e **SE ≈ (310, 914)**. A primeira fica a ~60 m do mitreu "voltado para as carceres"; a segunda, a ~40 m do ponto do Arco de Tito "na extremidade leste". Os dois pontos de controle são coerentes com essa implantação, apesar da baixa acurácia de ambos.
+- **Verificação [DERIVADO]:** um circo de 621 m (Dionísio) centrado no ponto Pleiades e alinhado a 126° teria extremidades em **NO ≈ (−192, 549)** e **SE ≈ (310, 914)**. A primeira fica a ~60 m do mitreu "voltado para as carceres"; a segunda, a ~40 m do ponto do Arco de Tito "na extremidade leste". Os dois pontos de controle são coerentes com essa implantação, apesar da baixa acurácia de ambos. **[verif.]** Conta refeita: meio comprimento de 310,5 m × (sen 126°, −cos 126°) = (251,2; 182,6), o que dá as extremidades (−192,3; 548,8) e (310,1; 914,0). As distâncias são 62 m até o mitreu e 38 m até o ponto do Arco de Tito. Com 647 m de comprimento (estádio de 185 m), as extremidades se afastariam mais ~13 m de cada lado. O rumo de 126° depende do DEM e **⚠ não foi confirmado por fonte arqueológica**.
 - **Largura do vale [DERIVADO do DEM]:** a faixa abaixo da cota moderna de 28 m mede ~140 m no centro e ~185–235 m nas extremidades.
 
 ### Dimensões
@@ -73,22 +75,22 @@
 | Comprimento (circo de César, texto de Plínio) | 3 | estádios | Plín. *NH* 36.102 (conferido) | média: o texto é dado como corrupto (Platner) |
 | Largura (Plínio) | 1 | estádio | idem | baixa: largura de 1 estádio (≈ 177 m [DERIVADO]) não bate com Dionísio |
 | Área "com os edifícios" (Plínio) | 4 | *iugera* | idem | baixa (número suspeito, Platner) |
-| Lugares sentados (Plínio, ed. Mayhoff) | 250.000 (*CCL*) | pessoas | idem | baixa (texto corrupto; refere-se à época de Plínio/Vespasiano segundo Platner) |
-| Lugares sentados (Plínio, trad. Bostock) | 260.000 | pessoas | Perseus, Bostock (conferido) | baixa (variante de manuscrito) |
-| Comprimento (Dionísio, c. 8 a.C.) | 3,5 estádios ≈ **621** | m | Dion. 3.68.2 (conferido: *τριῶν καὶ ἡμίσους σταδίων*); conversão em metros segundo resumo de busca (Platner/DAR) | alta para o texto; média para a conversão |
-| Largura (Dionísio) | 4 plethra ≈ **118** | m | Dion. 3.68.2 (conferido: *τεττάρων πλέθρων*); conversão idem | alta / média |
+| Lugares sentados (Plínio, ed. Mayhoff) | 250.000 (*CCL*) | pessoas | idem | baixa (texto corrupto; refere-se à época de Plínio/Vespasiano segundo Platner, **⚠ não confirmado**) |
+| Lugares sentados (Plínio, trad. Bostock) | 260.000 | pessoas | Perseus, Bostock (conferido) | baixa. **[verif.]** É a leitura *CCLX* das edições anteriores a Brotier, segundo o aparato de Mayhoff (antes estava como "variante de manuscrito") |
+| Comprimento (Dionísio, c. 8 a.C.) | 3,5 estádios ≈ **621** | m | Dion. 3.68.2 (conferido: *τριῶν καὶ ἡμίσους σταδίων*); conversão em metros segundo resumo de busca (Platner/DAR). **[verif.]** O valor de 621 m corresponde ao estádio de 600 pés de 0,296 m: 3,5 × 177,6 = 621,6 m. Com o estádio romano de 625 pés (≈ 185 m), daria **≈ 647 m** [DERIVADO]. A escolha do estádio é incerta (±4%) | alta para o texto; **média/baixa** para a conversão |
+| Largura (Dionísio) | 4 plethra ≈ **118** | m | Dion. 3.68.2 (conferido: *τεττάρων πλέθρων*); conversão idem (4 × 100 pés × 0,296 = 118,4 m; com o plethron de 1/6 do estádio de 185 m, ≈ 123 m [DERIVADO]). **[verif.] Ambiguidade:** Dionísio dá comprimento e largura "do hipódromo" e só depois diz que "em volta dele" foi cavado o euripus e que "depois do euripus" vêm as stoas. A frase não deixa claro se 4 plethra é a **largura total** ou só a da **pista** (leitura nossa, não resolvida) | alta (texto) / média (conversão); **⚠ interpretação não confirmada** |
 | Euripus: largura e profundidade | 10 pés ≈ **2,96** | m | Dion. 3.68.2 (*βάθος τε καὶ πλάτος δεκάπους*, conferido); 10 pés romanos = 2,96 m (resumo de busca) | alta |
 | Euripus: extensão | os 2 lados longos e o lado curvo; **não** do lado das carceres | — | Dion. 3.68.2 (conferido) | alta (estado augustano) |
 | Perímetro da "stoa-anfiteatro" (arquibancadas) | 8 | estádios | Dion. 3.68.3 (conferido) | alta (texto); estado augustano |
 | Capacidade (Dionísio) | **150.000** (*πεντεκαίδεκα μυριάδας*) | pessoas | Dion. 3.68.3 (conferido) | alta (texto); estado c. 8 a.C. |
-| Estimativa moderna | c. 650 × 125 | m | Humphrey, citado em resumo de busca (provavelmente DAR) | média |
-| Estimativa moderna | c. 621 × 118 | m | Ciancio Rossetto 1987, citado em resumo de busca | média |
-| Pista/arena (sem fase indicada) | 540 × 80 | m | World History Encyclopedia (resumo de busca) | baixa |
+| Estimativa moderna | c. 650 × 125 | m | Humphrey, citado em resumo de busca (provavelmente DAR) | **⚠ não confirmado** (não reconferido). **[verif.]** Os números coincidem com a conversão de Dionísio pelo estádio de 185 m (≈ 647 × 123 m) [DERIVADO]; podem ser conversão, e não medição independente |
+| Estimativa moderna | c. 621 × 118 | m | Ciancio Rossetto 1987, citado em resumo de busca | **⚠ não confirmado**. **[verif.]** Coincide com a conversão de Dionísio pelo estádio de 600 pés de 0,296 m [DERIVADO]; não serve de confirmação arqueológica independente |
+| Pista/arena (sem fase indicada) | 540 × 80 | m | World History Encyclopedia (resumo de busca) | baixa; **⚠ não confirmado** |
 | Fase imperial (não usar) | 600 × 140 | m | Stanford *Digital Forma Urbis* (resumo de busca) | média (fase imperial) |
 | Constantino (não usar) | c. 610 × 190 (?) | m | Britannica (resumo de busca, em italiano; número possivelmente mal resumido) | baixa |
 | Valores de divulgação a descartar | 544 × 129; "~600 × 140"; 421 × 118 | m | sites de divulgação / erro de transcrição no resumo da Stanford | — |
 | Altura das plataformas dos *fori* arcaicos | 12 pés ≈ 3,55 | m | Lív. 1.35.9 (conferido: *furcis duodenos ab terra spectacula alta sustinentibus pedes*) [conversão DERIVADA, pé = 0,296 m] | alta (texto); fase régia lendária |
-| Número de carceres | **12** | — | Platner (resumo de busca) | média; fase de referência não especificada; para 46 a.C., NÃO ENCONTRADO |
+| Número de carceres | **12** | — | Platner (resumo de busca) | **⚠ não confirmado** (nenhuma fonte primária conferida dá o número; Dionísio 3.68.3 não o cita); fase de referência não especificada; para 46 a.C., NÃO ENCONTRADO |
 | Altura das arquibancadas, nº de degraus, inclinação da cávea | **NÃO ENCONTRADO** | — | — | — |
 | Comprimento e altura da barreira central em 46 a.C. | **NÃO ENCONTRADO** | — | — | — |
 | Cota da arena antiga | **NÃO ENCONTRADO** (DEM moderno do fundo do vale: 21,5–25,4 m s.n.m., ver §2) | m | — | — |
@@ -128,7 +130,8 @@
 
 - **Corridas:** quadrigas, bigas e **desultores** (cavaleiros que saltam de um cavalo para outro), conduzidos por jovens nobres nos jogos de 46 a.C. (Suet. *Iul.* 39.2).
 - **Jogo de Troia** (meninos a cavalo em duas turmas, Suet. *Iul.* 39.2).
-- **Caçadas** de 5 dias e batalhas com **elefantes com torres** (Plín. *NH* 8.22; Suet. *Iul.* 39.3). Em 55 a.C., Plínio conta que o público se levantou em lágrimas e amaldiçoou Pompeu ao ouvir o lamento dos elefantes (*NH* 8.21).
+- **Caçadas** de 5 dias e batalhas com **elefantes com torres** (Plín. *NH* 8.22; Suet. *Iul.* 39.3).
+- **[verif.] Girafa:** nos jogos de 46 a.C. César mostrou em Roma, **pela primeira vez**, a "camelopardo" (girafa) (Dião 43.23.1–2, conferido). O local da exibição não é dito no trecho. Em 55 a.C., Plínio conta que o público se levantou em lágrimas e amaldiçoou Pompeu ao ouvir o lamento dos elefantes (*NH* 8.21).
 - **Festas no calendário:** Cereálias com cavalos nas carceres (*"carcere partitos Circus habebit equos"*, Ov. *Fast.* 4.680); *Ludi Romani* ou *Magni* (Lív. 1.35.9); Consuálias (Lív. 1.9.6).
 - **Público:** os lugares eram divididos por cúrias na tradição régia (Dion. 3.68.1). Havia lojas e moradias no pórtico externo (Dion. 3.68.4) e comércio de mercadorias inflamáveis (Tác. *Ann.* 15.38).
 - **Sons:** cordas da largada (Dion.), rugido do público, água do euripus, elefantes.
@@ -136,13 +139,13 @@
 ### Proposta de modelagem [HIPÓTESE DE MODELAGEM]
 
 - **Implantação:** eixo 126°/306°, centro em (58,9; 731,4) ± 30 m, carceres a ONO, perto de (−190, 550), e curva a ESE, perto de (310, 914).
-- **Dimensões externas:** 621 × 118 m (Dionísio).
-  - Arena interna ~540 × 80 m (estimativa de divulgação, baixa confiança).
+- **Dimensões externas:** 621 × 118 m (Dionísio). **⚠** O texto também admite ler 4 plethra como largura só da pista, e a conversão admite ~647 × 123 m (ver tabela de dimensões). Manter 621 × 118 m como valor de trabalho, com etiqueta.
+  - Arena interna ~540 × 80 m (estimativa de divulgação, baixa confiança, **⚠ não confirmado**).
   - Euripus de 2,96 m de largura em volta dos 2 lados longos e da curva.
   - Sobram ~16 m de faixa de arquibancada de cada lado [DERIVADO: (118 − 80)/2 − 3].
 - **Cávea:** 3 níveis. O térreo em pedra (tufo com revestimento de estuque) e dois níveis de madeira (andaimes, tábuas), com **pórtico externo de um andar** com lojas e moradias. Isso é tecnicamente o estado c. 8 a.C.; é aceitável como aproximação de 46 a.C., com etiqueta.
-- **Carceres:** 12 vãos abobadados num lado reto ou levemente curvo, com cordas.
-- **Barreira central:** metas cônicas nas extremidades e *ova* sobre suportes. **Sem obelisco, sem golfinhos.** Painel informativo: "forma da barreira central em 46 a.C. desconhecida".
+- **Carceres:** 12 vãos abobadados num lado reto ou levemente curvo, com cordas (número **⚠ não confirmado**; abóbadas e corda única são do estado augustano de Dionísio).
+- **Barreira central:** metas cônicas nas extremidades e *ova* sobre suportes. **Sem obelisco, sem golfinhos.** **[verif.]** Dião (49.43.2) atribui a Agripa, em 33 a.C., "os golfinhos **e as obras em forma de ovo**" para mostrar as voltas. Os *ova* existem desde 174 a.C. (Lív. 41.27.6), mas o monumento de ovos que se costuma reconstruir pode ser a versão de Agripa. Para 46 a.C., usar contadores simples e etiquetá-los como hipótese. Painel informativo: "forma da barreira central em 46 a.C. desconhecida".
 - **Ambiente:** templos areostilos de Ceres e Hércules Pompeiano com frontões de terracota pintada; o arco de Stertínio com estátuas douradas.
 
 ---
@@ -189,6 +192,8 @@
 ### Dimensões: cotas e inclinações
 
 > **Cuidado com o DEM.** No Fórum, onde o pavimento republicano está documentado entre **11,8 e 14 m s.n.m.** (Platner e Van Deman, via nota 01), o DEM moderno lê **18–24 m**. Ou seja, nos poços escavados e nas áreas construídas o DEM fica **6–10 m acima** do terreno real ou antigo: ele suaviza 30 m e é afetado por prédios e aterros [DERIVADO, comparação nossa]. Use os valores do DEM **só para a forma relativa** e como **teto** provável dos cumes modernos.
+>
+> **[verif.]** Leitura do DEM reproduzida de forma independente: os mesmos tiles Terrarium z15 foram baixados e lidos no pixel de cada ponto, com a conversão do `00-coordenadas.md` (≈ 111.316 m/° de latitude; ≈ 82.866 m/° de longitude). Resultados: Palatino (200, 370) = 51,9; cume sul do Capitólio (−221, 11) = 46,6; Arx (−145, −176) = 53,0; Aventino (−445, 970) = 52,4; Célio (705, 565) = 56,6; Quirinal (162, −825) = 56,7; Viminal (701, −727) = 72,0; Portuno = 19,2; Fórum (0, 0) = 23,3; ponto do Circo = 24,6 m. Diferenças ≤ 0,3 m em relação à tabela. Isso confirma **a leitura**, não a exatidão do DEM.
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
@@ -237,7 +242,7 @@
 - **Palatino:** Escadas de Caco no canto sudoeste, descendo para o vale do Circo (Pleiades 606719480).
   - O **Clivus Victoriae** é uma rua íngreme no canto sudoeste (ou perto dele) (Pleiades 668537796).
   - A **Porta Mugonia**, porta da "Roma quadrata" no lado norte, tem posição debatida (Pleiades 547584100).
-  - O **Templo da Magna Mater** foi dedicado perto do Clivus Victoriae em 11 de abril de 191 a.C. e destruído por incêndio em 111 a.C. (Pleiades 192818177). Estado em 50–44 a.C.: provavelmente reconstruído; detalhe: NÃO ENCONTRADO.
+  - O **Templo da Magna Mater** foi dedicado perto do Clivus Victoriae em 11 de abril de 191 a.C. e destruído por incêndio em 111 a.C. (Pleiades 192818177). **[verif.]** Foi **reconstruído por um Metelo**: *"templi non perstitit auctor: Augustus nunc est, ante Metellus erat"* e *"contulit aes populus, de quo delubra Metellus fecit"* (Ov. *Fast.* 4.347–352, conferido). Em 50–44 a.C. está de pé o **templo metelano**; a reconstrução de Augusto é posterior. Forma e dimensões: NÃO ENCONTRADO.
   - A **Casa de Lívia** é uma domus com fases republicana e imperial (Pleiades 904782880).
 - **Velia:** esporão que ligava o Palatino ao Opio, fechando o Fórum a leste (Pleiades). Forma e cota: NÃO ENCONTRADO.
 - **Vale do Circo (*Murcia*):** entre o Palatino e o Aventino (Lív. 1.33.5; Dion. 3.68.1).
@@ -273,6 +278,7 @@
   - Dionísio diz que a muralha "é difícil de encontrar por causa das casas que a cercam por muitos lados, mas **conserva traços em muitos lugares**" (4.13.5, conferido).
   - Plínio: a cidade é fechada a leste pelo ***agger* de Tarquínio Soberbo**, da altura das muralhas onde o acesso era plano; no resto, por muralhas altíssimas ou montes escarpados, "**exceto que as casas, espalhando-se, acrescentaram muitas cidades**" (*NH* 3.67, conferido).
 - **Construção/reconstrução:** em 378 a.C. os censores contrataram uma muralha "de **pedra quadrada**" (*murum … saxo quadrato faciundum*) (Lív. 6.32.1, conferido). A tradição atribui a Sérvio o *agger*, os fossos e a muralha (Lív. 1.44.4).
+- **[verif.] Reparos e torres:** em 212 a.C. foram eleitos *"quinqueviri muris et turribus reficiendis"*, uma comissão de cinco para reparar **muralhas e torres** (Lív. 25.7.5, conferido). Isso confirma torres também fora do *agger* (cf. Str. 5.3.7) e uma manutenção ativa no fim do séc. III a.C.
 
 ### Localização / traçado perto da área do jogo
 
@@ -326,7 +332,7 @@
 
 ### Materiais e acabamentos
 
-- *Saxum quadratum* (Lív. 6.32.1). O **tufo de Grotta Oscura** é o "tufo giallo della via Tiberina" (OxREP, via nota 01), mas o seu uso **nesta** muralha **NÃO foi confirmado** nas fontes consultadas.
+- *Saxum quadratum* (Lív. 6.32.1). O **tufo de Grotta Oscura** é o "tufo giallo della via Tiberina" (OxREP, via nota 01). **[verif.]** A nota `11-materiais-pessoas.md` registra, por fontes secundárias (Ancient Rome Live [M-ARL] e Wikipedia, *Servian Wall*, via resumo de busca), que o Grotta Oscura foi usado na **2ª fase** da muralha (378 a.C.). **⚠ não confirmado** de forma independente nesta verificação, por falta de cota de busca. Passa de "sem fonte" para "fonte secundária única, não reconferida".
 - **[HIPÓTESE]** Blocos de tufo amarelado em fiadas regulares, com reparos de cor diferente.
 
 ### Detalhes de ambientação
@@ -342,7 +348,7 @@
   2. cruzando a **sela Capitólio–Quirinal** pelos pontos de S. Eufemia e Magnanapoli, ~270–300 m ao norte do Fórum de César;
   3. com a **Porta Carmental**, de dois vãos, ao pé do Capitólio, a sudoeste, junto a S. Omobono e ao Vicus Iugarius;
   4. com a **Porta Fontinal** a norte ou noroeste do Capitólio, a caminho do Campo de Marte.
-- Altura de ~8–10 m (valor **não atestado**), com casas encostadas e trechos semienterrados.
+- Altura de ~8–10 m (valor **não atestado**, **⚠ não confirmado**: nenhuma fonte, antiga ou moderna, foi achada para este número; é decisão de design), com casas encostadas e trechos semienterrados.
 
 ---
 
@@ -396,7 +402,7 @@
 
 ### Detalhes de ambientação
 
-- **Vicus Tuscus:** "no Vicus Tuscus estão os homens que se vendem a si mesmos" (Plaut. *Curc.* 482 [4.1], conferido: *"in Tusco vico, ibi sunt homines qui ipsi sese venditant"*). Horácio, nos anos 30 a.C., chama de "**a turba ímpia do Vicus Tuscus**" os fornecedores que acorrem à casa de um herdeiro pródigo: pescador, fruteiro, passarinheiro, perfumista, salsicheiro (*Sat.* 2.3.226–229, conferido: *"piscator uti, pomarius, auceps, unguentarius ac Tusci turba impia vici"*).
+- **Vicus Tuscus:** "no Vicus Tuscus estão os homens que se vendem a si mesmos" (Plaut. *Curc.* 482 [4.1], conferido: *"in Tusco vico, ibi sunt homines qui ipsi sese venditant"*). Horácio, nos anos 30 a.C., chama de "**a turba ímpia do Vicus Tuscus**" os fornecedores que acorrem à casa de um herdeiro pródigo: pescador, fruteiro, passarinheiro, perfumista, salsicheiro (*Sat.* 2.3.228–229, conferido: *"piscator uti, pomarius, auceps, unguentarius ac Tusci turba impia vici"*).
 - **Fórum (Plauto, mesmo trecho):**
   - perjuros no Comício;
   - mentirosos e fanfarrões junto ao santuário de Cloacina;
@@ -418,7 +424,7 @@
 
 - **Forum Boarium:** "o chamado mercado de gado, área-chave de atividade comercial e ritual na margem leste do Tibre", flanqueado pelo Capitólio, pelo Palatino e pelo Aventino (Pleiades 207271756). O **Velabro** é o vale que liga o Fórum Romano ao Forum Boarium (Pleiades 432833118).
 - **Templo de Portuno:** "templo **tetrastilo** dedicado a Portuno, datado do fim do séc. II ou início do séc. I a.C." (Pleiades 494660670). **Existente.**
-- **Templo de Hércules Vencedor (redondo):** "construído no fim do séc. II a.C., talvez por L. Múmio Acaico" (Pleiades 825969667). **Existente.**
+- **Templo de Hércules Vencedor (redondo):** "construído no fim do séc. II a.C., talvez por L. Múmio Acaico" (Pleiades 825969667; texto reconferido no `places.csv` **[verif.]**). **Existente.** A atribuição a Múmio é só um "talvez" do Pleiades: **⚠ não confirmado**.
   - O Pleiades o chama de "monopteros", termo que talvez não seja exato; a planta exata (cella circular com peristilo?) não foi conferida aqui.
   - Lívio já fala de um "**templo redondo de Hércules**" no Forum Boarium em **296 a.C.**, junto ao *sacellum Pudicitiae Patriciae* (10.23.3, conferido). Pode ser um antecessor; a relação entre os dois: NÃO ENCONTRADO.
 - **Ara Máxima de Hércules:** "antigo centro de culto ligado a Héracles, no Forum Boarium" (Pleiades 207271757). O sulco do pomério de Rômulo começou no Forum Boarium, "onde vemos a estátua de bronze de um touro", de modo a **abraçar a grande ara de Hércules** (Tác. *Ann.* 12.24, conferido).
@@ -463,7 +469,7 @@
 
 ### Materiais e acabamentos
 
-- **Mármore do Templo de Hércules Vencedor: NÃO CONFIRMADO** nas fontes consultadas; precisa de verificação antes de modelar (o escopo pressupõe mármore).
+- **Mármore do Templo de Hércules Vencedor: NÃO CONFIRMADO** nas fontes consultadas; precisa de verificação antes de modelar (o escopo pressupõe mármore). **⚠ não confirmado** também na 2ª rodada: sem cota de busca, e a nota 11 também o lista como "NÃO VERIFICADO".
 - Materiais do Templo de Portuno: NÃO ENCONTRADO.
 
 ### Detalhes de ambientação
@@ -483,7 +489,7 @@
   - Enchentes: 193 a.C., nas partes planas (Lív. 35.9.2); 192 a.C., o Tibre levou **duas pontes** e muitos edifícios (Lív. 35.21.5); 189 a.C., inundou o Campo de Marte **12 vezes** (Lív. 38.28.4).
 - **Pons Sublicius:** a ponte de madeira tradicional, atribuída a Anco Márcio (642 a.C.), atravessava o Tibre **perto do Forum Boarium, logo a jusante da Ilha Tiberina** (Pleiades 286808786). Era **religiosamente construída sem pregos de ferro**, "desde que foi arrancada com dificuldade quando Horácio Cocles a defendia" (Plín. *NH* 36.100, conferido: *"quod item Romae in ponte sublicio religiosum est, posteaquam Coclite Horatio defendente aegre revolsus est"*). **Existente.** Posição exata: NÃO ENCONTRADO (o ponto Pleiades está errado, a 87 km).
 - **Pons Aemilius:** em **179 a.C.** o censor M. Fúlvio contratou "**os pilares da ponte** no Tibre, sobre os quais os censores **P. Cipião Africano e L. Múmio** mandaram pôr os **arcos** alguns anos depois" (Lív. 40.51.4, conferido). Esses censores são os de 142 a.C. [data DERIVADA da censura de Múmio, NÃO verificada aqui]. O Pleiades o chama de "a primeira ponte de pedra (241 a.C.)", o que **diverge** de Lívio. Restos: "Ponte Rotto". **Existente.**
-- **Pons Fabricius:** "ponte do séc. I a.C. que liga a área do Circo Flamínio à Ilha Tiberina" (Pleiades 68481414). A data de **62 a.C.** (do escopo) **NÃO foi verificada** nesta pesquisa: a inscrição e Dião Cássio não estavam acessíveis. **Provavelmente existente.**
+- **Pons Fabricius:** "ponte do séc. I a.C. que liga a área do Circo Flamínio à Ilha Tiberina" (Pleiades 68481414). **[verif.]** Dião Cássio: "**foi construída a ponte de pedra que leva à ilhota no Tibre, chamada Fabrícia**", e logo em seguida passa ao "ano seguinte, sob os cônsules Pisão e Messala" (61 a.C.). A construção é portanto de **62 a.C.** (Dião 37.45.3–46.1, conferido no grego: *ἡ γέφυρα ἡ λιθίνη ἐς τὸ νησίδιον τὸ ἐν τῷ Τιβέριδι ὂν φέρουσα κατεσκευάσθη, Φαβρικία κληθεῖσα*). **Existente** em 50–44 a.C., de pedra. Número de arcos em 44 a.C.: NÃO ENCONTRADO.
 - **Pons Cestius:** "a ponte original data do séc. I a.C." (Pleiades 211668069). **Existência em 50–44 a.C.: NÃO ENCONTRADO.**
 - **Cloaca Máxima:** nasceu como dreno canalizado no fim do séc. VI a.C., depois foi abobadada e enterrada, e deságua no Tibre (Pleiades 867802692). Era larga o bastante para uma carroça de feno (Plín. *NH* 36.108; Str. 5.3.8).
 
@@ -503,7 +509,7 @@
 |---|---|---|---|---|
 | Largura do Tibre | ~4 plethra (≈ 118 m [DERIVADO, com a mesma conversão do Circo]) | — | Dion. 9.68.2 (conferido) | média (época arcaica, valor aproximado: *μάλιστα*) |
 | Ilha Tiberina: retângulo mínimo do contorno OSM moderno | 417 × 111 | m | Pleiades OSM [DERIVADO] | média (o contorno moderno é muralhado e pode incluir encontros de ponte) |
-| Ilha Tiberina: eixo longo | 113° / 293° (OSO–ENE, aprox. ESE–ONO) | graus | idem | média |
+| Ilha Tiberina: eixo longo | 113° / 293° (ESE–ONO) | graus | idem | média |
 | Ilha Tiberina: área | ≈ 27.800 | m² | idem | média |
 | Pontes: vãos, largura e nº de arcos em 44 a.C. | **NÃO ENCONTRADO** | — | — | — |
 | Nível da água antigo / altura das margens | **NÃO ENCONTRADO** (DEM moderno 7–10 m) | — | — | — |
@@ -531,18 +537,20 @@
 | **Mitreu** do Circo Máximo | imperial | Pleiades 960323262 |
 | **Septizônio** (canto sudeste do Palatino) | Severos | Pleiades 705506085 |
 | **Domus Flavia / Augustana**, "Estádio" do Palatino, Paedagogium | Domiciano, c. 92 d.C. | Pleiades 564783056, 792237246, 132886213, 155566866 |
-| **Templo de Apolo Palatino**, Casa de Augusto como residência imperial | augustano | Pleiades 257097394, 250568480 (datas: NÃO verificadas aqui) |
+| **Templo de Apolo Palatino**, Casa de Augusto como residência imperial | augustano; o templo foi **terminado e consagrado** por Otaviano com o recinto e as bibliotecas no ano do censo de 28 a.C. | Pleiades 257097394, 250568480; **[verif.]** Dião 53.1.3 (conferido no grego; o ano de 28 a.C. vem da posição do trecho na narrativa de Dião) |
 | **Arco de Jano Quadrifronte** (Velabro / Forum Boarium) | início do séc. IV d.C. | Pleiades 367835399 |
 | **Arcus Argentariorum** (Velabro) | 204 d.C. | Pleiades 335461216 |
 | **Sant'Anastasia** e demais igrejas | c. 325 d.C. em diante | Pleiades 267621225 |
 | **Casa dei Crescenzi** junto à Pons Aemilius | 1040–1065 | Pleiades 111763397 |
-| **Teatro de Marcelo** construído | dedicado em 12 a.C. | Pleiades 300583267. Em 44 a.C. César só **planejava** "um teatro de enorme tamanho encostado ao monte Tarpeio" (Suet. *Iul.* 44.1, conferido) |
+| **Teatro de Marcelo** construído | **[verif.] corrigido:** o Pleiades diz "dedicado em 12 a.C.", mas as fontes antigas dão **13 a.C.** (Dião 54.26.1, logo após a volta de Augusto, conferido no grego) ou **11 a.C.** (Plínio *NH* 8.65: dedicação em 4 de maio, *"Q. Tuberone Paulo Fabio Maximo cos."*, conferido; o ano vem dos fastos consulares). Em qualquer caso, **depois de 44 a.C.** | Pleiades 300583267. Em 44 a.C. César só **planejava** "um teatro de enorme tamanho encostado ao monte Tarpeio" (Suet. *Iul.* 44.1, conferido) |
 | **Pórtico de Otávia** | depois de 27 a.C. (substituiu o Pórtico de Metelo) | Pleiades 236573248 |
 | **Termas de Caracala** | 212–216 d.C. | Pleiades 322942899 |
 | **Arco de Galieno** na Porta Esquilina | 262 d.C. | Pleiades 29110684 |
 | Limite de **70 pés** para prédios em vias públicas; corpo de vigiles de libertos | Augusto | Str. 5.3.7 |
 | Aquedutos e fontes de **Agripa** | depois de 44 a.C. | Str. 5.3.8 (menciona Agripa) |
-| **Muralha Aureliana** | séc. III d.C. | Pleiades 529700371 (nome; data NÃO verificada aqui) |
+| **Muralha Aureliana** | 271–275 d.C. (Aureliano e Probo) | Pleiades 529700371 **[verif.]** (descrição do `places.csv`) |
+| **Golfinhos** (e contadores ovoides de Agripa) na barreira do Circo | 33 a.C. (edilidade de Agripa) | **[verif.]** Dião 49.43.2 (conferido) |
+| **Anfiteatro de pedra** de Estatílio Tauro no Campo de Marte | 4º consulado de Otaviano (30 a.C.) | **[verif.]** Dião 51.23.1 (conferido no grego). Em 46 a.C. César só montou um **teatro de caça de madeira** (*θέατρόν τι κυνηγετικὸν ἰκριώσας*), "chamado anfiteatro" (Dião 43.22.3, conferido) |
 | **Pons Aelius**, Pons Neronianus | Adriano / Calígula ou Nero | Pleiades 334776903, 100447491 |
 | Sela capitolina e Piazza del Campidoglio na cota atual | ~8 m acima da antiga | Musei Capitolini, via nota 01 |
 
@@ -554,14 +562,15 @@
 
 1. **Circo em 46 a.C.:**
    - Dimensões exatas da fase cesariana: Plínio (3 × 1 estádios) diverge de Dionísio (3,5 estádios × 4 plethra, augustano), e o texto de Plínio é corrupto.
-   - Número de carceres em 46 a.C.: 12 é o número de referência de Platner, sem fase indicada.
+   - Número de carceres em 46 a.C.: 12 é o número de referência de Platner, sem fase indicada (**⚠ não confirmado** na 2ª rodada).
+   - **[verif.]** Conversão de Dionísio: 621 × 118 m (estádio de 177,6 m) ou ~647 × 123 m (estádio de 185 m). As "estimativas modernas" citadas (621 × 118; 650 × 125) coincidem com essas duas conversões e talvez não sejam medições independentes. Também não está claro se 4 plethra é a largura total ou só a da pista.
    - Forma da barreira central; proporção pedra/madeira das arquibancadas em 46 a.C.; cota da arena.
    - **Sugestão:** 621 × 118 m, 12 carceres, euripus de 2,96 m em 3 lados, arquibancada baixa de pedra e alta de madeira, metas removíveis, **sem obelisco**. Painel: "Dimensões segundo Dionísio de Halicarnasso (c. 8 a.C.); estado exato de 46 a.C. incerto".
 2. **Santuários de Múrcia e Conso:** forma, posição exata e se o altar de Conso era subterrâneo: NÃO ENCONTRADO. **Sugestão:** pequeno altar junto ao sopé do Palatino, perto da extremidade das carceres, e uma edícula para Múrcia; ambos rotulados como hipotéticos.
 3. **Cotas antigas:** não temos as cotas republicanas dos cumes, do vale do Circo, do Velabro, do Forum Boarium, da Subura nem do Tibre; só as do Fórum (11,8–14 m) e as do Capitólio em relação ao Tibre (38–39 m). O DEM moderno lê 6–10 m acima no Fórum escavado. **Sugestão:** terreno com a forma do DEM, normalizado para Fórum = 0 e vales planos rebaixados; painel "relevo reconstruído a partir de dados modernos".
 4. **Palatino:** subdivisão Germalo/Palatium e cotas de cada uma: NÃO ENCONTRADO (Varrão, *LL* 5, não estava acessível).
 5. **Velia:** forma e cota do esporão hoje removido: NÃO ENCONTRADO. **Sugestão:** sela suave entre o Palatino e o Opio, ~10–15 m acima do Fórum (valor **inventado para design**, marcar).
-6. **Muralha Serviana:** altura, espessura, tamanho dos blocos, tufo usado (Grotta Oscura? NÃO confirmado), estado de conservação em 50–44 a.C. e posições das portas **Ratumena**, **Fontinalis** (precisa), **Viminalis**, **Flumentana**: NÃO ENCONTRADO. **Divergência:** comprimento do *agger*, 7 estádios em Dionísio e 6 em Estrabão. **Sugestão:** muralha de ~8–10 m (não atestado), com casas encostadas.
+6. **Muralha Serviana:** altura, espessura, tamanho dos blocos, tufo usado (Grotta Oscura? Fonte secundária única na nota 11, **⚠ não confirmado**), estado de conservação em 50–44 a.C. e posições das portas **Ratumena**, **Fontinalis** (precisa), **Viminalis**, **Flumentana**: NÃO ENCONTRADO. **Divergência:** comprimento do *agger*, 7 estádios em Dionísio e 6 em Estrabão. **Sugestão:** muralha de ~8–10 m (não atestado), com casas encostadas.
 7. **Ruas:** larguras de todas as ruas pedidas (Vicus Tuscus, Vicus Iugarius, Argiletum, Clivus Suburanus, Vicus Patricius, Via Nova, Clivus Victoriae); traçado da **Via Nova**; meio-fios e passeios: NÃO ENCONTRADO. **Divergência** sobre o Vicus Iugarius (Pleiades × nota 01 × OSM). **Sugestão:** vias principais de 4–6 m e becos de 2–3 m (design, não atestado), coerentes com *angustissimis semitis* (Cícero) e *artis itineribus* (Tácito).
 8. **Forum Boarium:**
    - Ordem, colunas, materiais e orientação de Portuno e de Hércules Vencedor.
@@ -570,7 +579,7 @@
    - Relação entre a *aedes rotunda Herculis* de 296 a.C. e o templo do fim do séc. II a.C.
    
    **Sugestão:** usar o contorno OSM das plantas (Portuno 23,3 × 11,6 m; Hércules ⌀ ~19 m) e aguardar a pesquisa de detalhes.
-9. **Pontes:** data do Pons Fabricius (62 a.C.?), existência do Pons Cestius em 44 a.C., posição do Pons Sublicius, número de arcos e larguras: NÃO ENCONTRADO. **Divergência** sobre a data do Pons Aemilius (Pleiades 241 a.C. × Lívio 179/142 a.C.). **Sugestão:** Aemilius de pedra com arcos; Sublicius de madeira a jusante; Fabricius de pedra marcado como "c. 62 a.C. (tradição)"; **sem** Cestius, ou com painel de dúvida.
+9. **Pontes:** ~~data do Pons Fabricius (62 a.C.?)~~ **resolvido [verif.]: 62 a.C., Dião 37.45.3**; existência do Pons Cestius em 44 a.C., posição do Pons Sublicius, número de arcos e larguras: NÃO ENCONTRADO. **Divergência** sobre a data do Pons Aemilius (Pleiades 241 a.C. × Lívio 179/142 a.C.). **Sugestão:** Aemilius de pedra com arcos; Sublicius de madeira a jusante; Fabricius de pedra, "62 a.C." (Dião 37.45.3); **sem** Cestius, ou com painel de dúvida.
 10. **Ilha Tiberina e margens:** contorno antigo (o OSM é moderno, muralhado) e nível do rio: NÃO ENCONTRADO.
 
 ---
@@ -587,7 +596,7 @@
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1348/abo011/phi1348.abo011.perseus-eng2.xml>
 - **Dionísio de Halicarnasso, *Antiquitates Romanae*** 1.7.2 (datação do autor); 1.32.3 (Lupercal); 3.68.1–4 (Circo: medidas, euripus, stoas, 150.000, carceres, lojas); 4.13.2–5 (Sérvio; muralha escondida pelas casas); 4.44.1–2 (pórticos do hipódromo, Tarquínio Soberbo); 9.68.2–4 (Tibre; *agger*).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0081/tlg001/tlg0081.tlg001.perseus-grc2.xml>
-- **Tito Lívio, *Ab Urbe Condita*** 1.9.6; 1.33.5; 1.35.8–9; 1.36.1; 1.38.6; 1.44.3–5; 1.56.2; 2.49.8; 5.47.2; 6.32.1; 8.20.2; 10.23.3; 10.23.12; 21.62.3; 22.57.6; 24.9.6; 24.47.15–16; 25.7.6; 27.11.16; 27.37.15; 33.27.4; 35.9.2–3; 35.10.12; 35.21.5; 35.41.10; 38.28.3–4; 39.44.5–7; 40.2.2; 40.51.4–5; 41.27.5–8.
+- **Tito Lívio, *Ab Urbe Condita*** 1.9.6; 1.33.5; 1.35.8–9; 1.36.1; 1.38.6; 1.44.3–5; 1.56.2; 2.49.8; 5.47.2; 6.32.1; 8.20.2; 10.23.3; 10.23.12; 21.62.3; 22.57.6; 24.9.6; 24.47.15–16; 25.7.6; 27.37.15; 33.27.4; 35.9.2–3; 35.10.12; 35.21.5; 35.41.10; 38.28.3–4; 39.44.5–7; 40.2.2; 40.51.4–5; 41.27.5–8.
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0914/phi001/phi0914.phi001.perseus-lat2.xml>
 - **Estrabão, *Geographica*** 5.3.7 (muralha de Sérvio, *agger* de 6 estádios, Porta Viminal, desabamentos e incêndios, limite de 70 pés de Augusto); 5.3.8 (vias, cloacas abobadadas, Agripa).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0099/tlg001/tlg0099.tlg001.perseus-grc2.xml>
@@ -595,12 +604,15 @@
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1351/phi005/phi1351.phi005.perseus-lat1.xml>
 - **Cícero, *De lege agraria*** 2.96 (Roma em montes e vales, *cenacula*, ruas estreitas).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0474/phi011/phi0474.phi011.perseus-lat2.xml>
-- **Horácio, *Sermones*** 2.3.226–229 (Vicus Tuscus, Velabro).
+- **Horácio, *Sermones*** 2.3.228–229 (Vicus Tuscus, Velabro).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml>
-- **Plauto, *Curculio*** 4.1 (vv. 466–484: frequentadores do Fórum, do Vicus Tuscus e do Velabro).
+- **Plauto, *Curculio*** 4.1 (vv. 470–483: frequentadores do Fórum, do Vicus Tuscus e do Velabro).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0119/phi008/phi0119.phi008.perseus-lat2.xml>
 - **Ovídio, *Fasti*** 3.199; 4.680; 5.669; 6.405; 6.477–478.
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi007/phi0959.phi007.perseus-lat2.xml>
+- **[verif.] Dião Cássio, *Historia Romana*** (texto grego do Perseus, com a numeração do TEI), lido na 2ª rodada: 37.45.3–46.1 (Pons Fabricius, 62 a.C.); 43.22.3 (teatro de caça de madeira, 46 a.C.); 43.23.1–6 (girafa; lutas no hipódromo com 40 elefantes; Jogo de Troia); 49.43.2 (golfinhos e ovos de Agripa, 33 a.C.); 51.23.1 (anfiteatro de pedra de Estatílio Tauro, 30 a.C.); 53.1.3 (Apolo Palatino, 28 a.C.); 54.26.1 (Teatro de Marcelo).
+  - <https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0385/tlg001/tlg0385.tlg001.perseus-grc2.xml>
+- **[verif.]** Também reconferidos na 2ª rodada: Plínio *NH* 8.65 (Teatro de Marcelo: cônsules Tuberão e Paulo Fábio Máximo); Ovídio *Fasti* 4.347–352 (Magna Mater reconstruída por Metelo); Lívio 25.7.5 (*quinqueviri muris et turribus reficiendis*).
 - **Vitrúvio, *De architectura*** 2.7.1–5 (pedras de Roma); 2.8.17 (paredes, prédios altos); 3.3.5 (templos areostilos de Ceres e Hércules Pompeiano junto ao Circo).
   - <https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml>
 
@@ -647,3 +659,69 @@
    - <https://imperiumromanum.pl/en/roman-art-and-culture/roman-architecture/roman-buildings/circus-maximus/>
    - <https://www.csun.edu/~hcfll004/SportsBuildings.html>
    - <https://britannica.com/topic/Circus-Maximus>
+
+---
+
+## Verificação independente
+
+> **Método e limites.** A cota de WebSearch da sessão estava **esgotada** já na primeira tentativa desta verificação: o limite de 200 buscas por turno é compartilhado entre agentes. Por isso **nenhuma busca nova na web foi feita**, e o que dependia só de bibliografia moderna (Platner, Humphrey, Ciancio Rossetto, sites de divulgação) **não pôde ser reconferido**. A reconferência usou três caminhos:
+> 1. **Releitura das fontes primárias** nos arquivos TEI do Perseus (GitHub), procurando cada citação no texto latino ou grego e conferindo a numeração. Inclui um autor que a 1ª rodada não usou: **Dião Cássio**.
+> 2. O **`places.csv` do Pleiades**, lido diretamente.
+> 3. Os **tiles do DEM Terrarium z15**, baixados e lidos de novo.
+>
+> Foram verificadas **15 afirmações principais**, mais 5 datas de anacronismos.
+
+### ✔ Confirmado
+
+| # | Afirmação | Fonte da confirmação |
+|---|---|---|
+| 1 | Dionísio: hipódromo de **3,5 estádios × 4 plethra**; euripus de **10 pés** de largura e profundidade nos 2 lados longos e num dos curtos; stoas de **3 andares** (pedra embaixo, madeira em cima); "anfiteatro" de **8 estádios** para **150.000** pessoas; carceres **abobadadas** abertas por **uma só corda**; pórtico externo de **um andar** com lojas, moradias em cima e escadas junto a cada loja | Dion. 3.68.2–4, grego reconferido (numeração do TEI) |
+| 2 | Datação de Dionísio em c. 8/7 a.C. ("meio da 187ª Olimpíada" + 22 anos) | Dion. 1.7.2, reconferido; conta refeita (Ol. 187 = 32–28 a.C.) |
+| 3 | Plínio: circo *"a Caesare dictatore exstructum longitudine stadiorum trium, latitudine unius … iugerum quaternum, ad sedem CCL"* | Plín. *NH* 36.102, Mayhoff reconferido |
+| 4 | César, 46 a.C.: circo **prolongado nos dois lados**, **euripus em volta**; metas **retiradas** e dois acampamentos para a batalha de 500 infantes, 20 elefantes e 30 cavaleiros por lado | Suet. *Iul.* 39.2–3, reconferido; Plín. *NH* 8.22, reconferido; **novo:** Dião 43.23.3 ("40 elefantes" no hipódromo) |
+| 5 | O euripus nasceu das grades de ferro forçadas pelos elefantes de Pompeu (55 a.C.); **Nero** o suprimiu para dar lugares aos cavaleiros | Plín. *NH* 8.20–21, reconferido |
+| 6 | Carceres pela 1ª vez em **329 a.C.**; em **174 a.C.**, carceres, *ova* e metas; no mesmo ano, pavimentação das ruas da cidade com *silex* | Lív. 8.20.2; 41.27.5–6, reconferidos |
+| 7 | Obelisco de Augusto no Circo (85¾ pés sem a base) é **anacrônico** | Plín. *NH* 36.71, reconferido (Mayhoff *LXXXV pedum et dodrantis*) |
+| 8 | Muralha de **pedra quadrada** em 378 a.C.; casas encostadas; muralha "difícil de achar" mas com traços em muitos lugares; a cidade cresceu além dela | Lív. 6.32.1; 1.44.4; Dion. 4.13.5; Plín. *NH* 3.67, todos reconferidos |
+| 9 | *Agger*: fosso com mais de 100 pés de largura e 30 de profundidade; 7 estádios de comprimento e 50 pés de largura (Dionísio); 6 estádios, com muralha e **torres**, da Collina à Esquilina, com a Porta Viminal no meio (Estrabão) | Dion. 9.68.3–4; Str. 5.3.7, reconferidos |
+| 10 | Limite de **70 pés** para prédios junto às vias públicas é de **Augusto**, portanto posterior | Str. 5.3.7, reconferido |
+| 11 | Arcos de Stertínio (196 a.C.): dois no Forum Boarium diante de Fortuna e Mater Matuta, um no Circo, todos com estátuas douradas; Fortuna e Mater Matuta "dentro da Porta Carmental"; Porta Carmental com *dexter Ianus* | Lív. 33.27.4; 25.7.6; 2.49.8, reconferidos |
+| 12 | Pons Aemilius: pilares contratados por M. Fúlvio (179 a.C.) e arcos postos depois pelos censores P. Cipião Africano e L. Múmio; Pons Sublicius sem ferro | Lív. 40.51.4; Plín. *NH* 36.100, reconferidos |
+| 13 | Leituras do DEM (cumes, Fórum, Circo, Portuno) | Tiles Terrarium relidos; diferenças ≤ 0,3 m |
+| 14 | Extremidades do Circo (−192, 549) e (310, 914) para 621 m a 126° | Conta refeita (ver §1) |
+| 15 | Descrições do Pleiades: Portuno tetrastilo, fim do séc. II ou início do I a.C.; Hércules Vencedor, fim do séc. II a.C.; Arco de Tito na extremidade leste do Circo; mitreu "voltado para as carceres"; Aventino fora do pomério até Cláudio; Ianus Quadrifons, início do séc. IV d.C.; Arcus Argentariorum, 204 d.C.; Arco de Galieno, 262 d.C. | `places.csv` do Pleiades, relido |
+| + | Citações literárias de apoio (Ov. *Fast.* 6.405, 6.477–478, 5.669; Vitr. 3.3.5; Tác. *Ann.* 12.24, 15.38; Cíc. *Leg. agr.* 2.96; Lív. 1.35.9, 40.2.2, 41.27.8, 10.23.3, 21.62.3; Plín. *NH* 34.57) | Reconferidas no TEI do Perseus |
+
+### ✎ Corrigido (antes → depois)
+
+| Item | Antes | Depois | Fonte |
+|---|---|---|---|
+| Pons Fabricius | "data de 62 a.C. NÃO verificada" | **62 a.C. confirmado**: ponte de pedra para a ilhota, "chamada Fabrícia", no ano anterior ao consulado de Pisão e Messala (61 a.C.) | Dião 37.45.3–46.1 (grego) |
+| Teatro de Marcelo | "dedicado em 12 a.C." (Pleiades) | **13 a.C.** (Dião 54.26.1) **ou 11 a.C.** (Plín. *NH* 8.65, cônsules Q. Tuberão e Paulo Fábio Máximo; o ano vem dos fastos). Continua posterior a 44 a.C. | Dião; Plínio (reconferidos) |
+| Templo da Magna Mater | "provavelmente reconstruído; detalhe NÃO ENCONTRADO" | Reconstruído por **Metelo**; em 50–44 a.C. está de pé o templo metelano, e o de Augusto é posterior | Ov. *Fast.* 4.347–352 (reconferido) |
+| Muralha Aureliana | "data NÃO verificada" | **271–275 d.C.** | Pleiades 529700371 |
+| Apolo Palatino | "datas NÃO verificadas" | Consagrado por Otaviano em **28 a.C.** (posição do trecho na narrativa) | Dião 53.1.3 |
+| Golfinhos do Circo | "acréscimos augustanos" (sem data) | Postos por **Agripa**, edil em **33 a.C.**, junto com "as obras em forma de ovo". O monumento de ovos que se costuma reconstruir pode ser agripiano; os *ova* de 174 a.C. tinham forma desconhecida | Dião 49.43.2 |
+| 260.000 lugares (Bostock) | "outra leitura do manuscrito" | Leitura *CCLX* das **edições anteriores a Brotier**, segundo o aparato de Mayhoff | Plín. *NH* 36.102, aparato |
+| Elefantes de Pompeu, 55 a.C. | "20 (17, segundo alguns)" | "20 ou, segundo alguns, **18** (texto de Mayhoff, que o aparato apoia em Sêneca); os manuscritos trazem 17" | Plín. *NH* 8.20, aparato |
+| Grotta Oscura na muralha | "NÃO confirmado" (sem fonte) | Fonte secundária única (nota 11: Ancient Rome Live e Wikipedia via resumo de busca) para a 2ª fase. Continua **⚠ não confirmado** de forma independente | `11-materiais-pessoas.md` |
+| **Acrescentado** | — | 46 a.C.: **girafa** mostrada pela 1ª vez em Roma; **teatro de caça de madeira** de César; **anfiteatro de pedra** de Estatílio Tauro (30 a.C.) entra como anacronismo; **reparo de muralhas e torres** em 212 a.C. | Dião 43.23.1–2; 43.22.3; 51.23.1; Lív. 25.7.5 |
+
+### ⚠ Permanece incerto (não confirmado nesta verificação)
+
+1. **Número de carceres = 12** (Platner, via resumo de busca). Nenhuma fonte primária conferida dá esse número, e a fase não está indicada.
+2. **Conversão das medidas de Dionísio:** 621 × 118 m (estádio de 177,6 m) ou ~647 × 123 m (estádio de 185 m). Também não está claro se os 4 plethra são a largura **total** ou só a **da pista**, porque o texto põe o euripus e as stoas "em volta" e "depois". As "estimativas modernas" (Ciancio Rossetto 621 × 118; Humphrey 650 × 125) **coincidem com essas conversões** e **não foram reconferidas**.
+3. **Arena de 540 × 80 m** (World History Encyclopedia): não confirmado.
+4. A observação de Platner de que os 250.000 lugares de Plínio refletem a época de Vespasiano, e a de que o texto é corrupto: não reconferidas.
+5. **Rumo do eixo do Circo (126°)** e **largura do vale:** só vêm do DEM moderno, sem confirmação arqueológica.
+6. **Muralha Serviana:** altura (os 8–10 m são decisão de design, sem fonte), espessura, tamanho dos blocos, tufo da 2ª fase (Grotta Oscura, fonte secundária única).
+7. **Templo de Hércules Vencedor:** mármore e atribuição a L. Múmio (o Pleiades diz "talvez"). **Portuno:** ordem, materiais e orientação.
+8. **Pons Cestius** em 44 a.C.; posição do **Pons Sublicius**; data da censura de Cipião e Múmio (142 a.C. é cálculo, não reconferido); divergência sobre o Pons Aemilius (Pleiades: 241 a.C. × Lívio: pilares em 179 a.C.).
+9. **Estado do Circo em 46 a.C.:** as arquibancadas de pedra e madeira, o pórtico externo de lojas e as carceres abobadadas de corda única só estão atestadas para c. 8 a.C. (Dionísio). Usá-las em 46 a.C. é **aproximação com etiqueta**, não fato.
+10. Cotas antigas dos vales, larguras das ruas e posições das portas Ratumena, Fontinalis, Viminalis e Flumentana continuam **NÃO ENCONTRADO**, como na 1ª rodada.
+
+### Anacronismos verificados nesta rodada
+
+- **Já sinalizados e confirmados:** obelisco de Augusto (Plín. 36.71); fechamento do euripus por Nero (Plín. 8.21); Arco de Tito no Circo (Pleiades); Ianus Quadrifons, Arcus Argentariorum, Arco de Galieno (Pleiades); limite de 70 pés (Str. 5.3.7).
+- **Datados ou acrescentados agora:** golfinhos e "obras em forma de ovo" de Agripa (33 a.C.); anfiteatro de pedra de Estatílio Tauro (30 a.C.); Apolo Palatino (28 a.C.); Teatro de Marcelo (13 ou 11 a.C., corrigido); templo augustano da Magna Mater (em 44 a.C. o templo é o metelano); Muralha Aureliana (271–275 d.C.).
+- **Risco de anacronismo na proposta de modelagem:** a cávea de 3 andares com pórtico externo de lojas e as carceres abobadadas de corda única seguem **Dionísio (c. 8 a.C.)**. A proposta já as rotula assim; manter a etiqueta "estado augustano usado como aproximação" no jogo.

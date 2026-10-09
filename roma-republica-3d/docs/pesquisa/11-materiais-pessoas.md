@@ -7,6 +7,8 @@
 >
 > Convenções: **x = leste (m), z = sul (m)**, origem 41.8925 N 12.4850 E (ver `00-coordenadas.md`). As conversões de medidas romanas são **cálculo próprio** com **1 pé romano ≈ 0,296 m**. É o valor convencional, o mesmo de `01-forum-oeste.md`, mas **não foi verificado por URL nesta sessão**. Derivados: 1 côvado = 1,5 pé ≈ 0,44 m; 1 palmo = ¼ pé ≈ 0,074 m; 1 dígito = 1/16 pé ≈ 0,0185 m.
 > Datas AUC (*ab urbe condita*) foram convertidas para a.C. por cálculo próprio (era varroniana: a.C. = 754 − AUC).
+>
+> **Verificação independente (09/10/2026).** Um segundo verificador releu este arquivo. O orçamento de WebSearch também estava esgotado nessa etapa, então **nenhuma afirmação moderna/arqueológica pôde ser reconferida por busca**. As afirmações baseadas em fontes antigas foram reconferidas **lendo de novo os TEI da Perseus** (latim e grego, `raw.githubusercontent.com/PerseusDL`), sem usar a leitura do primeiro pesquisador. Correções e alertas estão no corpo do texto com a marca **[verif.]**, e o balanço completo está na seção final "Verificação independente".
 
 ---
 
@@ -15,14 +17,14 @@
 - **A cidade é de tufo, estuque, madeira e telha, não de mármore.** O mármore ainda é **escandaloso em casas particulares**:
   - L. Licínio Crasso, **o orador** (cônsul em 95 a.C.), foi o primeiro a ter no Palatino colunas de mármore estrangeiro: só **6**, de mármore do Himeto, com **no máximo 12 pés (≈3,55 m)**. Foi ridicularizado como "Vênus Palatina" (Plín. *NH* 36.7, conferido).
   - Em 78 a.C., M. Lépido foi criticado por usar **soleiras** de mármore numídico (36.49, conferido).
-  - **Mamurra**, *praefectus fabrum* de César na Gália e portanto contemporâneo, foi o **primeiro** a revestir com placas de mármore **todas** as paredes da casa, no Célio. Todas as colunas eram maciças, de mármore de Caristo ou de Luna (Plín. *NH* 36.48, citando Cornélio Nepos, conferido).
+  - **Mamurra**, *praefectus fabrum* de César na Gália e portanto contemporâneo, foi o **primeiro** a revestir com placas de mármore **todas** as paredes da casa, no Célio. Todas as colunas eram maciças, de mármore de Caristo ou de Luna (Plín. *NH* 36.48, citando Cornélio Nepos, conferido). **[verif.]** Plínio/Nepos **não dão o ano** da casa. Plínio diz só que a casa mostrava que Mamurra "tinha tudo o que a Gália Comata tivera", o que sugere obra feita com o dinheiro da Guerra da Gália (58–50 a.C.). A data exata fica **⚠ não confirmada**.
   - A casa mais bela de Roma em 78 a.C. (a de Lépido) **35 anos depois** (c. 43 a.C.) já não estava nem entre as 100 primeiras (36.109, conferido). O período 50–44 é, portanto, de **explosão do luxo doméstico**.
 - **Templos:** predomina a tradição "toscana", com entablamentos de **madeira**, frontões com estátuas de **terracota ou bronze dourado** e terracotas pintadas de **mínio (vermelho)** (Vitr. 3.3.5; Plín. 35.157–158, conferidos). Os templos de mármore são exceções: o Júpiter Estator de Hermodoro é citado por Vitrúvio como períptero (3.2.5), mas o material **não foi verificado**.
 - **Pedras em uso:**
   - tufos locais: Grotta Oscura amarelo, Fidene, Monteverde, Aniene; o *cappellaccio* cinza é arcaico e quase só reaproveitado;
   - peperino/*sperone*, cinza-esverdeado;
   - travertino (*lapis Tiburtinus*), já comum em pavimentos e capitéis. Cícero zombava dos quianos dizendo que admiraria mais se as paredes fossem "de pedra tiburtina" (Plín. 36.46, conferido).
-- **Técnica:** concreto (*opus caementicium*) com paramento em ***opus incertum*** ("antigo") e ***reticulatum*** ("agora usado por todos", Vitr. 2.8.1, escrito sob Augusto, conferido). Havia lei limitando a 1,5 pé (≈0,44 m) a espessura das paredes de divisa (Vitr. 2.8.17; Plín. 35.173, conferidos). **Tijolo cozido não era usado para casas em Roma** segundo Plínio (35.173).
+- **Técnica:** concreto (*opus caementicium*) com paramento em ***opus incertum*** ("antigo") e ***reticulatum*** ("agora usado por todos", Vitr. 2.8.1, escrito sob Augusto, conferido). Havia lei limitando a 1,5 pé (≈0,44 m) a espessura das paredes de divisa (Vitr. 2.8.17; Plín. 35.173, conferidos). **[verif. — corrigido]** Na cidade não se faziam paredes de **tijolo cru** (*latericii*), porque com 1,5 pé elas só sustentam um andar (Plín. 35.173; Vitr. 2.8.17–18). O texto anterior dizia "tijolo **cozido**", o que está errado: em Plínio 35.169–173 os *lateres* são crus, secos por 2 anos. Vitrúvio (augustano) menciona estruturas de **tijolo cozido** (*structurae testaceae*) nos prédios altos (2.8.17).
 - **Moradia popular:** prédios altos de vários andares (*cenacula*), ruas "não ótimas, vielas estreitíssimas" (Cíc. *Leg. agr.* 2.96, 63 a.C., conferido). Incêndios e desabamentos eram frequentes (Plut. *Crass.* 2; Cíc. *Att.* 14.9.1, conferidos). Paredes de taipa (*craticii*) "pegam fogo como tochas" (Vitr. 2.8.20, conferido).
 - **População:**
   - Em 46 a.C., o recenseamento feito por César **por bairros (*vicatim*) através dos proprietários das *insulae*** reduziu os beneficiários do trigo público de **320 000 para 150 000** (Suet. *Iul.* 41.3).
@@ -41,7 +43,7 @@
 - **Soldados:**
   - Tropas armadas no Fórum eram **excepcionais e chocantes** (Cíc. *Mil.* 1–2, 52 a.C.).
   - O general que pedia triunfo tinha de ficar **fora da cidade** (Plut. *Caes.* 13; Suet. *Iul.* 18.2).
-  - **Exceções no período:** os **4 triunfos de César em 46 a.C.** e o 5º (Hispânia, 45 a.C.). Na entrada do triunfo gálico, **40 elefantes levavam tochas** subindo ao Capitólio (Suet. *Iul.* 37). César também usou **lictores e soldados** para confiscar iguarias proibidas (Suet. *Iul.* 43.2).
+  - **Exceções no período:** os **4 triunfos de César em 46 a.C.** e o 5º (Hispânia, 45 a.C.). Na entrada do triunfo gálico, **40 elefantes levavam *lychnuchi*** (candelabros/porta-lâmpadas, não exatamente "tochas") subindo ao Capitólio à noite (Suet. *Iul.* 37.2, reconferido no latim: "*quadraginta elephantis dextra sinistraque lychnuchos gestantibus*"). César também usou **lictores e soldados** para confiscar iguarias proibidas (Suet. *Iul.* 43.2).
 - **Veículos:**
   - César **restringiu o uso de liteiras** e de roupas de púrpura (Suet. *Iul.* 43.1).
   - A proibição de carros de dia (*Tabula Heracleensis*) **NÃO foi verificada** nesta sessão.
@@ -53,11 +55,12 @@
 
 ### Estado em 50–44 a.C.
 - ***Cappellaccio*** (tufo cinza, mole): usado sobretudo nos séc. VI–IV a.C. [M-OSTIA]; "séc. VII–V a.C." segundo um fichário [M-QUIZ], de confiança baixa. Em 50–44 a.C. **não é mais extraído para obras novas**: aparece em fundações e paredes antigas reaproveitadas. Exemplos são o pódio arcaico do Templo de Saturno e a fundação da Rostra (`01-forum-oeste.md`, via tese de Oxford e Touring Club; `02-forum-norte.md`, via Platner). Proveniência: Colinas Albanas segundo resumo de busca [M-ARL/M-UNRV]. Jackson et al. advertem que os nomes arqueológicos ("cappellaccio", "Grotta Oscura") são ambíguos e conflitam com a nomenclatura geológica [M-JACKSON].
-- **Grotta Oscura** (amarelo): do séc. IV a.C. **até o fim do período augustano** [M-OSTIA], portanto **em uso**. Identificado como "tufo giallo della via Tiberina", do complexo vulcânico dos Sabatini [M-JACKSON; M-OXREP via 01]. Usado na 2ª fase da Muralha Serviana (datação tradicional de Lívio: 378 a.C.) [M-ARL]. Aparece nas fundações mais antigas da Basílica Emília (`02`, via Archeoroma) e nas paredes da cella do Templo de Véiove (`01`, via Musei Capitolini).
+- **Grotta Oscura** (amarelo): do séc. IV a.C. **até o fim do período augustano** [M-OSTIA], portanto **em uso**. **[verif.]** Data-limite **⚠ não reconferida**: fonte moderna única, e não houve busca disponível na verificação. Nem se o tufo Grotta Oscura ainda era o predominante em obras novas de 50–44 a.C., nem se já fora suplantado por outros tufos, pôde ser confirmado. Identificado como "tufo giallo della via Tiberina", do complexo vulcânico dos Sabatini [M-JACKSON; M-OXREP via 01]. Usado na 2ª fase da Muralha Serviana (datação tradicional de Lívio: 378 a.C.) [M-ARL]. Aparece nas fundações mais antigas da Basílica Emília (`02`, via Archeoroma) e nas paredes da cella do Templo de Véiove (`01`, via Musei Capitolini).
 - **Fidene** ("tufo rosso a scorie nere", Sabatini) [M-JACKSON]: entrada em uso no séc. IV a.C. [M-OSTIA]; "fim do séc. V ao II a.C." [M-QUIZ]; usado no *castrum* de Óstia no fim do séc. IV a.C. [M-TABUL]. **Divergência de datas**, e talvez já pouco usado em 50–44.
 - **Aniene / Anio** (às vezes igualado ao "tufo lionato", equação que Jackson et al. consideram inconsistente em Lugli) [M-JACKSON]: datação **NÃO ENCONTRADA**. Mas Platner atribui ao **tufo do Aniene** as paredes internas do **Tabularium** (78 a.C.) (`01`, via Platner), logo estava **em uso** no período. Um estudo arqueométrico de Sant'Omobono identifica com segurança tufo do Aniene e *lapis Albanus* em datas "mais antigas do que se mostrara antes" [M-SPRINGER].
 - **Monteverde:** degraus curvos e pavimento da Rostra republicana (`02`, via Platner); citado também nos materiais atribuídos ao Templo da Concórdia de Opímio, 121 a.C. (`01`, fonte única, confiança baixa).
-- Segundo resumo de busca, "os romanos da República tardia usavam **sete tufos diferentes e travertino**" [M-VITR-GEO]. Confiança média.
+- Segundo resumo de busca, "os romanos da República tardia usavam **sete tufos diferentes e travertino**" [M-VITR-GEO]. Confiança média. **[verif.]** ⚠ não reconferido (é só resumo de busca; o artigo não foi lido).
+- **[verif.] Reconferido em Vitrúvio 2.7.1 (latim):** as pedras **moles** "perto da cidade" são *Rubrae, Pallenses, Fidenates, Albanae*; as **temperadas**, *Tiburtinae* (travertino), *Amiterninae* e *Soractinae*; as **duras**, *siliceae*. As moles se desfazem ao ar livre com geada e maresia (2.7.2). O travertino suporta carga e intempérie, mas **estala no fogo** (2.7.2). As pedras devem ser extraídas **2 anos** antes da obra, no verão (2.7.5).
 
 ### Localização/orientação/relações espaciais
 - Vitrúvio situa as pedreiras **moles** "nos arredores da cidade": Grotta Rossa (*Rubrae*), Palla, **Fidene** e Colinas Albanas. As **médias** ficam em Tívoli, Amiterno e Soracte; as **duras** são as de lava (*silex*) (Vitr. 2.7.1, trad. Morgan, conferido).
@@ -121,7 +124,7 @@
 ## 3. Travertino (*lapis Tiburtinus*)
 
 ### Estado em 50–44 a.C.
-- Em uso **crescente e corrente**. O uso datável mais antigo citado é o Templo da Concórdia, **121 a.C.**, mas vem de um blog de engenharia sem fonte primária [M-ENGROME], confiança baixa. Outros indícios:
+- Em uso **crescente e corrente**. O uso datável mais antigo citado é o Templo da Concórdia, **121 a.C.**, mas vem de um blog de engenharia sem fonte primária [M-ENGROME], confiança baixa. **[verif.]** ⚠ não confirmado: a data do primeiro uso do travertino em Roma não pôde ser reconferida. Outros indícios:
   - **Tabularium** (78 a.C.): bases e capitéis das meias-colunas, impostas e friso dórico em travertino (`01`, via Platner e Musei Capitolini);
   - **pavimento "silano"** de travertino no Fórum (`01`, Van Deman, JRS 1922);
   - **pavimento de travertino** diante da Cúria, atribuído a Fausto Sula, pós-52 a.C. (`01`/`02`, Platner heidelberg platner1929/0178).
@@ -159,12 +162,13 @@
 | c. 95 a.C. (Crasso cônsul) | **L. Licínio Crasso, o orador**: primeiras colunas de mármore estrangeiro no **Palatino**, de mármore **himécio**, **6**, de no máximo **12 pés** (≈3,55 m). M. Bruto o chamou de "Vênus Palatina" | Plín. 36.7 |
 | 86 a.C. em diante | **Sula** trouxe para o Templo de Júpiter Capitolino colunas do **Olympieion** de Atenas | Plín. 36.45 |
 | 78 a.C. | **M. Lépido** (cônsul em 676 AUC) é o primeiro a pôr **soleiras** de mármore **numídico** em casa, "com grande censura" | Plín. 36.49 |
-| 74 a.C. | **L. Lúculo** (cônsul 4 anos depois de Lépido) introduz o mármore "luculeu", **preto** (Plínio diz que vem de Melos) | Plín. 36.49–50 |
+| 74 a.C. | **L. Lúculo** (cônsul 4 anos depois de Lépido) introduz o mármore "luculeu", **preto** (Plínio diz que vem de Melos). **[verif.]** O latim confirma "*atrum*" e "*nascitur autem in Melo insula*". Uma identificação moderna do *marmor Luculleum* com outra pedra (p. ex. o "africano" de Teos, escuro com manchas) **⚠ não foi confirmada** por fonte nesta verificação. Por ora, modelar como Plínio descreve: preto | Plín. 36.49–50 |
 | 78 a.C. → c. 43 a.C. | A casa de Lépido era a mais bela de Roma; **em 35 anos** não estava nem entre as **100 primeiras** | Plín. 36.109 |
-| 58 a.C. | **M. Escauro**, edil: **360 colunas** no palco do teatro temporário. As maiores, de **38 pés** (≈11,2 m) em mármore luculeu, foram depois para o **átrio da casa dele no Palatino**. O empreiteiro das cloacas exigiu caução quando foram arrastadas para o Palatino | Plín. 36.5–6, 36.114 |
+| 58 a.C. (**[verif.]** ano ⚠ não confirmado: Plínio diz só "na edilidade de Escauro", sem o ano; 58 a.C. é a data convencional) | **M. Escauro**, edil: **360 colunas** no palco do teatro temporário, que ficou em uso "por apenas um mês" (36.5). As maiores, de **38 pés** (≈11,2 m) em mármore luculeu, foram depois para o **átrio da casa dele no Palatino**. O empreiteiro das cloacas exigiu caução quando foram arrastadas para o Palatino | Plín. 36.5–6, 36.114 |
 | 58 a.C. | Palco de Escauro em **3 andares**: inferior de **mármore**, médio de **vidro**, superior de **madeira dourada**. Plínio: as primeiras "paredes de mármore" foram as do palco de Escauro, e ele "ainda não encontra vestígios de mármore **serrado** na Itália" | Plín. 36.50, 36.114 |
-| c. 50–45 a.C. | **Mamurra** (cavaleiro de Fórmias, *praefectus fabrum* de César na Gália): **primeiro** a revestir **todas** as paredes da casa (no **Célio**) com placas (*crusta*) de mármore, e **primeiro** com **todas** as colunas **maciças**, de mármore de **Caristo** (cipollino) ou de **Luna** (Carrara) | Plín. 36.48 (Nepos) |
+| **[verif. — corrigido]** sem data em Plínio. Antes estava "c. 50–45 a.C."; o provável é durante ou depois da Guerra da Gália (58–50 a.C.), por inferência de 36.48 | **Mamurra** (cavaleiro de Fórmias, *praefectus fabrum* de César na Gália): **primeiro** a revestir **todas** as paredes da casa (no **Célio**) com placas (*crusta*) de mármore, e **primeiro** com **todas** as colunas **maciças**, de mármore de **Caristo** (cipollino) ou de **Luna** (Carrara) | Plín. 36.48 (Nepos) |
 
+- **[verif.] Terracota ainda nos frontões em 58 a.C.:** Plínio reclama que as leis se calaram enquanto as colunas de Escauro eram arrastadas para uma casa particular "**passando diante dos frontões de terracota dos deuses**" (*praeter fictilia deorum fastigia*, 36.6, latim reconferido). Isso confirma que os frontões de terracota dos templos eram a paisagem normal da cidade (cf. 35.158).
 - **Divergência interna em Plínio:** em 36.48 Mamurra tem placas (*crusta*), enquanto 36.50 diz não haver vestígio de mármore serrado na Itália na época de Escauro. Pode refletir datas diferentes (Escauro em 58 vs. Mamurra depois da Gália, ≥ 50 a.C.).
 - **Numeração de Plínio:** [M-SMITH] cita "36.6, s. 7" e a Wikipedia cita "36.7" para Mamurra. Na edição de Mayhoff (Perseus) a passagem é **36.48**, conferida.
 - **Templos de mármore:** Vitrúvio cita o **Templo de Júpiter Estator de Hermodoro no Pórtico de Metelo** como modelo de **períptero** (6 colunas na frente e atrás, 11 nos lados contando as de canto) e o **templo mariano de Honra e Virtude**, de Múcio, sem pórtico posterior (Vitr. 3.2.5, conferido). Que o Júpiter Estator tenha sido o **primeiro templo de mármore** de Roma (Veleio Patérculo 1.11.5) e que o **Templo de Hércules Vencedor** seja de mármore pentélico são dados **NÃO VERIFICADOS** nesta sessão.
@@ -200,10 +204,10 @@
   - substrução do Tabularium (`01`, Musei Capitolini);
   - núcleo de concreto da **Rostra de César** de 44 a.C., com 3,50 m de altura e mais de 13 m de comprimento (`02`, Platner).
 - **Paramentos:** Vitrúvio diz que há "dois estilos de parede: o ***opus reticulatum***, **agora usado por todos**, e o estilo **antigo** chamado ***opus incertum***". O reticulado é mais bonito mas racha; o incerto é mais forte (Vitr. 2.8.1, conferido). Plínio: "a estrutura reticulada, que se usa muitíssimo em Roma, é propensa a rachaduras" (36.172, conferido).
-  - **Cuidado com a data:** Vitrúvio escreve sob "Imperator Caesar", isto é, Augusto (Vitr. 1.pr.1, conferido), uns 15–25 anos depois de 44 a.C. Em 50–44 é razoável mostrar **incertum e reticulatum coexistindo**. O termo "quasi reticulatum" e suas datas são **NÃO VERIFICADOS**.
+  - **Cuidado com a data:** Vitrúvio escreve sob "Imperator Caesar", isto é, Augusto (Vitr. 1.pr.1, conferido), uns 15–25 anos depois de 44 a.C. Em 50–44 é razoável mostrar **incertum e reticulatum coexistindo**. O termo "quasi reticulatum" e suas datas são **NÃO VERIFICADOS**. **[verif.]** A cronologia arqueológica moderna dos paramentos (quando o reticulado passa a predominar em Roma) **⚠ não pôde ser confirmada** por busca nesta verificação. A coexistência proposta continua sendo inferência das duas fontes antigas.
 - **Tijolo:**
-  - Plínio: "Em Roma **não se fazem** tais edifícios (de tijolo), porque uma parede de 1,5 pé só suporta um andar, e é proibido que a parede comum seja mais grossa" (35.173, conferido).
-  - Vitrúvio, mais tarde: proíbe o tijolo cru dentro da cidade (2.8.17–18) e descreve prédios altos "com pilares de pedra, paredes de **tijolo cozido** (*testacea*) e divisórias de alvenaria" (2.8.17, conferido). Isso pode já refletir a fase augustana.
+  - Plínio: "Em Roma **não se fazem** tais edifícios (de tijolo **cru**, *latericii*), porque uma parede de 1,5 pé só suporta um andar, e é proibido que a parede comum seja mais grossa" (35.173, conferido). **[verif.]** O contexto (35.169–172) trata de tijolos crus. A frase **não** se refere a tijolo cozido.
+  - Vitrúvio, mais tarde: na cidade "não se permitem paredes de tijolo cru" (2.8.18). Os prédios altos são erguidos "*pilis lapideis, structuris testaceis, parietibus caementiciis*", isto é, com **pilares de pedra, estruturas de tijolo cozido (ou telha) e paredes de concreto/pedra miúda** (2.8.17, latim reconferido; a versão anterior dizia "divisórias de alvenaria", o que era impreciso). Isso pode já refletir a fase augustana.
   - Os "tijolos" que Plínio descreve (*lateres*, 35.170) são **crus**: devem ter 2 anos antes do uso. O tipo **lídio**, "que nós usamos", mede **1,5 pé × 1 pé** (35.171, conferido).
 - **Taipa / pau a pique** (*craticii*): Vitrúvio "queria que nunca tivesse sido inventada": ganha tempo e espaço, mas "pega fogo como tochas" e racha o estuque. Era usada por economia ou para divisórias (2.8.20, conferido).
 - **Má construção:** "a principal causa dos desabamentos na cidade" é a **fraude na cal**, com pedras assentadas sem ligante (Plín. 36.176, conferido). As leis antigas de obras públicas proibiam o empreiteiro de usar cal com menos de **3 anos** de maceração (36.176).
@@ -233,7 +237,7 @@
 ### Estado em 50–44 a.C.
 - **Estuque de pó de mármore** (*opus albarium*/*marmoratum*) sobre a alvenaria: é a técnica-padrão de acabamento fino.
 - **Pintura mural:** Vitrúvio descreve a sequência histórica:
-  1. "os antigos começaram por representar **diferentes tipos de placas de mármore** em diferentes posições, depois **cornijas e blocos de ocre amarelo**", o que corresponde ao **"1º estilo"**;
+  1. "os antigos começaram por representar **diferentes tipos de placas de mármore** em diferentes posições, depois **cornijas e blocos de ocre amarelo**", o que corresponde ao **"1º estilo"**. **[verif.]** As "placas de mármore" (*crustarum marmorearum varietates*) estão confirmadas no latim. Já o "ocre amarelo" vem de uma **emenda** da tradução de Morgan: o texto latino da Perseus traz uma palavra corrompida (*†siliculorum*). A cor amarela dos blocos é, portanto, **⚠ leitura incerta**;
   2. "depois passaram a representar **formas de edifícios, colunas, frontões salientes**", fachadas de cena trágica, cômica ou satírica nas êxedras e **paisagens** nos corredores (portos, promontórios, rios, bosques, rebanhos), além de deuses, mitos, Troia e Ulisses: o **"2º estilo"**;
   3. a moda "atual" (augustana), de "monstruosidades" (caniços no lugar de colunas, candelabros sustentando edículas): o **3º estilo**, **anacrônico** para 50–44 (Vitr. 7.5.1–4, conferido). Os nomes "1º/2º/3º estilo" são convenção moderna; a correspondência é inferência.
 - **Paisagismo de jardins e vilas em parede** de **Estúdio** ("na época do divino Augusto"): **anacrônico** (Plín. 35.116–117, conferido).
@@ -278,7 +282,7 @@
 - **Terracotas arquitetônicas:** Plínio diz que os frontões de terracota de templos ainda eram "frequentes na própria cidade e nos municípios, de admirável relevo e arte" (35.158, conferido). No Capitólio havia uma **quadriga de terracota** no frontão, e a estátua arcaica de Júpiter, de Vulca, era de terracota **pintada com mínio** (35.157, conferido). Nos dias de festa o rosto de Júpiter era **pintado de mínio**, e o corpo dos triunfadores também (Verrius via Plín. 33.111, conferido).
 - **Templos "aerostilos" toscanos:** arquitraves de **vigas de madeira** sobre as colunas; templos "de teto pesado, baixos, largos", com frontões "ornados à maneira toscana com estátuas de **terracota ou de bronze dourado**". Exemplos: **Ceres** junto ao Circo Máximo, o **Hércules de Pompeu** e o **templo do Capitólio** (Vitr. 3.3.5, conferido).
 - **Bronze dourado:** Q. Cátulo **dourou as telhas de bronze** do Capitólio, e as opiniões se dividiram (Plín. 33.57, conferido). É o templo reconstruído depois do incêndio de 83 a.C. (inferência pela data de Cátulo).
-- **Templo toscano canônico** (Vitr. 4.7): largura = 5/6 do comprimento; metade posterior para as celas (3 celas: 3/10 + 4/10 + 3/10 da largura); colunas com diâmetro de 1/7 da altura; vigas de madeira com 2 dedos de folga para ventilar; mútulos projetados ¼ da altura da coluna; beirais de 1/3 do telhado completo (4.7.1–5, conferido).
+- **Templo toscano canônico** (Vitr. 4.7): largura = 5/6 do comprimento; metade posterior para as celas (3 celas: 3/10 + 4/10 + 3/10 da largura); colunas com diâmetro de 1/7 da altura; vigas de madeira com 2 dedos de folga para ventilar; mútulos projetados ¼ da altura da coluna; beirais de 1/3 do telhado completo (4.7.1–5, conferido). **[verif.]** Faltavam dois dados de 4.7.2 (latim e Morgan reconferidos): **altura da coluna = 1/3 da largura do templo** e **diâmetro no topo = ¾ do diâmetro na base**. Os "beirais de 1/3" são a tradução de Morgan para "*stillicidium tecti absoluti tertiario respondeat*". O sentido técnico (beiral ou inclinação do telhado) é **⚠ incerto**.
 
 ### Dimensões e números
 | elemento | valor | unidade | fonte | confiança |
@@ -287,6 +291,8 @@
 | Templo toscano: largura/comprimento | 5/6 | razão | Vitr. 4.7.1 | alta (regra) |
 | Templo toscano: diâmetro/altura da coluna | 1/7 | razão | Vitr. 4.7.2 | alta (regra) |
 | Projeção dos mútulos | ¼ da altura da coluna | razão | Vitr. 4.7.5 | alta (regra) |
+| Templo toscano: altura da coluna / largura do templo | 1/3 | razão | Vitr. 4.7.2 ([verif.]) | alta (regra) |
+| Templo toscano: diâmetro superior / inferior da coluna | 3/4 | razão | Vitr. 4.7.2 ([verif.]) | alta (regra) |
 | Folga entre vigas do arquitrave | 2 | dedos (≈ 3,7 cm) | Vitr. 4.7.4 | alta (regra) |
 | Dimensões das telhas | NÃO ENCONTRADO | — | — | — |
 
@@ -335,7 +341,7 @@
 | Telhado do Capitólio | bronze dourado | Plín. 33.57 |
 | Interiores ricos | ocre amarelo, vermelho-terra, cinábrio, verde, azul, preto; placas de mármore fingidas | Vitr. 7.5; Plín. 35.30 |
 | Fachadas de insulae | **NÃO ENCONTRADO**. Sugestão honesta: reboco simples em tons de terra/ocre com manchas, ou tufo/incertum aparente | hipótese |
-| Toldos no Fórum (em dias de espetáculo de César) | linho branco (os *vela* de *carbasus* de Lêntulo Espínter) | Plín. 19.23 (cor do linho: inferência) |
+| Toldos no Fórum (em dias de espetáculo de César) | linho branco (os *vela* de *carbasus* de Lêntulo Espínter) | Plín. 19.23. **[verif.]** Plín. 19.24 diz que, fora os toldos azuis estrelados de Nero e os vermelhos dos pátios, "o resto manteve a preferência pelo **branco**" (*cetero mansit candori pertinax gratia*). O branco tem portanto apoio textual e deixa de ser só inferência |
 
 ---
 
@@ -456,7 +462,7 @@
 
 ### Estado em 50–44 a.C.
 - **Números:** "cada **cônsul** é seguido por **12 lictores**, o **ditador por 24**" (Políbio 3.87, trad. Shuckburgh, conferido). Em Roma os **pretores urbanos** iam precedidos por lictores "**com fasces, dois**" (*cum fascibus bini*) (Cíc. *Leg. agr.* 2.93, conferido).
-- **Machados:** quando os decênviros saíram com 12 fasces cada um, "**120 lictores** encheram o Fórum, levando **machados atados aos fasces**", e os decênviros interpretaram que não precisavam tirar o machado porque não havia apelação (Lívio 3.36.3–4, conferido). Daí se infere que, normalmente, **dentro da cidade os fasces iam sem machado** (inferência).
+- **Machados:** quando os decênviros saíram com 12 fasces cada um, "**120 lictores** encheram o Fórum, levando **machados atados aos fasces**", e os decênviros interpretaram que não precisavam tirar o machado porque não havia apelação (Lívio 3.36.3–4, conferido). Daí se infere que, normalmente, **dentro da cidade os fasces iam sem machado** (inferência). **[verif.]** Exceção provável é o **ditador**. Lívio conta que, quando se criou o primeiro ditador em Roma, "depois que viram os **machados** levados à frente dele, grande medo tomou a plebe" (*postquam praeferri secures viderunt*, 2.18.8, latim conferido). Para **César ditador** (46–44 a.C.), 24 lictores **com machados** dentro da cidade é uma **inferência** dessa passagem do início da República (⚠ não confirmado para 46–44).
 - **Fasces laureados** depois de vitória: os lictores de Antônio "iam **laureados**" (Cíc. *Phil.* 2.58, conferido).
 - Em Luca (56 a.C.) reuniram-se tantos magistrados e promagistrados que havia "**120 lictores** e mais de 200 senadores" (Plut. *Caes.* 21, trad. Perrin, conferido).
 - **César ditador (46–44 a.C.):** pela regra de Políbio, **24**. Números maiores em triunfos ("72 lictores") são **NÃO VERIFICADOS** (Dião não acessível).
@@ -484,7 +490,7 @@
 - **Triunfo:** "os que pediam triunfo deviam **ficar fora da cidade**", e os candidatos ao consulado deviam estar dentro. Em 60 a.C. César **abriu mão do triunfo** para concorrer (Plut. *Caes.* 13, conferido; Suet. *Iul.* 18.2, conferido).
 - **Triunfos de César:**
   - **5 triunfos**, 4 deles **num mesmo mês**, em 46 a.C.: Gália, Alexandria, Ponto e África. O 5º, da Hispânia, foi depois de Munda (Suet. *Iul.* 37.1, conferido). Apiano fala em quatro, com o egípcio "entre o gálico e o pôntico" (*BC* 2.101, conferido).
-  - No triunfo gálico, **o eixo do carro quebrou no Velabro**, e César **subiu ao Capitólio à luz de tochas**, "com **40 elefantes** carregando tochas à direita e à esquerda" (Suet. *Iul.* 37.2, conferido).
+  - No triunfo gálico, **o eixo do carro quebrou no Velabro**, e César **subiu ao Capitólio à noite, iluminado**, "com **40 elefantes** carregando *lychnuchi* à direita e à esquerda" (Suet. *Iul.* 37.2, conferido). **[verif. — corrigido]** *Lychnuchi* são candelabros ou porta-lâmpadas, não tochas. Para modelar: suportes de lâmpadas a óleo nos elefantes.
   - No pôntico, levaram uma placa com "**VENI VIDI VICI**" (37.2).
   - Vercingetórix rendeu-se em Alésia (Plut. *Caes.* 27.5, conferido). Sua execução depois do triunfo de 46 a.C. está em Dião 43.19.4 segundo `01` (Dião não conferido aqui). A presença no cortejo é inferência.
 - **Exceção cesariana:** para fazer cumprir a lei suntuária, César pôs **guardas em volta do *macellum*** e às vezes mandava "**lictores e soldados**" retirar dos triclínios as iguarias proibidas (Suet. *Iul.* 43.2, conferido).
@@ -494,7 +500,7 @@
   - **2 *pila***: grossos (redondos de um palmo de diâmetro ou quadrados de um palmo) e finos; haste de ~3 côvados e ponta de ferro farpada "do mesmo comprimento";
   - **elmo de bronze**, com **3 penas** retas, roxas ou pretas, de ~1 côvado;
   - **grevas**;
-  - **peitoral de bronze** de um palmo de lado para os mais pobres, **cota de malha (*lorica*)** para os de censo acima de 10 000 dracmas.
+  - **peitoral de bronze** de um palmo de lado para os mais pobres, **cota de malha (*lorica*)** para os de censo acima de 10 000 dracmas. **[verif.]** O grego da Perseus confirma: "*hyper tas myrias timomenoi drachmas*" = acima de 10 000 dracmas (Shuckburgh traduz como "100 000 asses", valor equivalente); *halysidotoi thorakes* = couraças de malha; o peitoral se chama *kardiophylax* ("guarda-coração"), *chalkoma spithamiaion*, isto é, placa de bronze de um palmo (*spithame*) em todos os sentidos.
 - **César, *BG*:** na batalha do Sabis (57 a.C.) "faltou tempo não só para pôr as **insígnias**, mas até para **pôr os elmos e tirar as capas dos escudos**" (*BG* 2.21, conferido). Os soldados **marchavam com os escudos cobertos** e os elmos tirados. César era reconhecido em batalha "**pela cor da veste**, que costumava usar como insígnia" (*BG* 7.88, conferido). **A cor não é dita** no texto.
 - **Tipos de elmo (Montefortino/Coolus)** e o predomínio da *lorica hamata* c. 50 a.C.: **NÃO VERIFICADOS** nesta sessão (ver Lacunas).
 
@@ -610,7 +616,7 @@
 2. **"Crasso famoso pelas colunas de mármore"**: a anedota das **6 colunas himécias** ("Vênus Palatina") é de **L. Licínio Crasso, o orador** (cônsul em 95 a.C.), **não** de **M. Licínio Crasso, o triúnviro** (Plín. 36.7, conferido). Plutarco diz que M. Crasso "**não construiu casa para si além daquela em que morava**" e dizia que quem gosta de construir arruína a si mesmo (*Crass.* 2, conferido). Que M. Crasso tenha herdado ou morado na casa do orador é **NÃO ENCONTRADO**. Marcar no jogo como **reconstrução hipotética**.
 3. **3º estilo de pintura** (caniços como colunas, candelabros, figuras sobre caules: Vitr. 7.5.3–4) e **paisagismo de Estúdio** (Plín. 35.116): augustanos.
 4. **Abóbadas de vidro / mosaico de vidro** em teto (Plín. 36.189: "invenção recente", pós-Agripa).
-5. **Paramento de tijolo cozido** (*opus latericium/testaceum*) como padrão das insulae: Plínio diz que em Roma não se faziam paredes de tijolo (35.173). Vitrúvio, já augustano, menciona tijolo cozido nos prédios altos (2.8.17); usar com parcimônia e marcar.
+5. **Paramento de tijolo cozido** (*opus latericium/testaceum*) como padrão das insulae. **[verif. — corrigido]** Plínio 35.173 diz que em Roma não se faziam paredes de tijolo **cru** (*latericii*), não de tijolo cozido. A frase **não serve** como prova sobre tijolo cozido. A única menção a estruturas de tijolo cozido nos prédios altos é de Vitrúvio, já augustano (2.8.17). Quando o paramento de tijolo cozido passou a ser comum em Roma é algo que **⚠ não foi confirmado** por fonte moderna nesta verificação. Continua valendo: usar com parcimônia e marcar.
 6. **Togas *rasae* e *Phryxianae*** (fim de Augusto: Plín. 8.195). **Toldos azuis estrelados** (Nero: Plín. 19.24).
 7. **Obrigação de usar toga no Fórum** (édito de Augusto: Suet. *Aug.* 40.5). Em 50–44 muitos usam *lacerna* escura.
 8. **Saepta Iulia de mármore** no Campo de Marte: em 54 a.C. era só **projeto** (Cíc. *Att.* 4.16.8 / 4.17.7 Perseus, conferido: "*saepta... marmorea sumus et tecta facturi*" com pórtico de 1 milha).
@@ -693,3 +699,80 @@
 - `docs/pesquisa/00-coordenadas.md`: coordenadas Pleiades/OSM.
 - `docs/pesquisa/01-forum-oeste.md`: Platner (https://digi.ub.uni-heidelberg.de/diglit/platner1929/0178, …/0580), Van Deman, "The Sullan Forum", JRS 1922 (https://www.cambridge.org/core/journals/journal-of-roman-studies/article/sullan-forum/FA9A5FF5510AC28DA59414B54D094609), Musei Capitolini (https://museicapitolini.org/en/node/2491), OXREP Grotta Oscura (https://oxrep.classics.ox.ac.uk/popup.php?ste=3112).
 - `docs/pesquisa/02-forum-norte.md`: Platner (Comício, Rostra, Basílica Emília), Archeoroma, Ostia Antica (pavonazzetto).
+
+---
+
+## Verificação independente
+
+> **Método.** Verificação feita por um segundo agente em 09/10/2026. A ferramenta de busca (WebSearch) **já estava esgotada** quando a verificação começou: a primeira consulta foi recusada por limite de orçamento. Por isso:
+> - as afirmações baseadas em **fontes antigas** foram reconferidas lendo de novo, independentemente, os TEI da Perseus Digital Library em `raw.githubusercontent.com/PerseusDL` (latim, grego e, quando indicado, a tradução inglesa);
+> - as afirmações **modernas/arqueológicas** (datações de tufos e paramentos, identificação de mármores, população total, tipos de elmo, Tábua de Heracleia etc.) **não puderam ser reconferidas** e ficam na lista de incertezas. Nada foi "confirmado" por memória.
+>
+> URLs usadas: Plínio NH (latim, Mayhoff) https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml · Vitrúvio (latim) https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml e (Morgan) …/phi1056.phi001.perseus-eng2.xml · Suetônio *Iul.* https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1348/abo011/phi1348.abo011.perseus-lat2.xml · Políbio (Shuckburgh) https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0543/tlg001/tlg0543.tlg001.perseus-eng2.xml e (grego) …/tlg0543.tlg001.perseus-grc2.xml · Cícero *Leg. agr.* https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0474/phi011/phi0474.phi011.perseus-lat2.xml · Horácio *Sermones* https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml · Lívio https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0914/phi001/phi0914.phi001.perseus-lat2.xml · Plutarco *Crasso* (Perrin) https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg039/tlg0007.tlg039.perseus-eng2.xml
+
+### ✔ Confirmado (20 afirmações-chave para a modelagem)
+
+| # | afirmação | resultado | fonte reconferida |
+|---|---|---|---|
+| 1 | L. Licínio Crasso, **o orador**, foi o primeiro com colunas de mármore estrangeiro no Palatino: **6** colunas **himécias** de **no máximo 12 pés**; M. Bruto o chamou de "**Vênus Palatina**" | ✔ ("*Hymettias tamen nec plures sex aut longiores duodenum pedum*") | Plín. 36.7; repetido em 36.114 ("*sex Hymettias non tulerat*") |
+| 2 | **M. Crasso, o triúnviro**, "não construiu outra casa para si além daquela em que morava"; tinha mais de 500 escravos arquitetos e construtores | ✔ Isso confirma que a anedota das colunas **não** é do triúnviro: a Domus de Crasso no jogo é **reconstrução hipotética** | Plut. *Crass.* 2 (Perrin) |
+| 3 | **Mamurra**: primeiro a revestir com placas de mármore **todas** as paredes da casa no **Célio**; primeiro com todas as colunas de mármore, **maciças**, de **Caristo** ou de **Luna** (Nepos) | ✔ (a data foi corrigida; ver abaixo) | Plín. 36.48 |
+| 4 | **M. Lépido**, cônsul em **676 AUC (= 78 a.C.)**, foi o primeiro a usar **soleiras** de mármore numídico, "com grande censura"; a casa dele, a mais bela de 78 a.C., "em 35 anos" não estava entre as **100** primeiras | ✔ | Plín. 36.49, 36.109 |
+| 5 | **Lúculo**, cônsul 4 anos depois de Lépido (74 a.C.), deu nome ao mármore **luculeu**, "**preto**", "nascido em Melos" segundo Plínio | ✔ (o que Plínio diz; a identificação moderna fica incerta) | Plín. 36.49–50 |
+| 6 | **Escauro**, como edil: **360 colunas**; palco em **3 níveis** (mármore, **vidro**, tábuas douradas); colunas do nível inferior com **38 pés**; as maiores (de mármore luculeu) foram levadas ao **átrio da casa no Palatino**, e o empreiteiro das cloacas exigiu **caução**; teatro usado por cerca de um mês | ✔ (o ano 58 a.C. não está no texto) | Plín. 36.5–6, 36.114 |
+| 7 | Templos **aerostilos** toscanos: arquitraves de **vigas de madeira**, templos baixos e largos, frontões com estátuas de **terracota ou bronze dourado** (Ceres no Circo Máximo, Hércules de Pompeu, Capitólio) | ✔ | Vitr. 3.3.5 |
+| 8 | Frontões de terracota ainda "frequentes na cidade"; Júpiter de Vulca de terracota **pintado de mínio**; Cátulo **dourou as telhas de bronze** do Capitólio | ✔ (+ 36.6: as colunas de Escauro passaram "diante dos frontões de terracota dos deuses") | Plín. 35.157–158, 33.57, 36.6 |
+| 9 | Proporções do templo toscano: largura = 5/6 do comprimento; celas 3/10 + 4/10 + 3/10; diâmetro da coluna = 1/7 da altura; folga de 2 dedos nas vigas; mútulos = ¼ da altura da coluna | ✔ (+ dois dados que faltavam; ver Correções) | Vitr. 4.7.1–5 |
+| 10 | Lei de **1,5 pé** para paredes em terreno comum | ✔ ("*Leges publicae non patiuntur maiores crassitudines quam sesquipedales constitui loco communi*") | Vitr. 2.8.17; Plín. 35.173 |
+| 11 | "**Reticulatum**, que agora todos usam, e o **antigo**, chamado **incertum**"; o reticulado é mais bonito mas racha | ✔; Vitrúvio dirige a obra ao "*imperator Caesar*" (Augusto) | Vitr. 2.8.1, 1.pr.1; Plín. 36.172 ("*reticulata structura, qua frequentissime Romae struunt, rimis opportuna est*") |
+| 12 | Paredes de **taipa** (*craticii*) "prontas para incêndios como tochas" e racham o estuque | ✔ | Vitr. 2.8.20 |
+| 13 | **Estuque**: emboço + **≥ 3** camadas de areia + **3** de pó de mármore (Vitrúvio) contra **3 + 2** (Plínio); cor aplicada sobre estuque úmido; superfície que reflete imagens | ✔ (a divergência 3 vs 2 é real) | Vitr. 7.3.5–7, 7.3.9; Plín. 36.176 ("*ter harenato et bis marmorato*") |
+| 14 | Pintura: primeiro **imitações de placas de mármore**; depois arquiteturas, frentes de cena e paisagens; as "**monstruosidades**" (caniços no lugar de colunas, candelabros com edículas) são moda **atual** de Vitrúvio, logo augustanas | ✔ ("*nunc iniquis moribus inprobantur*") | Vitr. 7.5.1–3 |
+| 15 | Mínio usado em paredes inteiras "agora"; crisocola, púrpura (*ostrum*) e armênio são caros e fornecidos **pelo dono**, não pelo empreiteiro | ✔ | Vitr. 7.5.8 |
+| 16 | **Púrpura tíria *dibapha*** na *praetexta*: P. Lêntulo Espínter, edil curul, em **691 AUC (= 63 a.C.)**; violácea a 100 denários a libra; *dibapha* nem por 1 000 | ✔ | Plín. 9.137 |
+| 17 | Senador: "**couros pretos** amarrados até o meio da canela" e "**faixa larga** descendo do peito"; matrona: só o rosto visível, ***stola* até os tornozelos e *palla*** enrolada, **liteira**; *bulla* para filhos de quem serviu a cavalo e cordão de couro para os demais | ✔ | Hor. *Sat.* 1.6.27–28, 1.2.94–99; Plín. 33.10 |
+| 18 | Lictores: cônsul **12**, ditador **24**; pretores urbanos em Roma com **2** fasces; decênviros com **machados** atados aos fasces como sinal excepcional | ✔ | Políbio 3.87; Cíc. *Leg. agr.* 2.93; Lívio 3.36.3–4 |
+| 19 | Armamento em Políbio 6.23: *scutum* curvo de **2,5 × 4 pés** (+1 palmo no tamanho maior), madeira dupla, lona e couro de bezerro, bordas e umbo de ferro; gládio "hispânico" na **coxa direita**; **2 *pila*** com haste de ~**3 côvados**; elmo de bronze com **3 penas** roxas ou pretas de ~1 côvado; grevas; peitoral de bronze de 1 palmo; **cota de malha** acima de **10 000 dracmas** | ✔ (grego e inglês) | Políbio 6.23 |
+| 20 | César em 46 a.C.: **4 triunfos no mesmo mês** com dias de intervalo (mais 1 da Hispânia); eixo do carro quebrou no **Velabro**; **40 elefantes** dos dois lados; "VENI VIDI VICI" no pôntico. Recenseamento ***vicatim per dominos insularum***: **320 000 → 150 000** beneficiários do trigo; **80 000** colonos; remissão de aluguel até **2 000 HS** em Roma (500 na Itália); restrição a **liteiras**, púrpura e pérolas; **guardas no *macellum*** e lictores e soldados nos triclínios; **toldos** sobre todo o Fórum e a Via Sacra | ✔ | Suet. *Iul.* 37.1–2, 38.1–2, 39.3, 41.3, 42.1, 43.1–2; Plín. 19.23 |
+
+Confirmados também, de passagem: a piada de Cícero sobre a "pedra tiburtina" (Plín. 36.46); a classificação das pedras em Vitr. 2.7.1–2 e 2.7.5; os tijolos crus "lídios" de 1,5 × 1 pé com 2 anos de secagem (Plín. 35.170–171); a cal de pelo menos 3 anos nas leis antigas (Plín. 36.176); o *scutulatum* no Capitólio "depois de iniciada a 3ª Guerra Púnica" (= 149 a.C.); os *lithostrota* "já sob Sula"; as abóbadas de vidro como novidade pós-Agripa (Plín. 36.185, 36.189); as *scandulae* até a guerra de Pirro (Plín. 16.36); os barbeiros em 454 AUC (Plín. 7.211); o *latus clavus* de César "franjado até as mãos" (Suet. *Iul.* 45.3).
+
+### ✎ Corrigido (antes → depois)
+
+| # | antes | depois | fonte |
+|---|---|---|---|
+| C1 | "**Tijolo cozido** não era usado para casas em Roma segundo Plínio (35.173)" (Resumo) e "Plínio diz que em Roma não se faziam paredes de tijolo" (Anacronismo 5) | Plínio 35.173 fala de paredes de **tijolo cru** (*latericii*): "*Romae non fiunt talia aedificia, quia sesquipedalis paries non plus quam unam contignationem tolerat*". O contexto (35.169–172) é de *lateres* crus. **Não serve** como prova sobre tijolo cozido | Plín. 35.169–173; Vitr. 2.8.17–18 |
+| C2 | Vitrúvio: prédios altos com "pilares de pedra, paredes de tijolo cozido (*testacea*) e **divisórias de alvenaria**" | "*pilis lapideis, structuris testaceis, parietibus caementiciis*" = pilares de pedra, **estruturas** de tijolo cozido (ou telha) e **paredes de concreto/pedra miúda** | Vitr. 2.8.17 (latim) |
+| C3 | Triunfo gálico: "40 elefantes levavam **tochas**" | 40 elefantes levavam ***lychnuchi*** (**candelabros/porta-lâmpadas**) | Suet. *Iul.* 37.2 (latim) |
+| C4 | Mamurra datado em "**c. 50–45 a.C.**" na tabela de "fontes conferidas" | **Sem data em Plínio/Nepos**. Por inferência ("tinha tudo o que a Gália Comata tivera"), durante ou depois da Guerra da Gália (58–50 a.C.). Ano exato ⚠ não confirmado | Plín. 36.48 |
+| C5 | Escauro "**58 a.C.**" numa tabela marcada como "todas conferidas" | Plínio diz só "na edilidade de Escauro". O ano **58 a.C.** é convencional e ⚠ não foi conferido nesta verificação | Plín. 36.5, 36.114 |
+| C6 | Templo toscano sem a altura das colunas | Acrescentados: **altura da coluna = 1/3 da largura do templo** e **diâmetro superior = 3/4 do inferior**. "Beirais de 1/3 do telhado" é a tradução de Morgan para "*stillicidium tecti absoluti tertiario respondeat*", de sentido técnico ⚠ incerto | Vitr. 4.7.2, 4.7.5 (latim + Morgan) |
+| C7 | 1º estilo: "cornijas e **blocos de ocre amarelo**" sem ressalva | O "ocre amarelo" depende de uma **emenda** na tradução de Morgan; o latim da Perseus traz *†siliculorum* (palavra corrompida). Cor ⚠ incerta; as placas de mármore fingidas continuam confirmadas | Vitr. 7.5.1 (latim) |
+| C8 | Toldos brancos como "inferência" | Passam a ter apoio textual: "*cetero mansit candori pertinax gratia*" | Plín. 19.24 |
+| C9 | (ausente) Machados nos fasces do ditador | Acrescentado: o primeiro ditador teve **machados** levados à frente dele em Roma (*praeferri secures*). Aplicar aos 24 lictores de César é **inferência** ⚠ | Lívio 2.18.8 (latim) |
+| C10 | "cota de malha para os de censo acima de 10 000 dracmas" | Mantido, com a precisão: o grego diz *myrias drachmas* (10 000 dracmas) e Shuckburgh traduz "100 000 asses"; o peitoral é o *kardiophylax*, de 1 *spithame* | Políbio 6.23 (grego) |
+
+### ⚠ Permanece incerto (não confirmado nesta verificação, por falta de busca)
+
+1. **Datações modernas dos tufos**: Grotta Oscura "até o fim do período augustano" [M-OSTIA], Fidene, Aniene/tufo lionato, Monteverde, além das cores de Aniene e Monteverde. Não reconferidas.
+2. **Cronologia moderna dos paramentos**: *incertum*, *quasi reticulatum*, *reticulatum* e quando o paramento de **tijolo cozido** se torna comum em Roma. Não reconferida. Só as fontes antigas (Vitrúvio augustano, Plínio flaviano) foram conferidas.
+3. **Primeiro uso do travertino** em Roma (121 a.C., blog [M-ENGROME]) e a **cor** do travertino ("creme-claro" é hipótese).
+4. **Identificação moderna do mármore luculeu** (Plínio diz preto, de Melos; a hipótese "africano" de Teos não foi confirmada).
+5. **Júpiter Estator como primeiro templo de mármore** (Veleio 1.11.5) e **Hércules Vencedor de mármore pentélico**: não verificados. Obs.: no latim da Perseus de Vitr. 3.2.5 a posição de "*sine postico*" é ambígua entre os dois templos citados; Morgan a liga ao templo de Honra e Virtude.
+6. **Ano da edilidade de Escauro** (58 a.C.) e **data da casa de Mamurra**.
+7. **População total** de Roma c. 50–44 a.C.: nenhum número moderno foi conferido.
+8. **Tipos de elmo** (Montefortino/Coolus), predomínio da cota de malha c. 50 a.C. e data da *lorica segmentata*: não conferidos. Para o jogo, ficar com Políbio 6.23 e marcar como reconstrução.
+9. **Proibição diurna de carros** (*Tabula Heracleensis*, CIL I² 593) e o próprio rótulo "*Lex Iulia Municipalis*": não conferidos.
+10. **Pé romano = 0,296 m** e **12 horas do dia**: convenções não reconferidas por URL.
+11. **Machados nos fasces de César ditador**: inferência de Lívio 2.18.8 (início da República).
+12. **Estilos pompeianos**: datação moderna (quando começa o 2º estilo, se o 3º já aparece antes de 44 a.C.) não reconferida; a única base conferida é Vitrúvio 7.5.1–3.
+13. **Interpretação de Vitr. 4.7.5** ("*tertiario*": beiral ou inclinação do telhado).
+
+### Anacronismos: o que a verificação confirmou
+
+- O "**Crasso das colunas de mármore**" é **L. Licínio Crasso, o orador** (cônsul em 95 a.C.), não o triúnviro M. Crasso. Plutarco diz que o triúnviro não construiu outra casa além da sua (Plín. 36.7; Plut. *Crass.* 2). Na Domus de Crasso do jogo, colunas de mármore só como **hipótese** declarada.
+- As **"monstruosidades" do 3º estilo** são moda "*nunc*" sob Augusto (Vitr. 7.5.3): anacrônicas para 50–44.
+- **Abóbadas de vidro** são pós-Agripa (Plín. 36.189). **Toldos azuis estrelados** são de Nero (Plín. 19.24). **Toga obrigatória no Fórum** é édito de Augusto (Suet. *Aug.* 40.5, não reconferido aqui, mas já marcado como posterior).
+- As **estruturas de tijolo cozido** dos prédios altos são testemunho **augustano** (Vitr. 2.8.17), não prova para 50–44.
+- O **armamento de Políbio** é de meados do séc. II a.C., cerca de 100 anos antes do período.
+- Nenhum **novo** anacronismo de fase imperial foi encontrado nas afirmações com fonte antiga deste arquivo. As correções acima são de leitura e de atribuição, não de fase.

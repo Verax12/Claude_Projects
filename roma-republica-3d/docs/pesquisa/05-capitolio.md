@@ -7,6 +7,7 @@
 > - As **fontes antigas foram conferidas no texto original** (latim e grego), nos arquivos TEI do PerseusDL baixados de `raw.githubusercontent.com` (lista na seção Fontes). Essas citações estão marcadas como **(conferido)**.
 > - "Resumo de busca" quer dizer que a frase veio do resumo do mecanismo de busca e que a página em si não foi lida. A confiança dessas frases é no máximo **média**.
 > - As conversões de pés para metros são minhas e usam o pé romano convencional de **≈ 0,296 m**. Esse valor de conversão **não foi conferido em fonte nesta pesquisa**: trate-o como aproximação.
+> - **Verificação independente (seção no fim do arquivo):** feita sem WebSearch, porque a cota da sessão estava esgotada (a 1ª tentativa foi recusada), e sem acesso ao LacusCurtius (o proxy devolveu 403). As fontes antigas foram reconferidas em cópias locais do PerseusDL, e as coordenadas, no CSV local do Pleiades. Os números modernos que só vinham de resumos de busca estão marcados com "⚠ não confirmado".
 > - Coordenadas no sistema do jogo, conforme `00-coordenadas.md`: **x = leste (m), z = sul (m)**, origem em 41.8925 N, 12.4850 E.
 > - **Anos a.C.:** quando o texto antigo data um evento por cônsules ou magistraturas (por exemplo, "Torquato e Cota cônsules" = 65 a.C.), o ano a.C. é a correspondência convencional. Essa correspondência **não foi conferida em fonte nesta pesquisa**. Anos sem nenhuma âncora no texto estão marcados como "não verificado".
 
@@ -48,7 +49,7 @@
 | Ponto | x (L) | z (S) | Observação |
 |---|---|---|---|
 | Capitolinus Mons | −230,7 | −8,7 | Acurácia de 20 m; ponto-rótulo da colina. |
-| Temple of Jupiter Optimus Maximus | −276,2 | 30,9 | **Acurácia de 2000 m**, inútil para posicionar. As ruínas ficam sob o Palazzo Caffarelli, no Giardino Romano e no Museo Nuovo dos Musei Capitolini (resumo de busca, ver §2). |
+| Temple of Jupiter Optimus Maximus | −276,2 | 30,9 | **[CORRIGIDO na verificação]** O raio de 2000 m é a avaliação **genérica** que o Pleiades dá a coordenadas copiadas do GeoHack, e não uma medida do erro deste ponto. O próprio registro diz "Coordinates following GeoHack, verified in Google Earth" e `location_precision = precise` (`location_points.csv` e `places.csv` do Pleiades, conferidos localmente). Serve como **conferência grosseira**, não como posição final: fica ≈ 41 m a oeste do centro hipotético do §2. As ruínas ficam sob o Palazzo Caffarelli, no Giardino Romano e no Museo Nuovo dos Musei Capitolini (resumo de busca, ver §2; ⚠ não confirmado). |
 | Tarpeian Rock | −223,4 | 110,9 | "Penhasco íngreme no lado sul da Colina Capitolina" (Pleiades). |
 | Temple of Iuno Moneta | −150,5 | −161,1 | "Restos provavelmente sob Santa Maria in Ara Coeli" (Pleiades). |
 | Tabularium | −115,1 | −30,7 | Vici.org, ±5 m (ver `01-forum-oeste.md`). |
@@ -59,10 +60,10 @@
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
-| Cume norte (Arx/Aracoeli) | 39 | m acima do nível médio do Tibre | `01-forum-oeste.md`, que cita resumo de busca de ancientromelive/Platner (<https://ancientromelive.org/capitolinus-mons-capitoline-hill/>) | média (o datum é o Tibre, não o mar) |
-| Cume sul (Capitolium) | 38 | m acima do Tibre | idem | média |
-| Piazza del Campidoglio (sela atual) | 30 | m acima do Tibre | idem | média |
-| A sela atual está ≈ 8 m **acima** do nível antigo | ~8 | m | Musei Capitolini, *Ancient Capitol* (<https://museicapitolini.org/en/node/158>), via `01` | média |
+| Cume norte (Arx/Aracoeli) | 39 | m acima do nível médio do Tibre | `01-forum-oeste.md`, que cita resumo de busca de ancientromelive/Platner (<https://ancientromelive.org/capitolinus-mons-capitoline-hill/>) | média (o datum é o Tibre, não o mar); ⚠ não confirmado |
+| Cume sul (Capitolium) | 38 | m acima do Tibre | idem | média; ⚠ não confirmado |
+| Piazza del Campidoglio (sela atual) | 30 | m acima do Tibre | idem | média; ⚠ não confirmado |
+| A sela atual está ≈ 8 m **acima** do nível antigo | ~8 | m | Musei Capitolini, *Ancient Capitol* (<https://museicapitolini.org/en/node/158>), via `01` | média; ⚠ não confirmado |
 | Galeria do Tabularium em relação ao Fórum | ~15 | m acima | Wikipedia, *Tabularium*, via `01` | média |
 | Piso do Fórum na extremidade oeste (Comício e área de César) | 11,80–13,50 | m s.n.m. | Platner, *Comitium*, via `01` | média |
 | **Altura dos cumes acima do Fórum** | **NÃO ENCONTRADO** | — | Falta converter "m acima do Tibre" para o nível do mar | — |
@@ -75,42 +76,43 @@
 
 ### Estado em 50–44 a.C.
 - **83 a.C., incêndio:** o templo arcaico "queimou sob os cônsules L. Cipião e C. Norbano, 415 anos depois" da dedicação (Tác. *Hist.* 3.72, numeração usual, conferido). Plutarco diz que foi destruído "nas guerras civis" (*Publ.* 15.1, conferido). O ouro dos templos foi levado a Preneste por C. Mário, o filho, e depois exibido por Sula no triunfo (Plín. *NH* 33.16, conferido).
-- **Reconstrução:** "Sula, vencedor, assumiu o encargo, mas não o dedicou: foi a única coisa negada à sua felicidade" (Tác. *Hist.* 3.72; Plín. *NH* 7.138, conferidos). Plutarco: "o segundo templo foi construído por Sula, mas a consagração coube a Cátulo, depois da morte de Sula" (*Publ.* 15.1). Cátulo era o *curator restituendi Capitolii* (Gélio 2.10.2, conferido). O ano de **69 a.C.** da dedicação vem de fontes modernas (DAR e Wikipedia, via resumo de busca). Nos jogos da dedicação, Cátulo foi "o primeiro de todos" a cobrir o teatro com toldos (Plín. *NH* 19.23, conferido).
+- **Reconstrução:** "Sula, vencedor, assumiu o encargo, mas não o dedicou: foi a única coisa negada à sua felicidade" (Tác. *Hist.* 3.72; Plín. *NH* 7.138, conferidos). Plutarco: "o segundo templo foi construído por Sula, mas a consagração coube a Cátulo, depois da morte de Sula" (*Publ.* 15.1). Cátulo era o *curator restituendi Capitolii* (Gélio 2.10.2, conferido). O ano de **69 a.C.** da dedicação vem de fontes modernas (DAR e Wikipedia, via resumo de busca). **[Verificação]** Outra fonte moderna independente dá o mesmo ano: a nota marginal "69 B.C." de B. Perrin na tradução Loeb de Plut. *Publ.* 15.1 (PerseusDL `tlg0007.tlg008.perseus-eng2`, conferida localmente). Nenhum texto antigo com o ano explícito foi conferido. Nos jogos da dedicação, Cátulo foi "o primeiro de todos" a cobrir o teatro com toldos (Plín. *NH* 19.23, conferido).
 - **Mesmas fundações:** Dionísio diz que o templo "construído no tempo dos nossos pais, depois do incêndio, foi erguido **sobre as mesmas fundações** e só difere do antigo pela riqueza do material" (4.61.4, conferido). Tácito confirma: *isdem rursus vestigiis situm est* (*Hist.* 3.72, conferido). **Consequência para a modelagem:** as fundações arcaicas escavadas dão a **planta** do templo de Cátulo.
 - **62 a.C.:** César, pretor, acusou Cátulo de desvio, exigiu prestação de contas e tentou passar a Pompeu o término da obra. Havia "algumas partes meio acabadas, como numa obra tão grande, ou ele fingia que havia" (Dião 37.44.1–2; Suet. *Iul.* 15, conferidos). **Estado em 50–44 a.C.:** presumivelmente concluído. Cátulo morreu antes de 50 a.C., mas a data exata da morte NÃO foi verificada aqui.
 - **46 a.C.:** decretaram que o nome de César fosse inscrito no Capitólio "no lugar do de Cátulo, como se ele tivesse completado o templo" (Dião 43.14.6, conferido).
   - **Divergência:** Tácito diz que "o nome de Lutácio Cátulo permaneceu entre tantas obras dos Césares até Vitélio" (*Hist.* 3.72).
   - **Sugestão para o jogo:** manter a inscrição de Cátulo e fazer NPCs comentarem o decreto.
 - **Altura relativamente baixa:** Cátulo quis rebaixar a Area Capitolina "para que se subisse ao templo por mais degraus e o pódio ficasse mais alto em proporção ao tamanho do frontão". Não conseguiu, porque as *favisae* (câmaras e cisternas subterrâneas) o impediram (Varrão em Gélio 2.10.2–3, conferido). Quando Vespasiano reconstruiu o templo em 70 d.C., "**acrescentou-se altura**: só isso a religião permitia, e acreditava-se que só isso faltara à magnificência do templo anterior" (Tác. *Hist.* 4.53, numeração usual, conferido). **Conclusão:** o templo de Cátulo era **largo e relativamente baixo**.
+  - **[Nuance acrescentada na verificação]** Dionísio diz que o templo "foi feito assentado sobre uma **base (*krēpis*) alta**" (*ἐπὶ κρηπῖδος ὑψηλῆς βεβηκώς*, 4.61.3, grego reconferido), e o de Cátulo usa as mesmas fundações. Então "baixo" vale **em proporção à largura e ao frontão** (Gélio: *suggestus pro fastigii magnitudine*). Não quer dizer que o templo estava sem pódio. Modelar um pódio nitidamente elevado, com uma silhueta larga e achatada por cima.
 
 ### Localização, orientação e relações espaciais
-- Fica no **cume sul** da colina. As ruínas da plataforma estão no Giardino Romano e no Museo Nuovo dos Musei Capitolini (Palazzo Caffarelli), escavados a partir de outubro de 1998 (resumo de busca: Musei Capitolini, <https://www.museicapitolini.org/it/infopage/jard%C3%ADn-romano>; <https://journals.openedition.org/mefra/317>).
+- Fica no **cume sul** da colina. As ruínas da plataforma estão no Giardino Romano e no Museo Nuovo dos Musei Capitolini (Palazzo Caffarelli), escavados a partir de outubro de 1998 (⚠ não confirmado; resumo de busca: Musei Capitolini, <https://www.museicapitolini.org/it/infopage/jard%C3%ADn-romano>; <https://journals.openedition.org/mefra/317>).
 - **Orientação:** "a fachada **voltada para o sul**" (*pros mesēmbrian*, Dion. 4.61.4, conferido). As muralhas internas das fundações correm **E–O e N–S** (resumo de busca), o que indica orientação próxima dos pontos cardeais. Azimute exato: **NÃO ENCONTRADO**.
-- **Area Capitolina em volta**, segundo Platner via `01`: ≈ 35 m do templo até o limite leste; ≤ 30 m a oeste; 40–45 m na frente.
+- **Area Capitolina em volta**, segundo Platner via `01`: ≈ 35 m do templo até o limite leste; ≤ 30 m a oeste; 40–45 m na frente (⚠ não confirmado: o texto de Platner não foi reconferido).
 - O Clivus Capitolinus "provavelmente alcançava as substruções da Area pelo lado NE, virava em ângulo reto e contornava o canto sul antes de entrar pelo lado SE", em frente ao templo (Platner, via `01`).
-- **[HIPÓTESE DE POSICIONAMENTO, a verificar com o polígono do Palazzo Caffarelli e do Giardino Romano no OSM]** Encadeando as âncoras: a borda da Rocha Tarpeia (z ≈ 111) fica ao sul; Platner dá 40–45 m de área à frente; o templo tem ~62 m de comprimento N–S. Isso põe o **centro do templo em torno de x ≈ −235, z ≈ +38**, com a frente (sul) em z ≈ +69 e os fundos (norte) em z ≈ +7. O valor de x se apoia no ponto do Capitolinus Mons. A sela do Asylum e o Tabularium ficam ao N/NE e a ENE. **Não usar sem conferir.**
+- **[HIPÓTESE DE POSICIONAMENTO, a verificar com o polígono do Palazzo Caffarelli e do Giardino Romano no OSM]** Encadeando as âncoras: a borda da Rocha Tarpeia (z ≈ 111) fica ao sul; Platner dá 40–45 m de área à frente; o templo tem ~62 m de comprimento N–S. Isso põe o **centro do templo em torno de x ≈ −235, z ≈ +38**, com a frente (sul) em z ≈ +69 e os fundos (norte) em z ≈ +7. O valor de x se apoia no ponto do Capitolinus Mons. A sela do Asylum e o Tabularium ficam ao N/NE e a ENE. **Não usar sem conferir.** O ponto do Pleiades para o templo (x ≈ −276, z ≈ +31; ver §1) fica ≈ 41 m a oeste deste centro, e as duas estimativas ainda não foram conciliadas.
 
 ### Dimensões
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
-| Plataforma de fundação (sobrevivente), em blocos de tufo | 62 × 53 (203 × 174 pés) | m | Britannica (<https://www.britannica.com/place/Temple-of-Jupiter-Optimus-Maximus>), via resumo de busca | média-alta |
-| Pódio retangular, área | c. 62 × 53 | m | DAR (<https://www.digitalaugustanrome.org/records/iuppiter-optimus-maximus-capitolinus-aedes/>), via resumo de busca | média |
-| Área da plataforma de fundação | ≈ 3340 | m² | resenha das escavações de 1998–2000 (resumo de busca; provavelmente <https://journals.openedition.org/mefra/317>) | média |
-| Estilóbata (Platner) | ≈ 55 (lados curtos) × ≈ 60 (lados longos) | m | Platner & Ashby (LacusCurtius/Perseus), via resumo de busca | média |
-| Perímetro (Dionísio) | 8 *plethra* (= 800 pés, ≈ 237 m) | — | Dion. 4.61.3 (conferido); conversão própria | alta (texto) |
-| Lado (Dionísio) | "≈ 200 pés cada lado" (≈ 59 m) | pés | Dion. 4.61.3 (conferido) | alta (texto) |
-| Diferença comprimento − largura (Dionísio) | "menos de 15 pés inteiros" (< 4,4 m) | pés | Dion. 4.61.3 (conferido) | alta (texto) |
-| "Quase 60 × 60 m", com base num visitante antigo | ~60 × 60 | m | Wikipedia (<https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus>), via resumo de busca | média |
-| Dimensão alternativa (reconstrução de J. N. Hopkins, fase arcaica) | fundação de 74 × 54; pódio de 4,85 m | m | via resumo de busca | média (a proposta é debatida) |
-| Mura Sommella e Foglia | perímetro de 230 × 170 pés. Três perímetros: plataforma inteira 866 pés, base do pódio 800 pés, plano das colunas 770 pés | pés | resumo de busca (fonte italiana) | baixa-média |
-| Altura do pódio | 3,6 | m | DAR, via resumo de busca | média-baixa |
-| Altura do pódio (divergências) | 13 pés (≈ 3,85 m); 4,85 m (Hopkins); 4,5 m (blog) | — | resumos de busca | baixa |
-| Largura dos muros perimetrais da fundação | ≈ 6,90 | m | resenha 1998–2000 (resumo de busca) | média |
-| Muros internos E–O da fundação (2) | ≈ 4,5 de largura | m | idem | média |
-| Muros internos N–S da fundação (4) | ≈ 3,86 de largura | m | idem | média |
-| Intercolúnio central da fachada (hipótese de Mura Sommella, fase arcaica) | 12,43 | m | resumo de busca | média |
-| Intercolúnios laterais da fachada (4) | 8,88 | m | idem | média |
+| Plataforma de fundação (sobrevivente), em blocos de tufo | 62 × 53 (203 × 174 **pés ingleses**; em pés romanos seriam ≈ 209 × 179) | m | Britannica (<https://www.britannica.com/place/Temple-of-Jupiter-Optimus-Maximus>), via resumo de busca | média; ⚠ não confirmado |
+| Pódio retangular, área | c. 62 × 53 | m | DAR (<https://www.digitalaugustanrome.org/records/iuppiter-optimus-maximus-capitolinus-aedes/>), via resumo de busca | média; ⚠ não confirmado |
+| Área da plataforma de fundação | ≈ 3340 | m² | resenha das escavações de 1998–2000 (resumo de busca; provavelmente <https://journals.openedition.org/mefra/317>) | média; ⚠ não confirmado |
+| Estilóbata (Platner) | ≈ 55 (lados curtos) × ≈ 60 (lados longos) | m | Platner & Ashby (LacusCurtius/Perseus), via resumo de busca | média; ⚠ não confirmado (o LacusCurtius ficou inacessível na verificação) |
+| Perímetro (Dionísio) | 8 *plethra* (= 800 pés, ≈ 237 m) | — | Dion. 4.61.3 (conferido; **reconferido** no grego na verificação: *ὀκτάπλεθρος τὴν περίοδον*); conversão própria | alta (texto) |
+| Lado (Dionísio) | "≈ 200 pés cada lado" (≈ 59 m) | pés | Dion. 4.61.3 (reconferido: *διακοσίων ποδῶν ἔγγιστα τὴν πλευρὰν ἔχων ἑκάστην*) | alta (texto). Dionísio, que escreve em grego, não diz se usa pé romano ou grego; o valor em metros depende disso (não verificado). |
+| Diferença comprimento − largura (Dionísio) | "menos de 15 pés inteiros" (< 4,4 m) | pés | Dion. 4.61.3 (reconferido: *οὐδ' ὅλων πεντεκαίδεκα ποδῶν*) | alta (texto) |
+| "Quase 60 × 60 m", com base num visitante antigo | ~60 × 60 | m | Wikipedia (<https://en.wikipedia.org/wiki/Temple_of_Jupiter_Optimus_Maximus>), via resumo de busca | média; ⚠ não confirmado |
+| Dimensão alternativa (reconstrução de J. N. Hopkins, fase arcaica) | fundação de 74 × 54; pódio de 4,85 m | m | via resumo de busca, sem obra citada | ⚠ não confirmado (número sem referência bibliográfica; a proposta é debatida) |
+| Mura Sommella e Foglia | perímetro de 230 × 170 pés. Três perímetros: plataforma inteira 866 pés, base do pódio 800 pés, plano das colunas 770 pés | pés | resumo de busca (fonte italiana) | baixa; ⚠ não confirmado. **Incoerência interna (aritmética da verificação):** 2 × (230 + 170) = 800 pés bate com os 8 *plethra*, mas 230 − 170 = 60 pés de diferença contradiz o "menos de 15 pés" de Dionísio. |
+| Altura do pódio | 3,6 | m | DAR, via resumo de busca | média-baixa; ⚠ não confirmado |
+| Altura do pódio (divergências) | 13 pés (≈ 3,85 m); 4,85 m (Hopkins); 4,5 m (blog) | — | resumos de busca | baixa; ⚠ não confirmado |
+| Largura dos muros perimetrais da fundação | ≈ 6,90 | m | resenha 1998–2000 (resumo de busca) | média; ⚠ não confirmado |
+| Muros internos E–O da fundação (2) | ≈ 4,5 de largura | m | idem | média; ⚠ não confirmado |
+| Muros internos N–S da fundação (4) | ≈ 3,86 de largura | m | idem | média; ⚠ não confirmado |
+| Intercolúnio central da fachada (hipótese de Mura Sommella, fase arcaica) | 12,43 | m | resumo de busca | média; ⚠ não confirmado |
+| Intercolúnios laterais da fachada (4) | 8,88 | m | idem | média; ⚠ não confirmado |
 | Altura e diâmetro das colunas | **NÃO ENCONTRADO** | — | — | — |
 | Altura total, frontão e cumeeira | **NÃO ENCONTRADO** | — | — | — |
 | Nº de degraus da escadaria frontal | **NÃO ENCONTRADO** | — | — | — |
@@ -122,8 +124,8 @@
 - **Planta etrusco-itálica com três *cellae*:** "dentro há três celas paralelas com paredes comuns: no meio a de Júpiter; de cada lado, a de Juno e a de Minerva, cobertas por **um só frontão (*aetos*) e um só telhado**" (Dion. 4.61.4, conferido). A *cella* de **Minerva fica do lado direito**: a lei do cravo anual estava "fixada no lado direito do templo de Júpiter, do lado em que fica o templo de Minerva" (Lív. 7.3.5, conferido). Não fica claro se é a direita de quem olha ou a do deus; **mapear com cautela**.
 - **Colunatas:** "na parte da frente, voltada para o sul, é envolvido por **três fileiras de colunas**; dos lados, por **uma só fileira**" (Dion. 4.61.4, conferido). Dionísio **não menciona colunas atrás**, o que sugere fundos fechados (*sine postico*). Isso é **inferência**.
 - **Nº de colunas:**
-  - Fachada **hexastila**, isto é, 6 por fileira (Platner, via resumo de busca). Três fileiras de 6 dariam **18 colunas no pronau** (inferência).
-  - Laterais: a hipótese de Mura Sommella para a fase arcaica é períptero com **9 colunas nos lados longos** (resumo de busca). Para a fase de Cátulo, o número exato é **NÃO ENCONTRADO**.
+  - Fachada **hexastila**, isto é, 6 por fileira (Platner, via resumo de busca; ⚠ não confirmado). Três fileiras de 6 dariam **18 colunas no pronau** (inferência).
+  - Laterais: a hipótese de Mura Sommella para a fase arcaica é períptero com **9 colunas nos lados longos** (resumo de busca; ⚠ não confirmado). Para a fase de Cátulo, o número exato é **NÃO ENCONTRADO**.
 - **Correspondência com as fundações [HIPÓTESE]:** 4 muros internos N–S + 2 perimetrais formam 5 faixas longitudinais: ala W, cella lateral, cella de Júpiter, cella lateral, ala E. Isso combina com a descrição de Dionísio (três celas e colunatas laterais simples). Os 2 muros internos E–O sustentariam as fileiras do pronau e/ou a parede frontal das celas.
 - **Proporções "toscanas" (Vitr. 4.7.1–5, conferido; aplicação ao Capitólio = HIPÓTESE):**
 
@@ -138,8 +140,8 @@
 | Mútulos projetados = 1/4 da altura da coluna | ≈ 4,4 m |
 
   Vitrúvio fala do templo toscano genérico, **não** deste templo. Usar só como ponto de partida e marcar como hipotético.
-- **Templo "areostilo" (Vitr. 3.3.5, conferido):** nesses templos "não se podem usar epistílios de pedra nem de mármore, mas sim **vigas contínuas de madeira**". Eles têm aspecto "abaulado, pesado no alto, baixo e largo" (*varicae, barycephalae, humiles, latae*), e seus frontões são ornados "com estátuas de **terracota ou de bronze dourado**, à maneira toscana, como o de Ceres junto ao Circo Máximo, o de Hércules de Pompeu e **também o do Capitólio**". Vitrúvio dedica a obra ao *imperator Caesar* (1.pr.1, conferido); a data convencional, c. 30–20 a.C., não foi conferida. Portanto ele descreve o **templo de Cátulo**. **Para o jogo:** intercolúnios muito largos (12,4 m e 8,9 m), arquitrave de madeira revestida e silhueta baixa e larga.
-- **Colunas de mármore de Sula:** "o templo de Júpiter Olímpico, começado em Atenas, **do qual Sula trouxe colunas para os templos capitolinos**" (Plín. *NH* 36.45, conferido). Platner, via resumo de busca, fala das "colunas coríntias de mármore branco do Olympieion".
+- **Templo "areostilo" (Vitr. 3.3.5, conferido):** nesses templos "não se podem usar epistílios de pedra nem de mármore, mas sim **vigas contínuas de madeira**". Eles têm aspecto "abaulado, pesado no alto, baixo e largo" (*varicae, barycephalae, humiles, latae*), e seus frontões são ornados "com estátuas de **terracota ou de bronze dourado**, à maneira toscana, como o de Ceres junto ao Circo Máximo, o de Hércules de Pompeu e **também o do Capitólio**". Vitrúvio dedica a obra ao *imperator Caesar* (1.pr.1, conferido); a data convencional, c. 30–20 a.C., não foi conferida. Portanto ele descreve o **templo de Cátulo**. **Para o jogo:** intercolúnios muito largos (12,4 m e 8,9 m, números da hipótese de Mura Sommella, ⚠ não confirmados), arquitrave de madeira revestida e silhueta baixa e larga. (Vitr. 3.3.5 **reconferido** no latim na verificação: *nec lapideis nec marmoreis epistyliis uti datur, sed inponendae de materia trabes perpetuae... varicae, barycephalae, humiles, latae... item Capitolii*.)
+- **Colunas de mármore de Sula:** "o templo de Júpiter Olímpico, começado em Atenas, **do qual Sula trouxe colunas para os templos capitolinos**" (Plín. *NH* 36.45, conferido; **reconferido** na verificação: *ex quo Sulla Capitolinis aedibus advexerat columnas*). O plural *Capitolinis aedibus* não garante que as colunas foram para o templo de Júpiter em particular. Platner, via resumo de busca, fala das "colunas coríntias de mármore branco do Olympieion" (⚠ não confirmado: ordem e cor não foram reconferidas).
   - **Quantas e onde foram usadas: NÃO ENCONTRADO.** O texto de Plínio não diz se formam toda a colunata.
   - **Cuidado:** a frase "colunas de **mármore pentélico**, vistas em Atenas, depois recortadas em Roma e que ficaram finas demais" refere-se ao **4º templo, de Domiciano** (Plut. *Publ.* 15.3–4, conferido). **Não** se aplica ao templo de Cátulo.
 - **Telhado:** **telhas de bronze douradas por Cátulo**, decisão que dividiu a opinião de sua época: *cum varie sua aetas de Catulo existimaverit, quod tegulas aereas Capitoli inaurasset* (Plín. *NH* 33.57, conferido). Estrutura de **madeira**: em 69 d.C. o fogo pegou nas "*aquilae* que sustentavam o frontão, de madeira velha" (Tác. *Hist.* 3.71, conferido). *Aquila* é termo técnico para elementos de madeira do frontão; a interpretação exata é incerta.
@@ -147,12 +149,13 @@
 - **Escadaria:** frontal, ao sul (inferência pela fachada sul). Dião chama de *anabasmoi* os degraus que César subiu de joelhos em 46 a.C. (43.21.2, conferido). Uma fonte moderna fala de "escadaria entre dois avancorpos" (resumo de busca, baixa). Nº de degraus: **NÃO ENCONTRADO**.
 
 ### Materiais e acabamentos
-- **Fundações:** muros de blocos de **cappellaccio**, um tufo local (resumo de busca: Musei Capitolini/Giardino Romano). Britannica fala em "plataforma de tufo".
+- **Fundações:** muros de blocos de **cappellaccio**, um tufo local (resumo de busca: Musei Capitolini/Giardino Romano; ⚠ não confirmado). Britannica fala em "plataforma de tufo" (⚠ não confirmado).
 - **Colunas:** mármore trazido do Olympieion (Plín. 36.45). Cor branca e ordem coríntia segundo Platner (resumo de busca, média). Proporção e acabamento: **NÃO ENCONTRADO**.
 - **Arquitrave:** vigas de **madeira** (Vitr. 3.3.5). Revestimento: **NÃO ENCONTRADO**. Plausivelmente terracota ou bronze, mas isso não foi verificado.
 - **Telhado:** **bronze dourado** (Plín. 33.57) → modelar uma **cobertura dourada e brilhante**, a marca visual do templo.
 - **Teto interno:** os forros de caixotões (*laquearia*) foram dourados pela primeira vez "no Capitólio, depois da destruição de Cartago, na censura de L. Múmio" (Plín. 33.57, conferido). Isso se refere ao templo **anterior** a 83 a.C.; para o de Cátulo, **NÃO ENCONTRADO** (hipótese: forro dourado).
 - **Piso:** o *scutulatum* (losangos) "foi feito pela primeira vez em Roma no templo de Júpiter Capitolino, depois do início da Terceira Guerra Púnica" (Plín. 36.185, conferido). Também é do templo **anterior**; para o de Cátulo, **NÃO ENCONTRADO**.
+  - **[Correção da verificação]** *Scutulatum* é **conjectura de editor**. O aparato crítico da edição Mayhoff (PerseusDL `phi0978.phi001.perseus-lat2`, conferida localmente) registra *scutulatum S e coni. J.*, enquanto os manuscritos e as edições antigas leem *scalpturatum* (piso "entalhado/inciso"). O desenho em losangos é, portanto, **incerto** mesmo para o templo anterior.
 - **Frontão e cumeeira:** estátuas de terracota ou bronze dourado (Vitr. 3.3.5). Antecedentes, todos **anteriores a 83 a.C.**:
   - a quadriga de terracota de Vulca no frontão (Plín. 35.157; 28.16);
   - Júpiter em quadriga de bronze na cumeeira, posto pelos Ogúlnios em 296 a.C. (*Iovemque in culmine cum quadrigis*, Lív. 10.23.12);
@@ -166,10 +169,11 @@
 
 ### Interior e ambientação
 - **Cella de Júpiter:**
-  - **Trono** (*solium*), sob o qual Camilo depositara ouro. "Pereceram 2000 libras de ouro do trono de Júpiter Capitolino no **terceiro consulado de Pompeu**" (52 a.C.) (Plín. 33.14, conferido).
+  - **Trono** (*solium*), sob o qual Camilo depositara ouro. "Pereceram 2000 libras de ouro do trono de Júpiter Capitolino no **terceiro consulado de Pompeu**" (52 a.C.) (Plín. 33.14, conferido). **Variante textual (aparato de Mayhoff, conferido na verificação):** os manuscritos leem *III*, mas Brotier corrige para *secundo* (o que daria 55 a.C.), e edições antigas atribuíam o roubo a "M. Crasso". O ano de 52 a.C. segue o texto de Mayhoff.
   - Três mesas com **vasos de prata** desde 296 a.C. (Lív. 10.23.12).
 - **Estátua de culto:** a arcaica, de Vulca, era de **terracota pintada de mínio (vermelho)** (Plín. 35.157, conferido). Plínio, em 33.111–112 (conferido), diz que "o rosto da própria estátua de Júpiter costumava ser pintado de mínio nos dias de festa" e que "os censores contratam, em primeiro lugar, a pintura de Júpiter com mínio", no presente. **Qual estátua de culto havia em 50–44 a.C. (material, autor): NÃO ENCONTRADO.**
 - **Cella de Juno:** um **cão de bronze lambendo a ferida**. Plínio o viu antes do incêndio de 69 d.C., portanto ele estava no templo de Cátulo. Era tão valioso que "os guardiões (*tutelarii*) respondiam por ele com a própria vida" (Plín. 34.38, conferido).
+  - **⚠ Possível anacronismo:** Plínio só diz que "**a nossa época** o viu" (*aetas nostra vidit*, reconferido), ou seja, no séc. I d.C. A data em que foi dedicado **não é dada**, e a presença em 50–44 a.C. **não está atestada**. Usar como detalhe opcional, marcado como incerto.
 - **Cella de Minerva:**
   - Ali ficava a **edícula de Juventas**, com a pintura do *Rapto de Prosérpina* de Nicômaco acima dela (Plín. 35.108, conferido). Data de colocação **NÃO ENCONTRADA**.
   - Altares de Termino e Juventas: um fica "no pronau de Atena" e o outro "na própria cella, junto à estátua" (Dion. 3.69.5, conferido). Qual é qual fica ambíguo.
@@ -193,9 +197,9 @@ Envolve o templo no cume sul. A entrada pelo SE recebe o Clivus. Dimensões (Pla
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
-| Faixa leste (templo → limite) | ~35 | m | Platner (Heidelberg 0082), via `01` | média |
-| Faixa oeste | ≤ 30 | m | idem | média |
-| Faixa frontal (sul) | 40–45 | m | idem | média |
+| Faixa leste (templo → limite) | ~35 | m | Platner (Heidelberg 0082), via `01` | média; ⚠ não confirmado |
+| Faixa oeste | ≤ 30 | m | idem | média; ⚠ não confirmado |
+| Faixa frontal (sul) | 40–45 | m | idem | média; ⚠ não confirmado |
 | Faixa norte (fundos) | **NÃO ENCONTRADO** | — | — | — |
 | Colosso de Apolo (de Apolônia) | 30 côvados (≈ 13,3 m, conversão própria) | côvados | Plín. 34.39 (conferido) | alta (texto) |
 
@@ -216,7 +220,7 @@ Envolve o templo no cume sul. A entrada pelo SE recebe o Clivus. Dimensões (Pla
 | *Bonus Eventus* e *Bona Fortuna* de **Praxíteles** "no Capitólio" | Chegada **NÃO ENCONTRADA** | — | Plín. 36.23 |
 | Pintura de **Teseu** de Parrásio (autor pelo contexto de 35.67), que "esteve no Capitólio" | Chegada **NÃO ENCONTRADA** | — | Plín. 35.69 |
 | **Pórticos temporários** de César edil para exibir seu aparato | 65 a.C. (temporários) | **Não** modelar em 50–44 a.C. | Suet. *Iul.* 10.1 |
-| **Gansos** alimentados à custa pública e **cães** mantidos no Capitólio para dar alarme à noite | Época de Cícero (discurso *Pro Roscio Amerino*) | Os gansos eram sagrados para Juno (Lív. 5.47.3–4). | Cic. *Rosc. Am.* 56; Plín. 10.51 |
+| **Gansos** alimentados à custa pública e **cães** mantidos no Capitólio para dar alarme à noite | Época de Cícero (discurso *Pro Roscio Amerino*) | Os gansos eram sagrados para Juno (Lív. 5.47.3–4). | Cic. *Rosc. Am.* 56 (gansos e cães). **[Correção da verificação]** Plín. 10.51 (reconferido) trata só da **honra dos gansos** e do suplício anual de cães crucificados "entre o templo de Juventas e o de Sumano", que **não** fica no Capitólio. Não confirma os cães mantidos no Capitólio. |
 
 ### Materiais e acabamentos
 Piso, muro de recinto e portas da Area: **NÃO ENCONTRADO**. Tácito menciona as "primeiras portas da cidadela capitolina" (*primas Capitolinae arcis fores*) e as **estátuas arrancadas e usadas como barricada na entrada** (*Hist.* 3.71, conferido, 69 d.C.).
@@ -284,8 +288,9 @@ Piso, muro de recinto e portas da Area: **NÃO ENCONTRADO**. Tácito menciona as
 ### 6.1 Templo de Juno Moneta (Aedes Iunonis Monetae)
 
 **Estado em 50–44 a.C.: existente e em uso como casa da moeda.**
-- Votado pelo ditador L. Fúrio Camilo "no meio da própria batalha" (o inimigo não foi conferido aqui). O Senado criou duúnviros para construí-lo "à altura da grandeza do povo romano", em "lugar destinado na Arx, onde fora a área da casa de M. Mânlio Capitolino". Foi dedicado "um ano depois do voto", sob os cônsules C. Márcio Rutilo (3ª vez) e T. Mânlio Torquato (2ª vez) (Lív. 7.28.4–6, conferido). Pela correspondência convencional, 345 e 344 a.C.
+- Votado pelo ditador L. Fúrio Camilo "no meio da própria batalha" contra os **Auruncos** (*legiones... in Auruncos ductae... inter ipsam dimicationem aedem Iunoni Monetae vovit*, Lív. 7.28.2–4, reconferido na verificação). O Senado criou duúnviros para construí-lo "à altura da grandeza do povo romano", em "lugar destinado na Arx, onde fora a área da casa de M. Mânlio Capitolino". Foi dedicado "um ano depois do voto", sob os cônsules C. Márcio Rutilo (3ª vez) e T. Mânlio Torquato (2ª vez) (Lív. 7.28.4–6, conferido). Pela correspondência convencional, 345 e 344 a.C.
 - **Casa da moeda:** Mânlio tinha casa "onde **agora estão o templo e a oficina** de Moneta" (*ubi nunc aedes atque officina Monetae est*, Lív. 6.20.13, conferido). Valério Máximo: "onde agora vemos o templo de Moneta" (6.3.1a, conferido).
+  - **Ressalva da verificação:** o *nunc* de Lívio atesta a oficina **na época augustana**, quando Lívio escreveu. Para 50–44 a.C. trata-se de **inferência**, forte pela proximidade no tempo, mas não de atestação direta.
 - **Arquivo:** "os livros dos magistrados, de linho, guardados no templo de Moneta", citados por Licínio Macro (Lív. 4.20.8; 4.7.12, conferidos).
 - **Nome:** "escreveram muitos que, num terremoto, saiu do templo de Juno na Arx uma voz mandando expiar com uma porca prenhe; por isso essa Juno foi chamada Moneta" (Cic. *Div.* 1.101, conferido). Cícero ironiza em 2.69.
 
@@ -293,7 +298,7 @@ Piso, muro de recinto e portas da Area: **NÃO ENCONTRADO**. Tácito menciona as
 - "No **alto da Arx**, templo de Juno Moneta, segundo a tradição feito por voto teu, Camilo; antes fora a casa de Mânlio" (Ov. *Fast.* 6.183–186, conferido). Festa nas Calendas de junho (*sextis Kalendis*, 6.181).
 - Pleiades: restos "provavelmente sob Santa Maria in Ara Coeli" → **x ≈ −150,5, z ≈ −161,1**.
 - **Hipótese alternativa:** Tucci (2005) põe Juno Moneta sobre a substrução do Tabularium (ver `01`). **Não adotar.** Para o jogo, usar o cume da Arx.
-- Prodígio (início do séc. II a.C.; ano exato não verificado): "junto a Moneta arderam as pontas de duas lanças" (Lív. 33.26.8, conferido).
+- Prodígio de **196 a.C.**, segundo a data marginal (*a. Chr. n. 196*) da edição PerseusDL `phi0914.phi001.perseus-lat5`, conferida na verificação: "junto a Moneta arderam as pontas de duas lanças" (Lív. 33.26.8, conferido).
 
 **Dimensões, planta, ordem, materiais:** **NÃO ENCONTRADO** (nenhuma das 3 buscas tratou dos restos). **[HIPÓTESE]** Templo médio sobre pódio, de tipo itálico, com edifícios anexos para a oficina monetária.
 
@@ -400,7 +405,7 @@ Paredão de tufo nu, com vista para o Fórum. Lugar de memória ligado a Mânlio
 |---|---|---|
 | **Colunas de mármore pentélico "recortadas em Roma, finas demais"** e dourado de "mais de 12 000 talentos" | 4º templo, de **Domiciano** (pós-80 d.C.) | Plut. *Publ.* 15.3–4 (conferido) |
 | Templo **mais alto** que o de Cátulo | Reconstrução de **Vespasiano** (70 d.C.) acrescentou altura | Tác. *Hist.* 4.53 (conferido) |
-| **Templo de Júpiter Tonante** na Area Capitolina | Votado em 26 a.C., dedicado em **22 a.C.** (Augusto) | Pleiades 354249963; Plín. 34.10; 36.50 |
+| **Templo de Júpiter Tonante** na Area Capitolina | Votado em 26 a.C., dedicado em **22 a.C.** (Augusto). Dião diz que era o primeiro templo que encontravam os que subiam ao Capitólio. | Pleiades 354249963 (conferido localmente); Plín. 34.10; 36.50; Dião 54.4.2–4 (grego reconferido na verificação) |
 | **Sacelo de Júpiter Conservador** e **templo de Júpiter Custos** | Domiciano (pós-69 d.C.) | Tác. *Hist.* 3.74 (conferido) |
 | Júpiter Ferétrio **restaurado e coberto** | Restaurado por Otaviano/Augusto, depois de 44 a.C. | Nepos *Att.* 20.3; Lív. 4.20.7 (conferidos) |
 | **Teatro gigante encostado ao monte Tarpeio** | Só **planejado** por César; nunca construído | Suet. *Iul.* 44.1 (conferido) |
@@ -421,6 +426,7 @@ Paredão de tufo nu, com vista para o Fórum. Lugar de memória ligado a Mânlio
 1. **Dimensões exatas do templo de Cátulo.**
    - As fundações medem ~53 × 62 m (Britannica, DAR, ~3340 m²), mas há divergência: Platner dá 55 × 60 m no estilóbata; Dionísio dá ≈ 200 pés por lado com diferença < 15 pés (≈ 59 × 59 m); Hopkins, 74 × 54 m; e há uma leitura de que o templo seria muito menor do que a plataforma (artigo "...not Colossal", <https://www.academia.edu/66072132/>, conteúdo não lido).
    - **Tratamento sugerido:** pódio de 53 × 62 m sobre a plataforma escavada, com placa "dimensões debatidas".
+   - **[Verificação]** Nenhum desses números modernos pôde ser reconferido (ver "Verificação independente"). Só os números de Dionísio (8 *plethra*, ≈ 200 pés por lado, diferença < 15 pés) estão confirmados no texto.
 2. **Altura do pódio, das colunas e do frontão: NÃO ENCONTRADO** (pódio entre 3,6 e 4,85 m nas propostas).
    - Gélio e Tácito indicam que o templo era **baixo para a sua largura**, e Vitrúvio, que era "baixo, largo e pesado no alto".
    - **Tratamento:** pódio de ~4 m, colunas de ~15–18 m (regra de Vitrúvio aplicada, hipótese) e frontão largo e baixo. Marcar "reconstrução hipotética".
@@ -483,3 +489,117 @@ Paredão de tufo nu, com vista para o Fórum. Lugar de memória ligado a Mânlio
 
 ### Herdado de `01-forum-oeste.md` (consultar lá as URLs completas)
 - Cotas (ancientromelive/Platner; Musei Capitolini node/158; Wikipedia *Tabularium*); Area Capitolina e Clivus (Platner, Heidelberg 0082 e 0164); Tabularium e Véiove (Musei Capitolini; DAR *Asylum*); Concórdia na Arx (DAR); *Scalae Gemoniae* (Wikipedia *Gemonian stairs*); Lívio 37.3.7 e 41.27.7.
+
+---
+
+## Verificação independente
+
+**Verificador:** agente adversarial independente, 2026-10-09.
+
+**Como foi feita:**
+- **WebSearch:** a primeira busca foi recusada porque a cota de 200 buscas por turno, compartilhada por todos os agentes, estava esgotada. **Nenhuma busca nova foi feita.**
+- **LacusCurtius (Platner):** a tentativa de abrir o verbete direto falhou (o proxy devolveu 403).
+- Por isso, **nenhum número arqueológico moderno pôde ser reconferido** nesta etapa. Esses números estão marcados com "⚠ não confirmado" no corpo do texto.
+- O que foi reconferido de forma independente:
+  - os **textos antigos**, no latim ou no grego, em arquivos TEI do PerseusDL. Tácito *Historiae*, Gélio e Nepos foram baixados de novo de `raw.githubusercontent.com/PerseusDL/canonical-latinLit` nesta verificação; Dionísio, Dião, Plutarco, Lívio, Plínio, Vitrúvio, Cícero, Ovídio, Suetônio e Apiano vieram de cópias locais da sessão;
+  - as **coordenadas**, no `places.csv` e no `location_points.csv` locais do Pleiades.
+- **Conferidas: 15 afirmações principais**, mais alguns detalhes que apareceram no caminho.
+
+### ✔ Confirmado (15 afirmações principais)
+
+| # | Afirmação | Fonte da reconferência |
+|---|---|---|
+| 1 | O templo arcaico queimou sob os cônsules L. Cipião e C. Norbano (83 a.C.), 415 anos depois da dedicação. | Tác. *Hist.* 3.72: *interiecto quadringentorum quindecim annorum spatio L. Scipione C. Norbano consulibus flagraverat*. Apiano *BC* 1.83 e 1.86 (trad. H. White): o Capitólio queimou durante a guerra de Sula, por causa desconhecida. |
+| 2 | Sula assumiu a obra mas não a dedicou; Cátulo dedicou. O nome de Cátulo ficou na inscrição "até Vitélio". | Tác. *Hist.* 3.72 (*curam victor Sulla suscepit, neque tamen dedicavit... Lutatii Catuli nomen... usque ad Vitellium mansit*); Plut. *Publ.* 15.1 |
+| 3 | Dedicação em **69 a.C.** | Nota marginal de B. Perrin (Loeb) em Plut. *Publ.* 15.1. É fonte **moderna** independente; nenhum texto antigo com o ano foi conferido. |
+| 4 | Foi erguido **sobre as mesmas fundações** e só diferia pela riqueza do material. | Dion. 4.61.4 (*ἐπὶ γὰρ τοῖς αὐτοῖς θεμελίοις... τῇ πολυτελείᾳ τῆς ὕλης μόνον διαλλάττων*); Tác. *Hist.* 3.72 (*isdem rursus vestigiis situm est*) |
+| 5 | Medidas de Dionísio: perímetro de 8 *plethra*, ≈ 200 pés por lado, diferença menor que 15 pés. Acréscimo: o templo ficava **sobre uma *krēpis* alta**. | Dion. 4.61.3 (*ἐπὶ κρηπῖδος ὑψηλῆς βεβηκὼς ὀκτάπλεθρος τὴν περίοδον, διακοσίων ποδῶν ἔγγιστα... οὐδ' ὅλων πεντεκαίδεκα ποδῶν*) |
+| 6 | Fachada voltada para o **sul**, com 3 fileiras de colunas na frente e 1 de cada lado. Três *cellae* paralelas com paredes comuns, Júpiter no meio, sob um só frontão e um só telhado. | Dion. 4.61.4 (*πρὸς μεσημβρίαν βλέποντος τριπλῷ... στοίχῳ κιόνων, ἐκ δὲ τῶν πλαγίων ἁπλῷ... ὑφ' ἑνὸς ἀετοῦ καὶ μιᾶς στέγης*) |
+| 7 | A *cella* de Minerva fica do lado direito. | Lív. 7.3.5 (*dextro lateri aedis Iovis optimi maximi, ex qua parte Minervae templum est*). Continua ambíguo se é a direita do deus ou a de quem olha. |
+| 8 | Cátulo dourou as telhas de bronze. | Plín. 33.57 (*quod tegulas aereas Capitoli inaurasset*) |
+| 9 | Sula trouxe colunas do Olympieion de Atenas. | Plín. 36.45 (*Sulla Capitolinis aedibus advexerat columnas*). O plural não garante que foram para o templo de Júpiter em particular. |
+| 10 | As colunas pentélicas "recortadas e finas demais" são do **4º templo (Domiciano)**. Atribuí-las a 50–44 a.C. seria anacronismo. | Plut. *Publ.* 15.3–4 (trad. Perrin) |
+| 11 | O templo é areostilo, com vigas contínuas de madeira e aspecto "baixo, largo e pesado no alto"; frontão com estátuas de terracota ou de bronze dourado, "*item Capitolii*". | Vitr. 3.3.5 (latim) |
+| 12 | Cátulo quis rebaixar a Area para ganhar degraus e um pódio mais alto, e as *favisae* impediram. Vespasiano só acrescentou altura. | Gélio 2.10.2–3 (*Q. Catulus curator restituendi Capitolii... favisae impedissent*); Tác. *Hist.* 4.53 (*altitudo aedibus adiecta*) |
+| 13 | Decretos de 46 a.C.: carro de César de frente para Júpiter; estátua de bronze sobre a imagem da *oikoumene* com a palavra "semideus"; nome de César no lugar do de Cátulo. César subiu os degraus de joelhos e depois apagou "semideus". Em 45 a.C., sua estátua foi posta junto aos 7 reis e a Bruto. Em 62 a.C. havia partes "meio acabadas". | Dião 43.14.6; 43.21.2; 43.45.3–4; 37.44.1–2 (grego); Suet. *Iul.* 15, 37.2, 79.2 (latim) |
+| 14 | Juno Moneta: votada por Camilo **contra os Auruncos**, numa área da Arx onde ficara a casa de Mânlio, e dedicada um ano depois sob C. Márcio Rutilo (3ª vez) e T. Mânlio Torquato (2ª vez). No tempo de Lívio, ali estavam "o templo e a oficina de Moneta". Guardava os *libri lintei*. Ficava "no alto da Arx". | Lív. 7.28.2–6; 6.20.13; 4.7.12; 4.20.8; Ov. *Fast.* 6.183–186 |
+| 15 | Júpiter Ferétrio estava sem telhado e desabando antes da restauração de Otaviano. Era pequeno, com lados maiores de menos de 15 pés. | Nepos *Att.* 20.3 (*vetustate atque incuria detecta prolaberetur*); Lív. 4.20.7 (*vetustate dilapsam refecit*); Dion. 2.34.4 (*ἐλάττονας ἢ πέντε ποδῶν καὶ δέκα τὰς μείζους πλευράς*) |
+
+**Também confirmados no caminho:**
+- Pórticos "desde antigamente" à direita de quem sobe o clivo; *aquilae* de madeira velha no frontão; *centum gradus* e *lucum asyli* (Tác. *Hist.* 3.71). O *sacellum* de Júpiter Conservador e o templo de Júpiter Custos são posteriores, de Domiciano (Tác. *Hist.* 3.74).
+- Pequeno orifício no teto sobre Termino (Ov. *Fast.* 2.667–672).
+- Grande Júpiter voltado para o oriente, "para ver o nascer do sol, o Fórum e a Cúria" (Cic. *Cat.* 3.20).
+- Fides e Mens rededicadas por Escauro (Cic. *ND* 2.61).
+- Mens e Vênus Ericina *canali uno discretae* (Lív. 23.31.9).
+- Quadriga dos Ogúlnios na cumeeira, em 296 a.C. (Lív. 10.23.12).
+- Toldos de Cátulo na dedicação e toldos de César até o Capitólio (Plín. 19.23).
+- Colossos de Carvílio e de Lúculo e as cabeças de P. Lêntulo (Plín. 34.39, 34.43–44).
+- Pintura de Nicômaco e *aedicula* de Juventas na *cella* de Minerva, e a Vitória de Planco (Plín. 35.108).
+- *Simulacrum Veiovis in arce e cupresso* (Plín. 16.216).
+- **Júpiter Tonante** dedicado por Augusto: Dião 54.4.2–4 e Pleiades 354249963 ("vowed 26 BCE, dedicated 22 BCE"). É **anacronismo** para 50–44 a.C., como o arquivo já dizia.
+- **Coordenadas do Pleiades:** as conversões de Juno Moneta (−150,5; −161,1), Rocha Tarpeia (−223,4; +110,9), Capitolinus Mons (−230,7; −8,7) e templo de Júpiter (−276,2; +30,9) batem com as latitudes e longitudes do `places.csv`.
+
+### Corrigido (antes → depois)
+
+| Antes | Depois | Fonte |
+|---|---|---|
+| Ponto do Pleiades do templo de Júpiter com "acurácia de 2000 m, inútil para posicionar" | O raio de 2000 m é a avaliação genérica para coordenadas do GeoHack. O registro diz "verified in Google Earth" e `location_precision = precise`. Serve como conferência grosseira, ≈ 41 m a oeste da posição hipotética. | Pleiades `location_points.csv` (place 871801169) |
+| "Templo baixo", sem ressalva | Baixo **em proporção** à largura e ao frontão, mas assentado sobre uma *krēpis* **alta** | Dion. 4.61.3; Gélio 2.10.2 |
+| Plataforma "62 × 53 (203 × 174 pés)" | Esses 203 × 174 são **pés ingleses**; em pés romanos seriam ≈ 209 × 179 | Aritmética (62/0,3048 = 203; 53/0,3048 = 174) |
+| Mura Sommella e Foglia, "230 × 170 pés", apresentado como coerente com Dionísio | O perímetro (800 pés) bate, mas a diferença de 60 pés **contradiz** o "< 15 pés" de Dionísio | Dion. 4.61.3; aritmética |
+| Juno Moneta: "o inimigo não foi conferido" | Os **Auruncos** | Lív. 7.28.2–4 |
+| Prodígio de Moneta: "início do séc. II a.C.; ano exato não verificado" | **196 a.C.** (data marginal da edição) | Lív. 33.26.8, ed. PerseusDL lat5 |
+| Piso *scutulatum* (losangos) dado como certo | *Scutulatum* é **conjectura** (*e coni. J.*); os manuscritos leem *scalpturatum*. O desenho é incerto. | Plín. 36.185, aparato de Mayhoff |
+| Cão de bronze na *cella* de Juno posto em 50–44 a.C. | Plínio só diz *aetas nostra vidit* (séc. I d.C.). A data da dedicação é desconhecida, e a presença em 50–44 a.C. **não está atestada**. | Plín. 34.38 |
+| "Cães mantidos no Capitólio (Cic. *Rosc. Am.* 56; Plín. 10.51)" | Plín. 10.51 trata da honra dos gansos e do suplício anual de cães entre os templos de Juventas e de Sumano, fora do Capitólio. Os cães mantidos no Capitólio vêm só de Cícero. | Plín. 10.51 |
+| Ouro do trono, "3º consulado de Pompeu (52 a.C.)", sem ressalva | Há **variante textual**: os manuscritos leem *III*; Brotier corrige para *secundo* (55 a.C.); edições antigas falam de "M. Crasso" | Plín. 33.14, aparato de Mayhoff |
+| A oficina monetária em Moneta tratada como atestada para 50–44 a.C. | O *nunc* de Lívio atesta a oficina na época **augustana**; para 50–44 a.C. é inferência | Lív. 6.20.13 |
+| Dedicação em 69 a.C. "só de fontes modernas via resumo de busca" | Confirmada também pela nota marginal de Perrin (Loeb) | Plut. *Publ.* 15.1 |
+
+### ⚠ Permanece incerto ou não confirmado
+
+- **Todas as dimensões arqueológicas modernas do templo de Júpiter**, que vinham só de resumos de busca e não puderam ser reconferidas:
+  - 62 × 53 m e ≈ 3340 m² (Britannica, DAR, MEFRA);
+  - 55 × 60 m (Platner);
+  - 74 × 54 m e pódio de 4,85 m (Hopkins). Esse número **não tem referência bibliográfica** no arquivo;
+  - pódio de 3,6 m (DAR);
+  - larguras dos muros de fundação (6,90, 4,5 e 3,86 m);
+  - intercolúnios de 12,43 e 8,88 m (Mura Sommella);
+  - 9 colunas laterais;
+  - fachada hexastila (Platner);
+  - colunas de Sula coríntias de mármore branco (Platner);
+  - fundações em *cappellaccio*;
+  - início das escavações em outubro de 1998.
+- **Area Capitolina** (35 m a leste, ≤ 30 m a oeste, 40–45 m na frente) e **traçado do Clivus**, segundo Platner via `01`: não reconferidos.
+- **Cotas** (39, 38 e 30 m acima do Tibre; aterro de ≈ 8 m na sela): não reconferidas.
+- **Unidade de pé de Dionísio** (romano ou grego): não verificada. A conversão para metros dos "200 pés" depende dela.
+- **Posição do templo no sistema do jogo:** a hipótese (−235; +38) e o ponto do Pleiades (−276; +31) diferem em ≈ 41 m. É preciso conferir com o polígono do Palazzo Caffarelli e do Giardino Romano no OSM.
+- **Não reconferidos nesta etapa** (sem cópia local nem download): Cic. *Off.* 3.66 e 3.104; Cic. *Rosc. Am.* 56; Val. Máx. 6.3.1a, 6.3.3, 6.5.7 e 6.9.13. Seguem com a conferência do pesquisador original.
+- **Como continuar:** para retomar as buscas, o usuário pode mandar uma nova mensagem (a cota se renova) ou aumentar `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`. Prioridades:
+  1. verbete *Aedes Iovis Capitolini* de Platner no LacusCurtius;
+  2. DAR, *Iuppiter Optimus Maximus Capitolinus, Aedes*;
+  3. MEFRA 317 (escavações de 1998–2000);
+  4. a obra de J. N. Hopkins, para identificar a fonte do "74 × 54 m".
+
+**Anacronismos encontrados ou reforçados:**
+- Cão de bronze da *cella* de Juno: presença em 50–44 a.C. não atestada.
+- Piso em losangos: a leitura *scutulatum* é conjectura.
+- Templo de Júpiter Tonante: 22 a.C., confirmado.
+- Colunas pentélicas recortadas: de Domiciano, confirmado.
+- Altura maior que a do templo de Cátulo: de Vespasiano, confirmado.
+- Júpiter Conservador e Júpiter Custos: de Domiciano, confirmados.
+
+### Fontes desta verificação
+- Tácito, *Historiae* (PerseusDL `phi1351.phi004.perseus-lat2`), Gélio (`phi1254.phi001.perseus-lat2`), Nepos (`phi0588.abo025.perseus-lat2`): baixados de `https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/` em 2026-10-09.
+- Cópias locais da sessão (PerseusDL):
+  - Dionísio (`tlg0081.tlg001.perseus-grc2`);
+  - Dião (`tlg0385.tlg001.perseus-grc2`);
+  - Plutarco *Publicola* (`tlg0007.tlg008.perseus-eng2`, trad. Perrin);
+  - Lívio (`phi0914.phi001.perseus-lat2/lat3/lat4/lat5`);
+  - Plínio (`phi0978.phi001.perseus-lat2`, ed. Mayhoff com aparato);
+  - Vitrúvio (`phi1056.phi001.perseus-lat2`);
+  - Cícero *Cat.* (cópia local `cic-cat.xml` do PerseusDL `phi0474.phi013`) e *ND* (`phi0474.phi050`);
+  - Ovídio *Fasti* (`phi0959.phi007.perseus-lat2`);
+  - Suetônio *Iul.*;
+  - Apiano *BC* (trad. White).
+- Pleiades: `places.csv` e `location_points.csv` (cópia local do repositório `isawnyu/pleiades.datasets`).
