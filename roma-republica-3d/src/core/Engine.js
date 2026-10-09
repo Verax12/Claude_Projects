@@ -25,6 +25,24 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const nextFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
 
+/** Preferências do usuário (localStorage pode estar indisponível — usa o padrão). */
+function readPref(key, def) {
+  try {
+    const v = localStorage.getItem(key);
+    return v != null ? Number(v) : def;
+  } catch (e) {
+    return def;
+  }
+}
+
+function writePref(key, v) {
+  try {
+    localStorage.setItem(key, String(v));
+  } catch (e) {
+    /* ignora */
+  }
+}
+
 /** Rótulos curtos das áreas no mapa. */
 const AREA_LABELS = {
   'forum-praca': 'Fórum',
@@ -61,6 +79,17 @@ export class Engine {
       onTime: (h) => this.env.setTime(h),
       onAudio: (on) => this.audio.setEnabled(on),
       onVolume: (v) => this.audio.setVolume(v),
+      sensitivity: readPref('roma.sens', 1),
+      fov: readPref('roma.fov', 70),
+      onSensitivity: (v) => {
+        if (this.player) this.player.sensitivity = v;
+        writePref('roma.sens', v);
+      },
+      onFov: (v) => {
+        this.camera.fov = v;
+        this.camera.updateProjectionMatrix();
+        writePref('roma.fov', v);
+      },
       onNPCs: (on) => {
         this.npcs.enabled = on;
         if (!on) for (const im of Object.values(this.npcs.im || {})) im.count = 0;
@@ -84,7 +113,7 @@ export class Engine {
     materials.setAnisotropy(Math.min(8, renderer.capabilities.getMaxAnisotropy()));
 
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.15, q.viewDistance + 4000);
+    this.camera = new THREE.PerspectiveCamera(readPref('roma.fov', 70), window.innerWidth / window.innerHeight, 0.15, q.viewDistance + 4000);
     window.addEventListener('resize', () => this.onResize());
 
     // oclusão de ambiente (GTAO) opcional — escurece cantos, arcadas e ruas estreitas
@@ -165,6 +194,7 @@ export class Engine {
 
     // ---------------- jogador ----------------
     this.player = new Player(this.camera, renderer.domElement, this.world);
+    this.player.sensitivity = readPref('roma.sens', 1);
     this.player.onStep = (s) => this.audio.step(s);
     this.player.onLockChange = (locked) => this.ui.setLocked(locked);
     this.player.onFlyChange = (fly) => this.ui.toast(fly ? 'Modo voo ativado (F para sair)' : 'Modo voo desativado');

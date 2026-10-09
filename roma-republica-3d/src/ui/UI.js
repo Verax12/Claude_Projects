@@ -77,6 +77,8 @@ export class UI {
           <label>Hora do dia <span data-out="time"></span></label>
           <input type="range" min="6" max="18" step="0.25" data-set="time" style="width:100%">
           <label>Volume <input type="range" min="0" max="1" step="0.05" data-set="volume"></label>
+          <label>Sensibilidade do mouse <input type="range" min="0.3" max="3" step="0.1" data-set="sens"></label>
+          <label>Campo de visão <input type="range" min="55" max="95" step="1" data-set="fov"></label>
           <label>Pessoas (NPCs) <input type="checkbox" data-set="npcs" checked></label>
           <label>Estatísticas <input type="checkbox" data-set="stats"></label>
         </div>
@@ -184,6 +186,12 @@ export class UI {
     vol.value = 0.6;
     vol.addEventListener('input', () => this.opts.onVolume?.(Number(vol.value)));
     this.settingsPanel.querySelector('[data-set="npcs"]').addEventListener('change', (e) => this.opts.onNPCs?.(e.target.checked));
+    const sens = this.settingsPanel.querySelector('[data-set="sens"]');
+    sens.value = this.opts.sensitivity ?? 1;
+    sens.addEventListener('input', () => this.opts.onSensitivity?.(Number(sens.value)));
+    const fov = this.settingsPanel.querySelector('[data-set="fov"]');
+    fov.value = this.opts.fov ?? 70;
+    fov.addEventListener('input', () => this.opts.onFov?.(Number(fov.value)));
     this.settingsPanel.querySelector('[data-set="stats"]').addEventListener('change', (e) => this.showStats(e.target.checked));
 
     if (!this.visible) this.root.style.display = 'none';

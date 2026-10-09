@@ -43,6 +43,8 @@ export class Player {
     /** Callback de passo: fn(velocidade) — usado pelo áudio. */
     this.onStep = null;
     this.avatar = null;
+    /** Multiplicador da sensibilidade do mouse (configurações). */
+    this.sensitivity = 1;
     this._initInput();
   }
 
@@ -56,7 +58,7 @@ export class Player {
     });
     document.addEventListener('mousemove', (e) => {
       if (!this.locked) return;
-      const s = 0.0022;
+      const s = 0.0022 * this.sensitivity;
       this.yaw -= e.movementX * s;
       this.pitch -= e.movementY * s;
       this.pitch = Math.max(-1.45, Math.min(1.45, this.pitch));
