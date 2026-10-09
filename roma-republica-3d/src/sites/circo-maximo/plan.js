@@ -20,7 +20,7 @@
  *   r 52–59      arquibancada de madeira, 10 fileiras; por baixo, lojas e moradias (Dion. 3.68.3–4)
  *   r 59–59,6    parede externa
  *   r 59,6–63,2  pórtico externo de um andar (Dion. 3.68.4)
- *   r 63,6–70    rua (largura NÃO ENCONTRADA → HIPÓTESE)
+ *   r 63,2–70    rua (largura NÃO ENCONTRADA → HIPÓTESE)
  *   largura externa total da cávea ≈ 118 m (4 plethra, Dion. 3.68.2, conversão de 0,296 m/pé).
  */
 import { place, facingRotY, PES } from '../../core/geo.js';
@@ -36,6 +36,8 @@ export const ROT = facingRotY(AXIS_BEARING + 90);
 
 /** Cota do piso da arena e do entorno — NÃO ENCONTRADA (nota 10 §2); HIPÓTESE de trabalho. */
 export const Y0 = 2.0;
+/** Pisos construídos ficam 3 cm acima do terreno nivelado (evita z-fighting com o relevo). */
+export const FLOOR = Y0 + 0.03;
 
 /** Dimensões externas segundo Dionísio 3.68.2: 3,5 estádios × 4 plethra (621 × 118 m). */
 export const LENGTH = 621;
@@ -58,7 +60,6 @@ export const R = {
   facade: WIDTH / 2 + 0.6, // 59,6
   colonnade: 62.8,
   portico: 63.2,
-  street0: 63.6,
   street1: 70,
 };
 
@@ -93,14 +94,19 @@ export const CARCERES = {
 /** Passagem entre as carceres e o início das arquibancadas (HIPÓTESE de acesso). */
 export const STANDS_X0 = CARCERES.front + 6; // −296,5
 
-/** Lados retos: unidades de 7 lojas (5 m) + 1 vomitório (4 m) — HIPÓTESE de ritmo. */
-export const UNIT = { shops: 7, shopW: 5, vomW: 4, count: 14 };
-export const UNIT_LEN = UNIT.shops * UNIT.shopW + UNIT.vomW; // 39
+/**
+ * Lados retos: 13 blocos de 8 módulos (lojas); em cada bloco o módulo 4 é um vomitório
+ * (escada de acesso dos espectadores "junto às lojas", Dion. 3.68.4). Ritmo = HIPÓTESE.
+ */
 export const RUN_X0 = STANDS_X0 + 1; // −295,5 (depois do muro de testa)
-export const RUN_X1 = RUN_X0 + UNIT.count * UNIT_LEN; // 250,5
+export const RUN_X1 = XC; // início da meia-lua
+export const BLOCKS = 13;
+export const MODS = 8;
+export const MOD_W = (RUN_X1 - RUN_X0) / (BLOCKS * MODS); // ≈ 5,26 m
+export const VOM_MOD = 4;
 
-/** Meia-lua: 35 segmentos (o do meio fica no ápice, eixo do circo). */
-export const CURVE = { n: 35, vomitoria: [5, 11, 17, 23, 29], stoneAisles: [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32], woodAisles: [2, 8, 14, 20, 26, 32] };
+/** Meia-lua: 35 segmentos (o do meio, 17, fica no ápice, sobre o eixo do circo). */
+export const CURVE = { n: 35, vomitoria: [5, 11, 17, 23, 29], stoneAisles: [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32], woodAisles: [2, 8, 14, 20, 26, 32], apex: 17 };
 
 /** Metas (posições HIPOTÉTICAS: a forma da barreira em 46 a.C. é desconhecida). */
 export const META_X = [-150, 226];
@@ -117,12 +123,12 @@ export function curveAngle(k, frac = 0.5) {
   return (-90 + (180 / CURVE.n) * (k + frac)) * DEG;
 }
 
-/** Rotação Y de um quadro cujo −Z local aponta para fora na direção φ (no quadro do circo). */
+/** Rotação Y (no quadro do circo) de um quadro cujo −Z local aponta para fora na direção φ. */
 export function outwardRot(phi) {
   return Math.atan2(-Math.cos(phi), -Math.sin(phi));
 }
 
-/** Rumo de bússola (graus) da direção local (dx, dz) do quadro do circo. */
+/** Rumo de bússola (graus) da direção (dX, dZ) do quadro do circo. */
 export function worldBearing(dX, dZ) {
   const a = toWorld(0, 0);
   const b = toWorld(dX, dZ);
