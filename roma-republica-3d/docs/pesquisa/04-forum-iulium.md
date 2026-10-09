@@ -105,7 +105,7 @@
 
 ### Detalhes de ambientação
 - **Não era um mercado:** César destinou o espaço a ser uma praça "**não de mercadorias** (*οὐ τῶν ὠνίων*), mas para os que se reúnem para tratar de negócios públicos, como as praças dos persas, onde se busca ou se aprende a justiça" [A-APP] 2.102. **No jogo: sem bancas nem vendedores na praça.** Se as *tabernae* forem representadas, sugerimos uso administrativo ou fechado, como **hipótese**.
-- **Uso político e cerimonial em 44 a.C.:** César sentado diante do templo recebe o Senado inteiro, com cônsules e pretores à frente (Plutarco), e não se levanta [A-SUET] 78.1; [A-DIO] 44.8.1–2; [A-PLUT] 60.4. Suetônio conta duas versões: Cornélio Balbo o teria segurado quando tentava se levantar, ou ele nem tentou e olhou feio para C. Trebácio, que o advertia [A-SUET] 78.1. É uma cena de alto valor narrativo para o jogo.
+- **Uso político e cerimonial em 44 a.C.:** César sentado diante do templo recebe o Senado inteiro, com cônsules e pretores à frente (Plutarco, que porém situa a cena sobre a Rostra), e não se levanta [A-SUET] 78.1; [A-DIO] 44.8.1–2; [A-PLUT] 60.3 (corrigido; antes "60.4"). Suetônio conta duas versões: Cornélio Balbo o teria segurado quando tentava se levantar, ou ele nem tentou e olhou feio para C. Trebácio, que o advertia [A-SUET] 78.1. É uma cena de alto valor narrativo para o jogo.
 - **Noite da dedicação (46 a.C.):** chinelas, coroa de flores, cortejo popular e **elefantes com tochas** [A-DIO] 43.22.1.
 - **Tribunais e advogados:** Ovídio situa ali processos, juristas e oradores ("*arguto foro*", "*consultus*", "*disertus*", "*lites*") junto à Appias [A-OV-AA] 1.79–88; 3.449–452. É época **augustana**: para 46–44 a.C., trata-se de uma extrapolação (marcar).
 - **Prestígio:** Dio diz que o fórum de César "é mais belo que o Romano", mas aumentou o prestígio deste, a ponto de ser chamado de "Grande". O referente do pronome é ambíguo no grego; essa é a leitura que adotamos [A-DIO] 43.22.2.
@@ -119,7 +119,7 @@
 ### Estado em 50–44 a.C.
 - **Voto:** na noite antes de Farsália (48 a.C.), César invocou Marte e "sua ancestral Afrodite" e prometeu construir em Roma um templo a ela **como Portadora da Vitória** (*νικηφόρῳ* = Victrix), se vencesse [A-APP] 2.68. Depois ergueu o templo "à **Genetrix**, como havia prometido" [A-APP] 2.102. Escolheu depois Genetrix, mãe de Eneias e ancestral mítica dos Júlios [M-WIKI-VG].
 - **Dedicado em 26/09/46 a.C.**, último dia do triunfo [A-DIO] 43.22.2–3; [M-ER-VG]; [M-WIKI-VG].
-- **Inacabado na dedicação:** a estátua de culto foi colocada "antes de ser terminada, por pressa de dedicar" [A-PLIN] 35.156 (Plínio cita Varrão). Dio fala de um festival "instituído pela conclusão (*ἐκποιήσει*) do Afrodísio" que alguns se encarregaram de celebrar "ainda em vida de César" [A-DIO] 45.6.4.
+- **Estátua de culto inacabada na dedicação:** a estátua foi colocada "antes de ser terminada, por pressa de dedicar" [A-PLIN] 35.156 (✔ relido; Plínio cita Varrão em 35.155: *idem magnificat Arcesilaum, L. Luculli familiarem*). O que Plínio diz estar inacabado é a **estátua**; para o templo, ver a ressalva no Resumo. Dio fala de um festival "instituído pela conclusão (*ἐκποιήσει*) do Afrodísio" que alguns se encarregaram de celebrar "ainda em vida de César" [A-DIO] 45.6.4.
 - **Em uso no início de 44 a.C.:** o **pronaos** existia e era usado; César recebeu ali os senadores [A-DIO] 44.8.1 ("*ἐν τῷ τοῦ Ἀφροδισίου προνάῳ*").
 - **Concluído por Augusto/Otaviano** [M-WIKI-VG][M-MDT] (⚠ não confirmado diretamente: as *RG* não foram lidas). Danificado em **80 d.C.** (✔ [P-FI]) e **reconstruído inteiramente por Trajano** (113 d.C.) [M-WIKI-VG][M-MDT][M-MADAIN] (⚠ data de 113 não reconfirmada).
 - **Vitrúvio** (escreve sob Augusto, antes da reconstrução trajânica) cita "o de Vênus no Fórum de César" como exemplo de **picnostilo** [A-VITR] 3.3.2. ✔ Relido: *quemadmodum est divi Iulii et in Caesaris foro Veneris*. É o **único dado arquitetônico antigo sobre o templo pré-trajânico**. **Ressalva de fase (nova):** no mesmo passo, Vitrúvio cita também o templo do **Divo Júlio**, dedicado só em 18/08/29 a.C. ([P-DI], Pleiades 277569430, relido; ver também [03-forum-sul-leste]). Logo, ele escreve **depois de 29 a.C.** e descreve o templo de Vênus no estado **augustano**, depois da conclusão, e não necessariamente no de 46–44 a.C. O espaçamento das colunas dificilmente terá mudado, mas isso é **inferência**.
@@ -183,14 +183,14 @@
 | **Imagem (*εἰκών*) de Cleópatra**, "bela", ao lado da deusa | Dentro do templo, junto à estátua de culto | **Sim**: posta por César e ainda lá no tempo de Ápio | [A-APP] 2.102 | alta |
 | ↳ material: **dourada/"em ouro"** | — | Dio: Cleópatra "é vista **em ouro** (*χρυσῆ*) no Afrodísio" (época de Dio) | [A-DIO] 51.22.3 | alta para "dourada"; **ouro maciço ou bronze dourado: controverso**. Resumos modernos falam em "bronze com folha de ouro" [M-WIKI-VG] |
 | **Estátua equestre (*Equus Caesaris*)**: o cavalo de César, com patas dianteiras "semelhantes às humanas" | **Diante do templo** (*ante aedem* / *pro aede*); Estácio: "**defronte ao templo** de Dione Latina, no Fórum de César" | **Sim**: dedicada pelo próprio César (*postea dedicavit*), em data **NÃO ENCONTRADA** | [A-PLIN] 8.155; [A-SUET] 61; [A-STAT] *Silv.* 1.1.84–87 | alta (existência e posição geral) |
-| ↳ autoria e cavaleiro | — | Estácio: atribuída a **Lisipo**, feita para **Alexandre** (o "chefe de Pela") e depois com o rosto de César. Platner: o ditador montado no cavalo. Fonte divulgativa: "no estilo de Alexandre sobre Bucéfalo", "talvez duas vezes o tamanho natural", "no centro do pátio" | [A-STAT]; [M-ARL-PA]; [M-POP] | Estácio contra Plínio/Suetônio: **divergência**. "Duas vezes o natural" e "centro do pátio": baixa (fonte divulgativa) |
+| ↳ autoria e cavaleiro | — | Estácio: atribuída a **Lisipo**, feita para **Alexandre** (o "chefe de Pela") e depois com o rosto de César. Platner: o ditador montado no cavalo. Fonte divulgativa: "no estilo de Alexandre sobre Bucéfalo", "talvez duas vezes o tamanho natural", "no centro do pátio" | [A-STAT]; [M-ARL-PA]; [M-POP] | Estácio contra Plínio/Suetônio: **divergência**. Estácio escreve sob **Domiciano** (o poema se intitula *equus maximus Domitiani Imp.*) e descreve a estátua como estava no fim do séc. I d.C. "Duas vezes o natural" e "centro do pátio": baixa (fonte divulgativa; ⚠ não confirmado) |
 | **Estátua de César couraçado (*loricata*)** | "No seu fórum" | **Sim**: César "permitiu" que fosse dedicada | [A-PLIN] 34.18 | alta (existência); posição: **NÃO ENCONTRADO** |
 | **Quadros "Ájax" e "Medeia" de Timômaco de Bizâncio**, comprados por **80 talentos** | Plínio 35.26: "**diante** do templo" (*ante aedem*); 35.136: "**no** templo" (*in aede positas*); 7.126: comprados para dedicar "no templo" | **Sim** (dedicados por César) | [A-PLIN] 7.126; 35.26; 35.136 | alta (existência); posição: **divergente** |
 | **Seis dactilotecas** (coleções de gemas) | No templo | Sim (consagradas por César) | [A-PLIN] 37.11 | alta |
 | **Couraça (*thorax*) de pérolas britânicas** dedicada a Vênus Genetrix | No templo | Sim (dedicada por César) | [A-PLIN] 9.116 | alta |
 | **Fonte Appias / Apíades** (ninfas ligadas à Aqua Appia) | "Sob o templo de Vênus feito de mármore", jorrando água [A-OV-AA] 1.81–82. Posição exata debatida; R. Ulrich a coloca **diretamente diante do pódio** [M-ARL-APP] | **NÃO ENCONTRADO** para 46–44 a.C. (só atestada em Ovídio, época augustana) | [A-OV-AA] 1.81–82, 3.452; [A-OV-REM] 660; [M-WIKI-APPIAS]; [M-ARL-APP] | média (existência augustana); baixa para 46–44 |
 | ↳ "Apíades de Estéfano" | Plínio as põe nos **monumentos de Asínio Polião**, não no Fórum de César | Posterior: Polião ampliou o Atrium Libertatis em 39 a.C. [P-AL] | [A-PLIN] 36.33; [P-AL] | alta para o que Plínio diz. A ligação com a fonte do Fórum é **hipótese moderna** (o resumo [M-WIKI-APPIAS] atribui a Plínio 36.33 um vínculo que o texto não faz) |
-| **Estátua de bronze de César com estrela** | No templo (Afrodísio) | **NÃO: julho de 44 a.C., depois dos Idos** (Otaviano) | [A-DIO] 45.7.1 | alta (anacronismo para antes dos Idos) |
+| **Estátua de bronze de César com estrela** | No templo (Afrodísio), segundo Dio; "no fórum" (*in foro*), segundo Plínio 2.94, que cita Augusto | **NÃO: julho de 44 a.C., depois dos Idos** (Otaviano) | [A-DIO] 45.7.1; [A-PLIN] 2.94 | alta (anacronismo para antes dos Idos) |
 
 ---
 
@@ -218,8 +218,11 @@
 10. **Fonte Appias**: atestada só em época augustana [A-OV-AA]. Em 46–44 a.C., opcional e marcada como hipotética.
 11. **Tribunais e advogados de Ovídio** (*Ars amatoria*): época augustana. Para 46–44 a.C., só como extrapolação.
 12. **Atrium Libertatis ampliado por Polião** (39 a.C.) [P-AL].
-13. **Afirmação de que o fórum foi dedicado "concluído"** [P-FI]: contradiz Plínio 35.156 e as *Res Gestae* (via [M-MDT]). Não representar o conjunto como 100% acabado.
+13. **Afirmação de que o fórum foi dedicado "concluído"** [P-FI]: contradiz as *Res Gestae* (via [M-MDT], ⚠ não lidas) e, quanto à estátua de culto, Plínio 35.156. **Ressalva da 2ª rodada:** Dio 45.6.4 fala em "conclusão" (*ἐκποίησις*) do Afrodísio. Não representar o conjunto como 100% acabado, mas apresentar o canteiro como **hipótese**.
 14. **Reconstruções de Luigi Canina** (séc. XIX) [M-RA-CANINA]: não usar como base sem verificação.
+15. **(2ª rodada) Vitrúvio e Ovídio descrevem o templo augustano.** Vitrúvio 3.3.2 cita o templo de Vênus junto com o do Divo Júlio (dedicado em 29 a.C. [P-DI]), e Ovídio fala do templo "de mármore". Os dois descrevem o estado **depois** da conclusão augustana. Aplicar picnostilo e mármore a 46–44 a.C. é **extrapolação razoável, não atestação**.
+16. **(2ª rodada) Ordem coríntia, octastilo, 8/9 colunas laterais, *sine postico*, escadas laterais**: tudo descreve as ruínas **trajânicas** e vem só de resumos de busca (⚠ não confirmado). Para 46–44 a.C., é hipótese.
+17. **(2ª rodada) Pórtico duplo e "*tabernae* cesarianas"**: as duas atribuições vêm de páginas divulgativas não identificadas [M-POP] (⚠ não confirmado).
 
 ---
 
@@ -265,13 +268,13 @@ Dados prioritários: altura do pódio, dimensões do templo (largura × comprime
 - **[A-SUET]** Suetônio, *Divus Iulius* 26.2, 61, 78.1, 84.1. Latim: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1348/abo011/phi1348.abo011.perseus-lat2.xml
 - **[A-PLIN]** Plínio, o Velho, *Naturalis Historia* 2.93–94; 7.126; 8.155; 9.116; 16.236; 34.18; 35.26; 35.136; 35.156; 36.33; 36.102–103; 37.11. Latim (Mayhoff): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml ; inglês (Bostock & Riley): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-eng1.xml
 - **[A-VITR]** Vitrúvio, *De Architectura* 3.3.2, 3.3.3, 3.3.10. Latim: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml ; inglês (Morgan): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1056/phi001/phi1056.phi001.perseus-eng2.xml ; ver também https://lexundria.com/vitr/3.3.2/cf (via WebSearch)
-- **[A-APP]** Ápio, *Guerras Civis* 2.68, 2.102, 3.28. Grego: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0551/tlg017/tlg0551.tlg017.perseus-grc2.xml ; inglês (White): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0551/tlg017/tlg0551.tlg017.perseus-eng2.xml
+- **[A-APP]** Ápio, *Guerras Civis* 2.68, 2.102, 3.28. A numeração é a do texto grego; na tradução inglesa `perseus-eng2`, o voto de Farsália cai em **2.69**. Grego: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0551/tlg017/tlg0551.tlg017.perseus-grc2.xml ; inglês (White): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0551/tlg017/tlg0551.tlg017.perseus-eng2.xml
 - **[A-DIO]** Díon Cássio, *Historia Romana* 43.22.1–3; 44.5.1–2; 44.8.1–2; 45.6.4–45.7.1; 51.22.3. Grego (Boissevain): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0385/tlg001/tlg0385.tlg001.perseus-grc2.xml (traduções nossas)
-- **[A-PLUT]** Plutarco, *César* 60.4 (trad. Perrin): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg048/tlg0007.tlg048.perseus-eng2.xml
+- **[A-PLUT]** Plutarco, *César* **60.3** (corrigido na 2ª rodada; *ὑπὲρ τῶν ἐμβόλων καθεζόμενος*; trad. Perrin): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg048/tlg0007.tlg048.perseus-eng2.xml ; grego: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg048/tlg0007.tlg048.perseus-grc2.xml
 - **[A-OV-AA]** Ovídio, *Ars amatoria* 1.79–88 (*Subdita qua Veneris facto de marmore templo / Appias expressis aera pulsat aquis*) e 3.449–452: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml
 - **[A-OV-REM]** Ovídio, *Remedia amoris* 659–660: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi005/phi0959.phi005.perseus-lat2.xml
 - **[A-STAT]** Estácio, *Silvae* 1.1.84–87 (*Cedat equus, Latiae qui contra templa Diones / Caesarei stat sede fori…*): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1020/phi002/phi1020.phi002.perseus-lat2.xml
-- *Res Gestae Divi Augusti* 20 (conclusão do Forum Iulium por Augusto): **não lida diretamente** (o arquivo Perseus não estava disponível). A informação vem de [M-MDT].
+- *Res Gestae Divi Augusti* 20 (conclusão do Forum Iulium por Augusto): **não lida diretamente** (o arquivo Perseus não estava disponível). A informação vem de [M-MDT]. Na 2ª rodada, o registro `canonical-latinLit/data/phi1221/phi007/__cts__.xml` existe (ed. Brunt & Moore), mas pertence à coleção "*Greco-Roman-protected*" e o XML do texto não é público (404). ⚠ **Continua não lida.**
 
 ### Pleiades (lido diretamente: `places.csv`, isawnyu/pleiades.datasets, CC BY 3.0)
 - Arquivo: https://raw.githubusercontent.com/isawnyu/pleiades.datasets/main/data/gis/places.csv
@@ -282,6 +285,7 @@ Dados prioritários: altura do pódio, dimensões do templo (largura × comprime
 - **[P-CJ]** Curia Iulia: https://pleiades.stoa.org/places/837078212
 - **[P-ARG]** Argiletum: https://pleiades.stoa.org/places/451243813
 - **[P-FA]** Forum Augusti: https://pleiades.stoa.org/places/47606496 ; **[P-MU]** Temple of Mars Ultor: https://pleiades.stoa.org/places/823121346
+- **[P-DI]** Temple of Divus Iulius: https://pleiades.stoa.org/places/277569430 ("*dedication occurring on 18th August, 29 B.C.*"; lido na 2ª rodada)
 - **[P-FN]** Forum of Nerva: https://pleiades.stoa.org/places/984830239 ; **[P-FT]** Forum Traiani: https://pleiades.stoa.org/places/250091860 ; **[P-CT]** Column of Trajan: https://pleiades.stoa.org/places/783489695 ; **[P-TP]** Templum Pacis: https://pleiades.stoa.org/places/152567558
 
 ### Fontes modernas (via WebSearch; conteúdo conhecido pelos resumos da busca)
@@ -308,3 +312,64 @@ Dados prioritários: altura do pódio, dimensões do templo (largura × comprime
 ### Documentos do projeto
 - **[00-coordenadas]** `docs/pesquisa/00-coordenadas.md`: pontos Pleiades/OSM no sistema do jogo.
 - **[02-forum-norte]** `docs/pesquisa/02-forum-norte.md`: Cúria Hostília/Cornélia/de Fausto, Cúria Júlia, Argileto, Comício.
+- **[03-forum-sul-leste]** `docs/pesquisa/03-forum-sul-leste.md`: Templo do Divo Júlio (autorizado em 42 a.C., dedicado em 29 a.C.).
+
+---
+
+## Verificação independente
+
+**Método e limitação.** Um verificador adversarial escolheu as 15 afirmações mais importantes para a modelagem 3D. A cota de **WebSearch estava esgotada** (limite por turno, compartilhado entre agentes), e a busca falhou já na 1ª chamada. Por isso, **nenhuma fonte moderna pôde ser reaberta ou buscada de novo**: tudo o que depende só de [M-…] continua ⚠ **não confirmado**. O que foi conferido, foi conferido **direto na fonte**:
+- os textos antigos, nos XML do PerseusDL (`raw.githubusercontent.com/PerseusDL/canonical-latinLit` e `canonical-greekLit`), lidos por livro, capítulo e seção;
+- o `places.csv` do Pleiades (`isawnyu/pleiades.datasets`), campos `description`, `details`, coordenadas e `bounding_box_wkt`;
+- as contas derivadas [D], refeitas a partir das coordenadas.
+
+### ✔ Confirmado (com a fonte relida)
+
+| # | Afirmação | Fonte relida |
+|---|---|---|
+| 1 | Até 54 a.C., Cícero e Opio já tinham gasto HS 60 milhões (*contempsimus sexcenties HS*) para "ampliar o fórum (*ut forum laxaremus*) e estendê-lo até o Atrium Libertatis"; os particulares não vendiam por menos | Cícero, *Att.* 4.17.7 (Perseus/Purser, carta datada "*Scr. Romae K. Oct. a. 700 (54)*") |
+| 2 | *Forum de manubiis incohavit, cuius area super sestertium milies constitit* (mais de HS 100 milhões); junto com o *munus* pela filha | Suetônio, *Iul.* 26.2 |
+| 3 | Só o solo do fórum custou HS 100 milhões | Plínio, *NH* 36.103 (Bostock & Riley: "*one hundred millions of sesterces*"; no Mayhoff, o numeral vem corrompido no XML, com a variante *millies*) |
+| 4 | Templo **picnostilo**: intercolúnio = 1,5 D, com o exemplo "*in Caesaris foro Veneris*"; regra do picnostilo: altura = 10 D | Vitrúvio 3.3.2; 3.3.10 |
+| 5 | Fórum e templo de Afrodite dedicados no **último dia do triunfo**, "logo então" (*εὐθὺς τότε*); noite com chinelas, flores, povo e elefantes com tochas; o fórum é "mais belo que o Romano" | Dio 43.22.1–3 |
+| 6 | **Pronaos** existente e em uso no início de 44 a.C.: César recebe o Senado sentado *pro aede Veneris Genetricis* / *ἐν τῷ τοῦ Ἀφροδισίου προνάῳ*; as versões de Balbo e de Trebácio | Suetônio, *Iul.* 78.1; Dio 44.8.1 |
+| 7 | Voto a Afrodite *Nikephoros* antes de Farsália; templo erguido "à Genetrix, como prometera", com **τέμενος** em volta, destinado a ágora "**não de mercadorias**" (*οὐ τῶν ὠνίων*), mas de negócios públicos; imagem "bela" de **Cleópatra** ao lado da deusa | Ápio 2.68; 2.102 (grego) |
+| 8 | Cleópatra "é vista **em ouro**" (*χρυσῆ*) no Afrodísio (época de Dio) | Dio 51.22.3 |
+| 9 | Estátua do **cavalo** de César "diante do templo": *ante Veneris Genetricis aedem* (Plínio) e *pro aede* (Suetônio, *postea dedicavit*); em Estácio, *contra templa Diones*, atribuída a Lisipo e feita para Alexandre | Plínio 8.155; Suetônio, *Iul.* 61; Estácio, *Silv.* 1.1.84–87 (poema domicianeu) |
+| 10 | Oferendas de César: estátua de culto de **Arcesilau** (amigo de Luculo, citado por Varrão), posta **inacabada** "por pressa de dedicar"; quadros *Ájax* e *Medeia* de Timômaco por 80 talentos (*ante aedem* em 35.26 × *in aede* em 35.136 e 7.126); 6 dactilotecas; couraça de pérolas britânicas; César *loricatus* "no seu fórum" | Plínio 35.155–156; 35.26; 35.136; 7.126; 37.11; 9.116; 34.18 |
+| 11 | Estátua de bronze de César com **estrela**: Otaviano, julho de 44 a.C., **depois dos Idos** | Dio 45.6.4–45.7.1; Plínio 2.93–94 |
+| 12 | **Fonte Appias** só em Ovídio, época augustana ("*Subdita qua Veneris facto de marmore templo / Appias…*"); **Apíades de Estéfano** nos monumentos de **Asínio Polião**, não no Fórum de César | Ovídio, *Ars* 1.81–82, 3.451–452; *Rem.* 660; Plínio 36.33 |
+| 13 | O Pleiades diz: obra começada em 54 a.C., dedicada em 46 a.C. "*upon its completion*"; **160 × 75 m**, "do Argileto … ao Atrium Libertatis"; expansão do Fórum Romano; incêndio de 80 d.C.; reconstrução c. 95–100 d.C. sob Domiciano e Trajano | Pleiades 445545537 (`details`) |
+| 14 | Anacronismos datados: Basilica Argentaria **trajânica** (nome do séc. IV); Fórum de Augusto e Marte Vingador em **2 a.C.**; Fórum de Nerva em **97 d.C.**; Atrium Libertatis ampliado por Polião em **39 a.C.**; Cúria Júlia concluída em **29 a.C.**; nova cúria decretada e Hostília demolida (pretexto: templo de Felicitas, concluído por Lépido) | Pleiades 397225738, 47606496, 823121346, 984830239, 210292052, 837078212; Dio 44.5.1–2 |
+| 15 | Contas derivadas [D] refeitas: templo (−12,9; −182,9) → Cúria Júlia: 160,8°, 139,1 m; → Argileto: 162,0°, 158,0 m; → ponto do fórum: 153,6°, 55,9 m; vetor de frente para 158° = (0,375; 0,927); `rotation.y` ≈ 22°; caixa do templo 38,5 × 41,8 m; lado ≤ 38,5 / (cos 20° + sen 20°) ≈ 30 m; 8D + 7 × 1,5D = 18,5 D | Coordenadas do `places.csv`, recalculadas |
+
+Também conferidos: Plínio 16.236 (lótus do Volcanal "*in forum usque Caesaris per stationes municipiorum*"); Suetônio, *Iul.* 84.1 (*pro rostris aurata aedes ad simulacrum templi Veneris Genetricis*); Ápio 3.28 (jogos de Vênus Genetrix instituídos quando César dedicou o templo "junto com o próprio fórum").
+
+### ✎ Corrigido (antes → depois)
+
+| # | Antes | Depois | Fonte |
+|---|---|---|---|
+| C1 | "26 de setembro de 46 a.C." atribuído também a Dio 43.22 | Dio dá só "o último dia" do triunfo; a data de calendário vem das fontes modernas [M-ER-VG][M-WIKI-VG], ⚠ **não reconfirmadas** | Dio 43.22.1–3 relido |
+| C2 | "46 a.C.: dedicado INACABADO", apoiado em Plínio 35.156 e Dio 45.6.4 | Plínio 35.156 diz que a **estátua** estava inacabada (*priusquam absolveretur* tem como sujeito *Venerem*). Dio 45.6.4 fala da festa pela "**conclusão** (*ἐκποίησις*) do Afrodísio" e foi retirado como apoio. O fórum inacabado depende das *RG* 20, ⚠ não lidas | Plínio 35.156; Dio 45.6.4 relidos |
+| C3 | Plutarco, *Caes.* 60.4 | Plutarco, *Caes.* **60.3** (*ὑπὲρ τῶν ἐμβόλων καθεζόμενος*; cônsules e pretores à frente) | Plutarco, grego e Perrin, relidos |
+| C4 | "Efeitos do **picnostilo**" (Vitr. 3.3.3) | Efeitos de "*haec utraque genera*": picnostilo **e sistilo** | Vitrúvio 3.3.3 relido |
+| C5 | Vitrúvio como testemunho do templo "pré-trajânico" sem precisar a fase | Vitrúvio cita no mesmo passo o templo do **Divo Júlio** (dedicado em 18/08/29 a.C.). Logo descreve o templo de Vênus no **estado augustano**, e não necessariamente no de 46–44 a.C. | Vitrúvio 3.3.2; Pleiades 277569430 |
+| C6 | "D ≤ ~1,5 m" | **D ≤ ~1,6 m** (30 / 18,5 = 1,62; menos se o pódio for mais largo que a colunata) | Recalculado [D] |
+| C7 | Estátua com estrela "no templo" (só Dio) | Dio: no Afrodísio; Plínio 2.94, citando Augusto: *in foro*. Posterior aos Idos nos dois casos | Dio 45.7.1; Plínio 2.94 |
+| C8 | Ápio 2.68 sem aviso de numeração | 2.68 no grego; **2.69** na tradução `perseus-eng2` | Ápio, grego e inglês |
+| C9 | Carta de Cícero "de 1º out." apresentada como fato fixo | "1º out." é a data da edição Perseus/Purser (carta 4.17). No mesmo XML, a carta 4.16 é datada "fim de junho ou julho de 54". ⚠ A data nas edições que numeram 4.16.8 não foi confirmada. O ano de 54 não muda | Cícero, XML Perseus relido |
+| C10 | "Júlia (morta em 54 a.C.)" sem fonte | Mantido, mas marcado ⚠ sem fonte citada | — |
+
+### ⚠ Permanece incerto / não confirmado (não foi possível buscar)
+
+- **Dimensões 160 × 75 m.** Confirmado só que o **Pleiades** as dá. Faltam fonte moderna independente, fase da medida e se o templo está incluído.
+- **Data de 26/09/46 a.C.** (só fontes modernas não reabertas) e **início da obra em c. 51 a.C.** (só Wikipedia, via resumo).
+- **Conclusão augustana do Forum Iulium** (*RG* 20): texto não lido. O Perseus `phi1221.phi007` é protegido.
+- **Rededicação trajânica em 113 d.C.** e "reconstrução integral" por Trajano: só resumos modernos. O **papel de Domiciano** consta só no Pleiades.
+- **Planta do templo:** octastilo, 8 ou 9 colunas laterais, *sine postico*, "quase quadrado", coríntio, pódio a pique com duas escadas laterais. Tudo vem só de resumos de busca e descreve as **ruínas trajânicas**.
+- **Pórticos e tabernae:** pórtico duplo (trajânico) e *tabernae* "cesarianas" [M-POP], de páginas divulgativas não identificadas.
+- **Estátua equestre** "no centro do pátio" e "duas vezes o natural" [M-POP].
+- **Cleópatra** em ouro maciço ou bronze dourado ("bronze com folha de ouro" [M-WIKI-VG], não reconfirmado).
+- **Platner:** "talvez exagerado" (HS 100 milhões) e "provavelmente na cella" (Arcesilau), via [M-ARL-PA], não reconfirmados.
+- **Ainda NÃO ENCONTRADO:** altura do pódio, dimensões e materiais do templo cesariano, diâmetro das colunas, abside, dimensões da praça interna, profundidade e colunas dos pórticos, nº de *tabernae*, quais partes estavam inacabadas em 45–44 a.C. e o que havia antes no local.
+- **Prioridade para a próxima rodada (com busca):** confirmar 160 × 75 m e as dimensões da praça; confirmar a data de 26/09 e a sua fonte primária (calendários); obter as *RG* 20; confirmar planta e colunas do templo e a ordem e os materiais da fase cesariana; e verificar a datação das *tabernae* e dos pórticos (pistas já listadas acima: R. Ulrich; escavações de 1930 e de 1998–2008).

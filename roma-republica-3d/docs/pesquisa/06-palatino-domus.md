@@ -135,7 +135,7 @@ Provavelmente de pé. Não há notícia de destruição antes dos incêndios de 
 - **Jardim** com árvores "lotus" de copa larga e muito sombra [A-PLIN] 17.5. Smith fala em "beleza dos jardins" [M-SMITH-BIO, Crassus 23].
 
 ### Materiais e acabamentos
-- **Mármore do Himeto** (Ática), trazido para o palco temporário da edilidade e reaproveitado em casa [A-PLIN] 17.6. **Cor e veio do mármore do Himeto: NÃO ENCONTRADO** nas fontes consultadas. Sugestão: tratar como mármore claro acinzentado e marcar como hipótese.
+- **Mármore do Himeto** (Ática), trazido para o palco temporário da edilidade e reaproveitado em casa [A-PLIN] 17.6. **Cor e veio do mármore do Himeto: NÃO ENCONTRADO** nas fontes consultadas (⚠ não confirmado também na verificação independente). Sugestão: tratar como mármore claro acinzentado e marcar como hipótese.
 - Paredes e pisos: NÃO ENCONTRADO. Usar a referência de época do §7 e do §8.
 
 ### Detalhes de ambientação
@@ -227,7 +227,7 @@ Provavelmente de pé. Não há notícia de destruição antes dos incêndios de 
 - Átrio de grande altura, com 4 colunas colossais. Segundo Ascônio, as colunas estavam no tempo dele na *regia* (porta central da cena) do **Teatro de Marcelo** [A-ASC] in Scaur. 27C. Em 50–44 ainda estavam na casa? NÃO ENCONTRADO.
 
 ### Materiais e acabamentos
-- **Mármore luculiano, negro** ("*atrum*"). Plínio diz que vem de Melos e que L. Lúculo (cônsul em 74) lhe deu o nome [A-PLIN] 36.49. A procedência mélia vem de Plínio; uma eventual correção moderna é NÃO VERIFICADA.
+- **Mármore luculiano, negro** ("*atrum*"). Plínio diz que vem de Melos e que L. Lúculo (cônsul em 74) lhe deu o nome [A-PLIN] 36.49. A procedência mélia vem de Plínio; uma eventual correção moderna é NÃO VERIFICADA. **[verif.]** O latim foi conferido: "*atrum alioqui... nascitur autem in Melo insula*". Uma identificação moderna com outra pedra (por exemplo, o "africano" de Teos, que é escuro com manchas) continua ⚠ não confirmada. Até haver fonte, modelar como Plínio descreve: **preto**.
 - Ao serem arrastadas para o Palatino, o empreiteiro dos esgotos exigiu caução por danos às galerias [A-PLIN] 36.6.
 
 ### Detalhes de ambientação
@@ -741,7 +741,7 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 ## Fontes
 
 ### Textos antigos (lidos diretamente)
-- **[A-PLIN]** Plínio, o Velho, *Naturalis Historia*, latim (ed. Mayhoff, com aparato crítico): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml. Passagens: 8.196; 12.6–8, 12.13; 13.91–95; 16.36; **17.1–6**; 33.118, 33.134, 33.144–149; 34.8–14; 35.2–3, 35.6–7, 35.30–32, 35.116–118, 35.165; **36.5–8**, 36.44–50, 36.103, 36.109–110, 36.113–115, 36.184–189; 37.18.
+- **[A-PLIN]** Plínio, o Velho, *Naturalis Historia*, latim (ed. Mayhoff, com aparato crítico): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml. Passagens: 8.196; 9.168; 12.6–8, 12.13; 13.91–95; 16.36; **17.1–6**; 33.118, 33.134, 33.144–149; 34.8–14; 35.2–3, 35.6–7, 35.30–32, 35.116–118, 35.165; **36.5–8**, 36.44–50, 36.103, 36.109–110, 36.113–115, 36.184–189; 37.18.
 - **[A-PLIN-ENG]** Plínio, trad. Bostock & Riley: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-eng1.xml (36.103: "fourteen million eight hundred thousand sesterces").
 - **[A-VITR]** Vitrúvio, *De Architectura*, latim e inglês (Morgan): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1056/phi001/phi1056.phi001.perseus-lat2.xml e …perseus-eng2.xml. Passagens: 2.1.5; 2.8.1–2; 4.1.6–9; 4.7.2–3; **6.3.1–11; 6.4.1–2; 6.5.1–3**; 7.1.1–7; 7.3.1–11; 7.4.1–5; **7.5.1–8**; 7.7–7.14.
 - **[A-CIC-FAM]** Cícero, *Epistulae ad Familiares*: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0474/phi056/phi0474.phi056.perseus-lat2.xml. Passagens: **5.6.2**, 8.13.2.
@@ -752,8 +752,9 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 - **[A-CIC-OFF]** Cícero, *De Officiis* (44 a.C.): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0474/phi055/phi0474.phi055.perseus-lat2.xml. Passagens: 1.138–140.
 - **[A-CIC-SCAUR]** Cícero, *Pro Scauro* (54 a.C.), fragmentos 45k–n (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/cicero/scauro.txt
 - **[A-ASC]** Ascônio, comentários a Cícero (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/asconius.txt. Passagens: *in Pisonianam* 11C, 13C, 90C; *in Scaurianam* **27C**; *in Milonianam* **32–33C**; 70C (Megalésias).
-- **[A-VELL]** Veleio Patérculo 2.14.1–3 (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/vell2.txt
-- **[A-VALMAX]** Valério Máximo 1.8.11 e **9.1.4** (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/valmax1.txt ; https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/valmax9.txt
+- **[A-VELL]** Veleio Patérculo 2.14.1–3 e 2.81.3 (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/vell2.txt
+- **[A-OV-FAST]** Ovídio, *Fastos* 4.347–352 (latim, Perseus; acrescentado na verificação independente): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0959/phi007/phi0959.phi007.perseus-lat2.xml
+- **[A-VALMAX]** Valério Máximo 1.8.11, 9.1.1 e **9.1.4** (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/valmax1.txt ; https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/valmax9.txt
 - **[A-OBS]** Júlio Obsequente 39 (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/obsequens.txt
 - **[A-VARRO]** Varrão, *De Lingua Latina* 5.54, 5.161–162, 5.164 (Latin Library, espelho CLTK): https://raw.githubusercontent.com/cltk/lat_text_latin_library/master/varro.ll5.txt
 - **[A-GELL]** Aulo Gélio 12.12.1–4: https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1254/phi001/phi1254.phi001.perseus-lat2.xml
@@ -766,7 +767,7 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 - **[A-PLUT-CRASS]** Plutarco, *Crasso* 1.1, 2.4–6, 3.1, 25, 27–31: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg039/tlg0007.tlg039.perseus-eng2.xml
 - **[A-PLUT-ROM]** Plutarco, *Rômulo* 20.4–6: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg002/tlg0007.tlg002.perseus-eng2.xml
 - **[A-PLUT-CAES]** Plutarco, *César* 61.1–3: https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0007/tlg048/tlg0007.tlg048.perseus-eng2.xml
-- **[A-DIO]** Díon Cássio (grego, ed. Boissevain): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0385/tlg001/tlg0385.tlg001.perseus-grc2.xml. Passagens: 40 (sumário), 40.17.1, 40.25–28, **46.33.3**, **48.43.4**, **54.29.8**.
+- **[A-DIO]** Díon Cássio (grego, ed. Boissevain): https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0385/tlg001/tlg0385.tlg001.perseus-grc2.xml. Passagens: 40 (sumário), 40.17.1, 40.25–28, **46.33.3**, **48.43.4**, 53.1.3, **54.29.8**.
 - Fontes antigas citadas **através** de Smith (não li o original): Cícero, *De Legibus* 1.10 e *QFr.* 3.7; Festo (Porta Romana); Diodoro 4.21 e Solino 1.18 (Scalae Caci); Dionísio 1.32, 1.79 (Lupercal, Casa Romuli); Suetônio, *De grammaticis* 17; Díon 53.27; Valério Máximo 6.3.1; Gélio 13.11; Sêneca, Marcial e Plínio, o Jovem (imperiais).
 
 ### Fontes modernas
@@ -791,7 +792,7 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
   - **[M-PLE-GELOT]** domus Gelotiana: https://pleiades.stoa.org/places/364530240
   - **[M-PLE-PAED]** Paedagogium: https://pleiades.stoa.org/places/155566866
   - Também consultados no Pleiades: Murus Romuli (https://pleiades.stoa.org/places/698502930) e Palatinus Mons (https://pleiades.stoa.org/places/971691208).
-- **[M-SMITH-ANT]** W. Smith, W. Wayte & G. E. Marindin, *A Dictionary of Greek and Roman Antiquities* (1890), Perseus (CC BY-SA): https://raw.githubusercontent.com/PerseusDL/canonical-pdlrefwk/master/data/viaf88890045/001/viaf88890045.001.xml. Verbetes: DOMUS, TRICLINIUM, LECTUS, MENSA, CANDELABRUM, LUCERNA, ARCA, SELLA, THRONUS (solium), EMBLEMA, HORTUS, PICTURA, MENSURA. Versão LacusCurtius de *Domus* vista na busca: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/SMIGRA*/Domus.html
+- **[M-SMITH-ANT]** W. Smith, W. Wayte & G. E. Marindin, *A Dictionary of Greek and Roman Antiquities* (1890), Perseus (CC BY-SA): https://raw.githubusercontent.com/PerseusDL/canonical-pdlrefwk/master/data/viaf88890045/001/viaf88890045.001.xml. Verbetes: DOMUS, BALNEAE (acrescentado na verificação), TRICLINIUM, LECTUS, MENSA, CANDELABRUM, LUCERNA, ARCA, SELLA, THRONUS (solium), EMBLEMA, HORTUS, PICTURA, MENSURA. Versão LacusCurtius de *Domus* vista na busca: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/secondary/SMIGRA*/Domus.html
 - **[M-SMITH-GEO]** W. Smith, *Dictionary of Greek and Roman Geography* (1854), verbete ROMA (Palatino, portas, Casa Romuli, Magna Mater, residências): https://raw.githubusercontent.com/PerseusDL/canonical-pdlrefwk/master/data/viaf88890045/002/viaf88890045.002.xml
 - **[M-SMITH-BIO]** W. Smith, *Dictionary of Greek and Roman Biography and Mythology*, verbetes Crassus 17 (triúnviro), 19 (M. Crasso filho), 23 (L. Crasso orador) e Drusus 7: https://raw.githubusercontent.com/PerseusDL/canonical-pdlrefwk/master/data/viaf88890045/003/viaf88890045.003.perseus-eng1.xml ; Drusus 7 via busca: https://cts.perseids.org/read/pdlrefwk/viaf88890045/003/perseus-eng1/D.drusus_7
 - **[M-IMPROM]** ImperiumRomanum, "regulating huge amounts" (preço de 3,5 mi e compra de M. Crasso): https://imperiumromanum.pl/en/curiosities/regulating-huge-amounts/
@@ -805,3 +806,82 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 - **[M-ANTIQ-VICT]** *Antiquaries Journal*, "The Temple of Victory on the Palatine" (só o título foi visto): https://resolve.cambridge.org/core/journals/antiquaries-journal/article/temple-of-victory-on-the-palatine/95A0B26199C8D672F3C7BBBCD939A6B3
 - **[M-CAMB-CIC]** *Greece & Rome*, "At home with Cicero" (só o título e a citação de Richardson 1992, p. 123, foram vistos): https://resolve.cambridge.org/core/journals/greece-and-rome/article/at-home-with-cicero/8D34DB1B77866F5DDB68D2416E51ADDF
 - Blog consultado e **não usado** como fonte de fato, porque traz afirmações não verificadas (casa de Cícero "ao norte", "adjacente à Domus Publica", venda a Clódio em 53): https://rogueclassicism.com/2012/12/31/blogosphere-marc-antonys-assault-of-publius-clodius-fact-or-ciceronian-fiction/
+
+---
+
+## Verificação independente
+
+**Método e limitação.** Esta verificação foi feita por um segundo agente, de forma independente e adversarial.
+
+- **Nenhuma busca na web foi feita.** As três buscas WebSearch tentadas foram recusadas: a cota de buscas do turno, compartilhada por todos os agentes, já estava esgotada. Por isso nenhuma fonte arqueológica moderna (escavações, plantas, datações) pôde ser reconferida.
+- **O que foi feito no lugar:** o verificador **releu ele mesmo** os textos antigos nas edições Perseus e CLTK do GitHub, sem depender das citações do pesquisador. Usou o aparato crítico de Mayhoff (Plínio) quando ele estava disponível, o CSV do Pleiades e o dicionário de Smith (verbetes *Domus* e *Balneae*).
+- **Contas:** as conversões e a tabela vitruviana do §5 foram refeitas, e todas conferem. Os pontos do Pleiades, recalculados, diferem menos de 1 m dos valores do arquivo.
+- O usuário pode pedir uma nova rodada de buscas numa mensagem seguinte.
+
+### As 15 afirmações selecionadas
+
+| # | Afirmação | Resultado | Fonte conferida |
+|---|---|---|---|
+| 1 | O orador L. Crasso foi o primeiro com colunas de mármore estrangeiro no Palatino: do Himeto, no máximo 6, no máximo 12 pés; "Vênus Palatina" | ✔ "*Hymettias tamen nec plures sex aut longiores duodenum pedum*". Plínio repete em 36.114: "*sex Hymettias non tulerat*" | Plínio 36.7, 36.114 (Mayhoff) |
+| 2 | Em 17.6: 6 colunas no texto, 4 nos manuscritos; postas no átrio; vindas do palco da edilidade; antes de haver mármore em edifícios públicos | ✔ O aparato diz "*VI (pro IV) U[rlichs] chrest. … cfr. XXXVI 7. quattuor ll. v.*", ou seja, *quattuor* nos manuscritos e na vulgata | Plínio 17.6, aparato de Mayhoff |
+| 3 | Censores em 662 da Urbe (92 a.C.); oferta de HS 6.000.000; seis árvores *lotoe*; casa herdada; árvores vivas até os incêndios de Nero; depois de Cecina Largo | ✔ "*anno conditae urbis DCLXII*", "*\|LX\| HS*", "*exceptis sex arboribus*", "*quae mihi hereditate obvenit*". A conversão 662 → 92 a.C. é [derivado] | Plínio 17.2–5 |
+| 4 | Valério Máximo: colunas "*in porticu*"; 10 colunas por HS 100.000; 10 arvoretas; 6 milhões com elas e 3 milhões sem elas | ✔ "*decem columnas centum milibus nummum emi*" | Val. Máx. 9.1.4 |
+| 5 | Cícero comprou a casa "de Crasso" por HS 3.500.000 em 62 | ✔ "*quod de Crasso domum emissem, emi eam ipsam domum x̅x̅x̅v̅*". O cabeçalho da edição data a carta de "*circ. Id. Dec.*" de 62 | Cícero, *Fam.* 5.6.2 |
+| 6 | Empréstimo de HS 2.000.000 de P. Sula | ✔ "*a P. Sulla, qui tum reus erat, mutua sestertium viciens*" | Gélio 12.12.2 |
+| 7 | O terreno foi de Druso, depois de Cícero e de Censorino, e depois de **Statilius** Sisenna | ✔ "*quae quondam Ciceronis, mox Censorini fuit, nunc Statilii Sisennae est*". O "Rutilius" de Smith é mesmo erro | Veleio 2.14.3 |
+| 8 | Superfície da casa avaliada em HS 2.000.000 (57); obra de Catulo derrubada em 3/11/57 | ✔ "*sestertio viciens*". Também: villa de Túsculo, HS 500.000; de Fórmias, HS 250.000. Em 57 os cônsules contrataram a restauração do Pórtico de Catulo. Em 4.3.2, "*porticus Catuli… ad tectum paene pervenerat*" é derrubado | Cícero, *Att.* 4.2.5, 4.3.2 |
+| 9 | Colunas de mármore de Cícero levadas à sogra do cônsul; casa "à vista de quase toda a cidade"; 1/10 do terreno anexado ao pórtico; pórtico de 300 pés e "peristilo amplíssimo" de Clódio | ✔ todas as citações | Cícero, *De Domo* 62, 100, 103, 116 |
+| 10 | Casa de Escauro: colunas de 38 pés de mármore luculiano no átrio; 4 colunas; localização; dono depois Cecina Largo; Clódio a compra "poucos meses" antes de jan. 52; corpo no átrio | ✔ Plínio não dá o número de colunas, diz só *maximas earum*. Ascônio dá 4 e diz que elas estavam depois na *regia* do Teatro de Marcelo. *In Mil.*: "*Erat domus Clodi ante paucos menses empta de M. Scauro in Palatio*". **O ano (58) ⚠ não está nos textos** | Plínio 36.6; Ascônio *in Scaur.* 27C, *in Mil.* 32–33C |
+| 11 | Preço da casa de Clódio: 14,7 milhões (Mayhoff) ou 14,8 milhões (Bostock) | ✔ A divergência é real: Mayhoff traz "*HS \|CXLVII\|*"; Bostock, "*fourteen million eight hundred thousand*". Plínio não diz que é a casa de Escauro | Plínio 36.103, latim e inglês |
+| 12 | Mármore luculiano, **negro**, "de Melos" | ✔ o que Plínio diz ("*atrum… nascitur autem in Melo insula*"). A identificação moderna ⚠ não foi confirmada | Plínio 36.49 |
+| 13 | Átrio de Vitrúvio: proporções 5:3, 3:2 ou diagonal do quadrado; altura de 3/4 do comprimento (latim) ou 3/4 da largura (Morgan) | ✔ A divergência é real: o latim diz "*Altitudo eorum, quanta longitudo fuerit quarta dempta*"; Morgan, "*one fourth less than their width*" | Vitrúvio 6.3.3–4, latim e inglês |
+| 14 | Magna Mater: contratada em 204, dedicada em 191; incêndio de 111; estátua de Quinta Cláudia no vestíbulo; estátua de culto voltada para leste até 43 a.C. | ✔ Lívio 36.36 ("*tredecim annis*" depois do contrato). Obsequente 39 (ano dos cônsules P. Cipião e L. Calpúrnio = 111). Val. Máx. 1.8.11. Díon 46.33.3 ("*πρὸς… τὰς τοῦ ἡλίου ἀνατολὰς πρότερον βλέπον πρὸς δυσμὰς… μετεστράφη*"). Pleiades (11/4/191; incêndio de 111). **Novo:** Ovídio confirma a reconstrução por um Metelo | Fontes citadas; Ovídio, *Fastos* 4.347–352 |
+| 15 | Casa Romuli de pé em 44 (incêndios em 38 e 12 a.C.); Casa de Hortênsio modesta, e Hortênsio morrendo em mai./jun. de 50 | ✔ Díon 48.43.4 (cerimônia dos pontífices) e 54.29.8 (corvos com carne em brasa). Suetônio, *Aug.* 72.1 ("*porticus breves… Albanarum columnarum et sine marmore ullo aut insigni pavimento conclavia*"). *Fam.* 8.13.2 ("*animam agebat*"), carta datada "*ex. m. Mai. aut in. Iun.*" de 50 | Díon; Suetônio; Cícero, *Fam.* |
+
+**Outras conferências (✔):**
+- Díon 40.17.1: o inverno do consulado de Calvino e Messala.
+- Plutarco, *Crasso* 2.5: "não construiu para si nenhuma casa além daquela em que morava".
+- Suetônio, *Aug.* 5: nascimento "*VIIII Kal. Octob.*", *ad Capita bubula*, no consulado de Cícero e Antônio.
+- Suetônio, *Iul.* 46: *domus publica* na Via Sacra.
+- Cícero, *Att.* 2.24.3: "*consularem disertum vicinum consulis*".
+- Plínio:
+  - 36.48: Mamurra;
+  - 36.50: "*nondum enim secti marmoris vestigia invenio in Italia*";
+  - 36.109: Lépido;
+  - 33.118: *minium* a HS 70 por libra, cerca de 2.000 libras por ano;
+  - 33.147: taças de Mentor; vasos a HS 6.000 a libra;
+  - 34.14: os herdeiros do orador venderam *triclinia aerata*;
+  - 36.185 e 36.189: pisos; *lithostrota* "*iam sub Sulla*";
+  - 12.13: *nemora tonsilia* de C. Mácio;
+  - 35.116: Studius, "*divi Augusti aetate*";
+  - 37.18: vasos murrinos de Pompeu;
+  - 17.2: a casa de Catulo era "*aliquanto praestantior*".
+- Descrições do Pleiades conferidas no CSV: Casa dei Grifi, Casa de Lívia, House of Augustus, Domus de Cícero (*rough*), Casa do Fauno, Tugurium Romuli e Scalae Caci.
+- Smith, *Domus*: "*He purchased the above-named house of L. Crassus and greatly enlarged it*". Smith **não cita a fonte**, o que mantém a hipótese do §1(d) com confiança baixa.
+
+### Correções (antes → depois)
+
+1. **Anacronismos, linha do hipocausto.** Antes: "hipocausto doméstico… posteriores". Depois: hipocausto **para aquecer cômodos de estar** é posterior. Já um **banho privado com piso suspenso aquecido** (*pensilia balinea*) existia antes de 91 a.C., invenção de Sérgio Orata. Fontes: Val. Máx. 9.1.1; Plínio 9.168; Smith, *Balneae*. O §6 também foi corrigido.
+2. **Magna Mater.** Antes: "o texto de Ovídio sobre Metelo não foi verificado". Depois: verificado. Ovídio diz "*Augustus nunc est, ante Metellus erat*" e "*contulit aes populus, de quo delubra Metellus fecit*". O templo de 50–44 é, portanto, a reconstrução de um Metelo (*Fastos* 4.347–352).
+3. **Apolo Palatino.** Antes: "posterior a Áccio". Depois: **prometido em 36 a.C.**, depois da vitória sobre Sexto Pompeu, quando Otaviano comprou casas no Palatino (Veleio 2.81.3); **construído depois de Áccio** (Ascônio, *in Pis.* 90C); **dedicado em 28 a.C.** (Díon 53.1.3). Em 44 aquele terreno era de casas particulares.
+4. **Linha do tempo, 58 a.C.** Antes: "58: Escauro, edil". Depois: ano ⚠ não confirmado. Nem Plínio nem Ascônio dão o ano da edilidade; 58 é a data convencional.
+5. **Colunas de Escauro.** Antes: só "Ascônio fala em 4". Depois: acrescentado que Plínio não dá número (*maximas earum*). O número 4 vem só de Ascônio.
+
+### O que permanece incerto (⚠ não confirmado)
+
+- Data das pinturas da Casa dei Grifi ("c. 100–80 a.C.").
+- Identificação moderna do mármore luculiano.
+- Cor e veio do mármore do Himeto.
+- Identidade botânica do "lotus" de Plínio.
+- Magna Mater: pódio, ordem, número de colunas, materiais e qual Metelo a reconstruiu.
+- Localização do Templo da Vitória.
+- Plantas e dimensões das casas da encosta norte (escavações modernas).
+- As 44 colunas e a área da Casa do Fauno (só Smith e Pleiades).
+- Ano da edilidade de Escauro.
+- Datação das pinturas das casas de Lívia e de Augusto.
+- **O vendedor de 62 ter sido o triúnviro:** é inferência. Cícero diz só "*de Crasso*", e a confiança continua média-alta.
+- **A casa do orador ser a mesma de Escauro:** hipótese. Smith a afirma sem fonte.
+- **Identidade do "M. Bruto"** de Plínio 36.7: não é dita no texto.
+- **Fontes modernas que não foram reconferidas:** [M-IMPROM], [M-GESCH], [M-WIKI-CENS], [M-KELSEY], [M-DICT-HYM], [M-EB-HYM].
+
+**Anacronismos:** a releitura não achou no texto nenhum elemento de fase posterior atribuído a 50–44 a.C. A tabela de anacronismos estava correta, com uma exceção, que era o caso inverso: o hipocausto de banho privado tinha sido excluído sem necessidade. Fica reforçada a conclusão central do arquivo: as colunas de mármore do Himeto pertenceram a **L. Crasso, o orador** († 91), e não a M. Crasso, o triúnviro.
