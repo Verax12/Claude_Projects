@@ -579,3 +579,72 @@
 - **[M-SMITH-BIO]** W. Smith (ed.), *A Dictionary of Greek and Roman Biography and Mythology*, verbetes *Maenius*, *Torquatus, Manlius* (n.º 6), *Bulbus, C. Atilius*, *Afranius*. Mesmo repositório, `viaf88890045.003.perseus-eng1.xml`.
 - **[A-DIO]**, passagens acrescentadas: 44.4.1 (honras "depois das já mencionadas", não todas ao mesmo tempo); 49.39.1 e 49.43.1 (marcos de ano para 34 a.C.); 51.21.1 (marco de ano para 29 a.C.); 53.20.2 (Sexto Pacúvio, 27 a.C.).
 - **[A-CIC-ATT-ENG]** Cícero, *Cartas a Ático*, trad. E. S. Shuckburgh (Perseus eng1), cabeçalhos das cartas CXLII ("A IV, 16 and part of 17", "Rome (? 24 June)") e CXLVIII ("A IV, 17 and parts of 16", "Rome, 1 October"): https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0474/phi057/phi0474.phi057.perseus-eng1.xml
+
+---
+
+## Verificação independente
+
+**Verificador:** segunda checagem adversarial, 09/10/2026.
+
+**Limites desta checagem (leia antes de usar).** O orçamento de WebSearch da sessão estava **esgotado** quando esta checagem começou: a primeira busca foi recusada. O proxy também recusou com 403 o acesso direto a LacusCurtius/Platner, Wikipedia e Digital Augustan Rome. Por isso:
+- As afirmações baseadas em **textos antigos** foram **relidas** nas cópias locais dos TEI da Perseus (`PerseusDL/canonical-latinLit` e `canonical-greekLit`), sem usar as citações do primeiro pesquisador: Díon (grc2), Plínio (lat2, ed. Mayhoff, com aparato), Lívio (lat2), Cícero (*Att.* lat2 e eng1; *Q. fr.*; *Fin.*), Suetônio (*Iul.*), Plutarco (*Caes.*, trad. Perrin), Ápio (*BC*, trad. White), Varrão (*LL* 5) e Ascônio (*Mil.*).
+- Algumas afirmações modernas foram cotejadas com os dicionários de **Smith** (1854/1890 e *Biography*), do repositório `PerseusDL/canonical-pdlrefwk`. São obras do séc. XIX: servem para confirmar datas e textos, **não** para medidas arqueológicas atuais.
+- **Nenhum número arqueológico moderno** (Platner & Ashby, DAR, DFR, Seindal, Treccani, Wikipedia, catálogos de moedas) pôde ser reconferido em sua fonte. Esses números ficaram marcados com **⚠ não confirmado** no corpo do texto.
+
+### Afirmações-chave verificadas (15)
+
+| # | Afirmação (importância para a modelagem) | Resultado | Fonte da verificação |
+|---|---|---|---|
+| 1 | Orientação: cúria ao norte e voltada para o sul; Rostra **diante** dela; Graecostasis a oeste/sudoeste; meio-dia visto "entre a Rostra e a Graecostasis" | ✔ texto confirmado. A geometria em coordenadas continua **[derivado]**. Nova ressalva: em Varrão, *sub dextra huius* pode remeter à Rostra **ou** à Cúria (o Smith 1890 lê "à direita da Cúria") | Plínio 7.212 (relido: *cum a curia inter Rostra et Graecostasin prospexisset solem; a columna Maenia ad carcerem…*); Varrão *LL* 5.155 (relido: *Curia Hostilia… Ante hanc Rostra… sub dextra huius a Comitio locus substructus… Graecostasis*); Smith 1890, *Graecostasis* |
+| 2 | Incêndio de 52 a.C.: pira feita com os bancos; a cúria e a **Basílica Pórcia contígua** arderam | ✔ | Díon 40.49.2–3 (πυρὰν ἐκ τῶν βάθρων… ἔκαυσαν καὶ ἐκεῖνο καὶ τὸ συνέδριον); Ascônio, *Mil.* (*cremavitque subselliis et tribunalibus et mensis et codicibus librariorum; quo igne et ipsa quoque curia flagravit, et item Porcia basilica quae erat ei iuncta ambusta est*) |
+| 3 | Fausto Sula encarregado da reconstrução (52 a.C.); o Senado reunido fora do pomério, junto ao teatro de Pompeu | ✔ | Díon 40.50.2–3 |
+| 4 | Cúria de Fausto "embora reconstruída" demolida; Templo de Felicitas concluído por Lépido; nova cúria com o nome Júlia | ✔ quanto aos fatos; **cronologia corrigida** (ver abaixo) | Díon 44.4.1, 44.5.1–2 |
+| 5 | Cúria Júlia em obras em 42 a.C. ("junto ao chamado Comício") e dedicada em 29 a.C.; divergência de 43 a.C. (decreto de reconstruir a Hostília) | ✔ | Díon 47.19.1; 51.22.1 (ano conferido por 51.21.1: verão do consulado de Valério Potito = 29 a.C.); 45.17.8 |
+| 6 | Senado nos Idos de Março na Cúria de Pompeu, numa sala do pórtico do teatro | ✔ | Suet. *Iul.* 80.4 (*senatus Idibus Martiis in Pompei curiam edictus est*); Díon 44.16.2 (ἐν οἰκήματί τινι τοῦ περιστῴου) |
+| 7 | Transferência da Rostra em 44 a.C.; estátuas de Sula e Pompeu repostas; crédito e inscrição para Antônio | ✔ O ano é o do 5º consulado de César, com Antônio, e da 5ª ditadura, com Lépido como mestre da cavalaria = **44 a.C.** | Díon 43.49.1–2 (relido); Smith 1890, *Rostra* ("Julius Caesar transferred the position of the Rostra to the western side of the Forum") |
+| 8 | Duas estátuas de César sobre a tribuna (coroa cívica e obsidional); diadema posto numa delas e retirado pelos tribunos; Lupercais com César sentado na tribuna | ✔ | Díon 44.4.5, 44.9.2, 44.11.2; Ápio 2.109 ("seated on his golden chair before the rostra"); Suet. *Iul.* 79.2 (*Lupercalibus pro rostris*) |
+| 9 | Rostra republicana: 2 degraus de ~35 cm, plataforma ~1 m, *canalis* a ~9 m, poços a 6,75 m | ⚠ **não confirmado** (Platner inacessível) | — |
+| 10 | Rostra de César: núcleo de concreto de 3,50 m de altura e > 13 m; escada de 7 degraus atrás | ⚠ **não confirmado** (também não confirmado na verificação de `01-forum-oeste.md`) | — |
+| 11 | Rostra augustana (anacrônica): ~24 m de frente, ~10 m de projeção, ~3 m de altura | ✔ ordem de grandeza | Smith 1890, *Rostra*: 78 × 33 pés, 11 pés acima do piso; 19 + 20 furos de esporões em duas fileiras |
+| 12 | Nº de esporões de Âncio = 6 | ✘ **corrigido** para NÃO ENCONTRADO | Lívio 8.14.12 (sem número); Smith, *Biography*, *Maenius* ("the rostra of some of the ships") |
+| 13 | Basílica Paulli: canteiro em 54 a.C. "com as mesmas colunas antigas"; 1.500 talentos de César em 50 a.C.; "no lugar da Fúlvia"; dedicação em 34 a.C. | ✔ quanto aos fatos; **data da carta de Cícero corrigida** | Cícero *Att.* 4.17.7 Perseus = 4.16.8 (relido); Shuckburgh, carta CXLII; Plut. *Caes.* 29.3 (Perrin: "a famous monument, erected in place of the Fulvia"); Ápio 2.26 ("bought the neutrality of Paulus for 1500 talents"); Díon 49.42.2 (ano: 49.39.1 = 2º consulado de Antônio, 34 a.C.; 49.43.1 = "no ano seguinte") |
+| 14 | Cotas: Fórum sulano 11,80–11,90 m; pavimento de Fausto 12,63 m; mármore de Luni 13,50 m | ⚠ **não confirmado**, com **divergência** em relação a `01-forum-oeste.md` (11,80 m = piso do Comício junto à Rostra) | — |
+| 15 | Ianus Geminus aberto em 50–44 a.C.; fechado só em 235 a.C. (T. Mânlio) e em 29 a.C. | ✔ | Lívio 1.19.2–3 (relido); Smith, *Biography*, *Torquatus* n.º 6 e *Bulbus* (cônsules de 235 a.C., Jano fechado); Díon 51.20.4 |
+
+### Outras afirmações confirmadas (✔)
+- ✔ Basílica Pórcia: 184 a.C., Catão comprou *atria duo, Maenium et Titium, in lautumiis, et quattuor tabernas* (Lívio 39.44.7, relido).
+- ✔ Basílica de Fúlvio (179 a.C.): *basilicam post argentarias novas et forum piscatorium circumdatis tabernis quas vendidit in privatum* (Lívio 40.51.5, relido).
+- ✔ Escudos de M. Emílio Lépido (cônsul com Q. Lutácio, 78 a.C.) "não só na basílica Emília, mas também em casa" (Plínio 35.13, relido).
+- ✔ Plínio 34.26 (Pitágoras e Alcibíades nos *cornua* do Comício *donec Sulla dictator ibi curiam faceret*); 34.21 (Ato Návio *ante curiam*, base queimada no funeral de Clódio); 35.22 (pintura *in latere curiae Hostiliae*); 36.102 (*basilicam Pauli columnis e Phrygibus mirabilem*); 15.119 (Vênus Cluacina); 16.236 (lótus e cipreste do Volcanal); 34.33 (Jano com os dedos indicando 365 dias). Todos relidos no latim.
+- ✔ Lívio 1.36.5 (Ato Návio *in comitio in gradibus ipsis ad laevam curiae*); 3.48.5 (*prope Cloacinae ad tabernas, quibus nunc novis est nomen*).
+- ✔ Cícero *Q. fr.* 2.1.3 (*a Graecostasi et gradibus clamorem*); *Fin.* 5.2 (*Hostiliam dico, non hanc novam, quae minor mihi esse videtur, posteaquam est maior*); *Att.* 1.14.7 (*Argiletani aedifici reliquum dodrantem emit HS DCCXXV*); 12.32.2 (*mercedes Argileti et Aventini*).
+- ✔ Suet. *Iul.* 76.1 (*sedem auream in curia et pro tribunali*); 84.1 (*pro rostris aurata aedes ad simulacrum templi Veneris Genetricis*).
+- ✔ Ápio 1.97 (estátua equestre dourada de Sula *in front of the rostra*, "Cornelius Sulla, a fortunate commander").
+- ✔ Smith 1890, *Graecostasis*: "like the Rostra which it adjoined, seems to have occupied a different site before and after the reconstruction of the Forum under Julius Caesar" ([M-SMITH-GRAEC] confirmado).
+- ✔ Coluna Mênia "near the end of the forum, on the Capitoline" (Smith, *Biography*, *Maenius*; [M-SMITH-MAENIUS] confirmado).
+- ✔ parcial: Fausto Sula fugiu com Afrânio depois de Tapso (46 a.C.) e foi capturado por P. Sítio (Smith, *Biography*, *Afranius*). A morte em si não foi lida.
+
+### Correções feitas (antes → depois)
+1. **Data da carta de Cícero sobre a Basílica Paulli:** "outubro de 54 a.C." → **c. 24 de junho / início de julho de 54 a.C.** Shuckburgh (Perseus eng1) numera a carta como CXLII, "A IV, 16 and part of 17", "Rome (? 24 June)". A carta de 1º de outubro é outra (CXLVIII, "A IV, 17 and parts of 16"). O próprio texto menciona o dia 3 de julho e a guerra na Britânia em curso.
+2. **Cronologia da demolição da cúria de Fausto:** "demolida em 44 a.C." → **demolida antes do decreto da nova cúria, que Díon põe entre as honras de fim de 45 / início de 44 a.C.; portanto até o início de 44, talvez já em 45.** O grego diz *ἐπειδὴ τὸ Ὁστίλιον καίπερ ἀνοικοδομηθὲν καθῃρέθη* (44.5.1), no contexto de 44.4.1. **Consequência para o jogo:** a sugestão "cúria de Fausto de pé" para o ano-âncora fev./mar. de 44 a.C. foi **retirada**. Para esse ano, a cúria provavelmente já estava demolida ou em demolição.
+3. **Pé romano:** 0,2975 m (site, "80 pés = 23,80 m") → **0,296 m** (Smith 1890, *Mensura*: 295,6–296 mm, "296 mill."). Coerente com `01-forum-oeste.md` e `06-palatino-domus.md`.
+4. **Nº de esporões de Âncio:** "6" → **NÃO ENCONTRADO** (Lívio 8.14.12 não dá número; Smith, *Maenius*: "some of the ships").
+5. **Prenome de Valério Messala** (relógio de sol de 263 a.C.): "M." → **"M'." (Mânio)**, conforme Plínio 7.214. Acrescentado que o ano 490 da Urbe é emenda de Pighius.
+6. **Escudos de 78 a.C. "para 50–44 a.C.":** de elemento da cena → **opcional**. A presença depois da reconstrução de Paulo (55/54–34 a.C.) não está atestada.
+7. **Estátuas "na Rostra" (lista para 50–44 a.C.):** acrescentado o alerta de que o presente de Plínio descreve a Rostra **transferida/augustana**. Caso concreto de anacronismo: das três Sibilas, uma foi restaurada por Sex. Pacúvio Tauro, edil da plebe, provavelmente o Sexto Pacúvio de 27 a.C. (Díon 53.20.2); duas são "de M. Messala" (Plínio 34.22). Presença em 50–44 a.C.: **não atestada**.
+8. **Anacronismo n.º 2 (Templo de Felicitas):** "só a partir de 44 a.C." → "só depois da demolição da cúria (decreto de fim de 45 / início de 44 a.C.)".
+
+### O que permanece incerto (⚠)
+- **Todas as medidas de Platner & Ashby** citadas por resumo: Rostra republicana (degraus, plataforma, *canalis*, poços), núcleo da Rostra de César (3,50 m; > 13 m), cotas altimétricas (11,80–11,90; 12,63; 13,50 m) e Volcanal +5 m. Há ainda uma **divergência entre arquivos** sobre o que a cota de 11,80 m mede.
+- **Escada de 7 degraus** da Rostra de César (DAR/Coarelli).
+- **Cúria Júlia** (só referência): 27 × 18 × 21 m vs. 82 × 58 pés ≈ 25 × 17,7 m. As duas medidas não batem, e a fonte não diz se usa pé inglês ou romano.
+- **Basílica Emília imperial:** medidas inconsistentes entre as fontes (nave central de 12 m em Seindal vs. 17,50 m em Treccani; sala de 70 m vs. nave de 76,50 m); lote de 110 × 50 m; 16 arcadas; 15 ou 11 lojas; friso de 184–185 m; ordens e fases de Freyberger.
+- **Lapis Niger:** dimensões (4 × 3 m etc.), espessura das lajes e, sobretudo, a **data do pavimento** (Sula c. 80 a.C. vs. César c. 44–40 a.C.).
+- **Vênus Cloacina:** diâmetro de 2,40 m; travertino e borda de mármore (fase da borda desconhecida).
+- **Moedas:** datas e descrições de RRC 419/3 (61 ou 58 a.C.), RRC 473/1 (45 a.C.) e RRC 494/42 (42 a.C.) não reconferidas nos catálogos. A leitura do denário de Palicano como imagem da Rostra do Comício é interpretação.
+- **Forma e diâmetro do Comício** (círculo de Coarelli, "~50 m" de site de guia, datas da fase circular).
+- **"Cúria Cornélia não atestada"** (Wikipedia): não relido. Nos textos relidos, o nome de Sula foi decretado para a cúria **de Fausto** (Díon 40.50.3).
+- Posição da Rostra a leste ou a oeste do Lapis Niger; localização do Volcanal (Coarelli vs. Platner); destino da Basílica Pórcia depois de 52 a.C.; Senado de 600 membros com Sula (Wikipedia); coordenadas derivadas (erro de 20–30 m).
+- **Passagens antigas não relidas nesta checagem** (só por falta de tempo ou de cópia local; não foram desmentidas): Suet. *Iul.* 10.1; Plut. *Cat. Min.* 5.1; Ápio 1.71, 1.94, 2.21, 2.143, 4.15, 4.20; Varrão *LL* 6.4; Plínio 7.215, 15.77, 19.23, 33.19, 34.20, 34.22–24 (parcial), 35.25, 35.113, 35.173; Vitrúvio 5.1–5.2; Lívio 4.17.6, 26.27.3, 27.36.8.
+
+**Como continuar:** quando houver orçamento de busca ou acesso ao LacusCurtius, a prioridade é reconferir em Platner & Ashby (*Rostra*, *Rostra Augusti*, *Comitium*, *Forum Romanum*, *Volcanal*) as medidas da Rostra e as cotas, e resolver a divergência dos 11,80 m com `01-forum-oeste.md`.

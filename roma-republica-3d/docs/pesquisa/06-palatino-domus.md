@@ -13,6 +13,8 @@
 > **Conversões.** 1 pé romano (*pes*) ≈ 0,296 m [M-SMITH-ANT, *Mensura*: "296 mm"; M-BRIT-PES]. 1 pé = 16 dígitos = 12 *unciae* [M-SMITH-ANT, *Mensura*]. 1 dígito ≈ 18,5 mm e 1 *uncia* ≈ 24,7 mm [derivado].
 >
 > **Coordenadas do jogo:** x = leste (m), z = sul (m), origem 41.8925 N 12.4850 E (ver `00-coordenadas.md`). Norte = −z. Os pontos do Pleiades marcam ruínas atuais ou centroides. Quando o Pleiades declara precisão "rough", o ponto pode ser só o centro do monte.
+>
+> **Verificação independente (out. 2026).** Uma segunda leitura, adversarial, conferiu as afirmações centrais deste arquivo nos próprios textos antigos e no CSV do Pleiades. **⚠ não confirmado** marca o que essa leitura não conseguiu confirmar. As correções estão indicadas no ponto em que aparecem, com a etiqueta **[verif.]**. O resumo fica na seção final **Verificação independente**.
 
 ---
 
@@ -33,7 +35,7 @@
 | 9 | **Pórtico de Catulo** | Seguiu-se a sequência: reconstrução contratada pelos cônsules em 57, quase coberta, e nova demolição pelos bandos de Clódio em 3/11/57. **Estado em 50–44: NÃO ENCONTRADO**; a reconstrução é provável. | [A-CIC-ATT] 4.2.5, 4.3.2; [A-CIC-DOM] 102, 114, 116 |
 | 10 | **Casa dei Grifi** | Domus tardo-republicana de pé. Pinturas de transição do I para o II estilo. Hoje está soterrada sob o palácio de Domiciano. | [M-PLE-GRIFI] |
 | 11 | **Casa de Hortênsio** (futura casa de Augusto) | De pé. Hortênsio estava morrendo em mai./jun. de 50. Casa modesta: pórticos curtos com colunas de pedra albana, sem mármore e sem pisos notáveis. | [A-CIC-FAM] 8.13.2; [A-SUET-AUG] 72.1 |
-| 12 | **Templo de Apolo Palatino, palácios imperiais** | **NÃO existiam.** O Apolo Palatino é posterior a Áccio. | [A-ASC] in Pis. 90C |
+| 12 | **Templo de Apolo Palatino, palácios imperiais** | **NÃO existiam.** O Apolo Palatino é posterior a Áccio. **[verif.]** Mais exatamente: Otaviano o **prometeu** depois da vitória sobre Sexto Pompeu (36 a.C.), quando comprou várias casas no Palatino. Foi **construído** depois de Áccio e **dedicado** em 28 a.C. Em 44, portanto, esse terreno era ocupado por casas particulares. | [A-ASC] in Pis. 90C; [A-VELL] 2.81.3; [A-DIO] 53.1.3 |
 
 **Sugestão para o jogo (ver §5).** Manter no menu de teleporte o rótulo **"Domus de Crasso (Palatino)"**, com uma placa dentro do jogo que diga a verdade:
 
@@ -63,7 +65,7 @@ Respostas às quatro perguntas do escopo:
 - **Qual Crasso vendeu?** Cícero escreve só "de Crasso". Smith (1890) afirma "o Crasso, não L. Crasso, o orador" [M-SMITH-ANT, *Domus*]. Smith (1854) diz "provavelmente não o célebre orador" [M-SMITH-GEO, *Roma*]. Como o orador morreu em 91 [M-SMITH-BIO, Crassus 23], o vendedor de 62 é, com **confiança média-alta**, M. Licínio Crasso, o triúnviro. Uma fonte moderna também diz "Marcus Crassus" [M-IMPROM].
 
 **(c) A casa famosa pelas colunas de mármore do Himeto era do orador L. Licínio Crasso, e não do triúnviro?**
-- **Confirmado.** Plínio, *NH* 36.7, no latim de Mayhoff: "*L. Crassum oratorem illum, qui primus peregrini marmoris columnas habuit in eodem Palatio, Hymettias tamen nec plures sex aut longiores duodenum pedum, M. Brutus in iurgiis ob id Venerem Palatinam appellaverat*" [A-PLIN] 36.7. Em resumo: o orador L. Crasso foi o primeiro a ter colunas de mármore estrangeiro, no Palatino. Eram do Himeto, não mais de seis nem mais longas que 12 pés, e por isso M. Bruto o apelidou "Vênus Palatina".
+- **Confirmado.** Plínio, *NH* 36.7, no latim de Mayhoff: "*L. Crassum oratorem illum, qui primus peregrini marmoris columnas habuit in eodem Palatio, Hymettias tamen nec plures sex aut longiores duodenum pedum, M. Brutus in iurgiis ob id Venerem Palatinam appellaverat*" [A-PLIN] 36.7. Em resumo: o orador L. Crasso foi o primeiro a ter colunas de mármore estrangeiro, no Palatino. Eram do Himeto, não mais de seis nem mais longas que 12 pés, e por isso M. Bruto o apelidou "Vênus Palatina". **[verif.]** Conferido no latim de Mayhoff. A briga com Crasso aconteceu antes de 91, então este M. Bruto é um contemporâneo do orador, e não se deve tomá-lo pelo cesaricida. Plínio não diz quem ele era (⚠ não confirmado).
 - Plínio, *NH* 17.1–6, conta o resto. O orador e Cn. Domício Enobarbo foram censores juntos em 662 da Urbe, ou seja, 92 a.C. Domício censurou o luxo da casa e ofereceu HS 6.000.000 (*sexagies*) por ela. Crasso aceitou vender "exceto seis árvores" [A-PLIN] 17.3–4. As árvores eram *lotoe* de copa ampla e sombria. Duraram, verdes e "jovens", até os incêndios de Nero, e Cecina Largo as exibia "em sua casa" quando Plínio era jovem [A-PLIN] 17.5. As colunas eram "*Hymetti marmoris, aedilitatis gratia ad scaenam ornandam advectas*": trazidas para decorar o palco nos jogos de sua edilidade e depois postas "*in atrio eius domus*", "quando ainda não havia colunas de mármore em nenhum edifício público" [A-PLIN] 17.6.
 - Crasso diz ainda que a casa lhe veio **por herança** ("*domo, quae mihi hereditate obvenit*") [A-PLIN] 17.4.
 - **Divergências** (registradas, sem decidir):
@@ -92,7 +94,7 @@ Respostas às quatro perguntas do escopo:
 | 91 | Morte do orador [M-SMITH-BIO]; herdeiros vendem leitos de bronze [A-PLIN] 34.14 | Druso é morto na própria casa [A-VELL] 2.14.1 | — |
 | até 62 | ? | Passa à "família de Crasso" [M-SMITH-BIO, Drusus 7] | Escauro demole a casa de Otávio e a anexa à sua [A-CIC-OFF] 1.138 |
 | 62 | ? | Cícero compra "de Crasso" por HS 3,5 mi [A-CIC-FAM] 5.6.2 | — |
-| 58 | ? | Saqueada, queimada e demolida por Clódio; colunas de mármore levadas [A-CIC-DOM] 62; [A-ASC] in Pis. 11C | Escauro, edil, traz colunas de 38 pés para o átrio [A-PLIN] 36.6 |
+| 58 | ? | Saqueada, queimada e demolida por Clódio; colunas de mármore levadas [A-CIC-DOM] 62; [A-ASC] in Pis. 11C | Escauro, edil, traz colunas de 38 pés para o átrio [A-PLIN] 36.6. **[verif.]** O ano está ⚠ não confirmado: nem Plínio (36.5–6, 36.114) nem Ascônio (argumento do *Pro Scauro*) dão o ano da edilidade. 58 a.C. é a data convencional |
 | 57–54 | ? | Terreno restituído; o Estado paga a reconstrução (superfície avaliada em HS 2 mi) [A-CIC-ATT] 4.2.5; obras em 56 [A-CIC-QFR] 2.4.2 | Defesa de Escauro em 54 (*Pro Scauro*) [A-ASC] in Scaur. |
 | 53/52 | ? | Cícero dono | Clódio compra de Escauro "poucos meses" antes de jan. 52 [A-ASC] in Mil. 32–33C (HS 14,7–14,8 mi [A-PLIN] 36.103) |
 | **50–44** | **NÃO ENCONTRADO** | **Cícero dono** | **NÃO ENCONTRADO** |
@@ -214,7 +216,7 @@ Provavelmente de pé. Não há notícia de destruição antes dos incêndios de 
 |---|---|---|---|---|
 | Altura das maiores colunas (mármore luculiano) do átrio | 38 | pés | [A-PLIN] 36.6, 36.114 | alta |
 | Mesma altura | ≈ 11,25 | m | [derivado] | — |
-| Número de colunas no átrio | 4 ("*quattuor columnae marmoreae insigni magnitudine*") | colunas | [A-ASC] in Scaur. 27C | média |
+| Número de colunas no átrio | 4 ("*quattuor columnae marmoreae insigni magnitudine*"). **[verif.]** Plínio não dá número; diz só que "as maiores" (*maximas earum*) das 360 colunas do teatro, de 38 pés, foram para o átrio | colunas | [A-ASC] in Scaur. 27C; [A-PLIN] 36.6 | média |
 | Diâmetro, se a coluna tiver altura = 9 diâmetros (jônica) | ≈ 1,25 | m | [derivado] de [A-VITR] 4.1.8 | baixa |
 | Altura do átrio até as vigas, regra "altura = 3/4" | ≈ 11–12+ | m | [derivado] de [A-VITR] 6.3.4 | baixa |
 | Preço pago por Clódio | 14.700.000 (Mayhoff) / 14.800.000 (Bostock) | sestércios | [A-PLIN] 36.103 | média |
@@ -340,11 +342,13 @@ Marcos de luxo citados por Plínio:
 - *atrium*, palavra que Varrão deriva da cidade etrusca de Atria;
 - em volta do átrio: *cella*, *penaria* (despensa), *cubiculum* e *cenaculum*. Quando se passou a jantar no andar de cima, o andar superior inteiro passou a chamar-se *cenacula*.
 
-**Peristilo:** a abertura para o céu é maior que no átrio, e as colunas são mais numerosas. A Casa do Fauno, em Pompeia, tinha 44 colunas dóricas no peristilo [M-SMITH-ANT, *Domus*].
+**Peristilo:** a abertura para o céu é maior que no átrio, e as colunas são mais numerosas. A Casa do Fauno, em Pompeia, tinha 44 colunas dóricas no peristilo [M-SMITH-ANT, *Domus*]. **[verif.]** O texto de Smith foi conferido ("*forty-four Doric columns in the peristylium*"), mas o número não foi checado numa fonte arqueológica moderna (⚠ não confirmado). Smith também não diz a qual dos peristilos da casa ele se refere.
 
 **Janelas:** poucas. Os cômodos do térreo recebem luz do átrio e do peristilo, e as janelas para a rua ficam sobretudo nos *cenacula* superiores. Fechavam com venezianas de madeira (*bifores*) ou treliças (*clathri*) [M-SMITH-ANT, *Domus*, citando Lívio 1.41 e outros]. Tarquínio Prisco morava junto a Júpiter Estator, com janelas "voltadas para a Nova Via" [A-LIV] 1.41.4.
 
 **Aquecimento:** braseiros portáteis (*foculi*). Smith diz que foi o único meio "até o reinado de Augusto", e que o hipocausto doméstico é posterior [M-SMITH-ANT, *Domus*]. A fumaça saía por portas, janelas e aberturas, sem chaminés na maioria dos cômodos [M-SMITH-ANT, *Domus*].
+- **[verif.] Correção (banhos privados).** A regra acima vale para os **cômodos de estar**, não para os banhos. Valério Máximo diz que "C. Sérgio Orata foi o primeiro a fazer *pensilia balinea*" [A-VALMAX] 9.1.1. Plínio data essa invenção da "época do orador L. Crasso, antes da guerra mársica" (91 a.C.), em villas que Orata revendia [A-PLIN] 9.168. O próprio Smith, no verbete *Balneae*, entende esses "banhos suspensos" como piso apoiado sobre hipocausto (ressalva: "explicado de modo diferente por diferentes comentadores") [M-SMITH-ANT, *Balneae*].
+- **Consequência:** em 50–44, uma casa nobre **pode ter um pequeno banho com piso suspenso aquecido**. Átrio, cubículos e triclínios continuam aquecidos só com braseiros. A presença desse banho na casa do Palatino é ⚠ não confirmada; é só plausível.
 
 ### Materiais e acabamentos
 - **Paredes:** "dois tipos de alvenaria: o *opus reticulatum*, que agora todos usam, e o antigo, chamado *incertum*" [A-VITR] 2.8.1. Smith diz que o núcleo é de concreto, com paramento de pedra [M-SMITH-ANT, *Domus*].
@@ -544,7 +548,7 @@ Pássaros e o *topiarius* trabalhando. Estufas com *specularia* só aparecem no 
 ## 11. Exemplos arqueológicos de referência
 
 ### 11.1 Casa dei Grifi (Palatino)
-- **Estado em 50–44 a.C.:** "domus tardo-republicana do Palatino, depois engolida pelas subestruturas da ala domicianeia do palácio flaviano". Suas pinturas são "de transição do I para o II estilo pompeiano". Foi descoberta por Giacomo Boni em 1912 [M-PLE-GRIFI]. Em 50–44 seria uma casa habitada, de dono NÃO ENCONTRADO. Data das pinturas: a faixa "c. 100–80 a.C." do enunciado está **NÃO CONFIRMADA** nas fontes acessíveis.
+- **Estado em 50–44 a.C.:** "domus tardo-republicana do Palatino, depois engolida pelas subestruturas da ala domicianeia do palácio flaviano". Suas pinturas são "de transição do I para o II estilo pompeiano". Foi descoberta por Giacomo Boni em 1912 [M-PLE-GRIFI]. Em 50–44 seria uma casa habitada, de dono NÃO ENCONTRADO. Data das pinturas: a faixa "c. 100–80 a.C." do enunciado está **NÃO CONFIRMADA** nas fontes acessíveis (⚠ não confirmado; a verificação independente também não conseguiu confirmá-la). **[verif.]** A descrição do Pleiades ("transição do I para o II estilo", Boni, 1912) foi conferida no CSV.
 - **Localização:** x = 183,9, z = 389,4, precisão *precise* [M-PLE-GRIFI; 00-coordenadas], no centro do monte. Orientação: NÃO ENCONTRADO.
 - **Dimensões:** NÃO ENCONTRADO.
 - **Planta e materiais:** NÃO ENCONTRADO além da transição de estilos. A origem do nome "Grifi" (grifos em estuque) não foi verificada.
@@ -562,7 +566,7 @@ Pássaros e o *topiarius* trabalhando. Estufas com *specularia* só aparecem no 
 - **Uso no jogo:** é o melhor modelo **textual** de casa nobre do Palatino em 44: colunas de peperino cinza, estuque pintado e pisos simples de *signinum* ou mosaico sóbrio. A escolha dos pisos é hipótese baseada no "*sine insigni pavimento*".
 
 ### 11.4 Casa do Fauno (Pompeia), referência de planta e porte
-- **Estado:** "grande residência construída c. **180 a.C.** (VI.12.2)". Tinha uma estatueta de bronze de fauno no implúvio e o **mosaico de Alexandre** [M-PLE-FAUNO]. O peristilo tinha **44 colunas dóricas** [M-SMITH-ANT, *Domus*].
+- **Estado:** "grande residência construída c. **180 a.C.** (VI.12.2)". Tinha uma estatueta de bronze de fauno no implúvio e o **mosaico de Alexandre** [M-PLE-FAUNO]. O peristilo tinha **44 colunas dóricas** [M-SMITH-ANT, *Domus*]. **[verif.]** A descrição do Pleiades foi conferida no CSV. As 44 colunas aparecem só em Smith (⚠ não confirmado por fonte moderna).
 - **Dimensões, área e número de átrios: NÃO ENCONTRADO** nas fontes acessíveis.
 - **Uso no jogo:** referência de planta com átrio, tablinum, alas e peristilo. Smith afirma que as casas de Pompeia seguem o modelo das de Roma [M-SMITH-ANT, *Domus*].
 
@@ -584,7 +588,9 @@ Pássaros e o *topiarius* trabalhando. Estufas com *specularia* só aparecem no 
   - Contratado pelos censores em 204 [A-LIV] 29.37.2.
   - Dedicado em **191 a.C.** por M. Júnio Bruto, 13 anos depois do contrato. Os jogos da dedicação foram, segundo Âncias, os primeiros jogos cênicos [A-LIV] 36.36.3–4. O Pleiades dá a data de 11 de abril de 191 [M-PLE-MM].
   - **Incêndio em 111 a.C.:** "*maxima pars urbis exusta cum aede Matris Magnae*" [A-OBS] 39. Valério Máximo data o primeiro incêndio pelo consulado de P. Nasica e L. Béstia, que é 111 [A-VALMAX] 1.8.11.
-  - *Divergência:* Smith diz "110 a.C." e atribui a reconstrução a um **Metelo** [M-SMITH-GEO, *Roma*]. O texto de Ovídio sobre Metelo não foi verificado.
+  - *Divergência:* Smith diz "110 a.C." e atribui a reconstrução a um **Metelo** [M-SMITH-GEO, *Roma*]. ~~O texto de Ovídio sobre Metelo não foi verificado.~~
+  - **[verif.] Agora conferido:** Ovídio, *Fastos* 4.347–348, diz "*Nasica accepit, templi non perstitit auctor: / Augustus nunc est, ante Metellus erat*" ("Nasica recebeu [a deusa]; o fundador do templo não durou: agora é Augusto, antes era Metelo"). Em 4.351–352: "*contulit aes populus, de quo delubra Metellus / fecit*" ("o povo contribuiu com bronze, com o qual Metelo fez o santuário") [A-OV-FAST].
+  - Portanto, **o templo de pé em 50–44 é a reconstrução de um Metelo depois de 111**. Qual Metelo foi, Ovídio não diz (⚠ não confirmado). O ano de Smith (110) está errado: Obsequente põe o incêndio no ano dos cônsules P. Cipião e L. Calpúrnio, ou seja, 111 [A-OBS] 39.
   - Segundo incêndio no consulado de M. Servílio e L. Lâmia (3 d.C.) [A-VALMAX] 1.8.11. Augusto o restaurou [M-PLE-MM].
   - **Portanto, em 50–44 o templo é a reconstrução feita depois de 111 a.C.**
 - **Localização:** x = −1,8, z = 334,8, precisão *precise* [M-PLE-MM]. Ficava "junto ao Clivus Victoriae" [M-PLE-MM], no ângulo **sudoeste** do monte, ao norte da Casa Romuli [M-SMITH-GEO, *Roma*].
@@ -684,7 +690,7 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 | Elemento | Por quê | Fonte |
 |---|---|---|
 | **M. Crasso, o triúnviro, vivo e morando na casa** | Morreu na campanha de Carras (ano de Calvino e Messala, 53 a.C.) | [A-DIO] 40.17.1, 40.25–27 |
-| **Templo de Apolo Palatino** (com pórticos e bibliotecas) | Feito por Otaviano "depois da vitória de Áccio"; no tempo de Cícero o único templo de Apolo em Roma ficava fora da Porta Carmental | [A-ASC] in Pis. 90C; [M-PLE-APOLLO] |
+| **Templo de Apolo Palatino** (com pórticos e bibliotecas) | Feito por Otaviano "depois da vitória de Áccio"; no tempo de Cícero o único templo de Apolo em Roma ficava fora da Porta Carmental. **[verif.]** Prometido em 36 a.C., dedicado em 28 a.C. (ver a tabela do resumo, linha 12) | [A-ASC] in Pis. 90C; [A-VELL] 2.81.3; [A-DIO] 53.1.3; [M-PLE-APOLLO] |
 | **Palácios imperiais**: Domus Augustana/Flavia (Domiciano, c. 92 d.C.), Domus Tiberiana, ampliações de Calígula, Domus Gelotiana incorporada ao palácio, Paedagogium, "Estádio" palatino, Septizônio, Domus Aurea | Todos imperiais | [M-PLE-FLAVIA], [M-PLE-GELOT], [M-PLE-PAED], [M-PLE] |
 | **Casa de Augusto como palácio**; restaurações augustanas da Magna Mater, do Lupercal e da Casa Romuli | Otaviano só se muda para o Palatino depois; restaurações posteriores a 44 | [A-SUET-AUG] 72.1; [M-PLE-MM]; [M-SMITH-GEO, *Roma*] |
 | Pinturas da **Casa de Lívia / Casa de Augusto / Aula Isíaca** copiadas como se fossem de 44 | Fase pictórica posterior (Smith: "não depois de Augusto"); datação fina NÃO VERIFICADA | [M-SMITH-ANT, *Domus*] |
@@ -693,7 +699,7 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
 | **Topiaria de bosques podados** (*nemora tonsilia*), buxo esculpido | Inventada por C. Mácio, amigo de Augusto | [A-PLIN] 12.13 |
 | **Revestimento total de mármore** como padrão nas casas | Mamurra foi "o primeiro"; ainda raridade | [A-PLIN] 36.48–50 |
 | *Opus sectile* "pintado em pedra", com manchas incrustadas | Inventado sob Cláudio e Nero | [A-PLIN] 35.3 |
-| **Hipocausto doméstico** e janelas de vidro | Posteriores (Smith); usar braseiros e venezianas | [M-SMITH-ANT, *Domus*] |
+| **Hipocausto para aquecer cômodos de estar** e janelas de vidro | Posteriores (Smith); usar braseiros e venezianas. **[verif.] Corrigido:** antes a linha dizia "hipocausto doméstico" sem distinção. Um **banho privado com piso suspenso aquecido** (*pensiles balineae*) **não é anacronismo**: foi inventado por Sérgio Orata antes de 91 a.C. (ver §6) | [M-SMITH-ANT, *Domus*, *Balneae*]; [A-VALMAX] 9.1.1; [A-PLIN] 9.168 |
 | **Estufas com *specularia*** no jardim | Século I d.C. | [M-SMITH-ANT, *Hortus*] |
 | **Estátua de Libertas** (de Clódio) no terreno de Cícero | Consagração anulada em 57; casa reconstruída | [A-CIC-DOM] 116; [A-CIC-ATT] 4.2 |
 | **Colunas de Escauro no Teatro de Marcelo** | O teatro é posterior; em 50–44 elas estavam na casa ou fora de uso (NÃO ENCONTRADO) | [A-ASC] in Scaur. 27C |
@@ -727,7 +733,8 @@ O Pleiades o registra como "área augural do Palatino, mencionada nos Catálogos
     - "Rutilius Sisenna" no lugar de **Statilius** Sisenna;
     - *Att.* 13.45 como prova de que César era vizinho de Cícero (é vizinho de Ático);
     - a casa do orador "construída c. 92" (Plínio diz herdada).
-11. **Data do incêndio da Magna Mater:** 111 a.C. (Obsequente, Valério Máximo, Pleiades) ou 110 a.C. (Smith). Usar 111.
+11. **Data do incêndio da Magna Mater:** 111 a.C. (Obsequente, Valério Máximo, Pleiades) ou 110 a.C. (Smith). Usar 111. **[verif.]** Ovídio (*Fastos* 4.347–352) confirma que um Metelo reconstruiu o templo; qual Metelo, segue incerto.
+12. **[verif.] Itens sem fonte moderna que a verificação independente também não conseguiu confirmar** (ver a seção final): data das pinturas da Casa dei Grifi; identificação moderna do mármore luculiano; cor do mármore do Himeto; identidade botânica do "lotus"; dimensões da Magna Mater; as 44 colunas da Casa do Fauno; o ano da edilidade de Escauro.
 
 ---
 

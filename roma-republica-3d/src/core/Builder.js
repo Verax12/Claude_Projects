@@ -298,7 +298,7 @@ export class Builder {
     this.finished = true;
     for (const [key, list] of this.parts) {
       const mat = key.split('|')[0];
-      const geo = G.merge(list);
+      const geo = compactAttributes(G.merge(list));
       geo.computeBoundingSphere();
       geo.computeBoundingBox();
       const mesh = new THREE.Mesh(geo, materials.get(mat));
@@ -318,6 +318,28 @@ export class Builder {
     this.world.stats.builders++;
     return this.group;
   }
+}
+
+/**
+ * Reduz a memória da geometria fundida: normais em Int8 normalizado e cores em Uint8
+ * normalizado (44 → 26 bytes por vértice). Visualmente idêntico.
+ */
+function compactAttributes(geo) {
+  const n = geo.attributes.normal;
+  if (n && n.array instanceof Float32Array) {
+    const src = n.array;
+    const dst = new Int8Array(src.length);
+    for (let i = 0; i < src.length; i++) dst[i] = Math.max(-127, Math.min(127, Math.round(src[i] * 127)));
+    geo.setAttribute('normal', new THREE.BufferAttribute(dst, 3, true));
+  }
+  const c = geo.attributes.color;
+  if (c && c.array instanceof Float32Array) {
+    const src = c.array;
+    const dst = new Uint8Array(src.length);
+    for (let i = 0; i < src.length; i++) dst[i] = Math.max(0, Math.min(255, Math.round(src[i] * 255)));
+    geo.setAttribute('color', new THREE.BufferAttribute(dst, 3, true));
+  }
+  return geo;
 }
 
 /** Matriz local de translação + rotação Y. */
