@@ -10,6 +10,7 @@ const ICONS = {
   gear: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/></svg>',
   help: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5V14"/><circle cx="12" cy="17" r=".6"/></svg>',
   sound: '<svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg>',
+  map: '<svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',
   mute: '<svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>',
 };
 
@@ -49,7 +50,7 @@ export class UI {
             <b>W A S D</b><span>andar · <b>Shift</b> correr · <b>Espaço</b> pular</span>
             <b>E</b><span>falar com pessoas</span>
             <b>I</b><span>ler sobre o local</span>
-            <b>T</b><span>menu de teleporte</span>
+            <b>T</b><span>menu de teleporte · <b>M</b> mapa</span>
             <b>F</b><span>modo voo · <b>V</b> 3ª pessoa</span>
             <b>H</b><span>ajuda · <b>Esc</b> soltar o mouse</span>
           </div>
@@ -62,6 +63,7 @@ export class UI {
       <div id="topright" class="interactive">
         <div class="row">
           <button class="icon-btn" data-act="audio" title="Som ambiente">${ICONS.mute}</button>
+          <button class="icon-btn" data-act="map" title="Mapa (M)">${ICONS.map}</button>
           <button class="icon-btn" data-act="help" title="Ajuda (H)">${ICONS.help}</button>
           <button class="icon-btn" data-act="settings" title="Configurações">${ICONS.gear}</button>
           <button class="icon-btn caps" data-act="teleport" title="Teleporte (T)">${ICONS.pin}<span>Locais</span></button>
@@ -130,6 +132,7 @@ export class UI {
           <tr><td>E</td><td>Falar com a pessoa à sua frente</td></tr>
           <tr><td>I</td><td>Abrir/fechar a informação histórica do local</td></tr>
           <tr><td>T</td><td>Menu de teleporte</td></tr>
+          <tr><td>M</td><td>Mapa da cidade (clique num local para ir até ele)</td></tr>
           <tr><td>F</td><td>Modo voo (Q/E descer/subir, Shift acelera)</td></tr>
           <tr><td>V</td><td>Alternar 1ª / 3ª pessoa</td></tr>
           <tr><td>H</td><td>Esta ajuda</td></tr>
@@ -139,6 +142,18 @@ export class UI {
       </div>`);
     r.appendChild(this.help);
     this.help.querySelector('.close').addEventListener('click', () => this.toggleHelp(false));
+    this.mapPanel = this.el('<div id="map" class="panel interactive"><canvas width="900" height="900"></canvas><div class="legend"><span>Roma, início de 44 a.C. — clique num local para teleportar</span><span>N ↑ · 500 m</span></div></div>');
+    r.appendChild(this.mapPanel);
+    this.mapCanvas = this.mapPanel.querySelector('canvas');
+    this.mapCanvas.addEventListener('click', (e) => this.onMapClick(e));
+    this.mapCanvas.addEventListener('mousemove', (e) => {
+      if (!this.mapHits) return;
+      const r = this.mapCanvas.getBoundingClientRect();
+      const sx = ((e.clientX - r.left) / r.width) * this.mapCanvas.width;
+      const sy = ((e.clientY - r.top) / r.height) * this.mapCanvas.height;
+      const h = this.mapHits.find((q) => Math.hypot(q.px - sx, q.py - sy) < 14);
+      this.mapCanvas.title = h ? h.l.name : '';
+    });
 
     // eventos dos botões
     this.topright.addEventListener('click', (e) => {
@@ -148,6 +163,7 @@ export class UI {
       if (act === 'teleport') this.toggleTeleport();
       if (act === 'settings') this.toggleSettings();
       if (act === 'help') this.toggleHelp();
+      if (act === 'map') this.toggleMap();
       if (act === 'audio') {
         this.audioOn = !this.audioOn;
         b.innerHTML = this.audioOn ? ICONS.sound : ICONS.mute;
@@ -248,7 +264,162 @@ export class UI {
   }
 
   anyPanelOpen() {
-    return this.teleportPanel.classList.contains('open') || this.settingsPanel.classList.contains('open') || this.help.classList.contains('open');
+    return this.teleportPanel.classList.contains('open') || this.settingsPanel.classList.contains('open') || this.help.classList.contains('open') || this.mapPanel.classList.contains('open');
+  }
+
+  /* ----------------------------------- mapa ----------------------------------- */
+
+  /**
+   * Prepara o mapa: fundo com relevo sombreado (amostrado do terreno), áreas e locais.
+   * @param {{heightAt:Function}} terrain @param {Object} areas SITE_AREAS @param {Array} locations
+   */
+  setupMap(terrain, areas, locations, areaNames) {
+    this.mapData = { terrain, areas, locations, areaNames };
+    // extensão mostrada (m)
+    this.mapView = { minX: -1000, maxX: 1200, minZ: -1000, maxZ: 1200 };
+    const c = document.createElement('canvas');
+    const N = 300;
+    c.width = c.height = N;
+    const g = c.getContext('2d');
+    const img = g.createImageData(N, N);
+    const V = this.mapView;
+    for (let j = 0; j < N; j++) {
+      for (let i = 0; i < N; i++) {
+        const x = V.minX + ((i + 0.5) / N) * (V.maxX - V.minX);
+        const z = V.minZ + ((j + 0.5) / N) * (V.maxZ - V.minZ);
+        const h = terrain.heightAt(x, z);
+        const hx = terrain.heightAt(x + 6, z) - terrain.heightAt(x - 6, z);
+        const hz = terrain.heightAt(x, z + 6) - terrain.heightAt(x, z - 6);
+        const shade = Math.max(0, Math.min(1, 0.65 - (hx * 0.6 + hz * 0.6) / 12));
+        let r = 150 + h * 1.6;
+        let gg = 140 + h * 1.4;
+        let b = 110 + h * 0.8;
+        if (h < -5) {
+          r = 70;
+          gg = 100;
+          b = 110;
+        }
+        const k = (j * N + i) * 4;
+        img.data[k] = r * (0.55 + shade * 0.6);
+        img.data[k + 1] = gg * (0.55 + shade * 0.6);
+        img.data[k + 2] = b * (0.55 + shade * 0.6);
+        img.data[k + 3] = 255;
+      }
+    }
+    g.putImageData(img, 0, 0);
+    this.mapBg = c;
+  }
+
+  toggleMap(force) {
+    const open = force ?? !this.mapPanel.classList.contains('open');
+    this.mapPanel.classList.toggle('open', open);
+    if (open) {
+      this.teleportPanel.classList.remove('open');
+      this.settingsPanel.classList.remove('open');
+      document.exitPointerLock?.();
+      this.drawMap();
+    }
+  }
+
+  mapToCanvas(x, z) {
+    const V = this.mapView;
+    const W = this.mapCanvas.width;
+    return [((x - V.minX) / (V.maxX - V.minX)) * W, ((z - V.minZ) / (V.maxZ - V.minZ)) * W];
+  }
+
+  /** Redesenha o mapa (chamado ao abrir e periodicamente enquanto aberto). */
+  drawMap(player) {
+    if (!this.mapData || !this.mapPanel.classList.contains('open')) return;
+    const g = this.mapCanvas.getContext('2d');
+    const W = this.mapCanvas.width;
+    g.imageSmoothingEnabled = true;
+    g.drawImage(this.mapBg, 0, 0, W, W);
+    // áreas dos sítios
+    g.lineWidth = 2;
+    for (const [id, polys] of Object.entries(this.mapData.areas)) {
+      g.strokeStyle = 'rgba(80,40,20,0.55)';
+      g.fillStyle = 'rgba(160,90,50,0.16)';
+      for (const poly of polys) {
+        g.beginPath();
+        poly.forEach(([x, z], i) => {
+          const [px, py] = this.mapToCanvas(x, z);
+          if (i === 0) g.moveTo(px, py);
+          else g.lineTo(px, py);
+        });
+        g.closePath();
+        g.fill();
+        g.stroke();
+      }
+      const label = this.mapData.areaNames?.[id];
+      if (label) {
+        const p0 = polys[0];
+        const cx = p0.reduce((s, q) => s + q[0], 0) / p0.length;
+        const cz = p0.reduce((s, q) => s + q[1], 0) / p0.length;
+        const [px, py] = this.mapToCanvas(cx, cz);
+        g.font = '13px Palatino, Georgia, serif';
+        g.fillStyle = 'rgba(40,20,10,0.85)';
+        g.textAlign = 'center';
+        g.fillText(label, px, py);
+      }
+    }
+    // locais de teleporte
+    this.mapHits = [];
+    for (const l of this.mapData.locations) {
+      const [px, py] = this.mapToCanvas(l.x, l.z);
+      g.beginPath();
+      g.arc(px, py, 5, 0, Math.PI * 2);
+      g.fillStyle = '#c9a24a';
+      g.fill();
+      g.strokeStyle = '#2a1d10';
+      g.stroke();
+      this.mapHits.push({ px, py, l });
+    }
+    // jogador
+    const p = player || this.lastPlayer;
+    if (p) {
+      this.lastPlayer = p;
+      const [px, py] = this.mapToCanvas(p.x, p.z);
+      g.save();
+      g.translate(px, py);
+      g.rotate(-p.yaw);
+      g.beginPath();
+      g.moveTo(0, -11);
+      g.lineTo(7, 8);
+      g.lineTo(0, 4);
+      g.lineTo(-7, 8);
+      g.closePath();
+      g.fillStyle = '#8e2a1e';
+      g.fill();
+      g.strokeStyle = '#fff';
+      g.lineWidth = 1.5;
+      g.stroke();
+      g.restore();
+    }
+    // escala (500 m)
+    const [a] = this.mapToCanvas(0, 0);
+    const [b] = this.mapToCanvas(500, 0);
+    g.fillStyle = 'rgba(30,20,10,0.8)';
+    g.fillRect(W - 30 - (b - a), W - 24, b - a, 4);
+  }
+
+  onMapClick(e) {
+    if (!this.mapHits) return;
+    const r = this.mapCanvas.getBoundingClientRect();
+    const sx = ((e.clientX - r.left) / r.width) * this.mapCanvas.width;
+    const sy = ((e.clientY - r.top) / r.height) * this.mapCanvas.height;
+    let best = null;
+    let bd = 18;
+    for (const h of this.mapHits) {
+      const d = Math.hypot(h.px - sx, h.py - sy);
+      if (d < bd) {
+        bd = d;
+        best = h.l;
+      }
+    }
+    if (best) {
+      this.toggleMap(false);
+      this.opts.onTeleport?.(best);
+    }
   }
 
   /* --------------------------------- HUD dinâmico -------------------------------- */

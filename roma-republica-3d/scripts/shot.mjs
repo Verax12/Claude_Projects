@@ -18,6 +18,7 @@
  *   --npcs=0          desliga NPCs
  *   --ao=1            liga a oclusão de ambiente (GTAO)
  *   --layout=1        desenha os contornos das áreas de cada sítio (docs/LAYOUT.md)
+ *   --ui=1            mantém a interface visível (vistas podem ter "key": "KeyM" para pressionar uma tecla)
  *   --list            apenas lista os locais de teleporte registrados
  *
  * Vistas podem ter também "colliders": true (mostra a malha de colisão) e
@@ -49,7 +50,7 @@ const port = server.httpServer.address().port;
 
 const q = new URLSearchParams();
 q.set('quality', args.quality || 'low');
-q.set('ui', '0');
+q.set('ui', args.ui === '1' ? '1' : '0');
 if (args.sites) q.set('sites', args.sites);
 if (args.time) q.set('time', args.time);
 if (args.npcs === '0') q.set('npcs', '0');
@@ -95,6 +96,7 @@ try {
       // alguns quadros para estabilizar sombras/LOD/NPCs
       for (let k = 0; k < 4; k++) r.renderNow();
     }, v);
+    if (v.key) await page.keyboard.press(v.key);
     await page.waitForTimeout(Number(args.wait || 300));
     await page.evaluate(() => window.__roma.renderNow());
     const file = resolve(root, `${out}-${v.name || i}.png`);

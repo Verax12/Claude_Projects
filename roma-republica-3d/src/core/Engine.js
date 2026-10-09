@@ -24,6 +24,18 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const nextFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
 
+/** Rótulos curtos das áreas no mapa. */
+const AREA_LABELS = {
+  'forum-praca': 'Fórum',
+  'forum-iulium': 'Fórum de César',
+  capitolio: 'Capitólio',
+  palatino: 'Palatino',
+  macellum: 'Macellum',
+  subura: 'Subura',
+  'circo-maximo': 'Circo Máximo',
+  arredores: 'Velabro / Tibre',
+};
+
 export class Engine {
   constructor(container, uiRoot) {
     this.container = container;
@@ -154,6 +166,7 @@ export class Engine {
     this.player.onLockChange = (locked) => this.ui.setLocked(locked);
     this.player.onFlyChange = (fly) => this.ui.toast(fly ? 'Modo voo ativado (F para sair)' : 'Modo voo desativado');
     this.ui.setLocations(this.world.locations);
+    this.ui.setupMap(this.terrain, SITE_AREAS, this.world.locations, AREA_LABELS);
 
     const start = this.world.locations.find((l) => l.id === config.teleportOnStart) || this.world.locations.find((l) => l.start) || this.world.locations[0];
     if (config.camOnStart) {
@@ -226,6 +239,7 @@ export class Engine {
       if (e.repeat) return;
       if (e.code === 'KeyT') this.ui.toggleTeleport();
       if (e.code === 'KeyH') this.ui.toggleHelp();
+      if (e.code === 'KeyM') this.ui.toggleMap();
       if (e.code === 'KeyI') {
         this.ui.toggleInfo();
         if (this.ui.info.classList.contains('open')) document.exitPointerLock?.();
@@ -238,6 +252,7 @@ export class Engine {
         this.ui.toggleTeleport(false);
         this.ui.toggleSettings(false);
         this.ui.toggleHelp(false);
+        this.ui.toggleMap(false);
       }
     });
   }
@@ -383,6 +398,7 @@ export class Engine {
       }
     }
     ui.setNearbyInfo(info);
+    ui.drawMap({ x: f.x, z: f.z, yaw: this.player.yaw });
     // NPC à frente
     if (this.npcs.im && this.npcs.enabled && !this.player.fly) {
       const dir = new THREE.Vector3(0, 0, -1).applyAxisAngle(new THREE.Vector3(0, 1, 0), this.player.yaw);
