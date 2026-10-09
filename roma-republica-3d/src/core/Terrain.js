@@ -250,13 +250,13 @@ export class Terrain {
     const group = new THREE.Group();
     group.name = 'terrain';
     const det = terrainDetailTexture(Math.min(512, quality.textureSize), { seed: 29 });
-    det.map.repeat.set(1 / 6, 1 / 6);
-    det.normalMap.repeat.set(1 / 6, 1 / 6);
+    det.map.repeat.set(1 / 11, 1 / 11);
+    det.normalMap.repeat.set(1 / 11, 1 / 11);
     this.material = new THREE.MeshStandardMaterial({
       vertexColors: true,
       map: det.map,
       normalMap: det.normalMap,
-      normalScale: new THREE.Vector2(0.6, 0.6),
+      normalScale: new THREE.Vector2(0.22, 0.22),
       roughness: 0.97,
       metalness: 0,
     });
@@ -331,6 +331,7 @@ export class Terrain {
     const nxv = Math.floor(cw / step) + 1;
     const nzv = Math.floor(ch / step) + 1;
     const pos = [];
+    const nor = [];
     const col = [];
     const uv = [];
     const idx = [];
@@ -345,7 +346,10 @@ export class Terrain {
       // inclinação estimada por diferenças
       const hx = this.h[this.idx(Math.min(gi + 1, this.nx - 1), gj)] - this.h[this.idx(Math.max(gi - 1, 0), gj)];
       const hz = this.h[this.idx(gi, Math.min(gj + 1, this.nz - 1))] - this.h[this.idx(gi, Math.max(gj - 1, 0))];
-      const ny = (2 * this.cell) / Math.hypot(hx, 2 * this.cell, hz);
+      const nl = Math.hypot(hx, 2 * this.cell, hz);
+      const ny = (2 * this.cell) / nl;
+      // normal analítica (diferenças centrais) — idêntica para o topo e a saia de um vértice
+      nor.push(-hx / nl, ny, -hz / nl);
       const c = this.colorAt(x, z, k, ny);
       col.push(...c);
       uv.push(x, -z);
@@ -395,8 +399,8 @@ export class Terrain {
     g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
     g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
     g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+    g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
     g.setIndex(idx);
-    g.computeVertexNormals();
     g.computeBoundingSphere();
     return g;
   }

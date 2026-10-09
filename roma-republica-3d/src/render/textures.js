@@ -357,7 +357,7 @@ export function terrainDetailTexture(size, { seed = 29 }) {
     (u, v) => {
       const n = fbm(u, v, 8, 5, seed);
       const blades = valueNoise(u, v, 128, seed + 1);
-      const g = 200 + (n - 0.5) * 70 + (blades - 0.5) * 40;
+      const g = 222 + (n - 0.5) * 30 + (blades - 0.5) * 18;
       return { c: [g, g, g], h: n * 0.7 + blades * 0.3 };
     },
     { normal: true, normalStrength: 1.5 },

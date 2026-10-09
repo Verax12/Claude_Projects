@@ -1,26 +1,27 @@
 /**
  * Registro dos sítios (módulos de construção da cidade).
  *
- * Cada sítio exporta { id, name, shapeTerrain(ctx), build(ctx) }. A ordem importa:
- * 'cidade' (preenchimento urbano genérico) vem por último para respeitar as áreas
- * reservadas pelos demais. Sítios com `dev: true` só são construídos se pedidos via ?sites=.
+ * Cada sítio é um módulo que exporta por padrão { id, name, shapeTerrain(ctx), build(ctx) }.
+ * Os módulos são carregados DINAMICAMENTE pelo Engine (import()), de modo que um erro num
+ * sítio não impede o carregamento dos demais, e ?sites= carrega apenas os pedidos.
+ *
+ * A ordem importa: 'cidade' (preenchimento urbano genérico) vem por último para respeitar
+ * as áreas reservadas pelos demais. Entradas com `dev: true` só carregam se pedidas em ?sites=.
  */
-import forumPiazza from './forumPiazza.js';
-import forumWest from './forumWest.js';
-import forumNorth from './forumNorth.js';
-import forumSouthEast from './forumSouthEast.js';
-import forumIulium from './forumIulium.js';
-import capitoline from './capitoline.js';
-import palatine from './palatine.js';
-import domusCrassi from './domusCrassi.js';
-import macellum from './macellum.js';
-import subura from './subura.js';
-import insulaPlebeia from './insulaPlebeia.js';
-import foricae from './foricae.js';
-import circusMaximus from './circusMaximus.js';
-import city from './city.js';
-import teste from './_teste.js';
-
-const ALL = [forumPiazza, forumWest, forumNorth, forumSouthEast, forumIulium, capitoline, palatine, domusCrassi, macellum, subura, insulaPlebeia, foricae, circusMaximus, city, teste];
-
-export const SITES = ALL.filter((s) => !s.dev || (typeof location !== 'undefined' && new URLSearchParams(location.search).get('sites')?.split(',').includes(s.id)));
+export const SITE_LOADERS = [
+  { id: 'forum-praca', load: () => import('./forumPiazza.js') },
+  { id: 'forum-oeste', load: () => import('./forumWest.js') },
+  { id: 'forum-norte', load: () => import('./forumNorth.js') },
+  { id: 'forum-sudeste', load: () => import('./forumSouthEast.js') },
+  { id: 'forum-iulium', load: () => import('./forumIulium.js') },
+  { id: 'capitolio', load: () => import('./capitoline.js') },
+  { id: 'palatino', load: () => import('./palatine.js') },
+  { id: 'domus-crasso', load: () => import('./domusCrassi.js') },
+  { id: 'macellum', load: () => import('./macellum.js') },
+  { id: 'subura', load: () => import('./subura.js') },
+  { id: 'casa-plebe', load: () => import('./insulaPlebeia.js') },
+  { id: 'foricae', load: () => import('./foricae.js') },
+  { id: 'circo-maximo', load: () => import('./circusMaximus.js') },
+  { id: 'cidade', load: () => import('./city.js') },
+  { id: 'teste', load: () => import('./_teste.js'), dev: true },
+];

@@ -15,7 +15,7 @@ import { AudioSystem } from '../audio/AudioSystem.js';
 import { UI } from '../ui/UI.js';
 import { mulberry32 } from '../render/noise.js';
 import * as geo from './geo.js';
-import { SITES } from '../sites/index.js';
+import { SITE_LOADERS } from '../sites/index.js';
 
 const nextFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
 
@@ -85,7 +85,17 @@ export class Engine {
 
     const ctx = this.makeContext();
     this.ctx = ctx;
-    const sites = SITES.filter((s) => !config.onlySites || config.onlySites.includes(s.id));
+    // carrega os módulos dos sítios pedidos (erros de um sítio não afetam os demais)
+    const wanted = SITE_LOADERS.filter((s) => (config.onlySites ? config.onlySites.includes(s.id) : !s.dev));
+    const sites = [];
+    for (const entry of wanted) {
+      try {
+        const mod = await entry.load();
+        sites.push(mod.default);
+      } catch (e) {
+        console.error(`[${entry.id}] falha ao carregar o módulo`, e);
+      }
+    }
     // 1) modificações do terreno
     for (const s of sites) {
       try {
@@ -283,6 +293,10 @@ export class Engine {
     }
     this.world.update(dt, this.elapsed, this.camera);
     this.env.update(p.feet);
+    // neblina mais rala quando a câmera está alta (modo voo) — senão tudo fica branco
+    const camH = Math.max(0, this.camera.position.y - 40);
+    this.env.fog.near = 250 + camH * 1.5;
+    this.env.fog.far = config.quality.viewDistance + camH * 3;
     this.audio.update(p.feet, p.feet.y);
     this.updateHUD(dt);
     if (render) this.renderer.render(this.scene, this.camera);
