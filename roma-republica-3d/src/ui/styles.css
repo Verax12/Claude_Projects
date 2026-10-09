@@ -1,0 +1,584 @@
+/* Interface — discreta e elegante, inspirada em inscrições romanas (capitais, tons de pedra). */
+:root {
+  --ui-bg: rgba(24, 20, 16, 0.78);
+  --ui-bg-solid: #1d1813;
+  --ui-border: rgba(214, 190, 140, 0.35);
+  --ui-text: #efe6d2;
+  --ui-muted: #b9ab8e;
+  --ui-accent: #c9a24a;
+  --ui-accent-2: #8e2a1e;
+  --ui-font: 'Palatino Linotype', 'Book Antiqua', Palatino, 'URW Palladio L', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #1a1612;
+  font-family: var(--ui-font);
+  color: var(--ui-text);
+}
+
+#app canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#ui {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#ui .interactive {
+  pointer-events: auto;
+}
+
+.panel {
+  background: var(--ui-bg);
+  border: 1px solid var(--ui-border);
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.caps {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* --- Tela de carregamento ------------------------------------------------- */
+#loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #2b241b 0%, #120f0c 75%);
+  z-index: 50;
+  pointer-events: auto;
+  text-align: center;
+  padding: 24px;
+}
+
+#loading h1 {
+  font-weight: normal;
+  font-size: clamp(28px, 5vw, 54px);
+  letter-spacing: 0.3em;
+  margin: 0 0 4px;
+  color: #f3ead6;
+}
+
+#loading .sub {
+  color: var(--ui-muted);
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  margin-bottom: 34px;
+}
+
+#loading .bar {
+  width: min(420px, 80vw);
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#loading .bar > div {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--ui-accent-2), var(--ui-accent));
+  transition: width 0.25s;
+}
+
+#loading .status {
+  margin-top: 12px;
+  color: var(--ui-muted);
+  font-size: 13px;
+  min-height: 1.2em;
+}
+
+#loading .enter {
+  margin-top: 28px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#loading .controls {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px 18px;
+  font-size: 13px;
+  color: var(--ui-muted);
+  text-align: left;
+}
+
+#loading .controls b {
+  color: var(--ui-text);
+  font-weight: normal;
+}
+
+.btn {
+  font-family: var(--ui-font);
+  background: rgba(201, 162, 74, 0.12);
+  color: var(--ui-text);
+  border: 1px solid var(--ui-border);
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+  background: rgba(201, 162, 74, 0.28);
+  border-color: var(--ui-accent);
+}
+
+.btn.big {
+  font-size: 17px;
+  padding: 12px 34px;
+}
+
+/* --- Barra superior direita ----------------------------------------------- */
+#topright {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#topright .row {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  font-family: var(--ui-font);
+  background: var(--ui-bg);
+  border: 1px solid var(--ui-border);
+  color: var(--ui-text);
+  border-radius: 5px;
+  height: 34px;
+  min-width: 34px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn:hover {
+  border-color: var(--ui-accent);
+}
+
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+}
+
+/* Painel de teleporte */
+#teleport {
+  width: 300px;
+  max-height: min(70vh, 640px);
+  overflow-y: auto;
+  padding: 10px 0;
+  display: none;
+}
+
+#teleport.open {
+  display: block;
+}
+
+#teleport h3 {
+  margin: 10px 16px 4px;
+  font-size: 11px;
+  font-weight: normal;
+  color: var(--ui-accent);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+#teleport button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--ui-text);
+  font-family: var(--ui-font);
+  font-size: 14px;
+  padding: 6px 16px 6px 22px;
+  cursor: pointer;
+}
+
+#teleport button small {
+  display: block;
+  color: var(--ui-muted);
+  font-style: italic;
+  font-size: 12px;
+}
+
+#teleport button:hover {
+  background: rgba(201, 162, 74, 0.16);
+}
+
+#teleport::-webkit-scrollbar {
+  width: 6px;
+}
+
+#teleport::-webkit-scrollbar-thumb {
+  background: rgba(201, 162, 74, 0.35);
+  border-radius: 3px;
+}
+
+/* Painel de configurações */
+#settings {
+  width: 280px;
+  padding: 14px 16px;
+  display: none;
+  font-size: 13px;
+}
+
+#settings.open {
+  display: block;
+}
+
+#settings label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  gap: 10px;
+}
+
+#settings select,
+#settings input[type='range'] {
+  font-family: var(--ui-font);
+  background: var(--ui-bg-solid);
+  color: var(--ui-text);
+  border: 1px solid var(--ui-border);
+  border-radius: 3px;
+}
+
+#settings .note {
+  color: var(--ui-muted);
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* --- Bússola -------------------------------------------------------------- */
+#compass {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 26px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent);
+}
+
+#compass .strip {
+  position: absolute;
+  top: 0;
+  height: 26px;
+  white-space: nowrap;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+#compass .strip span {
+  position: absolute;
+  top: 4px;
+  transform: translateX(-50%);
+  color: var(--ui-muted);
+}
+
+#compass .strip span.major {
+  color: var(--ui-text);
+}
+
+#compass::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1px;
+  height: 7px;
+  background: var(--ui-accent);
+}
+
+/* --- Área / informação ---------------------------------------------------- */
+#area {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.8s;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+#area.show {
+  opacity: 1;
+}
+
+#area .name {
+  font-size: 22px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+#area .latin {
+  font-style: italic;
+  color: var(--ui-muted);
+  font-size: 14px;
+}
+
+#hint {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  padding: 8px 14px;
+  font-size: 13px;
+  display: none;
+  max-width: 360px;
+}
+
+#hint.show {
+  display: block;
+}
+
+#hint kbd,
+.kbd {
+  display: inline-block;
+  border: 1px solid var(--ui-border);
+  border-radius: 3px;
+  padding: 0 6px;
+  font-family: var(--ui-font);
+  font-size: 12px;
+  margin-right: 6px;
+  color: var(--ui-accent);
+}
+
+#info {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: min(460px, calc(100vw - 32px));
+  max-height: 62vh;
+  overflow-y: auto;
+  padding: 16px 18px;
+  display: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#info.open {
+  display: block;
+}
+
+#info h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+#info .latin {
+  font-style: italic;
+  color: var(--ui-muted);
+  margin-bottom: 4px;
+}
+
+#info .date {
+  color: var(--ui-accent);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+#info p {
+  margin: 0 0 10px;
+}
+
+#info .uncertain {
+  border-left: 2px solid var(--ui-accent-2);
+  padding-left: 10px;
+  color: #dccfb3;
+  font-size: 13px;
+}
+
+#info .sources {
+  font-size: 12px;
+  color: var(--ui-muted);
+  border-top: 1px solid var(--ui-border);
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+#info .close {
+  float: right;
+  margin: -4px -6px 0 8px;
+}
+
+/* --- Diálogo com NPC ------------------------------------------------------ */
+#dialog {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  text-align: center;
+  display: none;
+  min-width: 260px;
+}
+
+#dialog.show {
+  display: block;
+}
+
+#dialog .who {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ui-accent);
+}
+
+#dialog .la {
+  font-size: 19px;
+  font-style: italic;
+  margin: 4px 0 2px;
+}
+
+#dialog .pt {
+  color: var(--ui-muted);
+  font-size: 13px;
+}
+
+/* --- Mira, aviso, estatísticas ------------------------------------------- */
+#crosshair {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  background: rgba(255, 245, 220, 0.75);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#crosshair.show {
+  display: block;
+}
+
+#toast {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 16px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+#paused {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+}
+
+#paused.show {
+  display: block;
+}
+
+#stats {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font: 11px/1.4 monospace;
+  padding: 6px 8px;
+  white-space: pre;
+  display: none;
+}
+
+#stats.show {
+  display: block;
+}
+
+#help {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(560px, calc(100vw - 32px));
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#help.open {
+  display: block;
+}
+
+#help h2 {
+  margin-top: 0;
+  font-weight: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#help table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#help td {
+  padding: 3px 6px;
+  vertical-align: top;
+}
+
+#help td:first-child {
+  white-space: nowrap;
+  color: var(--ui-accent);
+}

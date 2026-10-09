@@ -1,0 +1,20 @@
+{
+  "name": "roma-republica-3d",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Exploração 3D interativa da Roma da República tardia (c. 50–44 a.C.) em Three.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "three-mesh-bvh": "^0.9.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.56.1",
+    "vite": "^7.3.7"
+  }
+}
