@@ -90,7 +90,7 @@ P.roofY = P.entY + P.entH; // beiral baixo do telhado (sobre a colunata)
 
 /** Templo (quadro local com origem no ponto do templo). Ver nota 04 §3 e temple.js. */
 export const TPL = {
-  D: 1.3, // diâmetro das colunas — NÃO ENCONTRADO; parâmetro (nota 04: D ≤ ~1,5 m pelo envelope [D])
+  D: 1.3, // diâmetro das colunas — NÃO ENCONTRADO; parâmetro (nota 04: D ≤ ~1,6 m pelo envelope [D])
   N: 8, // octastilo (nota 04 §3)
   podW: 26,
   podZ0: -17,

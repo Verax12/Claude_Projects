@@ -132,23 +132,23 @@ function addInfos(ctx) {
     radius: 26,
     title: 'Fórum de César',
     latin: 'Forum Iulium (Forum Caesaris)',
-    date: 'Terrenos comprados desde 54 a.C.; dedicado em 26 de setembro de 46 a.C., ainda inacabado',
+    date: 'Terrenos comprados desde 54 a.C.; dedicado em setembro de 46 a.C. (último dia do triunfo), ainda inacabado',
     text: [
       'Em 54 a.C., Cícero e Ópio, amigos de César, já tinham gasto 60 milhões de sestércios em terrenos "para ampliar o fórum e estendê-lo até o Atrium Libertatis". Suetônio diz que só a área custou mais de 100 milhões, pagos com o butim (de manubiis) das guerras de César.',
       'César cercou o templo de Vênus Genetrix com um recinto e o destinou a praça dos romanos: "não de mercadorias", explica Ápio, mas para quem se reúne para tratar de negócios públicos. Por isso não há aqui bancas nem vendedores.',
-      'O conjunto foi dedicado no último dia do triunfo de 46 a.C., ainda incompleto; Augusto concluiu as obras. No início de 44 a.C., a ponta voltada para o Comício e para a cúria demolida ainda é canteiro.',
-      'Para Dião Cássio, este fórum era "mais belo que o Romano". O que se vê hoje em Roma é sobretudo a reconstrução de Trajano (113 d.C.).',
+      'O conjunto foi dedicado no último dia do triunfo de 46 a.C. (a data de 26 de setembro vem de autores modernos). A estátua de culto foi posta ainda inacabada, e as obras do fórum só terminaram sob Augusto. No início de 44 a.C., a ponta voltada para o Comício e para a cúria demolida ainda é canteiro.',
+      'Dião Cássio diz que o fórum de César era "mais belo que o Romano" (o grego é ambíguo). O que se vê hoje em Roma é sobretudo a reconstrução de Domiciano e Trajano, depois do incêndio de 80 d.C.',
     ],
     uncertain:
-      'Reconstrução hipotética: a planta da fase cesariana não está documentada em detalhe. Usamos o envelope de 160 × 75 m citado pelo Pleiades (o recinto termina aqui onde começa o canteiro da Cúria) e o eixo de ≈ 158° calculado a partir dos pontos das ruínas. São escolhas de modelagem: a cota do pavimento, as lajes da praça, a profundidade, a ordem e o número de colunas dos pórticos, as tabernae dos dois lados e o muro de arrimo contra a encosta do Capitólio. Os pórticos são simples; o pórtico duplo só está atestado na fase trajânica.',
-    sources: ['Cícero, Ad Atticum 4.17.7 (= 4.16.8)', 'Suetônio, Divus Iulius 26.2', 'Plínio, NH 36.103 e 35.156', 'Ápio, Guerras Civis 2.102', 'Dião Cássio 43.22.1–3', 'Pleiades 445545537 (Forum Iulium)', 'Mercati di Traiano – Museo dei Fori Imperiali, Foro di Cesare', 'Imperium Romanum, Forum of Caesar'],
+      'Reconstrução hipotética: a planta da fase cesariana não está documentada em detalhe. Usamos o envelope de 160 × 75 m citado pelo Pleiades (o recinto termina aqui onde começa o canteiro da Cúria) e o eixo de ≈ 158° calculado a partir dos pontos das ruínas. São escolhas de modelagem: a cota do pavimento, as lajes da praça, a profundidade, a ordem e o número de colunas dos pórticos, as tabernae dos dois lados e o muro de arrimo contra a encosta do Capitólio. Os pórticos são simples; o pórtico duplo só está atestado na fase trajânica. A conclusão por Augusto vem das Res Gestae 20, citadas pelo Museo dei Fori Imperiali (texto não lido diretamente).',
+    sources: ['Cícero, Ad Atticum 4.17.7 (= 4.16.8)', 'Suetônio, Divus Iulius 26.2', 'Plínio, NH 36.103 e 35.156', 'Ápio, Guerras Civis 2.102', 'Dião Cássio 43.22.1–3', 'Pleiades 445545537 (Forum Iulium)', 'Res Gestae 20 (via Mercati di Traiano)', 'Mercati di Traiano – Museo dei Fori Imperiali, Foro di Cesare', 'Imperium Romanum, Forum of Caesar'],
   });
 
   info(0, MON.altarZ + 1.5, {
     radius: 8,
     title: 'Templo de Vênus Genetrix',
     latin: 'Aedes Veneris Genetricis',
-    date: 'Prometido em Farsália (48 a.C.); dedicado em 26 de setembro de 46 a.C.',
+    date: 'Prometido em Farsália (48 a.C.); dedicado em setembro de 46 a.C.',
     text: [
       'Na noite antes de Farsália, César prometeu um templo a Vênus como "portadora da vitória". Cumpriu o voto dedicando-o a Vênus Genetrix, a mãe de Eneias e ancestral mítica da gente Júlia.',
       'Vitrúvio, que conheceu o templo antes da reconstrução de Trajano, cita-o como exemplo de picnostilo: o vão entre as colunas mede só um diâmetro e meio. Nesses templos, diz ele, as mães de família não conseguem subir de braços dados entre as colunas, as portas ficam escondidas e as estátuas, na sombra.',
@@ -188,7 +188,7 @@ function addInfos(ctx) {
     ],
     uncertain:
       'Cena evocativa: a data exata do episódio não é conhecida, e Plutarco o situa na Rostra (divergência). A cadeira, o traje púrpura bordado de ouro e os poucos lictores representados são hipóteses de ambientação.',
-    sources: ['Suetônio, Divus Iulius 78.1 e 76.1', 'Dião Cássio 44.8.1–2', 'Plutarco, César 60.4', 'Ápio, Guerras Civis 2.106', 'Políbio 3.87'],
+    sources: ['Suetônio, Divus Iulius 78.1 e 76.1', 'Dião Cássio 44.8.1–2', 'Plutarco, César 60.3', 'Ápio, Guerras Civis 2.106', 'Políbio 3.87'],
   });
 
   info(0, MON.equusZ + 2, {

@@ -31,6 +31,7 @@ export const POS = {
   bankers: [{ u: 83, v: -18.6 }, { u: 82.6, v: -25.4 }],
   tremulus: { u: 52, v: -23.2 },
   sundials: [{ u: -17.6, v: 25.6 }, { u: -17.6, v: 28.4 }],
+  lectica: { u: 60.5, v: -19.6 },
 };
 
 const M = (x, y, z) => new THREE.Matrix4().makeTranslation(x, y, z);
@@ -398,6 +399,62 @@ export function buildSundials(b) {
     b.add(cylinderBetween([0, yb + 0.48, -0.12], [0, yb + 0.42, 0.18], 0.008, 0.006, 4), { mat: 'bronze' });
     b.pop();
   }
+}
+
+/* ========================================================================= */
+/*  Liteira (lectica) fechada, estacionada, com o banco dos carregadores       */
+/* ========================================================================= */
+/**
+ * Nota 11 §17: César "suprimiu o uso de liteiras, exceto a certas pessoas e idades e em certos
+ * dias" (Suet. Iul. 43.1); liteira fechada, "operta lectica" (Cic. Phil. 2.106); liteira de luxo
+ * com OITO carregadores (Catulo 10); matronas de liteira (Hor. Sat. 1.2.98). Forma e medidas:
+ * NÃO ENCONTRADAS → caixa de madeira com cobertura, cortinas fechadas e dois varais (hipótese).
+ * Frente (+Z local) voltada para ESE, ao longo do eixo da praça.
+ */
+export function buildLectica(bd) {
+  const { u, v } = POS.lectica;
+  bd.push(u, PAVE_Y, -v, fRot(119));
+  const L = 2.1; // comprimento da caixa
+  const W = 0.95;
+  const legH = 0.32;
+  // pés curtos (a liteira pousada no chão)
+  for (const [sx, sz] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) bd.box(0.1, legH, 0.1, sx * (W / 2 - 0.08), 0, sz * (L / 2 - 0.1), { mat: 'woodDark', collide: false });
+  // estrado + colchão e almofada
+  bd.box(W, 0.12, L, 0, legH, 0, { mat: 'woodDark', collide: false });
+  bd.box(W - 0.12, 0.16, L - 0.12, 0, legH + 0.12, 0, { mat: 'cloth', color: '#8c3a2a', collide: false });
+  bd.box(W - 0.2, 0.18, 0.4, 0, legH + 0.28, -L / 2 + 0.3, { mat: 'cloth', color: '#c9a24e', collide: false });
+  // painéis baixos (madeira com friso de bronze)
+  for (const s of [-1, 1]) {
+    bd.box(0.05, 0.3, L, s * (W / 2 - 0.025), legH + 0.12, 0, { mat: 'wood', collide: false });
+    bd.box(0.055, 0.04, L, s * (W / 2 - 0.025), legH + 0.38, 0, { mat: 'bronze', collide: false });
+  }
+  for (const s of [-1, 1]) bd.box(W, 0.3, 0.05, 0, legH + 0.12, s * (L / 2 - 0.025), { mat: 'wood', collide: false });
+  // colunetas e teto (cobertura de madeira com cornija)
+  const top = legH + 1.32;
+  for (const [sx, sz] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) bd.add(G.cylinder(0.035, 0.035, top - legH - 0.42, 8).translate(sx * (W / 2 - 0.04), legH + 0.42, sz * (L / 2 - 0.04)), { mat: 'woodDark' });
+  bd.box(W + 0.1, 0.07, L + 0.1, 0, top, 0, { mat: 'woodDark', collide: false });
+  bd.box(W - 0.1, 0.09, L - 0.2, 0, top + 0.07, 0, { mat: 'wood', collide: false });
+  for (const [sx, sz] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) bd.add(G.sphere(0.05, 8, 6).translate(sx * (W / 2), top + 0.06, sz * (L / 2)), { mat: 'bronze' });
+  // cortinas fechadas (operta lectica): laterais, frente e fundos, com dobras
+  const ch = top - legH - 0.44;
+  for (const s of [-1, 1]) {
+    for (let k = 0; k < 6; k++) {
+      const z0 = -L / 2 + 0.06 + k * ((L - 0.12) / 6);
+      bd.box(0.03, ch, (L - 0.12) / 6 - 0.01, s * (W / 2 - 0.05 + (k % 2) * 0.012), legH + 0.42, z0 + (L - 0.12) / 12, { mat: 'cloth', color: k % 2 ? '#6e2f26' : '#7d382d', collide: false });
+    }
+  }
+  for (const s of [-1, 1]) bd.box(W - 0.12, ch, 0.03, 0, legH + 0.42, s * (L / 2 - 0.05), { mat: 'cloth', color: '#74342a', collide: false });
+  // dois varais compridos (apoiados nos pés), com ponteiras de bronze
+  const PL = 4.6;
+  for (const s of [-1, 1]) {
+    bd.box(0.07, 0.08, PL, s * (W / 2 + 0.06), legH + 0.06, 0, { mat: 'woodDark', collide: false });
+    for (const e of [-1, 1]) bd.box(0.08, 0.09, 0.08, s * (W / 2 + 0.06), legH + 0.055, e * (PL / 2 - 0.04), { mat: 'bronze', collide: false });
+  }
+  bd.colliderBox(W + 0.3, top + 0.15, L, 0, 0, 0);
+  // banco dos carregadores ao lado (local +X = lado de +v, NNE)
+  bd.add(propGeom('bench'), { mat: 'wood', matrix: rotM(W / 2 + 1.4, 0, 0.1, Math.PI / 2), collide: 'box' });
+  bd.add(propGeom('basket'), { mat: 'woodLight', matrix: M(W / 2 + 1.45, 0, 1.45) });
+  bd.pop();
 }
 
 /* ------------------------------------------------------------------------- */

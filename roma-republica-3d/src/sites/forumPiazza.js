@@ -7,7 +7,7 @@
  *   - traçado e pavimento da Via Sacra da praça até o alto da Vélia (hipótese: basalto),
  *     com calçadas e, no trecho alto, frentes de lojas genéricas;
  *   - Lacus Curtius, Puteal Libonis + tribunal do pretor, estátua equestre de Q. Márcio Trêmulo,
- *     relógios de sol junto à (antiga) Rostra;
+ *     relógios de sol junto à (antiga) Rostra; uma liteira fechada estacionada (nota 11 §17);
  *   - caminhos de NPC densos, zonas de som, áreas, painéis e o local inicial "via-sacra".
  *
  * Fontes: docs/pesquisa/01, 02, 03 (§11–14) e 11. Módulos auxiliares em ./forum-praca/.
@@ -18,7 +18,7 @@ import { FORUM_FRAME, forumUV, ROT, AREA_PIAZZA, AREA_VIA, pushForumFrame } from
 import { buildPiazzaPavement } from './forum-praca/pavement.js';
 import { buildViaSacraStreet } from './forum-praca/viaSacra.js';
 import { planShopRows, buildShops } from './forum-praca/shops.js';
-import { buildLacusCurtius, buildPuteal, buildTremulus, buildSundials } from './forum-praca/monuments.js';
+import { buildLacusCurtius, buildPuteal, buildTremulus, buildSundials, buildLectica } from './forum-praca/monuments.js';
 import { addLife } from './forum-praca/life.js';
 
 export default {
@@ -59,6 +59,7 @@ export default {
     buildPuteal(bMon, bDet);
     buildTremulus(bMon);
     buildSundials(bMon);
+    buildLectica(bDet);
 
     // ---------------- Via Sacra ----------------
     buildViaSacraStreet(ctx, bPave);

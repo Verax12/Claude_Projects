@@ -16,6 +16,7 @@ import * as G from '../../render/geom.js';
 import * as T from '../../render/textures.js';
 import { fbm, valueNoise, worley, mulberry32 } from '../../render/noise.js';
 import { materials } from '../../render/materials.js';
+import { forumUV } from '../../data/layout.js';
 
 /* ------------------------------------------------------------------------- */
 /*  Cotas e posições                                                         */
@@ -81,9 +82,35 @@ export const VICUS_IUGARIUS = [
   [-163.5, 128],
   [-190, 140],
   [-230, 150],
-  [-270, 155],
-  [-305.5, 162],
+  [-262, 158],
+  [-290, 168.5],
 ];
+/** Continuação do Vicus Iugarius no sítio 'arredores' (nó de NPC dele, rumo à Porta Carmental). */
+export const VICUS_IUGARIUS_JOIN_W = [-288, 189];
+
+/**
+ * Junção com o trecho inferior do Clivus Capitolinus construído pelo sítio forum-oeste
+ * (src/sites/forumWest/plan.js, ponto K6: u = −160, v = −56,5, y = 15,5 — "altura da galeria
+ * do Tabularium"). Calculado aqui pelo referencial do Fórum para não depender do outro sítio.
+ */
+export const CLIVUS_JOIN = { ...forumUV(-160, -56.5), y: 15.5 };
+
+/**
+ * Patamar diante do portão leste da Area (chegada do clivo; Arco de Cipião). Plataforma
+ * construída (piso com colisão + muros de arrimo), no nível da Area. Forma HIPOTÉTICA.
+ */
+export const FORECOURT_POLY = [
+  [-185.8, 67],
+  [-166, 67],
+  [-166, 96],
+  [-185.8, 96],
+];
+
+/** Escada do caminho Asylum → Arx (chega ao muro sul do recinto da Arx). HIPOTÉTICA. */
+export const ARX_STAIR = { x: -150, z0: -117, z1: -127.6 };
+
+/** Centum Gradus (Tác. Hist. 3.71): dois lances ao longo do paredão sul, do sopé à Area. HIPOTÉTICO. */
+export const CENTUM = { edge: 4, offset: 4.0, t0: 13.4, t1: 29.9, t2: 32.1, t3: 48.6, width: 2.4, steps: 100 };
 
 /* ------------------------------------------------------------------------- */
 /*  Utilidades matemáticas                                                   */
@@ -685,6 +712,150 @@ export function swapMaterial(group, libKey, mat) {
     const key = m.name.split(':').slice(1).join(':').split('|')[0];
     if (key === libKey || key === libKey + '@interior') m.material = mat;
   }
+}
+
+/* ------------------------------------------------------------------------- */
+/*  Muros de arrimo e parapeitos ao longo de caminhos e plataformas           */
+/* ------------------------------------------------------------------------- */
+
+/**
+ * Muro lateral de uma rua/escada em rampa: segue a polilinha `pts` deslocado `off` m para a
+ * direita (off > 0) ou esquerda (off < 0) do sentido de percurso. Em cada trecho compara a cota
+ * do caminho (yFn(s)) com o terreno do lado de fora: se o terreno é mais alto, vira muro de
+ * arrimo (contém o corte); se é mais baixo, vira substrução com parapeito. Opus quadratum de
+ * tufo (Lív. 6.4.12 — substruções de cantaria; tipo de tufo NÃO ENCONTRADO).
+ * @param {object} o { from (s inicial), to (s final), step, thick, parapet, probe, mat, color, cap }
+ */
+export function sideWall(b, terrain, pts, yFn, off, o = {}) {
+  const S = resample(pts, o.step ?? 3);
+  const thick = o.thick ?? 1.2;
+  const par = o.parapet ?? 1.0;
+  const probe = o.probe ?? 5;
+  const from = o.from ?? -Infinity;
+  const to = o.to ?? Infinity;
+  const sg = Math.sign(off) || 1;
+  const P = S.filter((p) => p.s >= from - 1e-6 && p.s <= to + 1e-6);
+  if (P.length < 2) return;
+  const at = (p) => {
+    const nx = -p.dz;
+    const nz = p.dx;
+    const x = p.x + nx * off;
+    const z = p.z + nz * off;
+    const y = yFn(p.s);
+    const tOut = terrain.heightAt(p.x + nx * (off + sg * probe), p.z + nz * (off + sg * probe));
+    const top = Math.max(y + par, tOut + 0.15);
+    const base = Math.min(y, tOut) - 1.6;
+    return { x, z, top, base };
+  };
+  let A = at(P[0]);
+  for (let i = 1; i < P.length; i++) {
+    const B = at(P[i]);
+    const tone = o.color || ['#e3d6b8', '#d9caa6', '#e8dcc0'][i % 3];
+    slopedWall(b, A.x, A.z, B.x, B.z, A.top, B.top, A.base, B.base, thick, { mat: o.mat || 'tufa', color: tone });
+    if (o.cap !== false) slopedWall(b, A.x, A.z, B.x, B.z, A.top + 0.12, B.top + 0.12, A.top, B.top, thick + 0.18, { mat: 'travertine', collide: false });
+    A = B;
+  }
+}
+
+/**
+ * Muros de arrimo verticais em volta de uma plataforma construída (polígono no nível y), com
+ * parapeito na borda e aberturas. `gaps`: [[aresta, t0, t1]] em fração da aresta (0–1).
+ * @param {object} o { thick, parapet (altura; 0 = sem), skip: [arestas sem muro], toneSeed }
+ */
+export function platformWalls(b, terrain, poly, y, gaps = [], o = {}) {
+  const n = poly.length;
+  const T = o.thick ?? 2.0;
+  const par = o.parapet ?? 1.05;
+  for (let i = 0; i < n; i++) {
+    if (o.skip && o.skip.includes(i)) continue;
+    const a = poly[i];
+    const c = poly[(i + 1) % n];
+    const [nx, nz] = outwardNormal(poly, i);
+    const L = Math.hypot(c[0] - a[0], c[1] - a[1]);
+    const nSeg = Math.max(1, Math.round(L / 10));
+    for (let k = 0; k < nSeg; k++) {
+      const t0 = k / nSeg;
+      const t1 = (k + 1) / nSeg;
+      const e0 = k === 0 ? -T / L : 0;
+      const e1 = k === nSeg - 1 ? T / L : 0;
+      const pa = [lerp(a[0], c[0], t0 + e0) + (nx * T) / 2, lerp(a[1], c[1], t0 + e0) + (nz * T) / 2];
+      const pb = [lerp(a[0], c[0], t1 + e1) + (nx * T) / 2, lerp(a[1], c[1], t1 + e1) + (nz * T) / 2];
+      let base = Infinity;
+      for (let s = 0; s <= 4; s++) {
+        const q = lerp(t0, t1, s / 4);
+        base = Math.min(base, terrain.heightAt(lerp(a[0], c[0], q) + nx * 5, lerp(a[1], c[1], q) + nz * 5));
+      }
+      if (base > y - 0.4) base = y - 0.4;
+      const tone = ['#e8dcc0', '#d9caa6', '#efe3c9', '#d2c39f'][(i * 7 + k + (o.toneSeed || 0)) % 4];
+      slopedWall(b, pa[0], pa[1], pb[0], pb[1], y - 0.02, y - 0.02, base - 2, base - 2, T, { mat: 'tufa', color: tone });
+      slopedWall(b, pa[0] + nx * 0.2, pa[1] + nz * 0.2, pb[0] + nx * 0.2, pb[1] + nz * 0.2, y - 0.4, y - 0.4, y - 0.72, y - 0.72, T + 0.4, { mat: 'tufa', color: '#cdbf9f', collide: false });
+    }
+    if (!par) continue;
+    const eg = gaps.filter((g) => g[0] === i).map((g) => [g[1], g[2]]).sort((p, q) => p[0] - q[0]);
+    const spans = [];
+    let cur = 0;
+    for (const [ga, gb] of eg) {
+      if (ga > cur) spans.push([cur, ga]);
+      cur = Math.max(cur, gb);
+    }
+    if (cur < 1) spans.push([cur, 1]);
+    const off = T - 0.3;
+    for (const [s0, s1] of spans) {
+      const pa = [lerp(a[0], c[0], s0) + nx * off, lerp(a[1], c[1], s0) + nz * off];
+      const pb = [lerp(a[0], c[0], s1) + nx * off, lerp(a[1], c[1], s1) + nz * off];
+      slopedWall(b, pa[0], pa[1], pb[0], pb[1], y + par, y + par, y - 0.3, y - 0.3, 0.55, { mat: 'tufa', color: '#e3d6b8' });
+      slopedWall(b, pa[0], pa[1], pb[0], pb[1], y + par + 0.12, y + par + 0.12, y + par - 0.02, y + par - 0.02, 0.7, { mat: 'travertine', collide: false });
+    }
+  }
+}
+
+/**
+ * Escadaria longa em lances com patamares, de A até B (planta), subindo de y0 a y1.
+ * Lances de `perFlight` degraus (espelho `rise`, piso `tread`); o comprimento que sobra vira
+ * patamares iguais. Colisão por rampa em cada lance e caixa nos patamares.
+ * Devolve a função de cota y(s) (s = distância a partir de A) — útil para muros e NPCs.
+ */
+export function stairway(b, A, B, y0, y1, w, o = {}) {
+  const L = Math.hypot(B[0] - A[0], B[1] - A[1]);
+  const H = y1 - y0;
+  const rise = o.rise ?? 0.17;
+  const nSteps = Math.max(1, Math.round(Math.abs(H) / rise));
+  const sh = H / nSteps;
+  let tread = o.tread ?? 0.36;
+  const per = o.perFlight ?? 12;
+  const nFl = Math.ceil(nSteps / per);
+  let land = nFl > 1 ? (L - nSteps * tread) / (nFl - 1) : 0;
+  if (land < 0.9) {
+    tread = (L - Math.max(0, nFl - 1) * 1.2) / nSteps;
+    land = nFl > 1 ? 1.2 : 0;
+  }
+  const rotY = Math.atan2(-(B[0] - A[0]), -(B[1] - A[1])); // −Z local → direção A→B
+  b.push(A[0], 0, A[1], rotY);
+  const segs = []; // [s0, s1, ya, yb]
+  let s = 0;
+  let y = y0;
+  let k = 0;
+  for (let f = 0; f < nFl; f++) {
+    const n = Math.min(per, nSteps - k);
+    const yEnd = y + n * sh;
+    const base = Math.min(y, o.baseFn ? o.baseFn(s) : y) - 1.2;
+    flight(b, w, n * tread, y, yEnd, 0, -s, { steps: n, baseY: base, mat: o.mat || 'tufa', color: o.color });
+    segs.push([s, s + n * tread, y, yEnd]);
+    s += n * tread;
+    y = yEnd;
+    k += n;
+    if (f < nFl - 1) {
+      const lb = Math.min(y, o.baseFn ? o.baseFn(s) : y) - 1.2;
+      b.box(w, y - lb, land + 0.04, 0, lb, -s - land / 2, { mat: o.mat || 'tufa', color: o.color });
+      segs.push([s, s + land, y, y]);
+      s += land;
+    }
+  }
+  b.pop();
+  return (q) => {
+    for (const [s0, s1, ya, yb] of segs) if (q <= s1 + 1e-6) return ya + (yb - ya) * Math.max(0, Math.min(1, (q - s0) / Math.max(1e-6, s1 - s0)));
+    return y1;
+  };
 }
 
 export { G, materials };

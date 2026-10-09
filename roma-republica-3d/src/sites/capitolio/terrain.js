@@ -20,41 +20,50 @@ import {
   GRADUS_START,
   GRADUS_END,
   VICUS_IUGARIUS,
+  CLIVUS_JOIN,
+  FORECOURT_POLY,
+  ARX_STAIR,
   offsetPoly,
   resample,
+  polylineLength,
 } from './common.js';
 
 /** Estado compartilhado entre shapeTerrain e build (preenchido aqui). */
 export const state = {
-  clivus: null,
+  arxStair: null,
   gradus: null,
   centum: null,
   lots: [],
 };
 
-/* Traçado do clivo (parte alta): leste → oeste até o muro da Area, depois para o sul. */
+/*
+ * Traçado do clivo (parte alta), a partir da junção com o forum-oeste: sobe para OSO até o canto
+ * NE das substruções da Area, vira em ângulo reto para o sul ao longo do muro leste e chega ao
+ * patamar do portão SE — o percurso de Platner (nota 01 §6: "alcançava as substruções da Area
+ * pelo lado NE, virava em ângulo reto ... antes de entrar pelo lado SE"). Largura NÃO ENCONTRADA
+ * (6 m = decisão de design da nota 01); inclinação "forte" (≈ 15 %).
+ */
 export const CLIVUS = {
-  c0: [-147, -1],
-  c1: [-178, -1],
-  c2: [-178, 86],
-  gateX: -188,
-  roadHalf: 3, // largura da pista: 6 m (NÃO ENCONTRADO; decisão de design da nota 01)
-  porticoDepth: 5, // pórtico à direita de quem sobe (Tác. Hist. 3.71)
-  porticoZ: [4, 44],
-  archZ: 66, // Arco de Cipião (Lív. 37.3.7)
+  pts: [[CLIVUS_JOIN.x, CLIVUS_JOIN.z], [-178, -1], [-178, 66]],
+  y0: CLIVUS_JOIN.y,
+  roadHalf: 3,
+  porticoZ: [3, 46], // pórtico à direita de quem sobe (Tác. Hist. 3.71) — extensão HIPOTÉTICA
+  porticoX0: -185.8, // face externa do muro leste da Area (fundo do pórtico)
+  archZ: 73, // Arco de Cipião sobre o patamar (Lív. 37.3.7) — posição HIPOTÉTICA
 };
+export const CLIVUS_LEN = polylineLength(CLIVUS.pts);
+/** Distância ao longo do clivo no início da 2ª perna (canto NE). */
+export const CLIVUS_L1 = Math.hypot(CLIVUS.pts[1][0] - CLIVUS.pts[0][0], CLIVUS.pts[1][1] - CLIVUS.pts[0][1]);
 
-/** Altura da pista do clivo na distância s (m) a partir de c0. */
+/** Cota da pista do clivo na distância s (m) a partir da junção. */
 export function clivusHeight(s) {
-  const c = state.clivus;
-  if (!c) return Y_AREA;
-  if (s >= c.sTop) return Y_AREA;
-  return c.h0 + (Y_AREA - c.h0) * Math.max(0, s) / c.sTop;
+  const k = Math.max(0, Math.min(1, s / CLIVUS_LEN));
+  return CLIVUS.y0 + (Y_AREA - CLIVUS.y0) * k;
 }
 
-/** Distância ao longo do clivo de um ponto da perna 2 (x = −178) com coordenada z. */
+/** Distância ao longo do clivo de um ponto da 2ª perna (x = −178) com coordenada z. */
 export function clivusSOnLeg2(z) {
-  return state.clivus.L1 + (z - CLIVUS.c1[1]);
+  return CLIVUS_L1 + (z - CLIVUS.pts[1][1]);
 }
 
 /** Lotes das casas ao longo do Vicus Iugarius (retângulos com rotação; altura definida no pad). */
@@ -66,8 +75,7 @@ const LOTS = [
   // lado sul
   { x: -205, z: 155, w: 16, d: 10, side: -1, floors: 4 },
   { x: -226, z: 160, w: 15, d: 9, side: -1, floors: 3 },
-  { x: -263, z: 165.5, w: 14, d: 7, side: -1, floors: 3 },
-  { x: -285, z: 166.5, w: 14, d: 6, side: -1, floors: 2 },
+  { x: -246, z: 143.5, w: 14, d: 9, side: 1, floors: 3 },
 ];
 
 export function shapeTerrain(ctx) {
@@ -97,23 +105,26 @@ export function shapeTerrain(ctx) {
   ctx.terrain.addPad({ rect: { x: A.x, z: A.z, w: A.w + 4, d: A.d + 4 }, height: Y_ASYLUM, blend: 10, urban: 0.6 });
   ctx.reserve({ rect: { x: A.x, z: A.z, w: A.w + 4, d: A.d + 4 } });
 
-  /* ---- Clivus Capitolinus (parte alta) ---- */
-  const C = CLIVUS;
-  const h0 = t.heightAt(C.c0[0], C.c0[1]);
-  const L1 = Math.abs(C.c1[0] - C.c0[0]);
-  const L2 = C.c2[1] - C.c1[1];
-  state.clivus = { h0, L1, L2, sTop: L1 + L2 - 4 };
-  // pista + pórtico: corredor rebaixado ('min') abaixo da cota da pista
-  for (let s = 0; s <= L1; s += 3) {
-    const x = C.c0[0] - s;
-    ctx.terrain.addPad({ rect: { x, z: C.c0[1], w: 3.4, d: 2 * C.roadHalf + 3 }, height: clivusHeight(s) - 0.3, mode: 'min', blend: 3 });
+  /* ---- Clivus Capitolinus (parte alta): corredor nivelado na cota da pista ---- */
+  // pads finos a cada 1 m em ordem crescente; a cota usa s − 2,8 m para compensar a margem de
+  // ~3 m que cada pad impõe aos vértices vizinhos (grade de 4 m) — a pista fica a ±0,1 m da rampa.
+  for (const p of resample(CLIVUS.pts, 1)) {
+    const leg2 = p.s > CLIVUS_L1 + 0.5;
+    const h = clivusHeight(Math.max(0, p.s - 2.8)) - 0.04;
+    if (leg2) ctx.terrain.addPad({ rect: { x: -180, z: p.z, w: 12, d: 0.5 }, height: h, blend: 1.5, urban: 0.9 });
+    else ctx.terrain.addPad({ rect: { x: p.x, z: p.z, w: 0.5, d: 8, rotY: Math.atan2(-p.dz, p.dx) }, height: h, blend: 1.5, urban: 0.9 });
   }
-  for (let s = 0; s <= L2 + 4; s += 3) {
-    const z = C.c1[1] + s;
-    ctx.terrain.addPad({ rect: { x: C.c1[0] - 2.25, z, w: 2 * C.roadHalf + C.porticoDepth + 2.5, d: 3.4 }, height: clivusHeight(L1 + s) - 0.3, mode: 'min', blend: 3 });
-  }
-  ctx.reserve({ rect: { x: (C.c0[0] + C.c1[0]) / 2, z: C.c0[1], w: L1 + 8, d: 12 } });
-  ctx.reserve({ rect: { x: C.c1[0] - 2, z: (C.c1[1] + C.c2[1]) / 2, w: 16, d: L2 + 10 } });
+  ctx.reserve({ points: [[CLIVUS.pts[0][0], CLIVUS.pts[0][1] - 6], [-172, -9], [-172, 66], [-186, 66], [-186, -9], [CLIVUS.pts[0][0], CLIVUS.pts[0][1] + 6]] });
+
+  /* ---- patamar do portão SE (plataforma construída) ---- */
+  ctx.terrain.addPad({ points: FORECOURT_POLY, height: Y_AREA - 0.35, mode: 'min', blend: 3 });
+  ctx.reserve({ points: offsetPoly(FORECOURT_POLY, 3) });
+
+  /* ---- pé da escada Asylum → Arx: pequeno nivelamento ---- */
+  const af = { x: ARX_STAIR.x, z: ARX_STAIR.z0 + 2 };
+  const ay = t.heightAt(af.x, af.z);
+  ctx.terrain.addPad({ rect: { x: af.x, z: af.z, w: 7, d: 4 }, height: ay, blend: 4 });
+  state.arxStair = { y0: ay };
 
   /* ---- escadaria de Moneta (gradus Monetae) ---- */
   const g0 = GRADUS_START;
@@ -122,8 +133,9 @@ export function shapeTerrain(ctx) {
   const glen = Math.hypot(g1.x - g0.x, g1.z - g0.z);
   state.gradus = { y0: gy0, y1: Y_ARX, len: glen };
   for (const p of resample([[g0.x, g0.z], [g1.x, g1.z]], 3)) {
+    if (p.s < 5) continue; // não cava o pé da escada (borda com o forum-oeste)
     const k = p.s / glen;
-    ctx.terrain.addPad({ circle: { x: p.x, z: p.z, r: 4.2 }, height: gy0 + (Y_ARX - gy0) * k - 0.35, mode: 'min', blend: 2 });
+    ctx.terrain.addPad({ circle: { x: p.x, z: p.z, r: 4.2 }, height: gy0 + (Y_ARX - gy0) * k - 1.6, mode: 'min', blend: 2 });
   }
   ctx.reserve({ points: [[g0.x - 4, g0.z], [g0.x + 4, g0.z], [g1.x + 4, g1.z], [g1.x - 4, g1.z]] });
 

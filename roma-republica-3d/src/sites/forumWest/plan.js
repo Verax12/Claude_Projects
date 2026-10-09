@@ -193,10 +193,15 @@ export const K = {
   K3b: [satPt(12, 14).u, satPt(12, 14).v, 2.5],
   K4: [-120.6, -25.5, 5.0],
   K5: [-121, -55, 10.0],
-  K6: [-160, -56.5, 15.5], // passagem para o sítio "capitolio" (altura da galeria do Tabularium)
+  K5b: [-152, -56.5, 14.3], // diante da escadaria de Véiove (base do pódio 14,2)
+  // passagem para o sítio "capitolio" (o trecho alto começa no ponto do mundo (−147, −1),
+  // ≈ u −160,7 / v −65): o clivo dobra levemente para SSO até a borda da área
+  K6: [-161, -62.5, 15.5],
 };
 /** Trecho do Clivus sobre o terreno (com pads e calçamento de basalto). */
-export const CLIVUS_TERRAIN = [K.K3, K.K3b, K.K4, K.K5, K.K6];
+export const CLIVUS_TERRAIN = [K.K3, K.K3b, K.K4, K.K5, K.K5b, K.K6];
+/** Clivus inteiro, do pé da rampa (boca do Vicus Iugarius) até a junção com o "capitolio". */
+export const CLIVUS_ALL = [K.K0, K.K1, K.K2, K.K3, K.K3b, K.K4, K.K5, K.K5b, K.K6];
 
 /** Plataforma (substrução) do Clivus entre a frente de Saturno e a Rostra, topo em y = 2. */
 export const PLATFORM_Y = 2.0;

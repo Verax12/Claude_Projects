@@ -81,6 +81,12 @@ export function addLife(ctx, shopStatics) {
   // tagarelas "acima do lago" (Plauto) junto à mureta norte do Lacus Curtius
   st({ u: -16.8, v: -0.7 }, PAVE_Y, 160, 'citizen', 'gesture');
   st({ u: -14.9, v: -0.2 }, PAVE_Y, 230, 'citizen', 'stand');
+  // carregadores da liteira (8, como na liteira de luxo de Catulo 10): 2 sentados no banco, 6 de pé
+  const lc0 = POS.lectica;
+  st({ u: lc0.u - 0.35, v: lc0.v + 1.9 }, PAVE_Y + 0.47, 29, 'slave', 'sit');
+  st({ u: lc0.u + 0.55, v: lc0.v + 1.9 }, PAVE_Y + 0.47, 29, 'slave', 'sit');
+  const standing = [[2.6, 1.2, 250, 'gesture'], [3.3, 2.4, 230, 'stand'], [3.6, 0.1, 290, 'stand'], [-2.4, 1.6, 80, 'stand'], [-2.9, 0.4, 60, 'gesture'], [1.8, -1.6, 330, 'stand']];
+  for (const [du, dv, br, pose] of standing) st({ u: lc0.u + du, v: lc0.v + dv }, PAVE_Y, br, 'slave', pose);
   // vendedores das lojas da Via Sacra (no máximo 5)
   for (const s of shopStatics.slice(0, 5)) npcs.addStatic(s);
 
@@ -161,11 +167,12 @@ function addInfos(ctx) {
     text: [
       'A principal rota sagrada de Roma desce do alto da Vélia (summa Sacra Via) até o Fórum, passando pelo Arco de Fábio, pela Régia e pela Domus Publica — a residência oficial de César como Pontífice Máximo — e segue pela praça até o Clivo Capitolino.',
       'Era também passeio diário e lugar de encontros. Horácio abre uma sátira dizendo: "ia eu por acaso pela Via Sacra, como é meu costume". Cícero lembra a multidão que empurrava quem descia do alto da Via Sacra até o arco Fabiano, a porta de entrada no Fórum.',
-      'Daqui para leste a rua começa a subir em direção à Vélia; quem vinha de lá estava "descendo para o Fórum".',
+      'Daqui para leste a rua começa a subir em direção à Vélia; quem vinha de lá estava "descendo para o Fórum". Os moradores da rua, os Sacravienses, disputavam todo mês de outubro com os da Subura a cabeça do "Cavalo de Outubro" sacrificado a Marte; se venciam, ela ia para a Régia.',
+      'A rua também viu a violência dos anos 50 a.C.: em novembro de 57, Cícero foi atacado quando descia a Via Sacra e se refugiou no vestíbulo da casa de Tétio Damião; dias depois, Clódio tentou incendiar a casa de Milão.',
     ],
     uncertain:
       'Reconstrução hipotética: o traçado exato, a largura e o pavimento da Via Sacra republicana não foram encontrados. Modelou-se um calçamento poligonal de basalto (silex) de 6,5 m, por analogia com o Clivo Capitolino (pavimentado com silex em 174 a.C.), com meios-fios, calçadas elevadas e, no trecho alto, frentes de lojas e casas genéricas — a ocupação real da rua em 44 a.C. não é conhecida.',
-    sources: ['Pleiades: Sacra Via; Velia', 'Plínio, Naturalis Historia 19.23', 'Cícero, Pro Plancio 17; De Oratore 2.267', 'Horácio, Sátiras 1.9.1', 'Suetônio, Divus Iulius 46', 'Lívio 41.27.7 (Clivo Capitolino, via nota 01)', 'W. Smith, Dictionary of Greek and Roman Antiquities (1890)'],
+    sources: ['Pleiades: Sacra Via; Velia', 'Plínio, Naturalis Historia 19.23', 'Cícero, Pro Plancio 17; De Oratore 2.267; Ad Atticum 4.3.3', 'Horácio, Sátiras 1.9.1', 'Suetônio, Divus Iulius 46', 'Festo e Paulo Diácono (Cavalo de Outubro), via W. Smith, Dictionary of Greek and Roman Geography (1854)', 'Lívio 41.27.7 (Clivo Capitolino, via nota 01)', 'W. Smith, Dictionary of Greek and Roman Antiquities (1890)'],
   });
 
   p = at(306, 0);
@@ -236,6 +243,22 @@ function addInfos(ctx) {
     ],
     uncertain: 'Reconstrução hipotética: dimensões, material do pedestal e postura da figura não foram encontrados; a figura de bronze é um volume indicativo, e a posição exata diante do templo é aproximada.',
     sources: ['Lívio 9.43.22', 'Plínio, Naturalis Historia 34.23', 'Cícero, Filípicas 6.13'],
+  });
+
+  p = at(POS.lectica.u, POS.lectica.v);
+  ctx.addInfo({
+    x: p.x,
+    z: p.z,
+    radius: 6,
+    title: 'Uma liteira à espera',
+    latin: 'Lectica',
+    date: 'Início de 44 a.C.',
+    text: [
+      'Nas ruas de Roma, de dia, quase não se viam carros: andava-se a pé, e os ricos se faziam carregar em liteiras por escravos. Uma liteira de luxo tinha oito carregadores, como os "oito homens eretos" de que Catulo se gaba de ter trazido da Bitínia. As matronas saíam de liteira, com criadas e escolta.',
+      'César, como ditador, restringiu o uso de liteiras — e também das roupas de púrpura e das pérolas — "exceto a certas pessoas e idades e em certos dias". Esta liteira está fechada por cortinas (uma "operta lectica", como a de Antônio de que zomba Cícero); os carregadores esperam o dono, que trata de negócios na praça.',
+    ],
+    uncertain: 'Reconstrução hipotética: a forma, as medidas e as cores da liteira não foram encontradas nas fontes; a data exata da lei de César sobre as liteiras (entre 46 e 44 a.C.) também não. A ausência de carroças durante o dia é uma hipótese de ambientação.',
+    sources: ['Suetônio, Divus Iulius 43.1', 'Catulo 10', 'Cícero, Filípicas 2.58; 2.106', 'Horácio, Sátiras 1.2.94–99'],
   });
 
   p = at(-17.6, 27);

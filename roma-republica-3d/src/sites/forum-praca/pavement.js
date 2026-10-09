@@ -60,9 +60,11 @@ export function buildPiazzaPavement(b) {
       if (de < 3) t *= 0.93 + 0.023 * de;
       // remendos de lajes de tufo (pavimentos mais antigos/reparos) em pequenos grupos
       const tufa = valueNoise(cu, cv, 11, 7) > 0.8 && hash2(i, j, 9) > 0.45;
-      // travertino: tom creme-claro (hipótese da nota 11 §9) — compensa o cinza da textura
-      const warm = (hash2(i, j, 5) - 0.5) * 0.05;
-      const color = tufa ? [t * (1.1 + warm), t * 1.02, t * (0.84 - warm)] : [t * (1.22 + warm), t * 1.1, t * (0.86 - warm)];
+      // travertino: tom creme-claro (hipótese da nota 11 §9). As cores de vértice são limitadas
+      // a 0–1 (Builder), então o "aquecimento" é feito reduzindo verde e azul, nunca passando de 1.
+      const warm = (hash2(i, j, 5) - 0.5) * 0.04;
+      const k = Math.min(1, t * 1.04);
+      const color = tufa ? [k * 0.97, k * (0.9 - warm), k * (0.76 - warm)] : [k, k * (0.955 - warm), k * (0.86 - warm * 1.5)];
       const A = [ua, y, -va];
       const B = [ub, y, -va];
       const C = [ub, y, -vb];
