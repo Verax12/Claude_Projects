@@ -133,6 +133,7 @@ export class Engine {
 
     this.initKeys();
     this.exposeAPI();
+    if (new URLSearchParams(location.search).get('colliders') === '1') window.__roma.showColliders(true);
     this.ui.setProgress(1, 'Pronto.');
     this.running = true;
     this.renderer.setAnimationLoop(() => this.frame());
@@ -234,6 +235,31 @@ export class Engine {
       }),
       /** Renderiza um quadro imediatamente (útil para capturas sem laço). */
       renderNow: () => this.frame(0.016),
+      /**
+       * Simula o jogador andando (teste de colisão/escadas): rumo em graus, duração em s.
+       * Devolve a trilha de posições dos pés (a cada 0,25 s).
+       */
+      walk: (bearingDeg, seconds = 3, run = false) => {
+        const p = this.player;
+        p.fly = false;
+        p.yaw = (-bearingDeg * Math.PI) / 180;
+        p.keys.add('KeyW');
+        if (run) p.keys.add('ShiftLeft');
+        const trail = [];
+        const dt = 1 / 60;
+        const frames = Math.round(seconds / dt);
+        for (let f = 0; f < frames; f++) {
+          this.frame(dt, false);
+          if (f % 15 === 0) trail.push(p.feet.toArray().map((v) => +v.toFixed(2)));
+        }
+        p.keys.clear();
+        return trail;
+      },
+      /** Mostra/esconde a malha de colisão (wireframe vermelho). */
+      showColliders: (on = true) => {
+        if (on && !this.world.collider.parent) this.scene.add(this.world.collider);
+        this.world.collider.visible = on;
+      },
     };
   }
 
@@ -243,7 +269,8 @@ export class Engine {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
-  frame(forcedDt) {
+  /** Um quadro do jogo. `render = false` avança só a simulação (testes automatizados). */
+  frame(forcedDt, render = true) {
     const dt = forcedDt ?? Math.min(0.1, this.clock.getDelta());
     this.elapsed += dt;
     this.fps = this.fps * 0.95 + (1 / Math.max(dt, 1e-3)) * 0.05;
@@ -258,7 +285,7 @@ export class Engine {
     this.env.update(p.feet);
     this.audio.update(p.feet, p.feet.y);
     this.updateHUD(dt);
-    this.renderer.render(this.scene, this.camera);
+    if (render) this.renderer.render(this.scene, this.camera);
   }
 
   updateHUD(dt) {

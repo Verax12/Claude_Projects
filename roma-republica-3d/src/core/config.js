@@ -79,8 +79,8 @@ export const config = {
   /** Altura dos olhos do jogador acima do chão (m). */
   eyeHeight: 1.62,
   /** Velocidades do jogador (m/s): passo de caminhada e corrida. */
-  walkSpeed: 1.6,
-  runSpeed: 4.2,
+  walkSpeed: 2.3,
+  runSpeed: 5.5,
 };
 
 export function saveQuality(name) {

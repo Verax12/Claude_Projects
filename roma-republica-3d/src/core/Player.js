@@ -223,7 +223,8 @@ export class Player {
     const feetY = this.position.y - FEET_OFFSET;
     let groundedByTerrain = false;
     if (feetY <= t + 0.02) {
-      this.position.y += t - feetY;
+      // só empurra para CIMA (nunca puxa para baixo: isso anularia a subida em rampas)
+      if (feetY < t) this.position.y += t - feetY;
       groundedByTerrain = true;
     }
     this.onGround = groundedByMesh || groundedByTerrain;

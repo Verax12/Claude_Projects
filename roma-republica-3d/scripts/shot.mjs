@@ -17,6 +17,10 @@
  *   --w=1280 --h=720  resolução
  *   --npcs=0          desliga NPCs
  *   --list            apenas lista os locais de teleporte registrados
+ *
+ * Vistas podem ter também "colliders": true (mostra a malha de colisão) e
+ * "walk": [rumoGraus, segundos, correr] (simula o jogador andando antes da captura;
+ * a trilha de posições é impressa — útil para testar escadas, portas e paredes).
  */
 import { createServer } from 'vite';
 import { chromium } from 'playwright-core';
@@ -62,6 +66,7 @@ const page = await browser.newPage({ viewport: { width: W, height: H } });
 const errors = [];
 page.on('console', (m) => {
   if (m.type() === 'error' || m.type() === 'warning') errors.push(`[${m.type()}] ${m.text()}`);
+  else if (m.text().startsWith('walk ')) console.log(m.text());
 });
 page.on('pageerror', (e) => errors.push(`[pageerror] ${e.message}\n${e.stack || ''}`));
 
@@ -81,6 +86,8 @@ try {
       const r = window.__roma;
       if (v.cam) r.setView(...v.cam);
       else if (v.tp) r.teleport(v.tp);
+      if (v.colliders != null) r.showColliders(!!v.colliders);
+      if (v.walk) console.log('walk ' + JSON.stringify(r.walk(...v.walk)));
       // alguns quadros para estabilizar sombras/LOD/NPCs
       for (let k = 0; k < 4; k++) r.renderNow();
     }, v);

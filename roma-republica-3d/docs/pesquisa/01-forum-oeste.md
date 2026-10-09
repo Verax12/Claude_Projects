@@ -249,7 +249,7 @@ Coordenadas do jogo segundo `00-coordenadas.md` (Pleiades/OSM e pontos adicionai
 
 ### Planta e elementos arquitetônicos
 - **Nível inferior (substrução):** embasamento maciço que se percorre por dentro. O corredor interno, encostado na rocha de tufo, recebe luz pelas 6 janelas. Uma **escada íngreme** ligava o nível do Fórum ao Templo de Véiove, atrás; a entrada foi fechada depois pelo pódio do Templo de Vespasiano. Uma segunda escada subia aos andares superiores (Musei Capitolini, <https://museicapitolini.org/en/node/2491>). Em 50–44 a.C. essa porta para o lado do Fórum **estava aberta** (inferência: o Templo de Vespasiano é de 79–87 d.C.). A Wikipedia fala em "uma única porta" no primeiro piso da fachada.
-- **Galeria:** corredor estreito coberto por **abóbadas de aresta ou de pavilhão** (*volta a padiglione*), com grandes arcos abertos para o Fórum, "emoldurados por **meias-colunas dóricas**". Acima corria um **friso dórico de travertino com tríglifos e métopas**, do qual há vestígios (Musei Capitolini; romasegreta). Os vãos se comunicavam e uma escada os ligava ao corredor da substrução (Platner).
+- **Galeria:** corredor estreito coberto por **abóbada de pavilhão** (*volta a padiglione*, "cloister vault" nas páginas do museu), com grandes arcos abertos para o Fórum, "emoldurados por **meias-colunas dóricas**". Acima corria um **friso dórico de travertino com tríglifos e métopas**, do qual há vestígios (Musei Capitolini; romasegreta). Os vãos se comunicavam e uma escada os ligava ao corredor da substrução (Platner).
 - **Pavimento superior:** removido no séc. XVI para o Palazzo Senatorio. Era coríntio (ver tabela). Um pequeno trecho do plinto de travertino da fachada **noroeste** se conserva nas caves do palácio (Platner).
 
 ### Materiais e acabamentos
@@ -402,7 +402,7 @@ Coordenadas do jogo segundo `00-coordenadas.md` (Pleiades/OSM e pontos adicionai
 | Trecho rastreável hoje | ~50 | m | Wikipedia | média |
 
 ### Detalhes de ambientação
-- O **Lacus Servilius** era uma fonte monumental. Sobreviveu até o período augustano e foi destruído no incêndio de 12 a.C. da Basílica Júlia (<https://www.jeffbondono.com/TouristInRome/WaltersTours/LacusServilius.html>); "provavelmente englobado" na reconstrução da basílica, segundo La Regina (resumo de busca, Wikipedia). Forma e dimensões da fonte: **NÃO ENCONTRADO**.
+- O **Lacus Servilius** era uma fonte monumental. Sobreviveu até o período augustano e foi destruído no incêndio de 12 a.C. da Basílica Júlia (<https://www.jeffbondono.com/TouristInRome/WaltersTours/LacusServilius.html>); "provavelmente englobado" na reconstrução da basílica, segundo La Regina (resumo de busca, atribuição incerta; possivelmente DAR *Basilica Iulia*). Forma e dimensões da fonte: **NÃO ENCONTRADO**.
 - Rua de passagem para os mercados de hortaliças e de gado, perto do Tibre. **[HIPÓTESE]** Movimento de carregadores e de animais de carga.
 
 ---
@@ -518,9 +518,9 @@ Coordenadas do jogo segundo `00-coordenadas.md` (Pleiades/OSM e pontos adicionai
 - Vitrúvio, *De architectura* 5.2.1 (*aerarium, carcer, curia foro sunt coniungenda*).
 - Suetônio, *Divus Iulius* 28.3 (leis em bronze no aerarium); 75.4 (estátuas de Sula e Pompeu); 84 (funeral *pro rostris*); *Divus Augustus* 29.5 (*a Munatio Planco aedes Saturni*; *ab Asinio Pollione atrium Libertatis*); 100.3 (*pro rostris veteribus*).
 - Plínio, *Naturalis Historia* 7.212 (meio-dia entre a Rostra e a Graecostasis; coluna Mênia e Carcer); 15.32 (estátua de Saturno cheia de óleo); 15.77–78 (figueira diante de Saturno removida em 494 a.C.); 16.216 (estátua de cipreste de Véiove); 16.236 (lótus do Volcanal); 33.19 (edícula de bronze de Flávio *in Graecostasi*); 34–37 (obras de arte no templo da Concórdia, fase tiberiana); 36.196 (elefantes de obsidiana). A numeração de parágrafos segue o uso corrente; o texto foi conferido na edição Perseus.
-- Plutarco, *Camillus* 42.4; *Caius Gracchus* 17.6; *Caesar* 35.3–4 e 61; *Antonius* 12; *Brutus* 18.
+- Plutarco, *Camillus* 42.4; *Caius Gracchus* 17.6; *Caesar* 35.3–4, 55 e 61; *Antonius* 12; *Brutus* 18.
 - Apiano, *Bella Civilia* 2.41.
-- Dião Cássio 43.19.4 (execução de Vercingetórix); 43.49.1 (transferência da Rostra); 44.4.4–5 (estátuas de César na Rostra; templo da Concórdia Nova).
+- Dião Cássio 40.41 (rendição de Vercingetórix); 43.19.4 (execução de Vercingetórix); 43.49.1 (transferência da Rostra); 44.4.4–5 (estátuas de César na Rostra; templo da Concórdia Nova).
 
 ### Fontes antigas citadas por fontes modernas (não conferidas no original)
 - Varrão, *De lingua Latina* 5.151 (Tullianum, *lautumiae*), 5.156 (*Senaculum supra Graecostasim, ubi aedis Concordiae et basilica Opimia*); *Res rusticae* 1.1.4 (Dii Consentes dourados).

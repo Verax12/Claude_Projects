@@ -534,12 +534,13 @@ export class NPCSystem {
           az = 0.2;
         }
         if (L.carry && side === 1) {
-          ax = -2.6; // mão erguida segurando a carga no ombro/cabeça
-          az = 0.3;
+          // mão erguida apoiando a carga: no ombro (ânfora/saco) ou na cabeça (cesto)
+          ax = L.carry === 'basket' ? -2.75 : -2.2;
+          az = L.carry === 'basket' ? 0.55 : 0.35;
         }
         if (L.carry === 'basket' && side === -1) {
-          ax = -2.8;
-          az = -0.3;
+          ax = -2.75;
+          az = -0.55;
         }
         _m2.copy(_m).multiply(_m3.makeTranslation(x, 1.4, 0));
         _m2.multiply(_rx.makeRotationX(ax)).multiply(_rz.makeRotationZ(az));
