@@ -7,7 +7,8 @@
 > 4. **[HIPÓTESE DE MODELAGEM]** = proposta nossa para o jogo, **sem fonte direta**. Deve ser tratada como reconstrução hipotética.
 > 5. Coordenadas no sistema do jogo (x = leste, z = sul, metros), a partir de `00-coordenadas.md`. Elas marcam as **ruínas atuais**, em geral de fase imperial.
 > 6. Rumo = azimute em graus a partir do norte, no sentido horário.
-> 7. Os anos dos episódios narrados por Cícero e Dião (59, 58, 57, 52 e 44 a.C.) derivam do contexto consular dos próprios textos, por exemplo os cônsules nomeados (César e Bíbulo em Dião 38, argumento; Pisão e Gabínio em *Sest.* 34). Não foram tirados de fonte moderna.
+> 7. Os anos dos episódios narrados por Cícero e Dião (59, 58, 57 e 44 a.C.) derivam do contexto consular dos próprios textos, por exemplo os cônsules nomeados (César e Bíbulo em Dião 38, argumento; Pisão e Gabínio em *Sest.* 34). Não foram tirados de fonte moderna. **[corrigido na verificação]** O "52 a.C." que constava aqui era a data do **discurso** *Pro Milone*, não a do episódio narrado (ver §4).
+> 8. **Verificação independente (09/10/2026):** nesta segunda passada a cota de WebSearch já estava **esgotada** (0 buscas possíveis), e Wikipedia, Pleiades e LacusCurtius estão bloqueados pelo proxy. A reverificação foi feita **relendo os textos antigos** nos TEI do Perseus (GitHub) e os dicionários de Smith, com extração por referência CTS. **As medidas modernas (marcadas [busca]) não puderam ser reconfirmadas** e levam agora "⚠ não confirmado". Ver a seção final "Verificação independente".
 
 ---
 
@@ -16,15 +17,15 @@
 | Local | Estado em 50–44 a.C. | Grau de certeza | Fonte-chave |
 |---|---|---|---|
 | **Basílica Semprônia** (169 a.C.) | **Demolida** para dar lugar à Basílica Júlia. A demolição é dada como obra de César; a data exata não foi encontrada, presumivelmente a partir de c. 54 a.C. | média | Lívio 44.16.10–11 [conferido]; Wikipedia *Basilica Sempronia* [busca] |
-| **Basílica Júlia** | **Em construção**: iniciada c. 54 a.C. (há divergência: a Wikipedia diz 46 a.C.), **dedicada inacabada em 46 a.C.** e terminada por Augusto. A forma visível hoje é augustana ou posterior. | média | [busca] seindal, ancient-history-sites, Wikipedia; Smith 1890 (citando *Res Gestae* 20) |
+| **Basílica Júlia** | **Em construção**: iniciada c. 54 a.C. (há divergência: a Wikipedia diz 46 a.C.; ⚠ não confirmado), **dedicada inacabada em 46 a.C.** (⚠ não confirmado: ano não reconferido) e terminada por Augusto ("começada e quase terminada" por César, *Res Gestae* via Smith 1890 ✔). A forma visível hoje é augustana ou posterior. | média | [busca] seindal, ancient-history-sites, Wikipedia; Smith 1890 (citando *Res Gestae* 20) |
 | **Tabernae Veteres** | Fileira de lojas de banqueiros/agiotas no lado sul. Não foi encontrado se sobreviveram à obra da Basílica Júlia. | baixa para 50–44 | Plauto *Curc.* 480; Lívio 44.16.10 [conferido]; PL |
-| **Templo de Castor e Pólux** | **Existente e muito usado**: templo de L. Cecílio Metelo (117 a.C.), reparado por Verres em 74 a.C. Ali se reunia o Senado e corriam processos diários. Do alto da escadaria discursavam oradores (César em 59 a.C.). Clódio arrancou os degraus em 58 a.C. | alta (existência e uso); baixa (dimensões da fase de Metelo) | Cícero *Verr.* 2.1.129–154; *Dom.* 54; *Sest.* 34, 79, 85; *Pis.* 23; Dião 38.6.2–3 [conferido] |
+| **Templo de Castor e Pólux** | **Existente e muito usado**: templo de L. Cecílio Metelo (117 a.C.; ⚠ ano não confirmado, pois Cícero atesta a obra mas não a data), reparado por Verres em 74 a.C. Ali se reunia o Senado e corriam processos diários. Do alto da escadaria discursavam oradores (César em 59 a.C.). Clódio arrancou os degraus em 58 a.C. | alta (existência e uso); baixa (dimensões da fase de Metelo) | Cícero *Verr.* 2.1.129–154; *Dom.* 54; *Sest.* 34, 79, 85; *Pis.* 23; Dião 38.6.2–3 [conferido] |
 | **Lacus Iuturnae** | **Existente**: fonte sagrada que forma um "pequeno lago fundo" junto ao templo de Vesta e ao de Castor. Forma republicana não encontrada. | média | Dion. Hal. 6.13.2–4; Ovídio *Fasti* 1.705–708 [conferido] |
 | **Templo de Vesta** | **Existente**: templo redondo da fase posterior ao incêndio de 210 a.C. (presumido) e anterior ao incêndio de 14 a.C. Dimensões e número de colunas republicanos **não encontrados**. | alta (forma redonda); baixa (medidas) | Ovídio *Fasti* 6.261–266; Plut. *Numa* 11.1; Lívio 26.27.4; Dião 54.24.2 [conferido] |
-| **Atrium Vestae** | **Existente**, mas **menor** que o complexo imperial visível. Ovídio, já sob Augusto, chama o lugar de *locus exiguus*. Planta republicana não encontrada. | média | Ovídio *Fasti* 6.263; Dião 54.27.3 [conferido] |
+| **Atrium Vestae** | **Existente**, mas **menor** que o complexo imperial visível: foi ampliado depois de 12 a.C. (Dião 54.27.3), e os restos escavados em 1883–84 são da época de Adriano (Smith 1890, *Vestales*). Ovídio, já sob Augusto e **depois** da ampliação, chama o lugar de *locus exiguus*; o verso descreve o estado augustano, não o republicano. Planta republicana não encontrada. | média | Ovídio *Fasti* 6.263; Dião 54.27.3 [conferido]; Smith 1890 |
 | **Domus Publica** | **Residência de César** como Pontífice Máximo (eleição narrada em Plut. *Caes.* 7; o ano de 63 a.C. vem do escopo e não foi conferido), "na Via Sacra". Casa grande. Antes de março de 44 a.C. o Senado lhe concedeu um **frontão (*fastigium*)**, que já existia no sonho de Calpúrnia. Restos arqueológicos não encontrados. | alta (existência e uso); baixa (forma e posição exata) | Suet. *Iul.* 46, 81.3; Plut. *Caes.* 10.2, 63.6; Cic. *Phil.* 2.110 [conferido] |
-| **Régia** | **Existente**: edifício de culto e escritório do Pontífice Máximo, junto ao templo de Vesta. Guardava o *sacrarium* de Marte com as lanças sagradas. Incendiou-se em data não precisa e foi **reconstruída por Cn. Domício Calvino depois de 44 a.C.** (36 a.C. segundo o escopo; Dião não dá o ano do incêndio). A forma "trapezoidal" **não foi verificada** nas fontes acessadas. | média | Plut. *Numa* 14.1; Dião 48.42.4–6, 44.17.2 [conferido]; Smith 1890 |
-| **Fornix Fabianus** | **Existente**: arco honorífico de Q. Fábio Máximo Alobrógico (cônsul em 121 a.C.), sobre a Via Sacra, perto da Régia e do templo de Vesta, com a estátua do construtor no topo. Era ponto de aglomeração na descida para o Fórum. A restauração de 57 a.C. **não foi verificada**. Dimensões **não encontradas**. | média | Cic. *Verr.* 1.19; *Planc.* 17; *De Or.* 2.267 [conferido]; Smith Biog. (Pseudo-Ascônio) |
+| **Régia** | **Existente**: edifício de culto e escritório do Pontífice Máximo, junto ao templo de Vesta. Guardava o *sacrarium* de Marte com as lanças sagradas. Incendiou-se em data não precisa e foi **reconstruída por Cn. Domício Calvino depois de 44 a.C.** **[corrigido na verificação]** Dião não dá o ano do incêndio, mas narra a reconstrução dentro do ano de **39 a.C.** (cônsules L. Márcio e C. Sabino, 48.34.1); Smith 1890 diz "c. 35 a.C."; os "36 a.C." do escopo ficam ⚠ não confirmados. A forma "trapezoidal" ⚠ **não foi confirmada**; Smith 1890 diz que a planta completa "não pode ser determinada". | média | Plut. *Numa* 14.1; Dião 48.42.4–6, 44.17.2 [conferido]; Smith 1890 |
+| **Fornix Fabianus** | **Existente**: arco honorífico de Q. Fábio Máximo Alobrógico (cônsul em 121 a.C.), sobre a Via Sacra, perto da Régia e do templo de Vesta, com a estátua do construtor no topo. Era ponto de aglomeração na descida para o Fórum. Smith 1890 registra restos achados no séc. XVI e em 1882 **perto do templo de Faustina**. A restauração de 57 a.C. ⚠ **não foi confirmada**. Dimensões **não encontradas**. | média | Cic. *Verr.* 1.19; *Planc.* 17; *De Or.* 2.267 [conferido]; Smith Biog. (Pseudo-Ascônio) |
 | **Via Sacra** | **Existente**: do alto da Vélia (*summa Sacra Via*) até o Fórum, passando pelo Fornix, pela Domus Publica e pela Régia. Pavimentação e traçado republicanos **não encontrados**. | média | Cic. *Planc.* 17; Pleiades; Plínio *NH* 19.23; Horácio *Sat.* 1.9 [conferido] |
 | **Lacus Curtius** | **Existente**: área no meio do Fórum. No fim da República era uma pequena bacia dentro de uma área pavimentada (Pleiades). Havia ali figueira, oliveira e videira. Um altar foi removido para os jogos de gladiadores de César (46 a.C.). | média | Plínio *NH* 15.78; Ovídio *Fasti* 6.401–404; Lívio 7.6 [conferido]; PL |
 | **Puteal Libonis** | **Existente** (pelas fontes do séc. I a.C.): recinto sagrado em forma de altar, com guirlandas e liras, conforme as moedas, perto do qual ficava um **tribunal do pretor**. Frequentado por litigantes e agiotas. | média | Cic. *Sest.* 18; Hor. *Sat.* 2.6.35, *Ep.* 1.19.8 [conferido]; Smith 1890 |
@@ -84,12 +85,12 @@
 
 ### Estado em 50–44 a.C.
 - **Canteiro de obras ativo até 46 a.C. Depois, edifício dedicado mas inacabado.**
-- Datas [busca]:
+- Datas [busca] (todas ⚠ não confirmadas na verificação independente, que não teve acesso a busca):
   - início em **54 a.C.**, segundo várias fontes (seindal, ancient-history-sites, madain);
   - a **Wikipedia** dá **46 a.C.** como início (divergência);
   - dedicação em **46 a.C., ainda inacabada**, ligada à vitória de Tapso, ao Fórum de César e ao templo de Vênus Genetrix (uma fonte);
   - custeio com os despojos da Guerra Gálica (uma fonte).
-- Conclusão por Augusto. Smith 1890 resume as *Res Gestae* (*Mon. Ancyr.* 4.12): "começada e quase terminada por César, completada por Augusto". Depois houve um incêndio e uma reconstrução maior, com o título de Caio e Lúcio César. **Divergência nas datas posteriores** [busca]: rededicação em 12 d.C. ou 2 a.C.; incêndio em 9 a.C. ou 9 d.C.
+- Conclusão por Augusto. Smith 1890 resume as *Res Gestae* (*Mon. Ancyr.* 4.12): "começada e quase terminada por César, completada por Augusto" (✔ texto de Smith relido na verificação; o texto das *Res Gestae* em si não foi acessado). Depois houve um incêndio e uma reconstrução maior, com o título de Caio e Lúcio César. **Divergência nas datas posteriores** [busca]: rededicação em 12 d.C. ou 2 a.C.; incêndio em 9 a.C. ou 9 d.C.
 - Cícero, julho de 54 a.C. [conferido]: *"Paulus in medio foro basilicam iam paene texerat isdem antiquis columnis, illam autem quam locavit facit magnificentissimam"* (*Att.* 4.17.7, = 4.16.8 em numerações antigas): "Paulo já quase cobriu a basílica no meio do Fórum, com as mesmas colunas antigas; a outra, que ele contratou, faz magnificentíssima". Smith 1890 lê o trecho como **duas basílicas Emílias**, uma restaurada e outra construída por Paulo. **NÃO VERIFICADO** se alguma fonte moderna identifica a segunda com a futura Basílica Júlia. O texto, por si só, não dá o nome.
 
 ### Localização / orientação / relações espaciais
@@ -107,10 +108,10 @@
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
-| Dimensões externas (fase **augustana/imperial**) | ~101 × 49 | m | [busca]: "par de páginas quase idênticas" (URL exata não indicada pelo resumo; candidatas: ancient-history-sites, historyhit, seindal, madain) | média para a fase imperial; **não aplicável** diretamente a 46 a.C. |
-| Nave central (imperial) | ~82 × 18 | m | idem | média (imperial) |
-| Naves laterais | 4 (2 de cada lado) | — | idem | média (imperial) |
-| Altura da nave central | "três andares" | — | idem | baixa |
+| Dimensões externas (fase **augustana/imperial**) | ~101 × 49 ⚠ não confirmado | m | [busca]: "par de páginas quase idênticas" (URL exata não indicada pelo resumo; candidatas: ancient-history-sites, historyhit, seindal, madain) | média para a fase imperial; **não aplicável** diretamente a 46 a.C. |
+| Nave central (imperial) | ~82 × 18 ⚠ não confirmado | m | idem | média (imperial) |
+| Naves laterais | 4 (2 de cada lado) ⚠ não confirmado | — | idem; compatível com Smith 1890: nave "cercada de todos os lados por um corredor duplo em arcadas", com pilares e pilastras (fase imperial) | média (imperial) |
+| Altura da nave central | "três andares" ⚠ não confirmado | — | idem | baixa |
 | Dimensões da fase **cesariana** | **NÃO ENCONTRADO** | — | — | — |
 
 ### Planta e elementos arquitetônicos
@@ -163,7 +164,7 @@
 ## 4. Templo de Castor e Pólux (fase de L. Cecílio Metelo Dalmático, 117 a.C.)
 
 ### Estado em 50–44 a.C.
-- **Existente, em plena função.** É o templo arcaico votado pelo ditador Postúmio na batalha do lago Regilo (Lívio 2.20.12 [conferido]; o Pleiades data o voto de 499 a.C., mas na entrada do Lacus Iuturnae data a batalha de 495 a.C., **divergência**), dedicado nos Idos de julho pelo filho dele (Lívio 2.42.5 [conferido]). Depois foi **"completamente reconstruído e ampliado em 117 a.C." por L. Cecílio Metelo Dalmático** [busca].
+- **Existente, em plena função.** É o templo arcaico votado pelo ditador Postúmio na batalha do lago Regilo (Lívio 2.20.12 [conferido]; o Pleiades data o voto de 499 a.C., mas na entrada do Lacus Iuturnae data a batalha de 495 a.C., **divergência**), dedicado nos Idos de julho pelo filho dele (Lívio 2.42.5 [conferido; relido ✔]). Depois foi **"completamente reconstruído e ampliado em 117 a.C." por L. Cecílio Metelo Dalmático** [busca]. ⚠ **Ano não confirmado** na verificação: Cícero atesta a obra de Metelo paga com manúbias (abaixo), mas **não dá o ano**; 117 a.C. vem só do resumo de busca.
 - Cícero confirma que a obra de Metelo foi paga com os despojos (*ex L. Metelli manubiis*). Diz que Verres pagou mais para "caiar quatro colunas" do que Metelo pagou para "construí-las todas" (*Verr.* 2.1.154 [conferido]).
 - **Reparo de 74 a.C. (pretura de Verres)**, conferido em *Verr.* 2.1.130–150:
   - contrato de manutenção (*sarta tecta*) desde 80 a.C.;
@@ -177,33 +178,33 @@
   - em 59 a.C. César discursava "do Dioscúreo"; Bíbulo subiu e foi **empurrado escadaria abaixo** (κατὰ τῶν ἀναβασμῶν), e seus fasces foram quebrados (Dião 38.6.2–3 [conferido]);
   - em 58 a.C. Clódio levou armas para o templo e **arrancou e removeu os degraus** (*gradus Castoris convellisti ac removisti*, *Dom.* 54; *gradus eiusdem templi tollebantur*, *Sest.* 34; *sublato aditu revolsis gradibus*, *Pis.* 23 [conferido]). O templo virou "uma cidadela" (*Sest.* 85);
   - em 57 a.C. o tribuno Séstio foi atacado dentro do templo (*Sest.* 79);
-  - em 52 a.C. um escravo de Clódio foi preso no templo com um punhal destinado a Pompeu (*Mil.* 18 [conferido]);
+  - ~~em 52 a.C.~~ um escravo de Clódio, posto ali para matar Pompeu, foi preso **no templo de Castor** e teve o punhal (*sica*) arrancado das mãos (*comprehensus est in templo Castoris servus P. Clodi, quem ille ad Cn. Pompeium interficiendum conlocarat*, *Mil.* 18 [relido ✔]). **[corrigido na verificação]** 52 a.C. é o ano do **discurso**, não do episódio. *Mil.* 18 não dá data; Cícero conta o caso como coisa passada, junto com o assassinato de M. Papírio na Via Ápia, e em *Mil.* 37 diz que o mesmo punhal serviu contra Pompeu e contra Papírio. A data usual na bibliografia (58 a.C.) ⚠ **não foi confirmada** aqui;
   - em 44 a.C. Antônio, "sentado diante do templo de Castor", ameaçou o povo (*Phil.* 3.27, 5.21 [conferido]).
 - **[HIPÓTESE DE MODELAGEM]** Em 50–44 a.C. os degraus já teriam sido refeitos. Não foi encontrada fonte sobre a recolocação; o uso por Antônio em 44 a.C. sugere que o acesso funcionava.
 
 ### Localização / orientação / relações espaciais
-- Fica "no Fórum", no lugar onde os Dióscuros apareceram, ao lado da fonte homônima (Dion. Hal. 6.13.4 [conferido]). Pleiades: canto SE do Fórum.
+- Fica "no Fórum", no lugar onde os Dióscuros apareceram, ao lado da fonte homônima (Dion. Hal. 6.13.4 [conferido; relido na verificação ✔]). Pleiades: canto SE do Fórum.
 - Centro das ruínas: (52,6; 92,2). **[PL-bbox, derivado]** 56,9 m (L–O) × 62,4 m (N–S).
 - Vizinhos: Lacus Iuturnae a 29 m (ESE); Vesta a 47 m (L); Basílica Júlia a oeste, do outro lado do Vicus Tuscus. A estátua de Vortumno ficava no Vicus Tuscus, no início da *via tensarum* para o Circo, que passa pelo templo (*Verr.* 2.1.154).
-- **Orientação da fachada: NÃO ENCONTRADO** (azimute). As fontes mostram oradores no alto, voltados para o povo reunido no Fórum (Dião 38.6.2; Cic. *Phil.* 3.27), o que indica **frente voltada para a praça**. **[HIPÓTESE DE MODELAGEM]** Eixo longo perpendicular ao eixo da praça (rumo ≈ 114–119°), com a frente voltada para o interior da praça, a norte. A bbox OSM é compatível com um retângulo de ~32 × 50 m girado ~25–30°, mas não distingue as orientações NNE e NNO: conferir com o polígono OSM do pódio.
+- **Orientação da fachada: NÃO ENCONTRADO** (azimute). As fontes mostram oradores no alto, voltados para o povo reunido no Fórum (Dião 38.6.2; Cic. *Phil.* 3.27), o que indica **frente voltada para a praça**. **[HIPÓTESE DE MODELAGEM]** Eixo longo perpendicular ao eixo da praça (rumo ≈ 114–119°), com a frente voltada para o interior da praça, a norte. ~~A bbox OSM é compatível com um retângulo de ~32 × 50 m girado ~25–30°~~ **[corrigido na verificação]** A bbox (56,9 × 62,4 m) **não é compatível** com um retângulo de 32 × 50 m em nenhuma rotação: a diagonal desse retângulo é de 59,4 m, menor que os 62,4 m N–S da caixa. A caixa inclui, portanto, algo além do pódio (escadas, plataforma ou fundações) e **não serve** para estimar o ângulo. Também não distingue as orientações NNE e NNO. Conferir com o polígono OSM do pódio.
 
 ### Dimensões
 
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
-| Pódio visível hoje (planta) | 32 × 49,5 | m | Wikipedia *Temple of Castor and Pollux* [busca] | média (medida); **baixa** para atribuir à fase de 117 a.C. (ver divergência) |
-| Altura do pódio visível | 7 | m | idem | média |
-| Atribuição do pódio | "visível hoje é tiberiano, **exceto o pódio, que é de Metelo**" vs. "pódio em concreto (*opus caementicium*) revestido de lajes de tufo depois removidas" | — | resumos [busca]; URL exata não indicada | **divergente** |
-| Templo augustano/tiberiano | 32 × 50; altura de quase 19 | m | uma fonte do resumo [busca] | baixa/média (**anacrônico**) |
-| Templo arcaico (séc. V a.C.) | largura 27,50; comprimento entre 37 e 40 | m | resenha BMCR dos volumes nórdicos [busca] | média |
-| Fundação arcaica | grelha de blocos de *cappellaccio* | — | idem | média |
+| Pódio visível hoje (planta) | 32 × 49,5 ⚠ não confirmado | m | Wikipedia *Temple of Castor and Pollux* [busca] | média (medida); **baixa** para atribuir à fase de 117 a.C. (ver divergência) |
+| Altura do pódio visível | 7 ⚠ não confirmado | m | idem | média |
+| Atribuição do pódio | "visível hoje é tiberiano, **exceto o pódio, que é de Metelo**" vs. "pódio em concreto (*opus caementicium*) revestido de lajes de tufo depois removidas" ⚠ não confirmado | — | resumos [busca]; URL exata não indicada | **divergente** |
+| Templo augustano/tiberiano | 32 × 50; altura de quase 19 ⚠ não confirmado | m | uma fonte do resumo [busca] | baixa/média (**anacrônico**) |
+| Templo arcaico (séc. V a.C.) | largura 27,50; comprimento entre 37 e 40 ⚠ não confirmado | m | resenha BMCR dos volumes nórdicos [busca] | média |
+| Fundação arcaica | grelha de blocos de *cappellaccio* ⚠ não confirmado | — | idem | média |
 | Planta/medidas da fase de Metelo | **NÃO ENCONTRADO** | — | (publicação: *The Temple of Castor and Pollux*, Instituts Nordiques, Nielsen & Poulsen, escavações de 1983–1989 [busca]) | — |
 | Nº total de colunas (Metelo) | **NÃO ENCONTRADO** | — | o contrato de 74 a.C. listava "apenas o número de colunas" (*Verr.* 2.1.134), sem dizê-lo | — |
-| Colunas reerguidas em 74 a.C. | 4 | colunas | *Verr.* 2.1.147, 154 [conferido] | alta |
-| Escadas | fontes antigas: escada **central única**; escavação: **duas escadas laterais** | — | resumo [busca]; fase não especificada | baixa |
+| Colunas reerguidas em 74 a.C. | 4 | colunas | *Verr.* 2.1.147, 154 [conferido; relido ✔] | alta |
+| Escadas | fontes antigas: escada **central única**; escavação: **duas escadas laterais** ⚠ não confirmado | — | resumo [busca]; fase não especificada | baixa |
 
 ### Planta e elementos arquitetônicos
-- **Ordem e número de colunas de 117 a.C.: NÃO ENCONTRADO.** As três colunas coríntias visíveis hoje pertencem à fase tiberiana: "os restos visíveis são do templo de Tibério" [busca]. Ovídio alude a essa rededicação pelos "irmãos de estirpe divina" (*Fasti* 1.705–708 [conferido]).
+- **Ordem e número de colunas de 117 a.C.: NÃO ENCONTRADO.** As três colunas coríntias visíveis hoje pertencem à fase tiberiana: "os restos visíveis são do templo de Tibério" [busca]. Ovídio alude a essa rededicação pelos "irmãos de estirpe divina" (*Fasti* 1.705–708 [conferido; relido ✔]) e a põe no **27 de janeiro** (*sexta Kalendas*, v. 705), data diferente da dedicação republicana nos Idos de julho (Lívio 2.42.5). Suetônio confirma: Tibério "dedicou o templo de Pólux e Castor em seu nome e no do irmão, com o butim" (*Tib.* 20 [relido ✔]). O ano (6 d.C., Dião 55.27.4) ⚠ não foi confirmado: o TEI do Perseus para Dião acaba em 55.9.
 - **Teto com caixotões** (*tectum pulcherrime laqueatum*, *Verr.* 2.1.133 [conferido]).
 - Colunas de **tambores de pedra** desmontáveis, recolocadas *eisdem lapidibus*, **rebocadas** (*tectorium*) e **caiadas** (*Verr.* 2.1.145 [conferido]).
 - Pódio alto com **degraus** (*gradus*, *ascensus*) que podiam ser removidos (Cícero, acima). O alto do pódio servia de tribuna (Dião 38.6.2–3).
@@ -235,7 +236,7 @@
 
 ### Localização
 - Centro (79,0; 105,2). **[PL-bbox, derivado]** 7,7 m (L–O) × 9,6 m (N–S). É a bacia **atual**; fase não indicada.
-- Entre Castor (29 m a OSO, rumo 296°) e Vesta (26 m a NE).
+- Entre Castor (29 m a ~~OSO~~ **ONO**, rumo 296°) e Vesta (26 m a NE). **[corrigido na verificação]** Rumo de 296° é oés-noroeste (ONO), não oés-sudoeste.
 
 ### Dimensões
 
@@ -281,8 +282,8 @@
 - Dentro: o **fogo perpétuo** e, segundo alguns, objetos sagrados secretos (Dion. Hal. 2.66.2–3 [conferido]).
 
 ### Materiais e acabamentos
-- **Telhado:** *"quae nunc aere vides, stipula tum tecta videres, et paries lento vimine textus erat"*, "o que hoje vês coberto de bronze, verias então coberto de palha, com paredes de vime trançado" (Ovídio *Fasti* 6.261–262 [conferido]). O bronze é o do tempo de Ovídio, **depois de 14 a.C.**; a palha é a época de Numa. **Telhado em 50–44 a.C.: NÃO ENCONTRADO.**
-- **[HIPÓTESE DE MODELAGEM]** Tholos em pedra rebocada (tufo/travertino estucado) sobre pódio circular baixo, com colunata periférica. Cobertura cônica de **telhas cerâmicas**, preferível ao bronze, que só está atestado depois de 14 a.C. Abertura no topo para a fumaça (não atestada; conferir).
+- **Telhado:** *"quae nunc aere vides, stipula tum tecta videres, et paries lento vimine textus erat"*, "o que hoje vês coberto de bronze, verias então coberto de palha, com paredes de vime trançado" (Ovídio *Fasti* 6.261–262 [conferido]). O bronze é o do tempo de Ovídio, **depois de 14 a.C.**; a palha é a época de Numa. **Telhado em 50–44 a.C.: NÃO ENCONTRADO.** **[nota da verificação]** O verso (relido ✔) só prova bronze **no tempo de Ovídio**. Não prova que o templo republicano **não** tivesse bronze: a primeira atestação não é prova de ausência anterior. O bronze em 50–44 a.C. fica **incerto**, não anacrônico.
+- **[HIPÓTESE DE MODELAGEM]** Tholos em pedra rebocada (tufo/travertino estucado) sobre pódio circular baixo, com colunata periférica. Cobertura cônica de **telhas cerâmicas**. É uma escolha prudente, não um dado: o bronze só está **atestado** depois de 14 a.C., o que não o exclui antes. Abertura no topo para a fumaça (não atestada; conferir).
 
 ### Detalhes de ambientação
 - Fumaça contínua do fogo sagrado.
@@ -296,7 +297,7 @@
 ## 7. Atrium Vestae (Casa das Vestais), fase republicana
 
 ### Estado em 50–44 a.C.
-- **Existente, menor que o atual.** Ovídio (c. 8 d.C.): *"hic locus exiguus, qui sustinet atria Vestae, tunc erat intonsi regia magna Numae"*, "este lugar exíguo, onde está o átrio de Vesta, foi a grande régia de Numa" (*Fasti* 6.263–264 [conferido]).
+- **Existente, menor que o atual.** Ovídio (c. 8 d.C.): *"hic locus exiguus, qui sustinet atria Vestae, tunc erat intonsi regia magna Numae"*, "este lugar exíguo, onde está o átrio de Vesta, foi a grande régia de Numa" (*Fasti* 6.263–264 [conferido; relido ✔]). **[nota da verificação]** O verso descreve o lugar **depois** da ampliação de 12 a.C. e é um contraste poético com a "grande régia" de Numa. Não mede a casa republicana. A prova de que esta era menor vem de Dião 54.27.3 (abaixo) e de os restos escavados em 1883–84 serem **da época de Adriano** (Smith 1890, *Vestales* [relido]).
 - Em 12 a.C. Augusto deu às Vestais a casa "do *rex sacrorum*", porque **tinha parede comum com as moradias delas** (ὁμότοιχος, Dião 54.27.3 [conferido]). O complexo das Vestais **cresceu depois de 44 a.C.**
 - Smith 1890: as Vestais demoliram a maior parte dos prédios recebidos e reconstruíram a casa "em escala maior, no mesmo lugar".
 - Planta republicana: **NÃO ENCONTRADO.**
@@ -357,7 +358,7 @@
 
 ### Estado em 50–44 a.C.
 - **Existente.** Numa "construiu, perto do templo de Vesta, a chamada Régia" (Plut. *Numa* 14.1 [conferido]). O Pleiades a descreve como "sede ritual" e edifício ligado ao Pontífice Máximo.
-- **Incendiada e reconstruída por Cn. Domício Calvino** com o ouro do seu triunfo hispânico. Ele a decorou com estátuas emprestadas por César Otaviano e nunca as devolveu (Dião 48.42.4–6 [conferido]). Dião **não dá a data do incêndio**. A reconstrução é **posterior a 44 a.C.** O escopo da tarefa indica 36 a.C.; o ano não foi conferido numa fonte acessível.
+- **Incendiada e reconstruída por Cn. Domício Calvino** com o ouro do seu triunfo hispânico. Ele a decorou com estátuas emprestadas por César Otaviano e nunca as devolveu (Dião 48.42.4–6 [conferido]). Dião **não dá a data do incêndio**. A reconstrução é **posterior a 44 a.C.** O escopo da tarefa indica 36 a.C.; o ano não foi conferido numa fonte acessível. **[verificação]** Dião 48.42.4–6 (relido ✔) fica dentro da narrativa do ano de **39 a.C.** (48.34.1: cônsules L. Márcio e C. Sabino; o ano seguinte começa em 48.43.1, com Ápio Cláudio e C. Norbano). Smith 1890 (*Domus*) data a obra de "c. 35 a.C.". Qualquer que seja o ano (39–35 a.C.), é **posterior** ao período do jogo. "36 a.C." ⚠ não confirmado.
 - Em 210 a.C. queimou um *atrium regium* (Lívio 26.27.3 [conferido]). Smith 1890 o identifica com a Régia; é interpretação.
 
 ### Localização
@@ -368,7 +369,7 @@
 | Elemento | Valor | Unidade | Fonte | Confiança |
 |---|---|---|---|---|
 | Envoltória atual | 31,4 × 29,4 | m | PL-bbox [derivado] | média (fases misturadas; caixa girada é maior que o edifício) |
-| Planta "trapezoidal" | **NÃO VERIFICADO** nas fontes acessadas | — | (escopo da tarefa) | — |
+| Planta "trapezoidal" | ⚠ **não confirmado** nas fontes acessadas. Smith 1890 (*Domus*): edifício "em estado muito fragmentário", cuja "planta completa não pode ser determinada"; "salas pequenas" e átrio "de extensão muito limitada" | — | (escopo da tarefa); Smith 1890 | — |
 | Medidas da fase pré-36 a.C. | **NÃO ENCONTRADO** | — | — | — |
 
 ### Planta e elementos arquitetônicos
@@ -380,8 +381,8 @@
 - César tinha ali seu escritório diurno de funções religiosas; morava na *domus publica* (Smith 1890, seguindo Jordan).
 
 ### Materiais e ambientação
-- Materiais: **NÃO ENCONTRADO.** Mármore só depois de Calvino (não verificado).
-- **[HIPÓTESE DE MODELAGEM]** Edifício baixo de tufo rebocado, fechado, sem colunata frontal. Um pátio, uma sala sagrada com as lanças de Marte encostadas na parede e armários com rolos e tábuas (os anais pontificais).
+- Materiais (**acrescentado na verificação**; fonte do séc. XIX, **datada**): Smith 1890 (*Domus*, seguindo Middleton) descreve restos de várias fases. As paredes mais antigas são de **tufo mole** em blocos esquadrados; vem depois uma parte em **blocos de peperino** (*lapis Albanus*). Uma fase posterior, de **concreto revestido de tijolo** com **colunas de travertino estucadas e pintadas de azul e vermelho**, e uma parte em **blocos de mármore branco**, são atribuídas "provavelmente" a Calvino, portanto **depois** de 44 a.C. ⚠ A atribuição dessas fases a Calvino é de 1890 e não foi confirmada por fonte moderna. Para 50–44 a.C., usar **tufo e peperino**, sem mármore.
+- **[HIPÓTESE DE MODELAGEM]** Edifício baixo de tufo (e peperino) rebocado, fechado, sem colunata frontal. Um pátio, uma sala sagrada com as lanças de Marte encostadas na parede e armários com rolos e tábuas (os anais pontificais).
 
 ---
 
@@ -389,17 +390,19 @@
 
 ### Estado em 50–44 a.C.
 - **Existente.** Smith Biog. (*Maximus, Fabius Allobrogicus*, citando Pseudo-Ascônio *ad Verr.* 1.7 e o Escoliasta Gronoviano): Fábio, cônsul em 121 a.C., ergueu com o butim da Auvérnia "o Fornix Fabianus, **atravessando a Via Sacra, perto do templo de Vesta**", e pôs no alto do arco **uma estátua de si mesmo**.
-- A data exata de construção, depois da vitória de 121 a.C. e do triunfo, **não foi encontrada**.
-- Restauração de 57 a.C. pelo neto: **NÃO VERIFICADO** (nenhuma fonte acessível).
+- A data exata de construção, depois da vitória de 121 a.C. e do triunfo, **não foi encontrada**. Smith 1890 (*Arcus*) diz "em 121 a.C.", sem fonte primária para o ano.
+- Restauração de 57 a.C. pelo neto: ⚠ **não confirmado** (nenhuma fonte acessível, nem na verificação).
 
 ### Localização
 - Perto da **Régia** (Pseudo-Ascônio) e do **Puteal Libonis** (Porfirião *ad Hor. Ep.* 1.19.8), segundo Smith Geog. 1854.
 - Smith 1890: "na Via Sacra, **exatamente onde ela começa a subir** em direção ao Arco de Tito". Cita restos mínimos (Middleton 1885, p. 207).
+- **[acrescentado na verificação]** Smith 1890, verbete *Arcus* (relido): "ruínas do Fornix Fabianus foram achadas no séc. XVI e de novo em 1882, **perto do templo de Faustina**". É o melhor indício de posição encontrado. **Divergência interna** no mesmo dicionário: o verbete *Arcus* põe o arco "no **alto** (*top*) da Via Sacra", o que contradiz o verbete *Fornix* e Cícero (*Planc.* 17, que opõe *summa Sacra Via* ao arco). Seguir Cícero e o verbete *Fornix*. Smith Geog. 1854 também o põe "no extremo leste do Fórum".
+- Nota textual (verificação): em *Planc.* 17 os manuscritos trazem *Fabium*; *Fabianum fornicem* é correção de Sylvius, com apoio em *Verr.* 1.19.
 - Cícero [conferido]:
   - "se, como acontece, sou empurrado na multidão, não acuso quem está **no alto da Via Sacra** quando sou impelido **até o arco Fabiano**" (*Planc.* 17). O arco fica no **extremo baixo** da Via Sacra, perto do Fórum;
   - Mêmio se achava tão grande que, "**descendo para o Fórum**, abaixava a cabeça no arco Fabiano" (*De Or.* 2.267). O arco é a porta de entrada no Fórum para quem desce a Via Sacra;
   - em 70 a.C., Cúrio vê Verres "**junto ao próprio arco Fabiano, na multidão**" (*Verr.* 1.19).
-- Coordenada: **NÃO ENCONTRADO.** **[HIPÓTESE DE MODELAGEM]** Sobre a Via Sacra, a ~10–30 m a N/NE da Régia, entre a Régia e a área do futuro Templo do Divo Júlio, perpendicular à rua.
+- Coordenada: **NÃO ENCONTRADO.** **[HIPÓTESE DE MODELAGEM]** Sobre a Via Sacra, a ~10–30 m a N/NE da Régia, entre a Régia e a área do futuro Templo do Divo Júlio, perpendicular à rua. Fica compatível com os achados "perto do templo de Faustina" (Smith 1890), que é imperial e não deve ser modelado.
 
 ### Dimensões
 
@@ -438,7 +441,7 @@
 
 ### Materiais e ambientação
 - **[HIPÓTESE DE MODELAGEM]** Lajes poligonais de basalto (*silex*), por analogia com o Clivus Capitolinus, com 5–7 m de largura. Inclinação suave subindo para a Vélia a partir do Fornix.
-- **46 a.C.**: toldos (*vela*) sobre o Fórum e a Via Sacra, da casa de César ao Capitólio, durante seus jogos (Plínio *NH* 19.23 [conferido]). Dião diz que os toldos eram **de seda**, "segundo alguns" (43.24.2 [conferido]).
+- **46 a.C.**: toldos (*vela*) sobre o Fórum e a Via Sacra, da casa de César ao Capitólio, durante seus jogos (Plínio *NH* 19.23 [conferido; relido ✔]). Nota textual: o texto do Perseus traz *ab domo sua et clivum usque in Capitolium* ("desde a sua casa, e o clivo até o Capitólio"); a leitura *ad clivum usque Capitolinum* é variante. O sentido topográfico (casa de César no extremo da Via Sacra oposto ao Capitólio) não muda. Dião diz que os toldos eram **de seda**, "segundo alguns" (43.24.2 [conferido]).
 - Multidões, empurrões, encontros de rua (Cic. *Planc.* 17; Hor. *Sat.* 1.9).
 
 ---
@@ -448,13 +451,13 @@
 ### Estado em 50–44 a.C.
 - **Existente.** Pleiades: "área *in medio foro* ligada às fases mais antigas; **no período republicano tardio tornara-se uma pequena bacia dentro de uma área pavimentada**".
 - Ovídio [conferido]: *"Curtius ille lacus, siccas qui sustinet aras, nunc solida est tellus, sed lacus ante fuit"*, "aquele Lacus Curtius, que sustenta altares secos, hoje é terra firme, mas antes foi lago" (*Fasti* 6.403–404). É o estado do tempo de Augusto e Tibério.
-- Plínio *NH* 15.78 [conferido]: no meio do Fórum, onde Cúrcio preencheu o abismo, vive uma **figueira** nascida ao acaso. No mesmo lugar há uma **videira e uma oliveira** plantadas pela plebe para dar sombra. Um **altar foi retirado** dali para o espetáculo de gladiadores do Divo Júlio, "o último combate travado no Fórum" (46 a.C.).
+- Plínio *NH* 15.78 [conferido; relido ✔]: no meio do Fórum, onde Cúrcio preencheu o abismo, vive uma **figueira** nascida ao acaso. No mesmo lugar há uma **videira e uma oliveira** plantadas pela plebe para dar sombra. Um **altar foi retirado** dali para o espetáculo de gladiadores do Divo Júlio, "o último combate travado no Fórum" (46 a.C.).
 - Lendas:
   - Mécio Cúrcio, sabino, cujo cavalo atolou no pântano (Lívio 1.13.5 [conferido]);
   - M. Cúrcio, que se lançou armado a cavalo no abismo aberto no Fórum, enquanto o povo atirava oferendas e frutos sobre ele (Lívio 7.6.1–6 [conferido]).
 
 ### Localização
-- Centro (7,1; 17,6). **[PL-bbox, derivado]** 11,0 m (L–O) × 10,6 m (N–S). Fica a 47 m a ESE da Rostra (ruínas atuais) e a 49 m a NNE da Basílica Júlia.
+- Centro (7,1; 17,6). **[PL-bbox, derivado]** 11,0 m (L–O) × 10,6 m (N–S). Fica a 47 m a ~~ESE~~ **SE** da Rostra (ruínas atuais) e a 49 m a NNE da Basílica Júlia. **[corrigido na verificação]** Recalculado de (−29,6; −11,4) para (7,1; 17,6): 46,8 m, rumo 128°, mais perto de SE (135°) que de ESE (112,5°).
 
 ### Dimensões
 
@@ -535,13 +538,15 @@
 
 | Elemento | Data / razão | Fonte |
 |---|---|---|
-| **Templo do Divo Júlio** e seu pódio | autorizado em 42 a.C., dedicado em 18/08/29 a.C. Em 50–44 a.C. a área é **praça aberta**. Depois dos Idos, o corpo de César foi levado à Rostra e queimado no Fórum. | Pleiades; Suet. *Iul.* 84 [conferido] |
-| **Basílica Júlia completa** na forma augustana/imperial (101 × 49 m, mármores, arcadas restauradas) | concluída e reconstruída por Augusto; rededicação em 12 d.C. ou 2 a.C. (divergente) | [busca]; Smith 1890 |
-| **Três colunas coríntias de Castor** e o templo augustano/tiberiano (32 × 50 m, ~19 m de altura) | reconstrução pelos "irmãos" (Tibério e Druso), Ovídio *Fasti* 1.705–708 | [busca]; Ovídio [conferido] |
-| **Ruínas severianas** do templo de Vesta | fase severiana | Pleiades |
-| **Telhado de bronze** de Vesta | atestado "agora" por Ovídio, depois do incêndio de 14 a.C. | Ovídio *Fasti* 6.261; Dião 54.24.2 [conferido] |
-| **Atrium Vestae imperial** (~104 × 77 m), com estátuas das *Vestales Maximae* e tanque de mármore | ampliação depois de 12 a.C.; estátuas do séc. II d.C. | Dião 54.27.3 [conferido]; Smith 1890; PL-bbox |
-| **Régia de Domício Calvino** (marmórea) | reconstrução posterior a 44 a.C. | Dião 48.42.4–6 [conferido] |
+| **Templo do Divo Júlio** e seu pódio | alicerces do *heroon* lançados "no Fórum e no lugar onde foi cremado" em **42 a.C.** (προκατεβάλοντο) (Dião 47.18.4; ano pelos cônsules Lépido e Planco em 47.16.1); consagrado em **29 a.C.** (Dião 51.22.2–3; ano pelo 5º consulado de Otaviano em 51.20.1). O dia 18/08 ⚠ não foi confirmado. Em 50–44 a.C. a área é **praça aberta**. Depois dos Idos, o corpo de César foi levado à Rostra e queimado no Fórum. | Pleiades; Suet. *Iul.* 84 [conferido]; Dião [relido na verificação ✔] |
+| **Arco(s) de Augusto** no Fórum (**acrescentado na verificação**) | arco triunfal "no Fórum romano" votado pela vitória de Áccio (Dião 51.19.1) e arco triunfal pela devolução das insígnias partas (Dião 54.8.3; o ano exato não foi conferido). Ambos são posteriores a 44 a.C. Também é posterior a decoração do pódio do *heroon* de Júlio com os esporões dos navios capturados em Áccio (Dião 51.19.2). A posição usual, junto ao futuro Divo Júlio, entre ele e Castor, ⚠ não foi confirmada. **Não modelar.** | Dião 51.19.1; 54.8.3 [relido ✔] |
+| **Basílica Júlia completa** na forma augustana/imperial (101 × 49 m ⚠ não confirmado, mármores, arcadas restauradas) | concluída e reconstruída por Augusto; rededicação em 12 d.C. ou 2 a.C. (divergente); *cancelli* de mármore nas arcadas (Smith 1890) | [busca]; Smith 1890 |
+| **Três colunas coríntias de Castor** e o templo augustano/tiberiano (32 × 50 m, ~19 m de altura ⚠ não confirmado) | reconstrução pelos "irmãos" (Tibério e Druso), Ovídio *Fasti* 1.705–708; Suet. *Tib.* 20 | [busca]; Ovídio, Suetônio [relidos ✔] |
+| **Ruínas severianas** do templo de Vesta | fase severiana | Pleiades; Smith 1890 ("rebuilt by Severus") |
+| ~~**Telhado de bronze** de Vesta~~ | **[corrigido na verificação]** Não é anacronismo comprovado. Ovídio atesta o bronze "agora", depois do incêndio de 14 a.C., mas isso não prova a ausência antes. Fica **incerto** para 50–44 a.C.; as telhas cerâmicas são escolha de modelagem. | Ovídio *Fasti* 6.261; Dião 54.24.2 [relidos ✔] |
+| **Atrium Vestae imperial** (~104 × 77 m), com estátuas das *Vestales Maximae* e tanque de mármore | ampliação depois de 12 a.C.; restos escavados de época adrianiana; estátuas do séc. II d.C. | Dião 54.27.3 [relido ✔]; Smith 1890; PL-bbox |
+| **Régia de Domício Calvino** (marmórea) | reconstrução posterior a 44 a.C. (narrada por Dião no ano de 39 a.C.; "c. 35 a.C." em Smith 1890) | Dião 48.42.4–6 [relido ✔] |
+| **Fastos consulares gravados nas paredes de mármore da Régia** (**acrescentado na verificação**) | Smith 1890 (*Domus*) supõe que os fastos ficavam nas paredes de mármore da reconstrução de Calvino; mesmo que fosse assim, seriam posteriores a 44 a.C. | Smith 1890 (hipótese do séc. XIX) |
 | **Arco de Tito** (c. 81 d.C.) no alto da Via Sacra | imperial | Pleiades |
 | **Arco de Septímio Severo** (203 d.C.) | imperial | Pleiades |
 | **Arco de Tibério** (16 d.C.) sobre o Vicus Iugarius | imperial | tema 01 |
@@ -558,21 +563,21 @@
 
 | # | Lacuna | Tratamento sugerido |
 |---|---|---|
-| 1 | **Dimensões, planta, ordem e nº de colunas do templo de Castor de 117 a.C.** | Usar o pódio visível (32 × 49,5 × 7 m) como envoltória **máxima**. Templo períptero de colunas rebocadas brancas. Marcar como "reconstrução hipotética". Fonte para resolver: *The Temple of Castor and Pollux* I–III (Nielsen & Poulsen). |
+| 1 | **Dimensões, planta, ordem e nº de colunas do templo de Castor de 117 a.C.** | Usar o pódio visível (32 × 49,5 × 7 m, ⚠ não confirmado) como envoltória **máxima**. Templo períptero de colunas rebocadas brancas. Marcar como "reconstrução hipotética". Fonte para resolver: *The Temple of Castor and Pollux* I–III (Nielsen & Poulsen). |
 | 2 | **Orientação exata (azimute) da fachada de Castor** e da basílica | Eixo longo perpendicular ao da praça, frente para a praça. Conferir no polígono OSM do pódio (não acessível nesta pesquisa). |
 | 3 | **Forma da Basílica Júlia em 46–44 a.C.** (o quanto estava pronta, materiais, cobertura) | 2 andares, parcialmente em obras, com andaimes. Divergência sobre a cobertura da nave central (sem teto segundo Smith/Middleton; nave de "três andares" segundo o resumo de busca). |
 | 4 | **Data de início da Basílica Júlia** (54 vs 46 a.C.) e destino das Tabernae Veteres | Assumir 54 a.C. (maioria das fontes do resumo). Remover as Tabernae Veteres ou incorporá-las na fachada da basílica (hipótese). |
 | 5 | **Templo de Vesta republicano**: diâmetro, nº de colunas, telhado | Tholos com ~12–14 m de diâmetro externo (ordem de grandeza das ruínas severianas), proporções de Vitrúvio 4.8, telhas cerâmicas. **Hipotético.** |
 | 6 | **Atrium Vestae republicano** | Casa de átrio modesta ao S/SE de Vesta. Sem medidas; marcar como hipotético. |
 | 7 | **Domus Publica**: posição, planta, restos | Casa grande na Via Sacra, encostada ao Atrium Vestae, com frontão (antes de março de 44 a.C.). Divergência: a casa "com parede comum" (Dião 54.27.3) é a do *rex sacrorum*, não necessariamente a domus publica. |
-| 8 | **Régia**: forma trapezoidal e medidas pré-36 a.C.; data do incêndio | Edifício fechado de ~20–30 m dentro da bbox de 31 × 29 m. Forma trapezoidal **a confirmar** (é afirmação do escopo, não verificada aqui). |
+| 8 | **Régia**: forma trapezoidal e medidas anteriores a Calvino; data do incêndio | Edifício fechado de ~20–30 m dentro da bbox de 31 × 29 m, em tufo e peperino (Smith 1890). Forma trapezoidal ⚠ **não confirmada** (é afirmação do escopo; Smith 1890 diz que a planta completa não pode ser determinada). |
 | 9 | **Fornix Fabianus**: medidas, nº de vãos, materiais, coordenada; restauração de 57 a.C. | Arco simples hipotético sobre a Via Sacra, perto da Régia, com estátua no topo. |
 | 10 | **Via Sacra**: traçado exato, largura e pavimento em 50–44 a.C. | Basalto poligonal (analogia com o Clivus Capitolinus, 174 a.C.), 5–7 m de largura. **Hipotético.** |
 | 11 | **Lacus Iuturnae e Lacus Curtius**: forma republicana | Bacias de 6–10 m, por ordem de grandeza das bboxes atuais. |
 | 12 | **Puteal Libonis**: posição e medidas; data da moeda | Altar redondo de ~1 m com liras e festões, mais um tribunal do pretor, entre Castor, Vesta e o futuro Divo Júlio. |
 | 13 | **Material e cota do pavimento** na metade sul/leste; estado do *canalis* | Conciliar com os temas 01/02 (divergem: 11,8–11,9 vs 12,5–14 m). Usar travertino claro. Canal coberto, para não inventar um canal aberto. |
 | 14 | **Pista não verificada:** a inscrição do pretor L. Névio Surdino no pavimento do Lacus Curtius (época augustana) é conhecida da bibliografia, mas **não foi conferida nesta pesquisa** | Não usar até verificar. Se confirmada, é anacrônica para 50–44. |
-| 15 | **Limitação de pesquisa:** só 3 buscas na web foram possíveis (cota esgotada). Platner & Ashby, LTUR, Coarelli e o DFR (HU Berlin) **não foram acessados**. | Próximo passo, se houver nova cota: buscar "Regia Brown trapezoidal dimensions", "aedes Vestae Republican phase diameter", "Castor Metellan temple Nordic excavation columns", "Fornix Fabianus remains Middleton", "Basilica Iulia Caesarian phase". |
+| 15 | **Limitação de pesquisa:** só 3 buscas na web foram possíveis (cota esgotada). Na verificação independente, **nenhuma** busca foi possível, e Wikipedia, Pleiades e LacusCurtius estavam bloqueados. Platner & Ashby, LTUR, Coarelli e o DFR (HU Berlin) **não foram acessados**. Todas as medidas modernas seguem ⚠ não confirmadas. | Próximo passo, se houver nova cota: buscar "Regia Brown trapezoidal dimensions", "aedes Vestae Republican phase diameter", "Castor Metellan temple Nordic excavation columns", "Fornix Fabianus remains Middleton", "Basilica Iulia Caesarian phase". |
 
 ---
 
@@ -623,3 +628,76 @@ Base: https://raw.githubusercontent.com/PerseusDL/canonical-pdlrefwk/master/data
   - Velia https://pleiades.stoa.org/places/157710058
 - `docs/pesquisa/00-coordenadas.md` (conversão para o sistema do jogo).
 - Referências cruzadas, não reverificadas por mim: `docs/pesquisa/01-forum-oeste.md` e `docs/pesquisa/02-forum-norte.md` (cotas de Van Deman 1922 e Platner; Lívio 41.27.7 sobre o Clivus Capitolinus).
+
+---
+
+## Verificação independente
+
+**Data:** 09/10/2026. **Verificador:** passada adversarial independente da pesquisa original.
+
+**Método e limites.** A cota de WebSearch do turno já estava **esgotada** quando esta verificação começou (0 buscas feitas). Wikipedia, Pleiades (site) e LacusCurtius/Platner estão **bloqueados** pelo proxy. Por isso **nenhuma medida moderna** marcada [busca] pôde ser reconfirmada. O que foi reverificado:
+- os **textos antigos**, baixados de novo dos TEI do Perseus no GitHub (`raw.githubusercontent.com/PerseusDL/canonical-latinLit` e `canonical-greekLit`) e lidos por referência CTS. Arquivos novos em relação à pesquisa original: Suetônio, *Tiberius* (`phi1348/abo013`), e Cícero, *Pro Milone* (`phi0474/phi031`);
+- os dicionários de **Smith** (Antiquities 1890, Geography 1854, Biography), baixados de `canonical-pdlrefwk/data/viaf88890045/`;
+- a **aritmética** de todas as distâncias e rumos derivados das coordenadas do jogo.
+
+Foram selecionadas e reverificadas as afirmações mais importantes para a modelagem 3D (21 itens abaixo).
+
+### ✔ Confirmado
+
+| # | Afirmação | Fonte relida |
+|---|---|---|
+| 1 | Basílica Semprônia (169 a.C.): Semprônio comprou a casa de Cipião "atrás das Veteres, junto à estátua de Vortumno", com açougues e lojas, e fez a basílica "depois chamada Semprônia" | Lívio 44.16.10–11 |
+| 2 | Castor, obra de Metelo paga com manúbias: Verres pagou mais para "caiar quatro colunas" do que Metelo para "construí-las todas" | Cic. *Verr.* 2.1.154 |
+| 3 | Castor, acabamento: teto *pulcherrime laqueatum* (2.1.133); colunas derrubadas com máquina e recolocadas *eisdemque lapidibus*, reboco velho (*tectorium vetus*) trocado, colunas *dealbatas* (2.1.145); 4 colunas reerguidas (2.1.147); Senado convocado ali e advocacias diárias (2.1.129); *via tensarum* do Vortumno ao Circo passando pelo templo (2.1.154) | Cic. *Verr.* 2.1.129–154 |
+| 4 | Castor, degraus removíveis: *gradus Castoris convellisti ac removisti* (*Dom.* 54); *gradus eiusdem templi tollebantur* (*Sest.* 34); templo "como uma cidadela" *anno superiore* (*Sest.* 85); Séstio atacado no templo (*Sest.* 79) | Cícero, *Dom.* e *Sest.* |
+| 5 | Castor, alto da escadaria como tribuna: César falava "do Dioscúreo"; Bíbulo foi empurrado "escadaria abaixo" (κατὰ τῶν ἀναβασμῶν) | Dião 38.6.2–3 |
+| 6 | Castor, dedicação republicana nos **Idos de julho** pelo filho de Postúmio; fonte sagrada junto ao templo; sacrifício e desfile dos cavaleiros nos Idos de *Quintilis* | Lívio 2.42.5; Dion. Hal. 6.13.4 |
+| 7 | Castor, fase visível tiberiana: dedicado por Tibério "em seu nome e no do irmão", em **27 de janeiro** (*sexta Kalendas*) | Suet. *Tib.* 20; Ovídio *Fasti* 1.705–708 |
+| 8 | Estátua equestre de Q. Márcio Trêmulo **diante do templo de Castor**, ainda vista em 43 a.C. Divergência menor: Lívio diz vencedor dos hérnicos; Plínio diz "duas vezes vencedor dos samnitas" e acrescenta que era **togada** | Lívio 9.43.22; Plínio *NH* 34.23; Cic. *Phil.* 6.13 |
+| 9 | Antônio *pro aede Castoris sedens* ameaçou o povo | Cic. *Phil.* 3.27; 5.21 |
+| 10 | Lacus Iuturnae: fonte "junto ao templo de Vesta, formando um pequeno lago fundo" (λίμνην ποιοῦσα ἐμβύθιον ὀλίγην) | Dion. Hal. 6.13.2 |
+| 11 | Vesta: em 210 a.C. o templo "mal foi defendido", graças a 13 escravos; em 14 a.C. o fogo da *stoa* de Paulo chegou ao santuário; forma "que agora permanece" igual à antiga; templo no Fórum, entre Capitólio e Palatino | Lívio 26.27.4; Dião 54.24.2; Ovídio *Fasti* 6.265–266; Dion. Hal. 2.66.1 |
+| 12 | Atrium Vestae: em 12 a.C. Augusto deu às Vestais a casa do *rex sacrorum*, "porque tinha parede comum com as moradias delas" (ὁμότοιχος), e tornou pública parte da própria casa em vez de receber uma casa oficial. Restos escavados de época adrianiana | Dião 54.27.3; Smith 1890 (*Vestales*) |
+| 13 | Régia: Calvino a reconstruiu "depois de queimada" com o ouro das cidades ibéricas e a ornou com estátuas pedidas a César (Otaviano), que nunca devolveu; em 210 a.C. queimou o *atrium regium* | Dião 48.42.4–6; Lívio 26.27.3 |
+| 14 | Domus Publica: César morou *in Sacra via domo publica*; casa "grande" na festa da Bona Dea; *fastigium* concedido pelo Senado ("como diz Lívio"), visto desabar no sonho de Calpúrnia; *fastigium* entre as honras de César; armas de Marte na casa "do Pontífice Máximo, por costume ancestral" | Suet. *Iul.* 46, 81.3; Plut. *Caes.* 10.2, 63.6; Cic. *Phil.* 2.110; Dião 44.17.2 |
+| 15 | Fornix Fabianus: Fábio Alobrógico (cos. 121 a.C.) ergueu-o com o butim da Auvérnia, "atravessando a Via Sacra, perto do templo de Vesta", com sua estátua no alto. Extremos da Via Sacra: *summa Sacra Via* ↔ arco. Mêmio "descendo para o Fórum" abaixava a cabeça no arco | Smith Biog. (Pseudo-Ascônio); Cic. *Planc.* 17; *De Or.* 2.267 |
+| 16 | Toldos de 46 a.C. sobre o Fórum e a Via Sacra "desde a sua casa"; Dião fala em toldos de seda "segundo alguns" (sem dizer onde) | Plínio *NH* 19.23; Dião 43.24.2 |
+| 17 | Lacus Curtius: figueira espontânea, videira e oliveira; altar removido para o *munus* do Divo Júlio, "o último combate travado no Fórum"; "altares secos" e "terra firme" sob Augusto. Combate de gladiadores no Fórum (Fúrio Leptino) | Plínio *NH* 15.78; Ovídio *Fasti* 6.403–404; Suet. *Iul.* 39.1 |
+| 18 | Rostra transferida em 44 a.C. (ano da 5ª ditadura e do 5º consulado de César com Antônio) | Dião 43.49.1 |
+| 19 | Templo do Divo Júlio: alicerces lançados em 42 a.C. e consagração em 29 a.C. Portanto **não** existe em 50–44 a.C. | Dião 47.16.1, 47.18.4; 51.20.1, 51.22.2–3 |
+| 20 | Smith 1890, *Basilica*: Basílica Júlia "começada e quase terminada por César, completada por Augusto", queimada e refeita maior; "grande pórtico duplo"; espaço central "aparentemente sem telhado" (Middleton) | Smith 1890 (texto relido) |
+| 21 | Aritmética: as 11 linhas da tabela "Relações espaciais" foram recalculadas; distâncias e rumos conferem (±0,5°) | cálculo a partir de `00-coordenadas.md` |
+
+### ✘ Corrigido (antes → depois)
+
+| # | Antes | Depois | Fonte |
+|---|---|---|---|
+| 1 | "em **52 a.C.** um escravo de Clódio foi preso no templo com um punhal" | Data **não dada** pelo texto. 52 a.C. é o ano do **discurso**; o episódio é anterior e é contado junto com o assassinato de M. Papírio. 58 a.C. ⚠ não confirmado | Cic. *Mil.* 18, 37 |
+| 2 | Lacus Iuturnae: Castor "a **OSO**, rumo 296°" | "a **ONO**": 296° é oés-noroeste | cálculo |
+| 3 | Lacus Curtius "a **ESE** da Rostra" | "a **SE**" (rumo 128°, 46,8 m) | cálculo |
+| 4 | Castor: bbox "compatível com um retângulo de ~32 × 50 m girado ~25–30°" | **Incompatível**: a diagonal de 32 × 50 é 59,4 m, menor que os 62,4 m da caixa; a caixa não serve para estimar o ângulo | cálculo |
+| 5 | Régia: "Dião não dá o ano"; "36 a.C." | Dião narra a reconstrução no ano de **39 a.C.** (48.34.1 → 48.43.1); Smith 1890 diz "c. 35 a.C."; 36 a.C. ⚠ não confirmado. Em qualquer caso é posterior a 44 a.C. | Dião 48.34.1, 48.42–43; Smith 1890 |
+| 6 | Telhado de bronze de Vesta listado como **anacronismo** | **Incerto**: Ovídio prova o bronze no seu tempo, não a ausência antes (argumento do silêncio). As telhas cerâmicas ficam como escolha de modelagem | Ovídio *Fasti* 6.261 |
+| 7 | Atrium Vestae: *locus exiguus* (Ovídio) usado como prova do tamanho republicano | O verso descreve o estado **augustano**, depois de 12 a.C. A prova de que a casa republicana era menor é Dião 54.27.3 mais os restos adrianianos | Ovídio *Fasti* 6.263; Dião 54.27.3; Smith 1890 |
+| 8 | Régia: materiais "NÃO ENCONTRADO" | **Tufo** mole (fase mais antiga) e **peperino**; tijolo, travertino estucado e mármore atribuídos a Calvino (portanto depois de 44 a.C.). Fonte datada de 1890 | Smith 1890 (*Domus*) |
+| 9 | Tabela de anacronismos sem os arcos augustanos | **Acrescentados**: arco de Áccio "no Fórum" e arco das insígnias partas; esporões de Áccio no pódio do *heroon* de Júlio; fastos consulares nas paredes de mármore da Régia (hipótese de 1890, de qualquer modo posterior) | Dião 51.19.1–2; 54.8.3; Smith 1890 |
+| 10 | Fornix: sem indício de posição | **Acrescentado**: ruínas achadas no séc. XVI e em 1882 "perto do templo de Faustina". Divergência interna de Smith (*Arcus*: "no alto da Via Sacra"; *Fornix*: "onde começa a subir"): seguir Cícero. Nota textual: em *Planc.* 17 os manuscritos dão *Fabium*, e *Fabianum* é emenda | Smith 1890 (*Arcus*, *Fornix*); Cic. *Planc.* 17 |
+| 11 | Plínio *NH* 19.23 traduzido como "até o Clivus do Capitólio" sem nota | Acrescentada a nota textual: *ab domo sua et clivum usque in Capitolium*, com a variante *ad clivum usque Capitolinum* | Plínio *NH* 19.23 (TEI Perseus) |
+
+### ⚠ Permanece incerto / não confirmado (não foi possível verificar)
+
+- **Castor:** pódio de 32 × 49,5 × 7 m e sua atribuição a Metelo ou a Tibério; templo augustano/tiberiano de 32 × 50 m e ~19 m de altura; templo arcaico de 27,5 × 37–40 m; fundação em *cappellaccio*; escadas laterais vs. escada central; **ano de 117 a.C.** (Cícero não o dá); **ano de 6 d.C.** da rededicação (Dião 55.27.4 não está no TEI, que acaba em 55.9); ordem, número de colunas e azimute da fase de Metelo; reconstrução dos degraus antes de 44 a.C.
+- **Basílica Júlia:** início em 54 ou 46 a.C.; dedicação em 46 a.C.; 101 × 49 m, nave de 82 × 18 m, 4 naves laterais e "três andares" (fase imperial); custeio com o butim gálico; datas do incêndio e da rededicação; estado da obra em 46–44 a.C.
+- **Basílica Semprônia e Tabernae Veteres:** dimensões; destino das *Veteres* durante a obra da Júlia.
+- **Vesta:** diâmetro e número de colunas republicanos; material do telhado em 50–44 a.C.
+- **Régia:** planta trapezoidal; medidas anteriores a Calvino; ano do incêndio.
+- **Fornix Fabianus:** restauração de 57 a.C.; medidas; número de vãos.
+- **Domus Publica:** posição exata e planta.
+- **Divo Júlio:** o dia 18 de agosto da consagração.
+- **Bboxes do Pleiades:** não puderam ser reconsultadas (site bloqueado). Só a aritmética derivada foi conferida.
+- **Cotas e material do pavimento** da metade sul/leste.
+
+### Busca ativa de anacronismos e de números sem fonte
+- As sugestões de modelagem não atribuem a 50–44 a.C. nenhuma fase imperial **além** das já sinalizadas. O único exagero no sentido oposto foi o do telhado de bronze (item 6). Faltavam na lista os arcos augustanos e os fastos da Régia (item 9).
+- Números sem fonte encontrados: todos já estavam marcados como **[HIPÓTESE DE MODELAGEM]**: Atrium Vestae de 25–35 m, Fornix de 4–5 × 7–9 m, Via Sacra de 5–7 m, Puteal de ~1 m, bacias de 6–10 m e Régia de 20–30 m. Nenhum foi apresentado como dado.
+- Para resolver as pendências, quando houver cota de busca: Nielsen & Poulsen, *The Temple of Castor and Pollux* I–III; Platner & Ashby (*Regia*, *Basilica Iulia*, *Fornix Fabianus*, *Arcus Augusti*); LTUR; F. E. Brown sobre a Régia; Dião 55.27.4 numa edição completa.
