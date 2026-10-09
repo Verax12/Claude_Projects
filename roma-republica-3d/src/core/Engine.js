@@ -17,6 +17,7 @@ import { mulberry32 } from '../render/noise.js';
 import * as geo from './geo.js';
 import { SITE_LOADERS } from '../sites/index.js';
 import { SITE_AREAS } from '../data/layout.js';
+import { HILL_NAMES } from '../data/topography.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
@@ -152,6 +153,8 @@ export class Engine {
       }
       if (config.debug) console.log(`[${s.id}] ${(performance.now() - t0).toFixed(0)} ms`);
     }
+    // nomes das colinas como áreas de baixa prioridade (os sítios podem sobrepor nomes mais específicos)
+    for (const h of HILL_NAMES) this.world.addArea({ name: h.name, latin: h.latin, circle: { x: h.x, z: h.z, r: h.r }, priority: -10 });
     this.ui.setProgress(0.88, 'Plantando árvores e calculando colisões…');
     await nextFrame();
     this.vegetation.build();

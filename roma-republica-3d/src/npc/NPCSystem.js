@@ -530,8 +530,9 @@ export class NPCSystem {
           az = -0.25;
         }
         if (side === 1 && npc.gesture > 0) {
-          ax = -0.6 - npc.gesture * 0.9;
-          az = 0.2;
+          // gesto de conversa: antebraço à frente, sem erguer demais o braço
+          ax = -0.35 - npc.gesture * 0.55;
+          az = 0.15 + npc.gesture * 0.1;
         }
         if (L.carry && side === 1) {
           // mão erguida apoiando a carga: no ombro (ânfora/saco) ou na cabeça (cesto)
